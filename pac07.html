@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>8 PAC07 | Laboratori de Fonaments de Programació</title>
+  <meta name="description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="8 PAC07 | Laboratori de Fonaments de Programació" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="8 PAC07 | Laboratori de Fonaments de Programació" />
+  
+  <meta name="twitter:description" content="FAQS del Laboratori de Fonaments de programació" />
+  
+
+<meta name="author" content="Jordi Blasco Planesas" />
+
+
+<meta name="date" content="2019-10-31" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pac06.html"/>
+<link rel="next" href="pac08.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Laboratori Fonaments de Programació</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducció</a></li>
+<li class="chapter" data-level="2" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>2</b> PAC01</a><ul>
+<li class="chapter" data-level="2.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>2.1</b> Llenguatge algorísmic</a></li>
+<li class="chapter" data-level="2.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>2.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
+<li class="chapter" data-level="2.3" data-path="pac01.html"><a href="pac01.html#impressio-de-valors-incorrecta"><i class="fa fa-check"></i><b>2.3</b> Impressió de valors incorrecta</a></li>
+<li class="chapter" data-level="2.4" data-path="pac01.html"><a href="pac01.html#com-definir-un-enumeratiu"><i class="fa fa-check"></i><b>2.4</b> Com definir un enumeratiu</a></li>
+<li class="chapter" data-level="2.5" data-path="pac01.html"><a href="pac01.html#com-utilitzar-un-enumeratiu"><i class="fa fa-check"></i><b>2.5</b> Com utilitzar un enumeratiu</a></li>
+<li class="chapter" data-level="2.6" data-path="pac01.html"><a href="pac01.html#especificador-dun-enumeratiu"><i class="fa fa-check"></i><b>2.6</b> Especificador d’un enumeratiu</a></li>
+<li class="chapter" data-level="2.7" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>2.7</b> Lectura de caràcters en C</a></li>
+<li class="chapter" data-level="2.8" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>2.8</b> Lectura de float en C</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>3</b> PAC02</a><ul>
+<li class="chapter" data-level="3.1" data-path="pac02.html"><a href="pac02.html#define-vs-const"><i class="fa fa-check"></i><b>3.1</b> define vs const</a></li>
+<li class="chapter" data-level="3.2" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>3.2</b> Precisió en variables float</a></li>
+<li class="chapter" data-level="3.3" data-path="pac02.html"><a href="pac02.html#expressions"><i class="fa fa-check"></i><b>3.3</b> Expressions</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>3.3.1</b> Exemple 1: esParell</a></li>
+<li class="chapter" data-level="3.3.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>3.3.2</b> Exemple 2: capDeSetmana</a></li>
+<li class="chapter" data-level="3.3.3" data-path="pac02.html"><a href="pac02.html#exemple-3-gintonicpreparation"><i class="fa fa-check"></i><b>3.3.3</b> Exemple 3: ginTonicPreparation</a></li>
+<li class="chapter" data-level="3.3.4" data-path="pac02.html"><a href="pac02.html#exemple-4-gintonicfreeml"><i class="fa fa-check"></i><b>3.3.4</b> Exemple 4: ginTonicFreeMl</a></li>
+<li class="chapter" data-level="3.3.5" data-path="pac02.html"><a href="pac02.html#exemple-5-scoutingbasquet"><i class="fa fa-check"></i><b>3.3.5</b> Exemple 5: scoutingBasquet</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>4</b> PAC03</a><ul>
+<li class="chapter" data-level="4.1" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>4.1</b> Significat dels arguments del main</a></li>
+<li class="chapter" data-level="4.2" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>4.2</b> Assignar valors a un vector</a></li>
+<li class="chapter" data-level="4.3" data-path="pac03.html"><a href="pac03.html#stack-smashing-detected"><i class="fa fa-check"></i><b>4.3</b> Stack smashing detected</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>5</b> PAC04</a><ul>
+<li class="chapter" data-level="5.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>5.1</b> Com tractar elements d’un vector amb un bucle</a></li>
+<li class="chapter" data-level="5.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>5.2</b> Entrada continua de valors amb un bucle</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>6</b> PAC05</a><ul>
+<li class="chapter" data-level="6.1" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>6.1</b> Exemple: nomines</a></li>
+<li class="chapter" data-level="6.2" data-path="pac05.html"><a href="pac05.html#exemple-accions"><i class="fa fa-check"></i><b>6.2</b> Exemple accions</a></li>
+<li class="chapter" data-level="6.3" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>6.3</b> Comanda scanf</a></li>
+<li class="chapter" data-level="6.4" data-path="pac05.html"><a href="pac05.html#finalitzador-0"><i class="fa fa-check"></i><b>6.4</b> Finalitzador ‘\0’</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>7</b> PAC06</a><ul>
+<li class="chapter" data-level="7.1" data-path="pac06.html"><a href="pac06.html#comanda-strcmp"><i class="fa fa-check"></i><b>7.1</b> Comanda strcmp</a></li>
+<li class="chapter" data-level="7.2" data-path="pac06.html"><a href="pac06.html#exemple"><i class="fa fa-check"></i><b>7.2</b> Exemple</a></li>
+<li class="chapter" data-level="7.3" data-path="pac06.html"><a href="pac06.html#tipos-de-parametros-de-las-acciones"><i class="fa fa-check"></i><b>7.3</b> Tipos de parámetros de las acciones</a></li>
+<li class="chapter" data-level="7.4" data-path="pac06.html"><a href="pac06.html#exemple-1"><i class="fa fa-check"></i><b>7.4</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>8</b> PAC07</a><ul>
+<li class="chapter" data-level="8.1" data-path="pac07.html"><a href="pac07.html#estructura"><i class="fa fa-check"></i><b>8.1</b> Estructura</a></li>
+<li class="chapter" data-level="8.2" data-path="pac07.html"><a href="pac07.html#tipus-de-parametres-en-accions-i-funcions"><i class="fa fa-check"></i><b>8.2</b> Tipus de paràmetres en accions i funcions</a></li>
+<li class="chapter" data-level="8.3" data-path="pac07.html"><a href="pac07.html#scanf-accio-o-funcio"><i class="fa fa-check"></i><b>8.3</b> scanf: acció o funció?</a></li>
+<li class="chapter" data-level="8.4" data-path="pac07.html"><a href="pac07.html#pas-per-valor-vs-pas-per-referencia"><i class="fa fa-check"></i><b>8.4</b> Pas per valor vs pas per referència</a></li>
+<li class="chapter" data-level="8.5" data-path="pac07.html"><a href="pac07.html#exemple-capgirar"><i class="fa fa-check"></i><b>8.5</b> Exemple: capgirar</a></li>
+<li class="chapter" data-level="8.6" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>8.6</b> Exemple: funció isParell</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>9</b> PAC08</a><ul>
+<li class="chapter" data-level="9.1" data-path="pac08.html"><a href="pac08.html#exemple-2"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
+<li class="chapter" data-level="9.2" data-path="pac08.html"><a href="pac08.html#exemple-3"><i class="fa fa-check"></i><b>9.2</b> Exemple</a></li>
+<li class="chapter" data-level="9.3" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>9.3</b> Com inicialitzar una taula</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>10</b> PAC09</a><ul>
+<li class="chapter" data-level="10.1" data-path="pac09.html"><a href="pac09.html#exemple-4"><i class="fa fa-check"></i><b>10.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>11</b> PAC10</a></li>
+<li class="chapter" data-level="12" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>12</b> PR1</a><ul>
+<li class="chapter" data-level="12.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>12.1</b> Mode menu vs mode test</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>13</b> PR2</a><ul>
+<li class="chapter" data-level="13.1" data-path="pr2.html"><a href="pr2.html#exemple-5"><i class="fa fa-check"></i><b>13.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>14</b> VMWare i CodeLite</a><ul>
+<li class="chapter" data-level="14.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>14.1</b> Per què una màquina virtual?</a></li>
+<li class="chapter" data-level="14.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>14.2</b> Primers passos amb CodeLite</a></li>
+<li class="chapter" data-level="14.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>14.3</b> Com activar un projecte</a></li>
+<li class="chapter" data-level="14.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>14.4</b> Canviar idioma del teclat</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>15</b> Altres</a><ul>
+<li class="chapter" data-level="15.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>15.1</b> Bilbliografia</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Laboratori de Fonaments de Programació</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pac07" class="section level1">
+<h1><span class="header-section-number">8</span> PAC07</h1>
+<div id="estructura" class="section level2">
+<h2><span class="header-section-number">8.1</span> Estructura</h2>
+<p>Según lo que se indica en el enunciado de la PAC07, la estructura del proyecto tendría que ser:</p>
+<pre><code>proyecto
+   |
+   |-- /include/
+   |     |
+   |     \-- *.h
+   |
+   \-- /src/
+         |
+         |-- main.c
+         \-- *.c</code></pre>
+<p>El detalle correspondiente a este esquema sería:</p>
+<ul>
+<li>Carpeta ./include : contiene el fichero de cabeceras <code>*.h</code>. Este fichero tiene la predeclaración de todas las funciones/acciones, así como la definición de todos los enum y struct de nuestro código C, así como las constantes necesarias.</li>
+<li>Carpeta ./src : contiene el código fuente de nuestro proyecto. Dentro del fichero <code>*.c</code> tenemos la implementación de las funciones/acciones. Por contra, en el fichero main.c tenemos nuestro programa principal donde vamos pidiendo los datos de los trenes con la acción correspondiente, realizamos el cálculo de longitud de cada tren con la función que hemos implementado, etc.</li>
+</ul>
+<p>Así pues el main.c lo necesitas, ya que allí es donde llamas a las acciones y funciones, muestras los resultados por pantalla, etc. Se trata básicamente del núcleo de tu programa, donde ejecutas las acciones/funciones que has predeclarado/implementado en los otros ficheros del proyecto.</p>
+</div>
+<div id="tipus-de-parametres-en-accions-i-funcions" class="section level2">
+<h2><span class="header-section-number">8.2</span> Tipus de paràmetres en accions i funcions</h2>
+<p>En les <strong>accions</strong> els paràmetres poden ser de tipus <strong>in</strong>, <strong>out</strong> o <strong>inout</strong>. Cal especificar-ho en el moment de definir l’acció al nostre algorisme.</p>
+<p>Exemple: tres formes d’implementar una suma de dos enters amb diferents accions segons els tipus <strong>in</strong>, <strong>out</strong> o <strong>inout</strong> dels paràmetres:</p>
+<p>
+<img src="img/alg.png" style="float:left; padding:10px" />
+</p>
+<pre><code>action suma1(in num1: integer, in num2: integer)
+    var
+        resultat: integer;
+    end var
+
+    resultat := num1 + num2;
+    writeString(&quot;Resultat de la suma = &quot;);
+    writeInteger(resultat);
+end action
+
+action suma2(in num1: integer, in num2: integer, out resultat: integer)
+    resultat := num1 + num2;
+end action
+
+action suma3(inout num1: integer, in num2: integer)
+    num1 := num1 + num2;
+end action</code></pre>
+<p>A les funcions en canvi tots els paràmetres són d’entrada, amb el que no cal indicar l’<strong>in</strong>.</p>
+<p>Exemple:</p>
+<p>
+<img src="img/alg.png" style="float:left; padding:10px" />
+</p>
+<pre><code>function suma4(num1: integer, num2: integer): integer
+    var
+        resultat: integer;
+    end var
+
+    resultat := num1 + num2;
+    return resultat;
+end function</code></pre>
+</div>
+<div id="scanf-accio-o-funcio" class="section level2">
+<h2><span class="header-section-number">8.3</span> scanf: acció o funció?</h2>
+<p>El que ens indica la signatura de <code>scanf</code> és que estem davant d’una funció:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">int</span> scanf(<span class="dt">const</span> <span class="dt">char</span> *format, type* var1, ...);</code></pre></div>
+<p>El segon argument no és de tipus <strong>out</strong>, ja que el que li passem no és la variable que guardarà el valor llegit, sinó el punter a la variable que guardarà el valor llegit, i aquest punter no varia en cap moment.</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="co">/* Per exemple, el valor de &amp;numero és 0xbfb86c40 */</span>
+scanf(<span class="st">&quot;%d&quot;</span>, &amp;numero)
+<span class="co">/* una vegada executada la funció scanf, el valor de &amp;numero continua sent 0xbfb86c40 */</span></code></pre></div>
+<p>La funció <code>scanf</code> com a tal retorna un valor, tot i que nosaltres no l’utilitzem (retorna el número d’elements processats correctament). Dit d’una altra forma: que una funció retorni un valor no ens obliga a recuperar-lo i tractar-lo, tot i que habitualment sí que ho farem.</p>
+<p>D’altra banda, el fet de definir un paràmetre d’una funció/acció com a <code>const</code> significa que aquest paràmetre dins de l’acció/funció es comportarà com a una constant. Per tant dins de l’àmbit de la funció/acció no es podrà modificar.</p>
+<p>Aquest fet ens pot interessar o no. Per exemple, imagina que creem la següent funció per sumar dos enters:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="co">/* Predeclaració de funcions/acions */</span>
+<span class="dt">int</span> suma(<span class="dt">int</span> numA, <span class="dt">int</span> numB);
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+    <span class="dt">int</span> a = <span class="dv">10</span>;
+    <span class="dt">int</span> b = <span class="dv">13</span>;
+
+    <span class="dt">int</span> resultat = suma(a, b);
+    printf(<span class="st">&quot;Resultat: %d + %d = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, a, b, resultat);
+    <span class="cf">return</span> <span class="dv">0</span>;
+}
+
+<span class="co">/* Implementació de funcions/accions */</span>
+<span class="dt">int</span> suma(<span class="dt">int</span> numA, <span class="dt">int</span> numB) {
+    numA = numA + numB;
+    <span class="cf">return</span> (numA);
+}</code></pre></div>
+<p>Dins de l’àmbit de la funció, ens interessa per exemple que el paràmetre <code>numA</code> sigui constant? No, ja que si ho definim d’aquesta forma la compilació ens fallarà:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="co">/* Predeclaració de funcions/acions */</span>
+<span class="dt">int</span> suma(<span class="dt">const</span> <span class="dt">int</span> numA, <span class="dt">int</span> numB);
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+    <span class="dt">int</span> a = <span class="dv">10</span>;
+    <span class="dt">int</span> b = <span class="dv">13</span>;
+
+    <span class="dt">int</span> resultat = suma(a, b);
+    printf(<span class="st">&quot;Resultat: %d + %d = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, a, b, resultat);
+    <span class="cf">return</span> <span class="dv">0</span>;
+}
+
+<span class="co">/* Implementació de funcions/accions */</span>
+<span class="dt">int</span> suma(<span class="dt">const</span> <span class="dt">int</span> numA, <span class="dt">int</span> numB) {
+    numA = numA + numB;
+    <span class="cf">return</span> (numA);
+}</code></pre></div>
+<p>L’error que obtindrem en intentar compilar el programa serà <em>“error: assignment of read-only parameter ‘numA’”</em>, ja que dins de la funció suma estem modificant el valor de <code>numA</code>.</p>
+<p>Molt important: que dins de la funció modifiquem el valor de <code>numA</code> no significa que fora de l’àmbit de la funció el valor de la variable a variï (ho podem comprovar al printf que es fa posteriorment).</p>
+<p>Per tant l’ús de const en un paràmetre s’hauria de limitar a aquells valors que s’hagin de tractar realment com a constants: per exemple, si passem la constant PI = 3.14159… com a paràmetre, dins de la funció segur que no tenim la necessitat de modificar aquesta constant matemàtica, amb el que en aquest cas és més adient utilitzar const en el paràmetre de la funció.</p>
+<p>Com a darrer punt, no s’ha de confondre el fet de definir un paràmetre d’una funció com a <code>const</code>, a fer que fora de l’àmbit de la funció el paràmetre corresponent es defineixi com a constant:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="co">/* Predeclaració de funcions/acions */</span>
+<span class="dt">int</span> suma(<span class="dt">int</span> numA, <span class="dt">int</span> numB);
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+    <span class="dt">const</span> <span class="dt">int</span> a = <span class="dv">10</span>;
+    <span class="dt">int</span> b = <span class="dv">13</span>;
+
+    <span class="dt">int</span> resultat = suma(a, b);
+    printf(<span class="st">&quot;Resultat: %d + %d = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, a, b, resultat);
+
+    <span class="cf">return</span> <span class="dv">0</span>;
+}
+
+<span class="co">/* Implementació de funcions/accions */</span>
+<span class="dt">int</span> suma(<span class="dt">int</span> numA, <span class="dt">int</span> numB) {
+    numA = numA + numB;
+    <span class="cf">return</span> (numA);
+}</code></pre></div>
+<p>En aquest cas quan compilem no obtindrem cap error, ja que la variable a és una constant fora de la funció <code>suma</code>, però el seu valor passat com a paràmetre dins de la funció no és una constant.</p>
+</div>
+<div id="pas-per-valor-vs-pas-per-referencia" class="section level2">
+<h2><span class="header-section-number">8.4</span> Pas per valor vs pas per referència</h2>
+<p>El clàssic <strong>pas per valor</strong> correspon als paràmetres de tipus <strong>in</strong>, en els quals passem la variable/valor.</p>
+<p>D’altra banda el <strong>pas per referència</strong> consisteix en passar com a paràmetre de tipus <strong>out</strong> o <strong>inout</strong> la direcció de memòria de la variable (punter).</p>
+</div>
+<div id="exemple-capgirar" class="section level2">
+<h2><span class="header-section-number">8.5</span> Exemple: capgirar</h2>
+<p>Imagina que tenim una tupla <code>tParaula</code> la qual té dos camps:</p>
+<ul>
+<li><code>cadena</code> : conté l’string amb el valor de la tParaula</li>
+<li><code>numeroCaractersCadena</code> : conté el número de caracters de la cadena</li>
+</ul>
+<p>Implementem l’acció capgirar, la qual fa dues operacions:</p>
+<ul>
+<li>Capgira el camp cadena de la <code>tParaula</code>; per exemple, si entrem “Fonaments” el resultat serà “stnemanoF”.</li>
+<li>Calcula el valor de <code>numeroCaractersCadena</code>; si tenim com a cadena “Fonaments”, el valor serà 9.</li>
+</ul>
+<p>Volem que per teclat es demani el valor pel camp cadena de dues <code>tParaula</code>, i en cadascuna d’aquestes dues <code>tParaula</code> volem aplicar l’acció capgirar. Una possible forma d’implementar-ho tot plegat seria la següent:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+
+<span class="pp">#define MAX_CHAR 20+1</span>
+<span class="pp">#define MAX_PARAULES 2</span>
+   
+<span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;
+
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    <span class="dt">char</span> cadena[MAX_CHAR];
+    <span class="dt">int</span> numeroCaractersCadena;
+} tParaula;
+
+<span class="co">/* Predeclaració de l&#39;acció.</span>
+<span class="co">   Aquesta acció reb un paràmetre inout de tipus tParaula,</span>
+<span class="co">   el qual capgira el camp cadena, i calcula el valor</span>
+<span class="co">   corresponent pel camp numeroCaractersCadena */</span>
+<span class="dt">void</span> capgirar(tParaula *mot);
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+    <span class="dt">int</span> i = <span class="dv">0</span>;
+    
+    <span class="co">/* Introduim per teclat un total de MAX_PARAULES */</span>
+    <span class="cf">for</span> (i = <span class="dv">0</span>; i &lt; MAX_PARAULES; i++) {
+        tParaula paraula;
+    
+        printf(<span class="st">&quot;Introdueix una paraula : &quot;</span>);
+        scanf(<span class="st">&quot;%s&quot;</span>, paraula.cadena);
+    
+        capgirar(&amp;paraula);
+        printf(<span class="st">&quot;La paraula capgirada és : %s, de %d lletres.</span><span class="sc">\n</span><span class="st">&quot;</span>, paraula.cadena, paraula.numeroCaractersCadena);
+    }
+}
+
+<span class="co">/* Implementació de l&#39;acció */</span>
+<span class="dt">void</span> capgirar(tParaula *mot) {
+    
+    <span class="dt">int</span> i;
+    tParaula motCapgirat;
+    <span class="dt">int</span> midaMot = strlen(mot-&gt;cadena);
+ 
+    <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;midaMot; i++ ) {
+        motCapgirat.cadena[(midaMot-<span class="dv">1</span>)-i] = mot-&gt;cadena[i];
+    }
+    
+    <span class="co">/* Indiquem el finalitzador de l&#39;string */</span>
+    motCapgirat.cadena[midaMot] =&#39;\<span class="dv">0</span>&#39;;
+    
+    strcpy(mot-&gt;cadena, motCapgirat.cadena);
+    mot-&gt;numeroCaractersCadena = midaMot;
+}</code></pre></div>
+<p>L’acció només rep un paràmetre <code>tParaula</code>, no pas dos. Però com que el que volem és executar-lo per cada <code>tParaula</code> introduida per teclat, repetim la crida dues vegades dins del bucle (una per cada <code>tParaula</code>).</p>
+</div>
+<div id="exemple-funcio-isparell" class="section level2">
+<h2><span class="header-section-number">8.6</span> Exemple: funció isParell</h2>
+<p>Exemple de funció que retorna un booleà:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+   
+<span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;
+
+<span class="co">/* Predeclaració de la funció isParell, la qual retorna un</span>
+<span class="co">   booleà que indica si el número passat per paràmetre és</span>
+<span class="co">   parell (TRUE) o no (FALSE). */</span>
+boolean isParell(<span class="dt">int</span> numero);
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+    <span class="dt">int</span> numero;
+    
+    printf(<span class="st">&quot;Tecleja un número : &quot;</span>);
+    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numero);
+
+    <span class="cf">if</span> (!isParell(numero)) {
+        printf(<span class="st">&quot;El número %d és senar.</span><span class="sc">\n</span><span class="st">&quot;</span>, numero);
+    } <span class="cf">else</span> {
+        printf(<span class="st">&quot;El número %d és parell.</span><span class="sc">\n</span><span class="st">&quot;</span>, numero);
+    }
+}
+
+<span class="co">/* Implementació de la funció */</span>
+boolean isParell(<span class="dt">int</span> numero) {
+    <span class="cf">if</span> (numero % <span class="dv">2</span> == <span class="dv">0</span>) {
+        <span class="cf">return</span> TRUE;
+    } <span class="cf">else</span> {
+        <span class="cf">return</span> FALSE;
+    }
+}</code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pac06.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pac08.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-PAC07.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["FAQS-laboratori-FP.pdf", "FAQS-laboratori-FP.epub"],
+"toc": {
+"collapse": "section",
+"toc": true,
+"toc_float": true,
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

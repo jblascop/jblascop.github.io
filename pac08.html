@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>9 PAC08 | Laboratori de Fonaments de Programació</title>
+  <meta name="description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="9 PAC08 | Laboratori de Fonaments de Programació" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="9 PAC08 | Laboratori de Fonaments de Programació" />
+  
+  <meta name="twitter:description" content="FAQS del Laboratori de Fonaments de programació" />
+  
+
+<meta name="author" content="Jordi Blasco Planesas" />
+
+
+<meta name="date" content="2019-10-31" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pac07.html"/>
+<link rel="next" href="pac09.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Laboratori Fonaments de Programació</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducció</a></li>
+<li class="chapter" data-level="2" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>2</b> PAC01</a><ul>
+<li class="chapter" data-level="2.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>2.1</b> Llenguatge algorísmic</a></li>
+<li class="chapter" data-level="2.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>2.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
+<li class="chapter" data-level="2.3" data-path="pac01.html"><a href="pac01.html#impressio-de-valors-incorrecta"><i class="fa fa-check"></i><b>2.3</b> Impressió de valors incorrecta</a></li>
+<li class="chapter" data-level="2.4" data-path="pac01.html"><a href="pac01.html#com-definir-un-enumeratiu"><i class="fa fa-check"></i><b>2.4</b> Com definir un enumeratiu</a></li>
+<li class="chapter" data-level="2.5" data-path="pac01.html"><a href="pac01.html#com-utilitzar-un-enumeratiu"><i class="fa fa-check"></i><b>2.5</b> Com utilitzar un enumeratiu</a></li>
+<li class="chapter" data-level="2.6" data-path="pac01.html"><a href="pac01.html#especificador-dun-enumeratiu"><i class="fa fa-check"></i><b>2.6</b> Especificador d’un enumeratiu</a></li>
+<li class="chapter" data-level="2.7" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>2.7</b> Lectura de caràcters en C</a></li>
+<li class="chapter" data-level="2.8" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>2.8</b> Lectura de float en C</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>3</b> PAC02</a><ul>
+<li class="chapter" data-level="3.1" data-path="pac02.html"><a href="pac02.html#define-vs-const"><i class="fa fa-check"></i><b>3.1</b> define vs const</a></li>
+<li class="chapter" data-level="3.2" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>3.2</b> Precisió en variables float</a></li>
+<li class="chapter" data-level="3.3" data-path="pac02.html"><a href="pac02.html#expressions"><i class="fa fa-check"></i><b>3.3</b> Expressions</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>3.3.1</b> Exemple 1: esParell</a></li>
+<li class="chapter" data-level="3.3.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>3.3.2</b> Exemple 2: capDeSetmana</a></li>
+<li class="chapter" data-level="3.3.3" data-path="pac02.html"><a href="pac02.html#exemple-3-gintonicpreparation"><i class="fa fa-check"></i><b>3.3.3</b> Exemple 3: ginTonicPreparation</a></li>
+<li class="chapter" data-level="3.3.4" data-path="pac02.html"><a href="pac02.html#exemple-4-gintonicfreeml"><i class="fa fa-check"></i><b>3.3.4</b> Exemple 4: ginTonicFreeMl</a></li>
+<li class="chapter" data-level="3.3.5" data-path="pac02.html"><a href="pac02.html#exemple-5-scoutingbasquet"><i class="fa fa-check"></i><b>3.3.5</b> Exemple 5: scoutingBasquet</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>4</b> PAC03</a><ul>
+<li class="chapter" data-level="4.1" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>4.1</b> Significat dels arguments del main</a></li>
+<li class="chapter" data-level="4.2" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>4.2</b> Assignar valors a un vector</a></li>
+<li class="chapter" data-level="4.3" data-path="pac03.html"><a href="pac03.html#stack-smashing-detected"><i class="fa fa-check"></i><b>4.3</b> Stack smashing detected</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>5</b> PAC04</a><ul>
+<li class="chapter" data-level="5.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>5.1</b> Com tractar elements d’un vector amb un bucle</a></li>
+<li class="chapter" data-level="5.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>5.2</b> Entrada continua de valors amb un bucle</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>6</b> PAC05</a><ul>
+<li class="chapter" data-level="6.1" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>6.1</b> Exemple: nomines</a></li>
+<li class="chapter" data-level="6.2" data-path="pac05.html"><a href="pac05.html#exemple-accions"><i class="fa fa-check"></i><b>6.2</b> Exemple accions</a></li>
+<li class="chapter" data-level="6.3" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>6.3</b> Comanda scanf</a></li>
+<li class="chapter" data-level="6.4" data-path="pac05.html"><a href="pac05.html#finalitzador-0"><i class="fa fa-check"></i><b>6.4</b> Finalitzador ‘\0’</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>7</b> PAC06</a><ul>
+<li class="chapter" data-level="7.1" data-path="pac06.html"><a href="pac06.html#comanda-strcmp"><i class="fa fa-check"></i><b>7.1</b> Comanda strcmp</a></li>
+<li class="chapter" data-level="7.2" data-path="pac06.html"><a href="pac06.html#exemple"><i class="fa fa-check"></i><b>7.2</b> Exemple</a></li>
+<li class="chapter" data-level="7.3" data-path="pac06.html"><a href="pac06.html#tipos-de-parametros-de-las-acciones"><i class="fa fa-check"></i><b>7.3</b> Tipos de parámetros de las acciones</a></li>
+<li class="chapter" data-level="7.4" data-path="pac06.html"><a href="pac06.html#exemple-1"><i class="fa fa-check"></i><b>7.4</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>8</b> PAC07</a><ul>
+<li class="chapter" data-level="8.1" data-path="pac07.html"><a href="pac07.html#estructura"><i class="fa fa-check"></i><b>8.1</b> Estructura</a></li>
+<li class="chapter" data-level="8.2" data-path="pac07.html"><a href="pac07.html#tipus-de-parametres-en-accions-i-funcions"><i class="fa fa-check"></i><b>8.2</b> Tipus de paràmetres en accions i funcions</a></li>
+<li class="chapter" data-level="8.3" data-path="pac07.html"><a href="pac07.html#scanf-accio-o-funcio"><i class="fa fa-check"></i><b>8.3</b> scanf: acció o funció?</a></li>
+<li class="chapter" data-level="8.4" data-path="pac07.html"><a href="pac07.html#pas-per-valor-vs-pas-per-referencia"><i class="fa fa-check"></i><b>8.4</b> Pas per valor vs pas per referència</a></li>
+<li class="chapter" data-level="8.5" data-path="pac07.html"><a href="pac07.html#exemple-capgirar"><i class="fa fa-check"></i><b>8.5</b> Exemple: capgirar</a></li>
+<li class="chapter" data-level="8.6" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>8.6</b> Exemple: funció isParell</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>9</b> PAC08</a><ul>
+<li class="chapter" data-level="9.1" data-path="pac08.html"><a href="pac08.html#exemple-2"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
+<li class="chapter" data-level="9.2" data-path="pac08.html"><a href="pac08.html#exemple-3"><i class="fa fa-check"></i><b>9.2</b> Exemple</a></li>
+<li class="chapter" data-level="9.3" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>9.3</b> Com inicialitzar una taula</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>10</b> PAC09</a><ul>
+<li class="chapter" data-level="10.1" data-path="pac09.html"><a href="pac09.html#exemple-4"><i class="fa fa-check"></i><b>10.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>11</b> PAC10</a></li>
+<li class="chapter" data-level="12" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>12</b> PR1</a><ul>
+<li class="chapter" data-level="12.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>12.1</b> Mode menu vs mode test</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>13</b> PR2</a><ul>
+<li class="chapter" data-level="13.1" data-path="pr2.html"><a href="pr2.html#exemple-5"><i class="fa fa-check"></i><b>13.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>14</b> VMWare i CodeLite</a><ul>
+<li class="chapter" data-level="14.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>14.1</b> Per què una màquina virtual?</a></li>
+<li class="chapter" data-level="14.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>14.2</b> Primers passos amb CodeLite</a></li>
+<li class="chapter" data-level="14.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>14.3</b> Com activar un projecte</a></li>
+<li class="chapter" data-level="14.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>14.4</b> Canviar idioma del teclat</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>15</b> Altres</a><ul>
+<li class="chapter" data-level="15.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>15.1</b> Bilbliografia</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Laboratori de Fonaments de Programació</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pac08" class="section level1">
+<h1><span class="header-section-number">9</span> PAC08</h1>
+<div id="exemple-2" class="section level2">
+<h2><span class="header-section-number">9.1</span> Exemple</h2>
+<p>S’ha d’entendre una taula com un conjunt d’elements dels quals sabem en tot moment quants en tenim.</p>
+<p>Imaginem que volem fer un programa que calculi la nota mitjana de les PAC d’una assignatura. Podríem plantejar-ho com a un simple array d’enters, però com que ens agrada poder donar més funcionalitats en un futur al nostre programa, tindrem el següent escenari:</p>
+<p>tPac: serà el tipus de dades bàsic que tractarà el nostre programa. Aquesta tupla estarà formada d’una banda per un nom descriptiu de la pac, i d’altra banda per la seva nota numèrica amb decimals. tAssignatura: taula que contindrà elements de tipus tPac. A part d’aques array de tPac, també tindrà un comptador intern d’elements: numPacs.</p>
+<p>Sobre aquesta base realitzarem dues accions:</p>
+<ul>
+<li><code>afegir_pac()</code>: es tracta d’una acció que inclou un element de tipus <code>tPac</code> dins de la taula <code>tAssignatura</code>. És una operació similar a l’acció d’omplir taula dels exemples de la xWiki.</li>
+<li><code>calcular_nota()</code>: és una funció que revisa tots els elements <code>tPac</code> de la taula <code>tAssignatura</code> i en calcula la seva nota mitjana. Es tracta d’una operació equivalent a la dels recorreguts de taula dels exemples de la xWiki, ja que estem recorrent un a un tots els elements <code>tPac</code> per obtenir la seva nota.</li>
+</ul>
+<p>Una possible forma d’implementar-ho seria la següent:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+
+<span class="co">/* Definició de constants */</span>
+<span class="pp">#define MAX_PACS 5</span>
+<span class="pp">#define MAX_NOM 5+1</span>
+
+<span class="co">/* Definició de la tupla tPac */</span>
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    <span class="dt">char</span> nom[MAX_NOM];
+    <span class="dt">float</span> nota;
+} tPac;
+
+<span class="co">/* Definició de taula tAssignatura */</span>
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    tPac pac[MAX_PACS];
+    <span class="dt">int</span> numPacs;
+} tAssignatura;
+
+<span class="co">/* Definició funcions/accions */</span>
+
+<span class="co">/* Acció que afegeix un element de tipus tPac a la taula tAssignatura */</span>
+<span class="dt">void</span> afegir_pac(tAssignatura *assignatura, tPac pac);
+
+<span class="co">/* Funció que calcula la mitjana de totes les tPac que conté la taula</span>
+<span class="co">   tAssignatura */</span>
+<span class="dt">float</span> calcular_nota(tAssignatura assignatura);
+
+<span class="co">/* Programa principal */</span>
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="co">/* Definim les variables */</span>
+    tAssignatura fp;
+    tPac pac1, pac2, pac3;
+    <span class="dt">float</span> nota;
+
+    <span class="co">/* Inicialitzem les variables */</span>
+    nota = <span class="dv">0</span>;
+    strcpy(pac1.nom,<span class="st">&quot;PAC01&quot;</span>);
+    pac1.nota = <span class="dv">10</span>;
+    strcpy(pac2.nom,<span class="st">&quot;PAC02&quot;</span>);
+    pac2.nota = <span class="fl">8.5</span>;
+    strcpy(pac3.nom,<span class="st">&quot;PAC03&quot;</span>);
+    pac3.nota = <span class="fl">7.5</span>;
+
+    <span class="co">/* La inicialització de la taula es fa simplement</span>
+<span class="co">       posant a 0 el seu comptador */</span>
+    fp.numPacs=<span class="dv">0</span>;
+
+    <span class="co">/* Afegim ara les pacs a l&#39;assignatura, que és una taula</span>
+<span class="co">       d&#39;elements de tipus tPac */</span>
+    afegir_pac(&amp;fp, pac1);
+    afegir_pac(&amp;fp, pac2);
+    afegir_pac(&amp;fp, pac3);
+
+    <span class="co">/* i ara calculem la nota amb la funció calcular_nota */</span>
+    nota = calcular_nota(fp);
+
+    printf(<span class="st">&quot;La nota mitjana de les %d PAC és %f</span><span class="sc">\n</span><span class="st">&quot;</span>, fp.numPacs, nota);
+    <span class="cf">return</span> <span class="dv">0</span>;
+}
+
+<span class="co">/* Implementació funcions/accions */</span>
+
+<span class="dt">void</span> afegir_pac(tAssignatura *assignatura, tPac pac) {
+    <span class="co">/* numPacs conté el número d&#39;elements de tipus tPac</span>
+<span class="co">       que conté la taula en cada moment */</span>
+    assignatura-&gt;pac[assignatura-&gt;numPacs] = pac;
+
+    <span class="co">/* Una vegada hem assignat un element nou tPac a la taula</span>
+<span class="co">       incrementem el valor de numPacs */</span>
+    assignatura-&gt;numPacs = assignatura-&gt;numPacs + <span class="dv">1</span>;
+}
+
+<span class="dt">float</span> calcular_nota(tAssignatura assignatura) {
+    <span class="co">/* La variable suma conté el sumatori de totes</span>
+<span class="co">       les notes de les tPac que estan dins de la taula</span>
+<span class="co">       tAssignatura */</span>
+    <span class="dt">float</span> suma = <span class="dv">0</span>;
+
+    <span class="co">/* Es recorren tots els elements tPac de tAssignatura</span>
+<span class="co">       per tal d&#39;obtenir la seva nota i acumular-les a la</span>
+<span class="co">       variable suma */</span>
+    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; assignatura.numPacs; i++) {
+        suma = suma + assignatura.pac[i].nota;
+    }
+
+    <span class="co">/* Per calcular la mitjana es divideix el sumatori de</span>
+<span class="co">       notes pel total d&#39;elements de la taula tAssignatura */</span>
+    <span class="cf">return</span> suma/assignatura.numPacs;
+}</code></pre></div>
+<p>Per facilitar la lectura s’ha unit tot el programa en un únic bloc de codi (un únic arxiu).</p>
+</div>
+<div id="exemple-3" class="section level2">
+<h2><span class="header-section-number">9.2</span> Exemple</h2>
+<p>He adaptat l’exemple anterior per tal que demani els valors iterativament:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+
+<span class="co">/* Definició de constants */</span>
+<span class="pp">#define MAX_PACS 10</span>
+<span class="pp">#define MAX_NOM 10+1</span>
+
+<span class="co">/* Definició de la tupla tPac */</span>
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    <span class="dt">char</span> nom[MAX_NOM];
+    <span class="dt">float</span> nota;
+} tPac;
+
+<span class="co">/* Definició de taula tAssignatura */</span>
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    tPac pac[MAX_PACS];
+    <span class="dt">int</span> numPacs;
+} tAssignatura;
+
+<span class="co">/* Definició funcions/accions */</span>
+
+<span class="co">/* Acció que afegeix un element de tipus tPac a la taula tAssignatura */</span>
+<span class="dt">void</span> afegir_pac(tAssignatura *assignatura, tPac pac);
+
+<span class="co">/* Funció que calcula la mitjana de totes les tPac que conté la taula</span>
+<span class="co">   tAssignatura */</span>
+<span class="dt">float</span> calcular_nota(tAssignatura assignatura);
+
+<span class="co">/* Programa principal */</span> 
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="co">/* Definim les variables */</span>
+    tAssignatura fp;
+    <span class="dt">float</span> nota;
+    <span class="dt">int</span> numPacs, i;
+
+    <span class="co">/* Inicialitzem les variables */</span>
+    nota = <span class="dv">0</span>;
+    numPacs = <span class="dv">0</span>;
+    i = <span class="dv">0</span>;
+
+    <span class="co">/* Inicialitzem la taula */</span>
+    fp.numPacs=<span class="dv">0</span>;
+
+    <span class="co">/* Introduim ara les dades de les PAC des de teclat */</span>
+    printf(<span class="st">&quot;Número de PACs a introduir (&lt;%d): &quot;</span>, MAX_PACS);
+    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numPacs);
+
+    <span class="cf">for</span> (i = <span class="dv">0</span>; i &lt; numPacs; i++) {
+        tPac pacAux;
+
+        printf(<span class="st">&quot;Dades de la PAC0%d : </span><span class="sc">\n</span><span class="st">&quot;</span>, i+<span class="dv">1</span>);
+        printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">Nom : &quot;</span>);
+        scanf(<span class="st">&quot;%s&quot;</span>, pacAux.nom);
+        printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">Nota : &quot;</span>);
+        scanf(<span class="st">&quot;%f&quot;</span>, &amp;pacAux.nota);
+
+        <span class="co">/* Afegim a la taula la tPac auxiliar utilitzada</span>
+<span class="co">           dins del bucle. En cada iteració es construirà</span>
+<span class="co">           i s&#39;afegirà una tPac diferent */</span>
+        afegir_pac(&amp;fp, pacAux);
+   }
+
+   <span class="co">/* Calculem la nota amb la funció calcular_nota */</span>
+   nota = calcular_nota(fp);
+
+   printf(<span class="st">&quot;La nota mitjana de les %d PAC és %f</span><span class="sc">\n</span><span class="st">&quot;</span>, fp.numPacs, nota);
+   <span class="cf">return</span> <span class="dv">0</span>;
+}
+
+<span class="co">/* Implementació funcions/accions */</span>
+<span class="dt">void</span> afegir_pac(tAssignatura *assignatura, tPac pac) {
+
+    <span class="co">/* numPacs conté el número d&#39;elements de tipus tPac</span>
+<span class="co">       que conté la taula en cada moment */</span>
+    assignatura-&gt;pac[assignatura-&gt;numPacs] = pac;
+
+    <span class="co">/* Una vegada hem assignat un element nou tPac a la taula</span>
+<span class="co">       incrementem el valor de numPacs */</span>
+    assignatura-&gt;numPacs = assignatura-&gt;numPacs + <span class="dv">1</span>;
+}
+
+<span class="dt">float</span> calcular_nota(tAssignatura assignatura) {
+    <span class="co">/* La variable suma conté el sumatori de totes</span>
+<span class="co">       les notes de les tPac que estan dins de la taula</span>
+<span class="co">       tAssignatura */</span>
+    <span class="dt">float</span> suma = <span class="dv">0</span>;
+
+    <span class="co">/* Es recorren tots els elements tPac de tAssignatura</span>
+<span class="co">      per tal d&#39;obtenir la seva nota i acumular-les a la</span>
+<span class="co">      variable suma */</span>
+
+    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; assignatura.numPacs; i++) {
+        suma = suma + assignatura.pac[i].nota;
+    }
+
+    <span class="co">/* Per calcular la mitjana es divideix el sumatori de</span>
+<span class="co">       notes pel total d&#39;elements de la taula tAssignatura */</span>
+   <span class="cf">return</span> suma/assignatura.numPacs;
+}</code></pre></div>
+</div>
+<div id="com-inicialitzar-una-taula" class="section level2">
+<h2><span class="header-section-number">9.3</span> Com inicialitzar una taula</h2>
+<p>Per inicialitzar/esborrar una taula únicament ens cal indicar que el nombre d’elements que conté és 0.</p>
+<p>La pregunta que ens podem fer és <em>“simplement inicialitzant a 0 aquest atribut és suficient?”</em>. La resposta és afirmativa: l’atribut que conté el nombre d’elements d’una taula sempre és l’utilitzat a l’hora de recórrer una taula, ja que ens indica quin és l’últim element de la taula. De la mateixa manera, quan inserim un element incrementarem en 1 el seu valor.</p>
+<p>Què passa quan li donem valor 0? Estem indicant que la taula té 0 elements, amb el que quan n’hi afegim un de nou ho farem a la primera posició, sobreescrivint tot el que prèviament hi pogués haver en memòria.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pac07.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pac09.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/08-PAC08.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["FAQS-laboratori-FP.pdf", "FAQS-laboratori-FP.epub"],
+"toc": {
+"collapse": "section",
+"toc": true,
+"toc_float": true,
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

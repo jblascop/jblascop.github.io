@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>10 PAC09 | Laboratori de Fonaments de Programació</title>
+  <meta name="description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="10 PAC09 | Laboratori de Fonaments de Programació" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="10 PAC09 | Laboratori de Fonaments de Programació" />
+  
+  <meta name="twitter:description" content="FAQS del Laboratori de Fonaments de programació" />
+  
+
+<meta name="author" content="Jordi Blasco Planesas" />
+
+
+<meta name="date" content="2019-10-31" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pac08.html"/>
+<link rel="next" href="pac10.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Laboratori Fonaments de Programació</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducció</a></li>
+<li class="chapter" data-level="2" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>2</b> PAC01</a><ul>
+<li class="chapter" data-level="2.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>2.1</b> Llenguatge algorísmic</a></li>
+<li class="chapter" data-level="2.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>2.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
+<li class="chapter" data-level="2.3" data-path="pac01.html"><a href="pac01.html#impressio-de-valors-incorrecta"><i class="fa fa-check"></i><b>2.3</b> Impressió de valors incorrecta</a></li>
+<li class="chapter" data-level="2.4" data-path="pac01.html"><a href="pac01.html#com-definir-un-enumeratiu"><i class="fa fa-check"></i><b>2.4</b> Com definir un enumeratiu</a></li>
+<li class="chapter" data-level="2.5" data-path="pac01.html"><a href="pac01.html#com-utilitzar-un-enumeratiu"><i class="fa fa-check"></i><b>2.5</b> Com utilitzar un enumeratiu</a></li>
+<li class="chapter" data-level="2.6" data-path="pac01.html"><a href="pac01.html#especificador-dun-enumeratiu"><i class="fa fa-check"></i><b>2.6</b> Especificador d’un enumeratiu</a></li>
+<li class="chapter" data-level="2.7" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>2.7</b> Lectura de caràcters en C</a></li>
+<li class="chapter" data-level="2.8" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>2.8</b> Lectura de float en C</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>3</b> PAC02</a><ul>
+<li class="chapter" data-level="3.1" data-path="pac02.html"><a href="pac02.html#define-vs-const"><i class="fa fa-check"></i><b>3.1</b> define vs const</a></li>
+<li class="chapter" data-level="3.2" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>3.2</b> Precisió en variables float</a></li>
+<li class="chapter" data-level="3.3" data-path="pac02.html"><a href="pac02.html#expressions"><i class="fa fa-check"></i><b>3.3</b> Expressions</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>3.3.1</b> Exemple 1: esParell</a></li>
+<li class="chapter" data-level="3.3.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>3.3.2</b> Exemple 2: capDeSetmana</a></li>
+<li class="chapter" data-level="3.3.3" data-path="pac02.html"><a href="pac02.html#exemple-3-gintonicpreparation"><i class="fa fa-check"></i><b>3.3.3</b> Exemple 3: ginTonicPreparation</a></li>
+<li class="chapter" data-level="3.3.4" data-path="pac02.html"><a href="pac02.html#exemple-4-gintonicfreeml"><i class="fa fa-check"></i><b>3.3.4</b> Exemple 4: ginTonicFreeMl</a></li>
+<li class="chapter" data-level="3.3.5" data-path="pac02.html"><a href="pac02.html#exemple-5-scoutingbasquet"><i class="fa fa-check"></i><b>3.3.5</b> Exemple 5: scoutingBasquet</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>4</b> PAC03</a><ul>
+<li class="chapter" data-level="4.1" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>4.1</b> Significat dels arguments del main</a></li>
+<li class="chapter" data-level="4.2" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>4.2</b> Assignar valors a un vector</a></li>
+<li class="chapter" data-level="4.3" data-path="pac03.html"><a href="pac03.html#stack-smashing-detected"><i class="fa fa-check"></i><b>4.3</b> Stack smashing detected</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>5</b> PAC04</a><ul>
+<li class="chapter" data-level="5.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>5.1</b> Com tractar elements d’un vector amb un bucle</a></li>
+<li class="chapter" data-level="5.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>5.2</b> Entrada continua de valors amb un bucle</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>6</b> PAC05</a><ul>
+<li class="chapter" data-level="6.1" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>6.1</b> Exemple: nomines</a></li>
+<li class="chapter" data-level="6.2" data-path="pac05.html"><a href="pac05.html#exemple-accions"><i class="fa fa-check"></i><b>6.2</b> Exemple accions</a></li>
+<li class="chapter" data-level="6.3" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>6.3</b> Comanda scanf</a></li>
+<li class="chapter" data-level="6.4" data-path="pac05.html"><a href="pac05.html#finalitzador-0"><i class="fa fa-check"></i><b>6.4</b> Finalitzador ‘\0’</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>7</b> PAC06</a><ul>
+<li class="chapter" data-level="7.1" data-path="pac06.html"><a href="pac06.html#comanda-strcmp"><i class="fa fa-check"></i><b>7.1</b> Comanda strcmp</a></li>
+<li class="chapter" data-level="7.2" data-path="pac06.html"><a href="pac06.html#exemple"><i class="fa fa-check"></i><b>7.2</b> Exemple</a></li>
+<li class="chapter" data-level="7.3" data-path="pac06.html"><a href="pac06.html#tipos-de-parametros-de-las-acciones"><i class="fa fa-check"></i><b>7.3</b> Tipos de parámetros de las acciones</a></li>
+<li class="chapter" data-level="7.4" data-path="pac06.html"><a href="pac06.html#exemple-1"><i class="fa fa-check"></i><b>7.4</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>8</b> PAC07</a><ul>
+<li class="chapter" data-level="8.1" data-path="pac07.html"><a href="pac07.html#estructura"><i class="fa fa-check"></i><b>8.1</b> Estructura</a></li>
+<li class="chapter" data-level="8.2" data-path="pac07.html"><a href="pac07.html#tipus-de-parametres-en-accions-i-funcions"><i class="fa fa-check"></i><b>8.2</b> Tipus de paràmetres en accions i funcions</a></li>
+<li class="chapter" data-level="8.3" data-path="pac07.html"><a href="pac07.html#scanf-accio-o-funcio"><i class="fa fa-check"></i><b>8.3</b> scanf: acció o funció?</a></li>
+<li class="chapter" data-level="8.4" data-path="pac07.html"><a href="pac07.html#pas-per-valor-vs-pas-per-referencia"><i class="fa fa-check"></i><b>8.4</b> Pas per valor vs pas per referència</a></li>
+<li class="chapter" data-level="8.5" data-path="pac07.html"><a href="pac07.html#exemple-capgirar"><i class="fa fa-check"></i><b>8.5</b> Exemple: capgirar</a></li>
+<li class="chapter" data-level="8.6" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>8.6</b> Exemple: funció isParell</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>9</b> PAC08</a><ul>
+<li class="chapter" data-level="9.1" data-path="pac08.html"><a href="pac08.html#exemple-2"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
+<li class="chapter" data-level="9.2" data-path="pac08.html"><a href="pac08.html#exemple-3"><i class="fa fa-check"></i><b>9.2</b> Exemple</a></li>
+<li class="chapter" data-level="9.3" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>9.3</b> Com inicialitzar una taula</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>10</b> PAC09</a><ul>
+<li class="chapter" data-level="10.1" data-path="pac09.html"><a href="pac09.html#exemple-4"><i class="fa fa-check"></i><b>10.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>11</b> PAC10</a></li>
+<li class="chapter" data-level="12" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>12</b> PR1</a><ul>
+<li class="chapter" data-level="12.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>12.1</b> Mode menu vs mode test</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>13</b> PR2</a><ul>
+<li class="chapter" data-level="13.1" data-path="pr2.html"><a href="pr2.html#exemple-5"><i class="fa fa-check"></i><b>13.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>14</b> VMWare i CodeLite</a><ul>
+<li class="chapter" data-level="14.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>14.1</b> Per què una màquina virtual?</a></li>
+<li class="chapter" data-level="14.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>14.2</b> Primers passos amb CodeLite</a></li>
+<li class="chapter" data-level="14.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>14.3</b> Com activar un projecte</a></li>
+<li class="chapter" data-level="14.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>14.4</b> Canviar idioma del teclat</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>15</b> Altres</a><ul>
+<li class="chapter" data-level="15.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>15.1</b> Bilbliografia</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Laboratori de Fonaments de Programació</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pac09" class="section level1">
+<h1><span class="header-section-number">10</span> PAC09</h1>
+<div id="exemple-4" class="section level2">
+<h2><span class="header-section-number">10.1</span> Exemple</h2>
+<p>El plantejament és el següent: imaginem que tenim una llista de cartes de tipus <code>DIAMANTS</code>, <code>CORS</code>, <code>TREVOLS</code> i <code>PIQUES</code>; el que volem aconseguir és filtrar aquesta llista per un tipus determinat de carta, <code>DIAMANTS</code>, i afegir totes aquestes cartes de <code>DIAMANTS</code> a una altra llista.</p>
+<p>He detallat al màxim el codi amb comentaris, per tal que quedi el més clar possible:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="co">/* Definició del model de cartes segons l&#39;enllaç:</span>
+<span class="co">   https://ca.wikipedia.org/wiki/Joc_de_cartes#Joc_de_cartes_francès */</span>
+
+<span class="pp">#define MAX_CARTES 54+1</span>
+<span class="pp">#define MAX_DIAMANTS_CARTES 13+1</span>
+
+<span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;
+
+<span class="co">/* El terme &quot;coll&quot; equival a &quot;baraja&quot; */</span>
+<span class="kw">typedef</span> <span class="kw">enum</span> {DIAMANTS, PIQUES, TREVOLS, CORS} tColl;
+
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    <span class="dt">char</span> valor;
+    tColl coll;
+} tCarta;
+
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    tCarta cartes[MAX_CARTES];
+    <span class="dt">int</span> nCartes;
+} tCartesList;
+
+<span class="co">/* Predeclaració de les accions i les funcions */</span>
+<span class="dt">void</span> createList();
+<span class="dt">void</span> insert(tCartesList *llista, tCarta carta, <span class="dt">int</span> index);
+<span class="dt">void</span> delete(tCartesList *llista, <span class="dt">int</span> index);
+tCarta get(tCartesList llista, <span class="dt">int</span> index);
+boolean end(tCartesList llista, <span class="dt">int</span> pos);
+boolean emptyList(tCartesList llista);
+boolean fullList(tCartesList llista);
+<span class="dt">void</span> printList(tCartesList llista);
+<span class="dt">void</span> getCartesByColl(tCartesList llista, tColl coll, tCartesList *llistaByColl);
+
+<span class="co">/* Programa principal */</span>
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    tCarta carta1, carta2, carta3, carta4, carta5;
+    tCartesList llistaCartes, llistaCartesDiamants;
+
+    <span class="co">/* Creem les dues llistes */</span>
+    createList(&amp;llistaCartes);
+    createList(&amp;llistaCartesDiamants);
+
+    <span class="co">/* Definim una sèrie de cartes */</span>
+    carta1.valor = <span class="ch">&#39;3&#39;</span>;
+    carta1.coll = CORS;
+    carta2.valor = <span class="ch">&#39;A&#39;</span>;
+    carta2.coll = DIAMANTS;
+    carta3.valor = <span class="ch">&#39;J&#39;</span>;
+    carta3.coll = TREVOLS;
+    carta4.valor = <span class="ch">&#39;5&#39;</span>;
+    carta4.coll = DIAMANTS;
+    carta5.valor = <span class="ch">&#39;Q&#39;</span>;
+    carta5.coll = PIQUES;
+
+    <span class="co">/* I les afegim a la llista genèrica de cartes */</span>
+    insert(&amp;llistaCartes, carta1, <span class="dv">0</span>);
+    insert(&amp;llistaCartes, carta2, <span class="dv">1</span>);
+    insert(&amp;llistaCartes, carta3, <span class="dv">2</span>);
+    insert(&amp;llistaCartes, carta4, <span class="dv">3</span>);
+    insert(&amp;llistaCartes, carta5, <span class="dv">4</span>);
+
+    <span class="co">/* Mostrem el contingut de la llista de cartes</span>
+<span class="co">       per pantalla, amb l&#39;acció printList */</span>
+    printf(<span class="st">&quot;Contingut de la llista &#39;llistaCartes&#39; :</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printList(llistaCartes);
+
+    <span class="co">/* Ara volem filtrar la llista genèrica de cartes amb</span>
+<span class="co">       un dels colls possibles. Concretament volem separar </span>
+<span class="co">       de la llista genèrica de cartes aquelles que siguin </span>
+<span class="co">       del coll DIAMANTS; ho fem mitjançant la crida a </span>
+<span class="co">       l&#39;acció getCartesByColl. Per veure el seu funcionament,</span>
+<span class="co">       reviseu el comentari fet en la implementació d&#39;aquesta</span>
+<span class="co">       acció */</span>
+    getCartesByColl(llistaCartes, DIAMANTS, &amp;llistaCartesDiamants);
+
+    <span class="co">/* I mostrem ara el contingut de la llista que conté</span>
+<span class="co">       únicament les cartes del coll DIAMANTS */</span>
+    printf(<span class="st">&quot;Contingut de la llista &#39;llistaCartesDiamants&#39; :</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printList(llistaCartesDiamants);
+    <span class="cf">return</span> <span class="dv">0</span>;
+}
+
+<span class="co">/* Implementació dels mètodes de la llista: he fet un copy/paste</span>
+<span class="co">   de la codificació C de l&#39;exemple 19_12 de la xWiki, canviant</span>
+<span class="co">   el genèric &quot;elem&quot; per &quot;tCarta&quot;, i el genèric &quot;list&quot; per &quot;tCartesList&quot;,</span>
+<span class="co">   ja que aquests seran els elements amb els que treballarem</span>
+<span class="co">   en aquest exemple */</span>
+<span class="dt">void</span> createList(tCartesList *llista) {
+    llista-&gt;nCartes = <span class="dv">0</span>;
+}
+
+<span class="dt">void</span> insert(tCartesList *llista, tCarta carta, <span class="dt">int</span> index) {
+
+    <span class="dt">int</span> i = <span class="dv">0</span>;
+    <span class="cf">if</span> (llista-&gt;nCartes == MAX_CARTES) {
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st"> Full list </span><span class="sc">\n</span><span class="st">&quot;</span>);
+    } <span class="cf">else</span> {
+        <span class="cf">for</span> (i=llista-&gt;nCartes-<span class="dv">1</span>; i&gt;=index; i--) {
+            llista-&gt;cartes[i+<span class="dv">1</span>] = llista-&gt;cartes[i];
+        }
+        llista-&gt;nCartes++;
+        llista-&gt;cartes[index]=carta;
+    }
+}
+
+<span class="dt">void</span> delete(tCartesList *llista, <span class="dt">int</span> index) {
+
+    <span class="dt">int</span> i;
+    <span class="cf">if</span> (llista-&gt;nCartes == <span class="dv">0</span>) {
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st"> Empty list</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    } <span class="cf">else</span> {
+        <span class="cf">for</span> (i=index; i&lt;llista-&gt;nCartes-<span class="dv">1</span>; i++) {
+            llista-&gt;cartes[i] = llista-&gt;cartes[i+<span class="dv">1</span>];
+        }
+        llista-&gt;nCartes--;
+    }
+}
+
+tCarta get(tCartesList llista, <span class="dt">int</span> index) {
+
+    tCarta carta;
+
+    <span class="cf">if</span> (llista.nCartes == <span class="dv">0</span>) {
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st"> Empty list </span><span class="sc">\n</span><span class="st">&quot;</span>);
+    } <span class="cf">else</span> {
+        carta=llista.cartes[index];
+    }
+    <span class="cf">return</span> carta;
+}
+
+boolean end(tCartesList llista, <span class="dt">int</span> pos) {
+    <span class="cf">return</span> (pos &gt;= llista.nCartes);
+}
+
+boolean emptyList(tCartesList llista) {
+    <span class="cf">return</span> (llista.nCartes == <span class="dv">0</span>);
+}
+
+boolean fullList(tCartesList llista) {
+    <span class="cf">return</span> (llista.nCartes == MAX_CARTES);
+}
+
+<span class="co">/* A continuació s&#39;implementaran dues noves accions que</span>
+<span class="co">   no surten ja a l&#39;exemple 19_12. La primera acció, </span>
+<span class="co">   printList, imprimeix per pantalla una llista. La segona</span>
+<span class="co">   acció, getCartesByColl, permet fer un filtratge de </span>
+<span class="co">   cartes sobre una llista. */</span>
+<span class="dt">void</span> printList(tCartesList llista) {
+
+    <span class="dt">int</span> i;
+    tCarta cartaAux;
+
+    <span class="cf">for</span>(i = <span class="dv">0</span>; i &lt; llista.nCartes; i++) { 
+        cartaAux = get(llista, i);
+        <span class="cf">if</span> (cartaAux.coll == DIAMANTS) {
+            printf(<span class="st">&quot; [%c] de DIAMANTS</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);
+        } <span class="cf">else</span> <span class="cf">if</span> (cartaAux.coll == PIQUES) {
+            printf(<span class="st">&quot; [%c] de PIQUES</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);
+        } <span class="cf">else</span> <span class="cf">if</span> (cartaAux.coll == TREVOLS) {
+            printf(<span class="st">&quot; [%c] de TREVOLS</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);
+        } <span class="cf">else</span> <span class="cf">if</span> (cartaAux.coll == CORS) {
+            printf(<span class="st">&quot; [%c] de CORS</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);
+        }
+    }
+}
+
+<span class="co">/* La següent acció, getCartesByColl, rep tres paràmetres:</span>
+<span class="co">   tCartesList llista (in) : </span>
+<span class="co">   llista sobre la qual aplicarem el filtre</span>
+<span class="co">   </span>
+<span class="co">   tColl tipus (in) : </span>
+<span class="co">   correspon al tipus de coll que utilitzarem per fer </span>
+<span class="co">   el filtratge; per exemple, si com a coll indiquem </span>
+<span class="co">   DIAMANTS significa que el filtratge el farem</span>
+<span class="co">   sobre les cartes de tipus DIAMANTS</span>
+<span class="co">  </span>
+<span class="co">   tCartesList llistaByColl (out) :</span>
+<span class="co">   llista de sortida en la qual s&#39;hi inclouran aquelles</span>
+<span class="co">   cartes de la llista d&#39;entrada que són del coll tipus */</span>
+<span class="dt">void</span> getCartesByColl(tCartesList llista, tColl tipus, tCartesList *llistaByColl) {
+
+    <span class="dt">int</span> i, j;
+    tCarta carta;
+
+    createList(llistaByColl);
+    i = <span class="dv">0</span>;
+    j = <span class="dv">0</span>;
+
+    <span class="co">/* Amb un bucle i la funció end, controlem que no </span>
+<span class="co">       hem arribat al final de la llista */</span>
+   <span class="cf">while</span> ( end(llista, i) == FALSE ) {
+
+        <span class="co">/* Obtenim la carta de la posició i */</span>
+        carta = get(llista, i);
+
+        <span class="co">/* Si la carta és del coll indicat per tipus, </span>
+<span class="co">           s&#39;afegeix a la llista de sortida */</span>
+        <span class="cf">if</span> (carta.coll == tipus) {
+            insert(llistaByColl, carta, j);
+            j = j + <span class="dv">1</span>;
+        }
+        i = i + <span class="dv">1</span>;
+    }
+}</code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pac08.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pac10.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/09-PAC09.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["FAQS-laboratori-FP.pdf", "FAQS-laboratori-FP.epub"],
+"toc": {
+"collapse": "section",
+"toc": true,
+"toc_float": true,
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 PAC02 | Laboratori de Fonaments de Programació</title>
+  <meta name="description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 PAC02 | Laboratori de Fonaments de Programació" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 PAC02 | Laboratori de Fonaments de Programació" />
+  
+  <meta name="twitter:description" content="FAQS del Laboratori de Fonaments de programació" />
+  
+
+<meta name="author" content="Jordi Blasco Planesas" />
+
+
+<meta name="date" content="2019-10-31" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pac01.html"/>
+<link rel="next" href="pac03.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Laboratori Fonaments de Programació</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducció</a></li>
+<li class="chapter" data-level="2" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>2</b> PAC01</a><ul>
+<li class="chapter" data-level="2.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>2.1</b> Llenguatge algorísmic</a></li>
+<li class="chapter" data-level="2.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>2.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
+<li class="chapter" data-level="2.3" data-path="pac01.html"><a href="pac01.html#impressio-de-valors-incorrecta"><i class="fa fa-check"></i><b>2.3</b> Impressió de valors incorrecta</a></li>
+<li class="chapter" data-level="2.4" data-path="pac01.html"><a href="pac01.html#com-definir-un-enumeratiu"><i class="fa fa-check"></i><b>2.4</b> Com definir un enumeratiu</a></li>
+<li class="chapter" data-level="2.5" data-path="pac01.html"><a href="pac01.html#com-utilitzar-un-enumeratiu"><i class="fa fa-check"></i><b>2.5</b> Com utilitzar un enumeratiu</a></li>
+<li class="chapter" data-level="2.6" data-path="pac01.html"><a href="pac01.html#especificador-dun-enumeratiu"><i class="fa fa-check"></i><b>2.6</b> Especificador d’un enumeratiu</a></li>
+<li class="chapter" data-level="2.7" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>2.7</b> Lectura de caràcters en C</a></li>
+<li class="chapter" data-level="2.8" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>2.8</b> Lectura de float en C</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>3</b> PAC02</a><ul>
+<li class="chapter" data-level="3.1" data-path="pac02.html"><a href="pac02.html#define-vs-const"><i class="fa fa-check"></i><b>3.1</b> define vs const</a></li>
+<li class="chapter" data-level="3.2" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>3.2</b> Precisió en variables float</a></li>
+<li class="chapter" data-level="3.3" data-path="pac02.html"><a href="pac02.html#expressions"><i class="fa fa-check"></i><b>3.3</b> Expressions</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>3.3.1</b> Exemple 1: esParell</a></li>
+<li class="chapter" data-level="3.3.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>3.3.2</b> Exemple 2: capDeSetmana</a></li>
+<li class="chapter" data-level="3.3.3" data-path="pac02.html"><a href="pac02.html#exemple-3-gintonicpreparation"><i class="fa fa-check"></i><b>3.3.3</b> Exemple 3: ginTonicPreparation</a></li>
+<li class="chapter" data-level="3.3.4" data-path="pac02.html"><a href="pac02.html#exemple-4-gintonicfreeml"><i class="fa fa-check"></i><b>3.3.4</b> Exemple 4: ginTonicFreeMl</a></li>
+<li class="chapter" data-level="3.3.5" data-path="pac02.html"><a href="pac02.html#exemple-5-scoutingbasquet"><i class="fa fa-check"></i><b>3.3.5</b> Exemple 5: scoutingBasquet</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>4</b> PAC03</a><ul>
+<li class="chapter" data-level="4.1" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>4.1</b> Significat dels arguments del main</a></li>
+<li class="chapter" data-level="4.2" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>4.2</b> Assignar valors a un vector</a></li>
+<li class="chapter" data-level="4.3" data-path="pac03.html"><a href="pac03.html#stack-smashing-detected"><i class="fa fa-check"></i><b>4.3</b> Stack smashing detected</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>5</b> PAC04</a><ul>
+<li class="chapter" data-level="5.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>5.1</b> Com tractar elements d’un vector amb un bucle</a></li>
+<li class="chapter" data-level="5.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>5.2</b> Entrada continua de valors amb un bucle</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>6</b> PAC05</a><ul>
+<li class="chapter" data-level="6.1" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>6.1</b> Exemple: nomines</a></li>
+<li class="chapter" data-level="6.2" data-path="pac05.html"><a href="pac05.html#exemple-accions"><i class="fa fa-check"></i><b>6.2</b> Exemple accions</a></li>
+<li class="chapter" data-level="6.3" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>6.3</b> Comanda scanf</a></li>
+<li class="chapter" data-level="6.4" data-path="pac05.html"><a href="pac05.html#finalitzador-0"><i class="fa fa-check"></i><b>6.4</b> Finalitzador ‘\0’</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>7</b> PAC06</a><ul>
+<li class="chapter" data-level="7.1" data-path="pac06.html"><a href="pac06.html#comanda-strcmp"><i class="fa fa-check"></i><b>7.1</b> Comanda strcmp</a></li>
+<li class="chapter" data-level="7.2" data-path="pac06.html"><a href="pac06.html#exemple"><i class="fa fa-check"></i><b>7.2</b> Exemple</a></li>
+<li class="chapter" data-level="7.3" data-path="pac06.html"><a href="pac06.html#tipos-de-parametros-de-las-acciones"><i class="fa fa-check"></i><b>7.3</b> Tipos de parámetros de las acciones</a></li>
+<li class="chapter" data-level="7.4" data-path="pac06.html"><a href="pac06.html#exemple-1"><i class="fa fa-check"></i><b>7.4</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>8</b> PAC07</a><ul>
+<li class="chapter" data-level="8.1" data-path="pac07.html"><a href="pac07.html#estructura"><i class="fa fa-check"></i><b>8.1</b> Estructura</a></li>
+<li class="chapter" data-level="8.2" data-path="pac07.html"><a href="pac07.html#tipus-de-parametres-en-accions-i-funcions"><i class="fa fa-check"></i><b>8.2</b> Tipus de paràmetres en accions i funcions</a></li>
+<li class="chapter" data-level="8.3" data-path="pac07.html"><a href="pac07.html#scanf-accio-o-funcio"><i class="fa fa-check"></i><b>8.3</b> scanf: acció o funció?</a></li>
+<li class="chapter" data-level="8.4" data-path="pac07.html"><a href="pac07.html#pas-per-valor-vs-pas-per-referencia"><i class="fa fa-check"></i><b>8.4</b> Pas per valor vs pas per referència</a></li>
+<li class="chapter" data-level="8.5" data-path="pac07.html"><a href="pac07.html#exemple-capgirar"><i class="fa fa-check"></i><b>8.5</b> Exemple: capgirar</a></li>
+<li class="chapter" data-level="8.6" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>8.6</b> Exemple: funció isParell</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>9</b> PAC08</a><ul>
+<li class="chapter" data-level="9.1" data-path="pac08.html"><a href="pac08.html#exemple-2"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
+<li class="chapter" data-level="9.2" data-path="pac08.html"><a href="pac08.html#exemple-3"><i class="fa fa-check"></i><b>9.2</b> Exemple</a></li>
+<li class="chapter" data-level="9.3" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>9.3</b> Com inicialitzar una taula</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>10</b> PAC09</a><ul>
+<li class="chapter" data-level="10.1" data-path="pac09.html"><a href="pac09.html#exemple-4"><i class="fa fa-check"></i><b>10.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>11</b> PAC10</a></li>
+<li class="chapter" data-level="12" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>12</b> PR1</a><ul>
+<li class="chapter" data-level="12.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>12.1</b> Mode menu vs mode test</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>13</b> PR2</a><ul>
+<li class="chapter" data-level="13.1" data-path="pr2.html"><a href="pr2.html#exemple-5"><i class="fa fa-check"></i><b>13.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>14</b> VMWare i CodeLite</a><ul>
+<li class="chapter" data-level="14.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>14.1</b> Per què una màquina virtual?</a></li>
+<li class="chapter" data-level="14.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>14.2</b> Primers passos amb CodeLite</a></li>
+<li class="chapter" data-level="14.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>14.3</b> Com activar un projecte</a></li>
+<li class="chapter" data-level="14.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>14.4</b> Canviar idioma del teclat</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>15</b> Altres</a><ul>
+<li class="chapter" data-level="15.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>15.1</b> Bilbliografia</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Laboratori de Fonaments de Programació</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pac02" class="section level1">
+<h1><span class="header-section-number">3</span> PAC02</h1>
+<div id="define-vs-const" class="section level2">
+<h2><span class="header-section-number">3.1</span> define vs const</h2>
+<p>La definició de constants tant es pot fer amb <code>define</code> com amb <code>const</code>. Tot i això, la forma de comportar-se d’aquestes dues opcions és completament diferent, si ve el resultat final és el mateix:</p>
+<ul>
+<li><code>define</code>: quan utilitzem aquesta opció no es desa en cap posició de memòria el valor de la constant. El que es fa realment és que en els passos previs a la pròpia compilació del programa, el preprocessador substitueix totes les referencies del define pel valor indicat.</li>
+</ul>
+<p>Per exemple, si tenim el següent programa amb una constant creada amb <code>define</code> :</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#define MIDA 8</span>
+
+<span class="dt">char</span> lletres[] = {<span class="ch">&#39;a&#39;</span>, <span class="ch">&#39;b&#39;</span>, <span class="ch">&#39;c&#39;</span>, <span class="ch">&#39;d&#39;</span>, <span class="ch">&#39;e&#39;</span>, <span class="ch">&#39;f&#39;</span>, <span class="ch">&#39;g&#39;</span>, <span class="ch">&#39;h&#39;</span>};
+<span class="dt">int</span> vertical, horitzontal;
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+    <span class="co">/* font: https://en.wikipedia.org/wiki/Chess */</span>
+
+    <span class="cf">for</span> (vertical=MIDA; vertical&gt;=<span class="dv">1</span>; vertical--) {
+        <span class="cf">for</span> (horitzontal=<span class="dv">0</span>; horitzontal&lt;=MIDA-<span class="dv">1</span>; horitzontal++) {
+            printf(<span class="st">&quot;%c%d &quot;</span>, lletres[horitzontal], vertical);
+        }
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    }
+}</code></pre></div>
+<p>Abans de la compilació, el preprocessador entre altres accions elimina comentaris i substitueix totes les referències <code>MIDA</code> per <code>8</code>:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="dt">char</span> lletres[] = {<span class="ch">&#39;a&#39;</span>, <span class="ch">&#39;b&#39;</span>, <span class="ch">&#39;c&#39;</span>, <span class="ch">&#39;d&#39;</span>, <span class="ch">&#39;e&#39;</span>, <span class="ch">&#39;f&#39;</span>, <span class="ch">&#39;g&#39;</span>, <span class="ch">&#39;h&#39;</span>};
+<span class="dt">int</span> vertical, horitzontal;
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="cf">for</span> (vertical=<span class="dv">8</span>; vertical&gt;=<span class="dv">1</span>; vertical--) {
+        <span class="cf">for</span> (horitzontal=<span class="dv">0</span>; horitzontal&lt;=<span class="dv">8</span>-<span class="dv">1</span>; horitzontal++) {
+            printf(<span class="st">&quot;%c%d &quot;</span>, lletres[horitzontal], vertical);
+        }
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    }
+}</code></pre></div>
+<p>Per tant la definició de constants amb <code>define</code> es comporta com si d’un “cercar-reemplaçar” d’un processador de textos es tractés. No es desa cap constant en memòria, però per contra, el programa ocuparà una mica més per la substitució directa de referències que fa; la substitució la fa en tot el programa, no es pot limitar a un àmbit concret (per exemple només dins d’una funció).</p>
+<ul>
+<li><code>const</code>: en aquest cas sí que es reserva una posició de memòria. En C es comporta igual com si fos una variable, però la qual únicament funciona en mode lectura: no li podem modificar el valor.</li>
+</ul>
+<p>A més, <code>const</code> ens permet també dir quin tipus de valor tindrà la constant: si és de tipus <code>float</code>, <code>int</code>, <code>char</code>… amb el que aquest fet ens dóna un punt addicional de control, ja que ens assegurem que el tipus de valor assignat serà el correcte pel programa.</p>
+<p>Amb aquest tipus de definició de constant, l’exemple anterior quedaria de la següent forma:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="dt">const</span> <span class="dt">int</span> MIDA <span class="dv">8</span>
+
+<span class="dt">char</span> lletres[] = {<span class="ch">&#39;a&#39;</span>, <span class="ch">&#39;b&#39;</span>, <span class="ch">&#39;c&#39;</span>, <span class="ch">&#39;d&#39;</span>, <span class="ch">&#39;e&#39;</span>, <span class="ch">&#39;f&#39;</span>, <span class="ch">&#39;g&#39;</span>, <span class="ch">&#39;h&#39;</span>};
+<span class="dt">int</span> vertical, horitzontal;
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="co">/* La constant MIDA està desada en memòria */</span>
+    printf(<span class="st">&quot;posició en memòria de la constant MIDA : %p </span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;MIDA);
+
+    <span class="cf">for</span> (vertical=MIDA; vertical&gt;=<span class="dv">1</span>; vertical--) {
+        <span class="cf">for</span> (horitzontal=<span class="dv">0</span>; horitzontal&lt;=MIDA-<span class="dv">1</span>; horitzontal++) {
+            printf(<span class="st">&quot;%c%d &quot;</span>, lletres[horitzontal], vertical);
+        }
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    }
+}</code></pre></div>
+<p>Com es pot veure, és possible obtinir l’adreça en memòria on es desa la constant <code>MIDA</code>. En aquest cas, sí que pots definir una constant amb <code>const</code> i fer que només afecti un àmbit determinat (per exemple, que la constant estigui definida únicament dins d’una funció).</p>
+<p>Aquestes són les principals diferències entre <code>define</code> i <code>const</code> a l’hora de definir una constant; <code>define</code> es va crear molt abans que no la sentència <code>const</code>, amb el que és un habit força habitual decantar-se per aquesta opció per temes més històrics.</p>
+</div>
+<div id="precisio-en-variables-float" class="section level2">
+<h2><span class="header-section-number">3.2</span> Precisió en variables float</h2>
+<p>Hi ha alguns valors decimals determinats que no es poden representar de forma precisa en una variable de tipus <code>float</code>. La millor solució pels casos que tractem és arrodonir al número de decimals que realment necessitem.</p>
+<p>Si en canvi volem sí o sí treballar amb tots els decimals, podem optar per utilitzar un tipus de dada que tingui major precisió que <code>float</code>: <code>double</code>.</p>
+<p>Per exemple, el següent programa retorna el resultat esperat si es desa en un <code>double</code>, i no així si es fa en un <code>float</code>:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="dt">int</span> main() { 
+
+    <span class="dt">float</span> num1; 
+    <span class="dt">float</span> num2;
+    <span class="dt">float</span> resultat1; 
+    <span class="dt">double</span> resultat2; 
+    
+    num1 = <span class="fl">1.3</span>; 
+    num2 = <span class="dv">17</span>;
+    resultat1 = num1 + num2; 
+    printf(<span class="st">&quot;resultat amb float: %f</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat1); 
+    resultat2 = num1 + num2; 
+    printf(<span class="st">&quot;resultat amb double: %f</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat2); 
+    <span class="cf">return</span> <span class="dv">0</span>; 
+}</code></pre></div>
+<p>La sortida que genera és:</p>
+<p>
+<img src="img/play.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">resultat amb  <span class="dt">float</span>: <span class="fl">18.299999</span>
+resultat amb <span class="dt">double</span>: <span class="fl">18.300000</span></code></pre></div>
+</div>
+<div id="expressions" class="section level2">
+<h2><span class="header-section-number">3.3</span> Expressions</h2>
+<div id="exemple-1-esparell" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Exemple 1: esParell</h3>
+<p>Imaginem que ens demanen un algorisme que indiqui si un número és parell.</p>
+<p>Una possible solució seria:</p>
+<p>
+<img src="img/alg.png" style="float:left; padding:10px" />
+</p>
+<pre><code>algorithm esParell
+    var
+        numero: integer;
+        isParell: boolean;
+    end var
+
+    writeString(&quot;Introdueix un número : &quot;);
+    numero:= readInteger();
+    isParell:= (numero mod 2 = 0);
+    
+    writeString(&quot;El numero &quot;);
+    writeInteger(numero);
+    writeString(&quot; és parell? &quot;);
+    writeBoolean(isParell);
+
+end algorithm</code></pre>
+<p>La variable <code>isParell</code> prendrà el valor <code>TRUE</code> si el número es parell i <code>FALSE</code> en cas contrari. No ha calgut utilitzar cap estructura <code>if-else</code> per resoldre l’algorisme.</p>
+<p>Una possible forma de codificar-ho en llenguatge C és:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="dt">int</span> numero;
+    boolean isParell;
+
+    printf(<span class="st">&quot;Introdueix un número : &quot;</span>);
+    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numero);
+    isParell = (numero % <span class="dv">2</span> == <span class="dv">0</span>);
+    
+    printf(<span class="st">&quot;El número %d és parell? (0=FALSE, 1=TRUE) : %u </span><span class="sc">\n</span><span class="st">&quot;</span>, numero, isParell);
+
+    <span class="cf">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+</div>
+<div id="exemple-2-capdesetmana" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Exemple 2: capDeSetmana</h3>
+<p>Imaginem que volem fer un programa molt senzill que ens digui si avui és cap de setmana o no. El seu algorisme seria el següent:</p>
+<p>
+<img src="img/alg.png" style="float:left; padding:10px" />
+</p>
+<pre><code>type
+    dies = {DILLUNS, DIMARTS, DIMECRES, DIJOUS, DIVENDRES, DISSABTE, DIUMENGE};
+end type
+
+algorithm capDeSetmana
+
+    var
+        esCapDeSetmana: boolean;
+        diaSetmana: dies;
+    end var
+
+    writeString(&quot;Quin dia de la setmana és avui ?\n&quot;);
+    writeString(&quot;Per DILLUNS tecleja 0\n&quot;);
+    writeString(&quot;Per DIMARTS tecleja 1\n&quot;);
+    writeString(&quot;Per DIMECRES tecleja 2\n&quot;);
+    writeString(&quot;Per DIJOUS tecleja 3\n&quot;);
+    writeString(&quot;Per DIVENDRES tecleja 4\n&quot;);
+    writeString(&quot;Per DISSABTE tecleja 5\n&quot;);
+    writeString(&quot;Per DIUMENGE tecleja 6\n&quot;);
+ 
+    diaSetmana:= readInteger();
+    esCapDeSetmana:= (diaSetmana = DISSABTE or diaSetmana = DIUMENGE);
+
+    writeString(&quot;Avui és cap de setmana?&quot;);
+    writeBool(esCapDeSetmana);
+
+end algorithm</code></pre>
+<p>La variable <code>boolean</code> <code>esCapDeSetmana</code> prendrà el valor de <code>TRUE</code> o <code>FALSE</code> en funció del resultat d’avaluar l’expressió. No és necessari la utilització d’estructures condicionals <code>if-else</code> que veurem més endavant en el curs.</p>
+<p>Una possible forma de codificar-ho en llenguatge C és:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;
+<span class="kw">typedef</span> <span class="kw">enum</span> {DILLUNS, DIMARTS, DIMECRES, DIJOUS, DIVENDRES, DISSABTE, DIUMENGE} dies;
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    boolean esCapDeSetmana;
+    dies diaSetmana;
+
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Quin dia de la setmana és avui ?</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printf(<span class="st">&quot;Per DILLUNS tecleja 0</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printf(<span class="st">&quot;Per DIMARTS tecleja 1</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printf(<span class="st">&quot;Per DIMECRES tecleja 2</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printf(<span class="st">&quot;Per DIJOUS tecleja 3</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printf(<span class="st">&quot;Per DIVENDRES tecleja 4</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printf(<span class="st">&quot;Per DISSABTE tecleja 5</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printf(<span class="st">&quot;Per DIUMENGE tecleja 6</span><span class="sc">\n</span><span class="st">&quot;</span>);
+
+    scanf(<span class="st">&quot;%u&quot;</span>, &amp;diaSetmana);
+    esCapDeSetmana = (diaSetmana == DISSABTE || diaSetmana == DIUMENGE);
+
+    printf(<span class="st">&quot;Avui és cap de setmana (0 == FALSE, 1 == TRUE) ? %u</span><span class="sc">\n</span><span class="st">&quot;</span>, esCapDeSetmana);
+
+    <span class="cf">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+<p>Varis punts a considerar:</p>
+<ul>
+<li>Recordem que en C no hi ha el tipus primitiu <code>boolean</code>, al mateix nivell que existeix un <code>int</code>, un <code>float</code> o un <code>char</code>… Per tant definirem sempre el tipus <code>boolean</code> com un <code>enum</code> amb els components <code>{FALSE, TRUE}</code>.</li>
+<li>Quan definim una variable de tipus <code>enum</code>, la llegirem/escriurem com a <code>%u</code>. Ho podríem fer com a <code>%d</code>, però us retornarà un warning tot i que el resultat sigui correcte. El tipus <code>%u</code> és igual que un enter <code>%d</code> però sense signe: això significa que amb <code>%d</code> podem tractar valors negatius com -12 i amb <code>%u</code> això no és possible, però com que sabem que els valors que pot prendre un <code>enum</code> sempre seran &gt;= 0, ens convé utilitzar <code>%u</code>.</li>
+<li>Per les particularitats dels <code>boolean</code> en el llenguatge de programació C que ja hem comentat abans, l’entrada i sortida de valors d’un <code>boolean</code> serà numèrica. Per facilitar la comprensió podem mostrar per pantalla un literal que ens indiqui que 0 equival a <code>FALSE</code> i 1 a <code>TRUE</code>.
+<ul>
+<li>L’assignació de valors en els algorismes la fem amb <code>:=</code>, però en llenguatge C es fa amb <code>=</code>.</li>
+<li>La comparació en els algorismes la fem amb <code>=</code>, però en llenguatge C es fa amb <code>==</code>.</li>
+<li>L’operació lògica <code>or</code> dels algorismes es tradueix en C amb l’operand <code>||</code>.</li>
+<li>L’operació lògica <code>and</code> dels algorismes es tradueix en C amb l’operand <code>&amp;&amp;</code>.</li>
+</ul></li>
+</ul>
+</div>
+<div id="exemple-3-gintonicpreparation" class="section level3">
+<h3><span class="header-section-number">3.3.3</span> Exemple 3: ginTonicPreparation</h3>
+<p>Imaginem que volem preparar un gintònic. Sabem el volum de ginebra i de tònica que utilitzarem, i quina és la capacitat de la copa de baló que el contindrà.</p>
+<p>Hem vist una oferta per internet i hem comprat glaçons metàl·lics d’acer inoxidable… però se’ns ha anat una mica el cap i n’hem comprat un total de 20 unitats.</p>
+<p>Volem fer un programa que, utilitzant únicament expressions, ens digui si podem preparar o no el gintònic en funció del número de glaçons que li volem posar:</p>
+<ul>
+<li>si el nombre de glaçons caben dins de la copa, retornarà <code>true</code>.</li>
+<li>en cas contrari, retornarà <code>false</code>.</li>
+</ul>
+<p>Per tant el que ha de fer el nostre programa bàsicament és validar si el volum de ginebra + tònica + (glaço) * número de glaçons supera o no el volum de la copa.</p>
+<p>L’algorisme podria ser el següent:</p>
+<p>
+<img src="img/alg.png" style="float:left; padding:10px" />
+</p>
+<pre><code>const
+    GIN: real = 50.0;              { in ml }
+    TONIC: real = 200.0;           { in ml }
+    GLASS: real = 620.0;           { in ml }
+    METAL_ICE_CUBE: real = 42.875; { in ml }
+end const
+
+algorithm ginTonicPreparation
+
+    var
+        numMetalIceCubes: integer;
+        isPossible: boolean;
+    end var
+
+    writeString(&quot;Number of metal ice cubes ? (integer) : &quot;);
+    numMetalIceCubes:= readInteger();
+
+    isPossible:= (GLASS ≥ (GIN + TONIC + METAL_ICE_CUBE * numMetalIceCubes));
+
+    writeString(&quot;Can you make a gin &amp; tonic? : &quot;);
+    writeBoolean(isPossible);
+
+end algorithm</code></pre>
+<p>L’expressió que dóna valor a <code>isPossible</code> s’ocupa d’avaluar el volum de la copa respecte el resultant de ginebra, tònica i glaçons.</p>
+<p>La seva traducció a C podria ser:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="pp">#define GIN 50.0              </span><span class="co">/* in ml */</span>
+<span class="pp">#define TONIC 200.0           </span><span class="co">/* in ml */</span>
+<span class="pp">#define GLASS 620.0           </span><span class="co">/* in ml */</span>
+<span class="pp">#define METAL_ICE_CUBE 42.875 </span><span class="co">/* in ml */</span><span class="pp"> </span>
+
+<span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="dt">int</span> numMetalIceCubes;
+    boolean isPossible;
+
+    printf(<span class="st">&quot;Number of metal ice cubes ? (integer) : &quot;</span>);
+    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numMetalIceCubes);
+
+    isPossible = GLASS &gt;= (GIN + TONIC + METAL_ICE_CUBE * numMetalIceCubes);
+
+    printf(<span class="st">&quot;Can you make a gin &amp; tonic? (0=FALSE, 1=TRUE) : %u</span><span class="sc">\n</span><span class="st">&quot;</span>, isPossible);
+    
+    <span class="cf">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+<p>Per realitzar el càlcul en C també s’ha utilitzat una expressió.</p>
+</div>
+<div id="exemple-4-gintonicfreeml" class="section level3">
+<h3><span class="header-section-number">3.3.4</span> Exemple 4: ginTonicFreeMl</h3>
+<p>Anem a evolucionar l’exemple anterior del gintònic: imaginem ara que volem que el nostre programa ens digui el volum (en mililitres) que queda lliure a la copa una vegada posat un determinat nombre de glaçons.</p>
+<p>L’algorisme quedaria de la següent forma:</p>
+<p>
+<img src="img/alg.png" style="float:left; padding:10px" />
+</p>
+<pre><code>const
+    GIN: real = 50.0;              { in ml }
+    TONIC: real = 200.0;           { in ml }
+    GLASS: real = 620.0;           { in ml }
+    METAL_ICE_CUBE: real = 42.875; { in ml }
+end const
+
+algorithm ginTonicFreeMl
+
+    var
+        numMetalIceCubes: integer;
+        volumeFree: real;
+    end var
+
+    writeString(&quot;Number of metal ice cubes ? (integer) : &quot;);
+    numMetalIceCubes:= readInteger();
+
+    volumeFree:= GLASS - (GIN + TONIC + METAL_ICE_CUBE * numMetalIceCubes);
+
+    writeString(&quot;How many free ml in the glass? : &quot;);
+    writeReal(volumeFree);
+
+end algorithm</code></pre>
+<p>I la codificació en C :</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="pp">#define GIN 50.0              </span><span class="co">/* in ml */</span>
+<span class="pp">#define TONIC 200.0           </span><span class="co">/* in ml */</span>
+<span class="pp">#define GLASS 620.0           </span><span class="co">/* in ml */</span>
+<span class="pp">#define METAL_ICE_CUBE 42.875 </span><span class="co">/* in ml */</span>
+
+<span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="dt">int</span> numMetalIceCubes;
+    <span class="dt">float</span> volumeFree;
+
+    printf(<span class="st">&quot;Number of metal ice cubes ? (integer) : &quot;</span>);
+    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numMetalIceCubes);
+
+    volumeFree = GLASS - (GIN + TONIC + METAL_ICE_CUBE * numMetalIceCubes);
+
+    printf(<span class="st">&quot;How many free ml in the glass ? : %.3f ml </span><span class="sc">\n</span><span class="st">&quot;</span>, volumeFree);
+    
+    <span class="cf">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+</div>
+<div id="exemple-5-scoutingbasquet" class="section level3">
+<h3><span class="header-section-number">3.3.5</span> Exemple 5: scoutingBasquet</h3>
+<p>Imaginem que fem tasques d’scouting per les seccions de bàsquet femení i masculí del nostre club, i ens han encarregat cobrir alguna de les tres places següents:</p>
+<ul>
+<li>Per l’equip femení: una pivot que com a mínim faci 195cm d’alçada.</li>
+<li>Per l’equip femení: una base, l’alçada de la qual sigui inferior a 170cm.</li>
+<li>Per l’equip masculí: un base que sigui més alt de 175cm però a la vegada que no superi els 190cm.</li>
+</ul>
+<p>El nostre programa demanarà per teclat si es tracta d’una jugadora o un jugador, i quina és la seva alçada. A continuació amb expressions avaluarà les condicions introduides i si les compleix per alguna de les tres places disponibles, l’escollirà (<code>isDrafted</code>).</p>
+<p>Una possible forma de codificar en C aquest programa seria:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;
+<span class="kw">typedef</span> <span class="kw">enum</span> {MALE, FEMALE} tGender;
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    boolean isPointGuard; <span class="co">/* Point Guard = base */</span>
+    boolean isCenter;     <span class="co">/* Center = pivot */</span>
+    boolean isDrafted;
+    <span class="dt">int</span> height;
+    tGender gender;
+
+    printf(<span class="st">&quot;Gender (0=MALE, 1=FEMALE) : &quot;</span>);
+    scanf(<span class="st">&quot;%u&quot;</span>, &amp;gender);
+    printf(<span class="st">&quot;Heigth (integer value) : &quot;</span>);
+    scanf(<span class="st">&quot;%d&quot;</span>, &amp;height);
+
+    <span class="co">/* Primer mirem si la posició de base femení o masculí la podem cobrir o no */</span>
+    isPointGuard = 
+        (height &lt; <span class="dv">170</span> &amp;&amp; (gender == FEMALE)) ||
+        (height &lt; <span class="dv">190</span> &amp;&amp; height &gt; <span class="dv">175</span> &amp;&amp; (gender == MALE));
+
+    <span class="co">/* A continuació comprovem si es tracta de la pívot femenina que busquem */</span>
+    isCenter = (height &gt;= <span class="dv">195</span> &amp;&amp; (gender == FEMALE));
+
+    <span class="co">/* Només que es compleixi alguna de les dues expressions anteriors </span>
+<span class="co">       (que isPointGuard sigui TRUE o que isCenter sigui TRUE), el jugador/a </span>
+<span class="co">       serà escollit per formar part de les nostres seccions de bàsquet */</span>
+    isDrafted = isPointGuard || isCenter;
+
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Is drafted (0=FALSE, 1=TRUE) ? : &quot;</span>);
+    printf(<span class="st">&quot;%u</span><span class="sc">\n</span><span class="st">&quot;</span>, isDrafted);
+}</code></pre></div>
+<p>Fixeu-vos que <code>isPointGuard</code> i <code>isCenter</code> són variables de tipus <code>boolean</code>, ja que l’avaluació de les expressions també serà de tipus <code>boolean</code>.</p>
+<p>Hi poden haver altres codificacions igual de vàlides, aquesta no és la única solució possible.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pac01.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pac03.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-PAC02.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["FAQS-laboratori-FP.pdf", "FAQS-laboratori-FP.epub"],
+"toc": {
+"collapse": "section",
+"toc": true,
+"toc_float": true,
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 PAC06 | Laboratori de Fonaments de Programació</title>
+  <meta name="description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 PAC06 | Laboratori de Fonaments de Programació" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="FAQS del Laboratori de Fonaments de programació" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 PAC06 | Laboratori de Fonaments de Programació" />
+  
+  <meta name="twitter:description" content="FAQS del Laboratori de Fonaments de programació" />
+  
+
+<meta name="author" content="Jordi Blasco Planesas" />
+
+
+<meta name="date" content="2019-10-31" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pac05.html"/>
+<link rel="next" href="pac07.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Laboratori Fonaments de Programació</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducció</a></li>
+<li class="chapter" data-level="2" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>2</b> PAC01</a><ul>
+<li class="chapter" data-level="2.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>2.1</b> Llenguatge algorísmic</a></li>
+<li class="chapter" data-level="2.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>2.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
+<li class="chapter" data-level="2.3" data-path="pac01.html"><a href="pac01.html#impressio-de-valors-incorrecta"><i class="fa fa-check"></i><b>2.3</b> Impressió de valors incorrecta</a></li>
+<li class="chapter" data-level="2.4" data-path="pac01.html"><a href="pac01.html#com-definir-un-enumeratiu"><i class="fa fa-check"></i><b>2.4</b> Com definir un enumeratiu</a></li>
+<li class="chapter" data-level="2.5" data-path="pac01.html"><a href="pac01.html#com-utilitzar-un-enumeratiu"><i class="fa fa-check"></i><b>2.5</b> Com utilitzar un enumeratiu</a></li>
+<li class="chapter" data-level="2.6" data-path="pac01.html"><a href="pac01.html#especificador-dun-enumeratiu"><i class="fa fa-check"></i><b>2.6</b> Especificador d’un enumeratiu</a></li>
+<li class="chapter" data-level="2.7" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>2.7</b> Lectura de caràcters en C</a></li>
+<li class="chapter" data-level="2.8" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>2.8</b> Lectura de float en C</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>3</b> PAC02</a><ul>
+<li class="chapter" data-level="3.1" data-path="pac02.html"><a href="pac02.html#define-vs-const"><i class="fa fa-check"></i><b>3.1</b> define vs const</a></li>
+<li class="chapter" data-level="3.2" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>3.2</b> Precisió en variables float</a></li>
+<li class="chapter" data-level="3.3" data-path="pac02.html"><a href="pac02.html#expressions"><i class="fa fa-check"></i><b>3.3</b> Expressions</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>3.3.1</b> Exemple 1: esParell</a></li>
+<li class="chapter" data-level="3.3.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>3.3.2</b> Exemple 2: capDeSetmana</a></li>
+<li class="chapter" data-level="3.3.3" data-path="pac02.html"><a href="pac02.html#exemple-3-gintonicpreparation"><i class="fa fa-check"></i><b>3.3.3</b> Exemple 3: ginTonicPreparation</a></li>
+<li class="chapter" data-level="3.3.4" data-path="pac02.html"><a href="pac02.html#exemple-4-gintonicfreeml"><i class="fa fa-check"></i><b>3.3.4</b> Exemple 4: ginTonicFreeMl</a></li>
+<li class="chapter" data-level="3.3.5" data-path="pac02.html"><a href="pac02.html#exemple-5-scoutingbasquet"><i class="fa fa-check"></i><b>3.3.5</b> Exemple 5: scoutingBasquet</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>4</b> PAC03</a><ul>
+<li class="chapter" data-level="4.1" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>4.1</b> Significat dels arguments del main</a></li>
+<li class="chapter" data-level="4.2" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>4.2</b> Assignar valors a un vector</a></li>
+<li class="chapter" data-level="4.3" data-path="pac03.html"><a href="pac03.html#stack-smashing-detected"><i class="fa fa-check"></i><b>4.3</b> Stack smashing detected</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>5</b> PAC04</a><ul>
+<li class="chapter" data-level="5.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>5.1</b> Com tractar elements d’un vector amb un bucle</a></li>
+<li class="chapter" data-level="5.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>5.2</b> Entrada continua de valors amb un bucle</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>6</b> PAC05</a><ul>
+<li class="chapter" data-level="6.1" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>6.1</b> Exemple: nomines</a></li>
+<li class="chapter" data-level="6.2" data-path="pac05.html"><a href="pac05.html#exemple-accions"><i class="fa fa-check"></i><b>6.2</b> Exemple accions</a></li>
+<li class="chapter" data-level="6.3" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>6.3</b> Comanda scanf</a></li>
+<li class="chapter" data-level="6.4" data-path="pac05.html"><a href="pac05.html#finalitzador-0"><i class="fa fa-check"></i><b>6.4</b> Finalitzador ‘\0’</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>7</b> PAC06</a><ul>
+<li class="chapter" data-level="7.1" data-path="pac06.html"><a href="pac06.html#comanda-strcmp"><i class="fa fa-check"></i><b>7.1</b> Comanda strcmp</a></li>
+<li class="chapter" data-level="7.2" data-path="pac06.html"><a href="pac06.html#exemple"><i class="fa fa-check"></i><b>7.2</b> Exemple</a></li>
+<li class="chapter" data-level="7.3" data-path="pac06.html"><a href="pac06.html#tipos-de-parametros-de-las-acciones"><i class="fa fa-check"></i><b>7.3</b> Tipos de parámetros de las acciones</a></li>
+<li class="chapter" data-level="7.4" data-path="pac06.html"><a href="pac06.html#exemple-1"><i class="fa fa-check"></i><b>7.4</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>8</b> PAC07</a><ul>
+<li class="chapter" data-level="8.1" data-path="pac07.html"><a href="pac07.html#estructura"><i class="fa fa-check"></i><b>8.1</b> Estructura</a></li>
+<li class="chapter" data-level="8.2" data-path="pac07.html"><a href="pac07.html#tipus-de-parametres-en-accions-i-funcions"><i class="fa fa-check"></i><b>8.2</b> Tipus de paràmetres en accions i funcions</a></li>
+<li class="chapter" data-level="8.3" data-path="pac07.html"><a href="pac07.html#scanf-accio-o-funcio"><i class="fa fa-check"></i><b>8.3</b> scanf: acció o funció?</a></li>
+<li class="chapter" data-level="8.4" data-path="pac07.html"><a href="pac07.html#pas-per-valor-vs-pas-per-referencia"><i class="fa fa-check"></i><b>8.4</b> Pas per valor vs pas per referència</a></li>
+<li class="chapter" data-level="8.5" data-path="pac07.html"><a href="pac07.html#exemple-capgirar"><i class="fa fa-check"></i><b>8.5</b> Exemple: capgirar</a></li>
+<li class="chapter" data-level="8.6" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>8.6</b> Exemple: funció isParell</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>9</b> PAC08</a><ul>
+<li class="chapter" data-level="9.1" data-path="pac08.html"><a href="pac08.html#exemple-2"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
+<li class="chapter" data-level="9.2" data-path="pac08.html"><a href="pac08.html#exemple-3"><i class="fa fa-check"></i><b>9.2</b> Exemple</a></li>
+<li class="chapter" data-level="9.3" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>9.3</b> Com inicialitzar una taula</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>10</b> PAC09</a><ul>
+<li class="chapter" data-level="10.1" data-path="pac09.html"><a href="pac09.html#exemple-4"><i class="fa fa-check"></i><b>10.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>11</b> PAC10</a></li>
+<li class="chapter" data-level="12" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>12</b> PR1</a><ul>
+<li class="chapter" data-level="12.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>12.1</b> Mode menu vs mode test</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>13</b> PR2</a><ul>
+<li class="chapter" data-level="13.1" data-path="pr2.html"><a href="pr2.html#exemple-5"><i class="fa fa-check"></i><b>13.1</b> Exemple</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>14</b> VMWare i CodeLite</a><ul>
+<li class="chapter" data-level="14.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>14.1</b> Per què una màquina virtual?</a></li>
+<li class="chapter" data-level="14.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>14.2</b> Primers passos amb CodeLite</a></li>
+<li class="chapter" data-level="14.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>14.3</b> Com activar un projecte</a></li>
+<li class="chapter" data-level="14.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>14.4</b> Canviar idioma del teclat</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>15</b> Altres</a><ul>
+<li class="chapter" data-level="15.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>15.1</b> Bilbliografia</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Laboratori de Fonaments de Programació</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pac06" class="section level1">
+<h1><span class="header-section-number">7</span> PAC06</h1>
+<div id="comanda-strcmp" class="section level2">
+<h2><span class="header-section-number">7.1</span> Comanda strcmp</h2>
+<p>La funció <code>strcmp</code> de C fa una comparació caràcter a caràcter de dos cadenes i com a resultat:</p>
+<ul>
+<li>Retorna 0: si les dues cadenes són iguals</li>
+<li>Retorna -1: si la primera cadena &lt; segona cadena</li>
+<li>Retorna 1: si la primera cadena &gt; segona cadena</li>
+</ul>
+<p>Com funciona una comparació caràcter a caràcter? Imaginem que tenim els següents dos string: “UOC” i “UAB”.</p>
+<p>La comparació caràcter a caràcter que realitza la funció strcmp és la següent:</p>
+<ul>
+<li>Caràcters de la posició 0 dels dos string: <strong>U</strong>OC vs <strong>U</strong>AB. Són iguals, amb el que passa a comparar el següent caràcter.</li>
+<li>Caràcters de la posició 1 dels dos string: U<strong>O</strong>C vs U<strong>A</strong>B. Són diferents (‘O’ &gt; ‘A’), finalitza la comparació i la funció <code>strcmp</code> retorna el valor 1.</li>
+</ul>
+<p>Per si vols fer proves, aquest exemple codificat en C podria ser:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+
+<span class="pp">#define MAX_STRING 3+1</span>
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="dt">char</span> cadena1[MAX_STRING] = <span class="st">&quot;UOC&quot;</span>;
+    <span class="dt">char</span> cadena2[MAX_STRING] = <span class="st">&quot;UAB&quot;</span>;
+    <span class="dt">int</span> resultatComparacio = <span class="dv">0</span>;
+
+    resultatComparacio = strcmp(cadena1, cadena2);
+
+    printf(<span class="st">&quot;Comparació strings </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> i </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, cadena1, cadena2, resultatComparacio);
+
+    <span class="cf">if</span> (resultatComparacio == <span class="dv">0</span>) {
+        printf(<span class="st">&quot;El resultat %d significa que l&#39;string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> == string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;\n</span><span class="st">&quot;</span>, resultatComparacio, cadena1, cadena2);
+    } <span class="cf">else</span> <span class="cf">if</span> (resultatComparacio == -<span class="dv">1</span>) {
+        printf(<span class="st">&quot;El resultat %d significa que l&#39;string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> &lt; string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;\n</span><span class="st">&quot;</span>, resultatComparacio, cadena1, cadena2);
+    } <span class="cf">else</span> <span class="cf">if</span> (resultatComparacio == <span class="dv">1</span>) {
+        printf(<span class="st">&quot;El resultat %d significa que l&#39;string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> &gt; string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;\n</span><span class="st">&quot;</span>, resultatComparacio, cadena1, cadena2); 
+    }
+
+    <span class="cf">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+<p>En què es basa strcmp per decidir que ‘O’ &gt; ‘A’ ? en el valor ASCII (numèric) que té associat cada caràcter. Per aquest motiu és normal que interpreti diferent una ‘A’ i una ‘a’, ja que són caràcters diferents; de fet segons els valors ASCII, tenim que ‘A’ &lt; ‘a’.</p>
+<p>Per si no vols consultar la taula ASCII per internet, pots obtenir tu mateix els valors de cada caràcter de la següent forma:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="dt">int</span> i = <span class="dv">0</span>;
+
+    <span class="co">/* Relació de caràcters ASCII (només és un subconjunt!)</span>
+<span class="co">       ordenats de més petit a més gran */</span>
+    <span class="cf">for</span> (i=<span class="dv">33</span>; i&lt;=<span class="dv">126</span>; i++) {
+        printf(<span class="st">&quot;%d : %c</span><span class="sc">\n</span><span class="st">&quot;</span>, i, i);
+    }
+}</code></pre></div>
+</div>
+<div id="exemple" class="section level2">
+<h2><span class="header-section-number">7.2</span> Exemple</h2>
+<p>Imaginem que treballem amb els empleats d’una empresa. Posem per cas que després d’introduir n-empleats al nostre sistema, volem una funció que ens retorni l’empleat que té la nòmina més petita.</p>
+<p>Com que esperem un valor de retorn, estem davant d’una funció. A la funció li passarem un vector d’empleats amb tots els empleats que prèviament hem introduit a la nostra empresa.</p>
+<p>Sense entrar en la codificació de la funció, el main del nostre programa pot ser similar al següent:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+
+<span class="pp">#define MAX_EMPLEATS 2</span>
+<span class="pp">#define MAX_CARACTERS 20+1</span>
+
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    <span class="dt">char</span> nom[MAX_CARACTERS];
+    <span class="dt">char</span> cognom[MAX_CARACTERS];
+    <span class="dt">float</span> nomina;
+} tEmpleat;
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    tEmpleat vEmpleats[MAX_EMPLEATS];
+    <span class="dt">int</span> i = <span class="dv">0</span>;
+
+    <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
+
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nom empleat %d : &quot;</span>, i);
+        scanf(<span class="st">&quot;%s&quot;</span>, vEmpleats[i].nom);
+
+        printf(<span class="st">&quot;Cognom empleat %d : &quot;</span>, i);
+        scanf(<span class="st">&quot;%s&quot;</span>, vEmpleats[i].cognom);
+
+        printf(<span class="st">&quot;Nòmina empleat %d : &quot;</span>, i);
+        scanf(<span class="st">&quot;%f&quot;</span>, &amp;vEmpleats[i].nomina);
+
+    }
+
+    tEmpleat empleat = cercaEmpleatNominaMinima(vEmpleats);
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">L&#39;empleat amb la nòmina més baixa és %s, %s (%.2f €)&quot;</span>, empleat.cognom, empleat.nom, empleat.nomina);
+    <span class="cf">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+<p>Fins aquest punt no hi ha res nou: utilitzem en aquest cas un vector de <code>tEmpleat</code> per tal d’anar introduint els empleats per teclat, i per cada empleat demanem el nom, el cognom i la seva nòmina.</p>
+<p>El que cal fer ara és implementar la funció <code>cercaEmpleatNominaMinima</code>, que rep com a paràmetre el vector d’empleats de l’empresa.</p>
+<p>De moment oblidem-nos que estem davant d’una funció, simplement centrem-nos en quina és l’acció que volem fer. En aquest cas, volem fer un programa que recorri un a un tots els elements d’un vector, i trobi l’empleat que cobra menys.</p>
+<p>Una possible codificació seria la següent:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">int</span> i = <span class="dv">0</span>; 
+<span class="dt">int</span> minNomina = <span class="dv">0</span>;
+
+<span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
+    <span class="cf">if</span> (vector[i].nomina &lt; vector[minNomina].nomina) {
+        minNomina = i;
+    }
+}</code></pre></div>
+<p>Aquest fragment de codi simplement recorre un a un tots els <code>tEmpleat</code> d’un vector, comparant la nòmina més baixa trobada fins el moment amb la de l’empleat que està tractant en qüestió, i si aquesta segona és més baixa, ens quedem amb la seva posició dins del vector com a empleat amb la nòmina més baixa (és el mateix plantejament que l’exposat a l’exemple de la setmana passada, per tant fins aquí res nou).</p>
+<p>Ara convertim aquest fragment de codi en una funció:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">tEmpleat cercaEmpleatNominaMinima(tEmpleat vector[MAX_EMPLEATS]) {
+
+    <span class="dt">int</span> i = <span class="dv">0</span>; 
+    <span class="dt">int</span> minNomina = <span class="dv">0</span>;
+
+    <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
+        <span class="cf">if</span> (vector[i].nomina &lt; vector[minNomina].nomina) {
+            minNomina = i;
+        }
+    }
+
+    <span class="cf">return</span> vector[minNomina];
+}</code></pre></div>
+<p>Com pots veure l’única diferència és que ara el codi té la capçalera de la funció, la qual ens diu que rep com a paràmetre un element de tipus vector de <code>tEmpleat</code>, i que retornarà un element de tipus <code>tEmpleat</code>.</p>
+<p>D’aquesta forma el programa complet queda de la següent manera:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+
+<span class="pp">#define MAX_EMPLEATS 2</span>
+<span class="pp">#define MAX_CARACTERS 20+1</span>
+
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    <span class="dt">char</span> nom[MAX_CARACTERS];
+    <span class="dt">char</span> cognom[MAX_CARACTERS];
+    <span class="dt">float</span> nomina;
+} tEmpleat;
+
+<span class="co">/* Predeclaració de funcions/accions */</span>
+tEmpleat cercaEmpleatNominaMinima(tEmpleat vector[MAX_EMPLEATS]);
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    tEmpleat vEmpleats[MAX_EMPLEATS];
+    <span class="dt">int</span> i = <span class="dv">0</span>;
+
+    <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
+
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nom empleat %d : &quot;</span>, i);
+        scanf(<span class="st">&quot;%s&quot;</span>, vEmpleats[i].nom);
+
+        printf(<span class="st">&quot;Cognom empleat %d : &quot;</span>, i);
+        scanf(<span class="st">&quot;%s&quot;</span>, vEmpleats[i].cognom);
+
+        printf(<span class="st">&quot;Nòmina empleat %d : &quot;</span>, i);
+        scanf(<span class="st">&quot;%f&quot;</span>, &amp;vEmpleats[i].nomina);
+
+    }
+
+    tEmpleat empleat = cercaEmpleatNominaMinima(vEmpleats);
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">L&#39;empleat amb la nòmina més baixa és %s, %s (%.2f €)&quot;</span>, empleat.cognom, empleat.nom, empleat.nomina);
+
+    <span class="cf">return</span> <span class="dv">0</span>;
+}
+
+<span class="co">/* Implementació de funcions/accions */</span>
+tEmpleat cercaEmpleatNominaMinima(tEmpleat vector[MAX_EMPLEATS]) {
+
+    <span class="dt">int</span> i = <span class="dv">0</span>; 
+    <span class="dt">int</span> minNomina = <span class="dv">0</span>;
+
+    <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
+        <span class="cf">if</span> (vector[i].nomina &lt; vector[minNomina].nomina) {
+            minNomina = i;
+        }
+    }
+
+    <span class="cf">return</span> vector[minNomina];
+}</code></pre></div>
+<p>Aquest exemple pot semblar senzill perquè el tipus de comparació que estem fent és numèrica: comparem dos camps de tipus float (les nòmines de dos empleats).</p>
+<p>Ampliem ara la funcionalitat del nostre programa: volem que pugui fer una cerca per cognom entre els nostres empleats. Per fer aquesta cerca, caldrà comparar una cadena de caràcters amb el cognom de cada empleat.</p>
+<p>Per no fer la funció més complexa del necessari, imaginarem que cap cognom es pot repetir i que sempre trobarem un cognom com el que busquem (l’objectiu és veure com funciona strcmp). Així doncs la nostra funció rebrà un vector d’empleats i un cognom a cercar, i retornarà l’empleat amb aquell cognom.</p>
+<p>Poso tot el codi complet, comentant la part de l’strcmp detalladament (remarco en blau la comparació) :</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+
+<span class="pp">#define MAX_EMPLEATS 2</span>
+<span class="pp">#define MAX_CARACTERS 20+1</span>
+
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    <span class="dt">char</span> nom[MAX_CARACTERS];
+    <span class="dt">char</span> cognom[MAX_CARACTERS];
+    <span class="dt">float</span> nomina;
+} tEmpleat;
+
+<span class="co">/* Predeclaració de funcions/accions */</span>
+tEmpleat cercaEmpleatNominaMinima(tEmpleat vector[MAX_EMPLEATS]);
+tEmpleat cercaEmpleatPerCognom(tEmpleat vector[MAX_EMPLEATS], <span class="dt">char</span> cognom[MAX_CARACTERS]);
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    tEmpleat vEmpleats[MAX_EMPLEATS];
+    <span class="dt">char</span> cognom[MAX_CARACTERS];
+    <span class="dt">int</span> i = <span class="dv">0</span>;
+
+    <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
+     
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nom empleat %d : &quot;</span>, i);
+        scanf(<span class="st">&quot;%s&quot;</span>, vEmpleats[i].nom);
+        
+        printf(<span class="st">&quot;Cognom empleat %d : &quot;</span>, i);
+        scanf(<span class="st">&quot;%s&quot;</span>, vEmpleats[i].cognom);
+        
+        printf(<span class="st">&quot;Nòmina empleat %d : &quot;</span>, i);
+        scanf(<span class="st">&quot;%f&quot;</span>, &amp;vEmpleats[i].nomina);
+    }
+
+    tEmpleat empleat = cercaEmpleatNominaMinima(vEmpleats);
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">L&#39;empleat amb la nòmina més baixa és %s, %s (%.2f €)&quot;</span>, empleat.cognom, empleat.nom, empleat.nomina);
+
+    printf(<span class="st">&quot;Cognom de l&#39;empleat a cercar : &quot;</span>);
+    scanf(<span class="st">&quot;%s&quot;</span>, cognom);
+
+    tEmpleat empleatCognom = cercaEmpleatPerCognom(vEmpleats, cognom);
+    printf(<span class="st">&quot;Dades de l&#39;empleat: %s, %s -&gt; %f&quot;</span>, empleatCognom.cognom, empleatCognom.nom, empleatCognom.nomina);
+
+    <span class="cf">return</span> <span class="dv">0</span>;
+}
+
+<span class="co">/* Implementació de funcions/accions */</span>
+tEmpleat cercaEmpleatNominaMinima(tEmpleat vector[MAX_EMPLEATS]) {
+
+    <span class="dt">int</span> i = <span class="dv">0</span>; 
+    <span class="dt">int</span> minNomina = <span class="dv">0</span>;
+
+    <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
+        <span class="cf">if</span> (vector[i].nomina &lt; vector[minNomina].nomina) {
+            minNomina = i;
+        }
+    }
+    <span class="cf">return</span> vector[minNomina];
+}
+
+tEmpleat cercaEmpleatPerCognom(tEmpleat vector[MAX_EMPLEATS], <span class="dt">char</span> cognom[MAX_CARACTERS]) {
+
+    <span class="dt">int</span> i = <span class="dv">0</span>; 
+    tEmpleat empleat;
+
+    <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
+
+        <span class="co">/* Per comparar strings utilitzarem la funció</span>
+<span class="co">           strcmp de C. Aquesta funció compara dues</span>
+<span class="co">           cadenes de caràcters, i retorna un valor</span>
+<span class="co">           com a resultat de la comparació:</span>
+<span class="co">           - si el valor és 0: les dues cadenes són iguals</span>
+<span class="co">           - si el valor és -1: la primera cadena &lt; segona cadena</span>
+<span class="co">           - si el valor és 1: la primera cadena &gt; segona cadena</span>
+<span class="co">           En el nostre cas ens interessa detectar que</span>
+<span class="co">           els cognoms siguin iguals, amb el que </span>
+<span class="co">           volem controlar que el valor que retorna</span>
+<span class="co">           la funció strcmp sigui 0. */</span>
+        <span class="cf">if</span> (strcmp(vector[i].cognom, cognom) == <span class="dv">0</span>) {
+            <span class="cf">return</span> vector[i];
+        }
+    }
+}</code></pre></div>
+</div>
+<div id="tipos-de-parametros-de-las-acciones" class="section level2">
+<h2><span class="header-section-number">7.3</span> Tipos de parámetros de las acciones</h2>
+<p>A grandes rasgos, el concepto de acción es muy similar al de función pero con dos diferencias:</p>
+<ul>
+<li>No devuelve un valor.</li>
+<li>Los parámetros pueden ser de <strong>entrada</strong>, de <strong>salida</strong>, o de <strong>entrada/salida</strong>.</li>
+</ul>
+<p>Para entender bien cómo se implementa una acción, relacionaré ejemplos con los distintos tipos de parámetros.</p>
+<p><strong>Entrada</strong>: son aquellos parámetros que se pasan a una función y de los cuales solamente usaremos su contenido. Esto significa que trabajaremos con ellos “en modo lectura”: obtendremos sus valores, generaremos resultados, pero nunca modificaremos su contenido.</p>
+<p>Ejemplo:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">void</span> suma(<span class="dt">int</span> num1, <span class="dt">int</span> num2) {
+    <span class="dt">int</span> resultat = num1 + num2;
+    printf(<span class="st">&quot;suma2: %d + %d = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num1, num2, resultat);
+}</code></pre></div>
+<p>En este caso le podemos pasar los parámetros que queramos a la función que nunca se modificarán:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) { 
+
+    <span class="dt">int</span> n1 = <span class="dv">3</span>;
+    <span class="dt">int</span> n2 = <span class="dv">2</span>;
+
+    printf(<span class="st">&quot;Valor de n1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
+    printf(<span class="st">&quot;Valor de n2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
+    printf(<span class="st">&quot;Inicio ejecución función\n&quot;</span>);
+    suma(n1,n2);
+    printf(<span class="st">&quot;Fin ejecución función\n&quot;</span>);
+    printf(<span class="st">&quot;Valor de n1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
+    printf(<span class="st">&quot;Valor de n2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
+}</code></pre></div>
+<p>El resultado de salida será:</p>
+<p>
+<img src="img/play.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de n1 = <span class="dv">3</span>
+Valor de n2 = <span class="dv">3</span>
+Inicio ejecución función
+suma: <span class="dv">3</span> + <span class="dv">2</span> = <span class="dv">5</span>
+Fin ejecución función
+Valor de n1 = <span class="dv">3</span>
+Valor de n2 = <span class="dv">3</span></code></pre></div>
+<p>Como ves, ni <code>n1</code> ni <code>n2</code> ha modificado su valor después de ejecutar la función: son <strong>parámetros de entrada</strong>.</p>
+<p><strong>Salida</strong>: Son todo lo opuesto a los que acabamos de tratar: a diferencia de los de entrada, los de salida se usan solamente para guardar un valor. Puede contener el valor inicial que sea, que este no se usa para nada dentro de la función a excepción de guardar el resultado final de la operación.</p>
+<p>Ejemplo:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">void</span> suma(<span class="dt">int</span> num1, <span class="dt">int</span> num2, <span class="dt">int</span> *res) {
+    *res = num1 + num2;
+}</code></pre></div>
+<p>De momento ignoremos que se trata de un puntero: independientemente del valor que tenga res al pasarse por parámetro, a su salida contendrá la suma de los otros dos parámetros de entrada <code>num1</code> y <code>num2</code>.</p>
+<p>Si ejecutamos el código:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) { 
+
+    <span class="dt">int</span> n1 = <span class="dv">3</span>;
+    <span class="dt">int</span> n2 = <span class="dv">2</span>;
+    <span class="dt">int</span> resultat = <span class="dv">0</span>;
+    <span class="dt">int</span> *pResultat = &amp;resultat;
+
+    printf(<span class="st">&quot;Valor de resultat = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
+    printf(<span class="st">&quot;Inicio ejecución función\n&quot;</span>); 
+    suma(n1,n2,pResultat);
+    printf(<span class="st">&quot;suma: %d + %d = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1, n2, resultat);
+    printf(<span class="st">&quot;Fin ejecución función\n&quot;</span>);
+    printf(<span class="st">&quot;Valor de resultat = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
+}</code></pre></div>
+<p>Obtenemos:</p>
+<p>
+<img src="img/play.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de resultat = <span class="dv">0</span>
+Inicio ejecución función
+suma: <span class="dv">3</span> + <span class="dv">2</span> = <span class="dv">5</span>
+Fin ejecución función
+Valor de resultat = <span class="dv">5</span></code></pre></div>
+<p>El valor de resultat ha cambiado, de 0 a 5. Se considera un parámetro de salida porque, independientemente del valor inicial que tenga, este no se usa para nada y al finalizar la función contendrá el resultado de realizar una operación.</p>
+<p>Ahora sí comentamos el uso de un puntero: la forma que tenemos en C para modificar una variable definida fuera de una función desde dentro de la misma es trabajando precisamente con su dirección de memoria.</p>
+<p><strong>Entrada/salida</strong>: este tipo de parámetro es una suma de los dos anteriores: por un lado su valor importa para realizar una operación, y a su vez al finalizar la ejecución de la función tendrá un valor distinto, también significativo.</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">void</span> suma(<span class="dt">int</span> *pNum1, <span class="dt">int</span> num2) {
+
+    *pNum1 = *pNum1 + num2;
+}</code></pre></div>
+<p>En este caso calculamos la suma como <code>n1 = n1 + n2</code> : el resultado de la suma de las dos variables lo guardaremos en la primera de ellas.</p>
+<p>Ejecutamos el código:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) { 
+    <span class="dt">int</span> n1 = <span class="dv">3</span>;
+    <span class="dt">int</span> n2 = <span class="dv">2</span>;
+    <span class="dt">int</span> *pNum1 = &amp;n1;
+
+    printf(<span class="st">&quot;Valor de n1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
+    printf(<span class="st">&quot;Valor de n2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n2);
+    printf(<span class="st">&quot;Inicio ejecución función\n&quot;</span>); 
+    suma(pNum1,n2);
+    printf(<span class="st">&quot;Resultado suma = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
+    printf(<span class="st">&quot;Fin ejecución función\n&quot;</span>);
+    printf(<span class="st">&quot;Resultado (n1=n1+n2) = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
+}</code></pre></div>
+<p>Y ahora la salida será:</p>
+<p>
+<img src="img/play.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de n1 = <span class="dv">3</span>
+Valor de n2 = <span class="dv">2</span>
+Inicio ejecución función
+Resultado suma = <span class="dv">5</span>
+Fin ejecución función
+Resultado (n1=n1+n2) = <span class="dv">5</span></code></pre></div>
+<p>En este caso el valor de la variable <code>n1</code> importa tanto en la entrada como en la salida de la función, por lo que se trata de un parámetro de entrada/salida.</p>
+</div>
+<div id="exemple-1" class="section level2">
+<h2><span class="header-section-number">7.4</span> Exemple</h2>
+<p>Adjunto un exemple inventat de com es poden definir accions que permetin modificar els atributs d’una tupla passada com a punter. He posat comentaris detallats al codi per tal que sigui el més clar possible:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="pp">#define MAX_CHAR 10+1</span>
+
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    <span class="dt">char</span> nom[MAX_CHAR];
+    <span class="dt">float</span> nomina;
+} tEmpleat;
+
+<span class="co">/* Predeclaració de les accions */</span>
+
+<span class="dt">void</span> printEmpleat(tEmpleat empleat);
+<span class="dt">void</span> setNominaEmpleat(tEmpleat *empleat, <span class="dt">float</span> nomina);
+<span class="dt">void</span> setNomEmpleat(tEmpleat *empleat, <span class="dt">char</span> nom[MAX_CHAR]);
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span>* argv[]) {
+
+    <span class="co">/* Declarem nouEmpleat de tipus tEmpleat,</span>
+<span class="co">       però no li donarem cap valor directament</span>
+<span class="co">       als seus dos atributs (nom i nomina): ho </span>
+<span class="co">       farem mitjançant dues accions */</span>
+    tEmpleat nouEmpleat;
+   
+    <span class="co">/* Els valors dels atributs nom i nomina els</span>
+<span class="co">       llegirem des de teclat i els desarem inicialment</span>
+<span class="co">       en les següents dues variables */</span>
+    <span class="dt">char</span> nom[MAX_CHAR];
+    <span class="dt">float</span> nomina;
+   
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nom empleat : &quot;</span>);
+    scanf(<span class="st">&quot;%s&quot;</span>, nom);
+      
+    printf(<span class="st">&quot;Nòmina empleat : &quot;</span>);
+    scanf(<span class="st">&quot;%f&quot;</span>, &amp;nomina);
+   
+    <span class="co">/* Assignem el nom i la nòmina al tEmpleat nouEmpleat</span>
+<span class="co">       utilitzant les accions definides. Fixeu-vos</span>
+<span class="co">       que el paràmetre nouEmpleat el passem com a punter</span>
+<span class="co">       (passem la seva adreça en memòria, ja que va </span>
+<span class="co">       precedit per &amp;) */</span>
+    setNomEmpleat(&amp;nouEmpleat, nom);
+    setNominaEmpleat(&amp;nouEmpleat, nomina);
+   
+    <span class="co">/* Mostrem les dades de la tupla tEmpleat nouEmpleat</span>
+<span class="co">       per pantalla */</span>
+    printEmpleat(nouEmpleat);
+    <span class="cf">return</span> <span class="dv">0</span>;
+}
+
+<span class="co">/* Implementació de les accions */</span>
+
+<span class="dt">void</span> printEmpleat(tEmpleat empleat) {
+    
+    <span class="co">/* El paràmetre empleat és d&#39;entrada, amb el</span>
+<span class="co">       que l&#39;accés als seus atributs ho farem</span>
+<span class="co">       amb un punt : empleat.nom, empleat.nomina */</span>
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Dades de l&#39;empleat: </span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">Nom: %s</span><span class="sc">\n</span><span class="st">&quot;</span>, empleat.nom);
+    printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">Nòmina: %.2f €</span><span class="sc">\n</span><span class="st">&quot;</span>, empleat.nomina);
+}
+
+<span class="dt">void</span> setNominaEmpleat(tEmpleat *empleat, <span class="dt">float</span> nomina) {
+    
+    <span class="co">/* El paràmetre empleat (de tipus inout) és un punter,</span>
+<span class="co">       per tal que des de dins de l&#39;acció sigui possible</span>
+<span class="co">       modificar el valor (d&#39;un atribut) de l&#39;empleat</span>
+<span class="co">       definit al main del nostre programa.</span>
+<span class="co">       L&#39;accés a un atribut d&#39;un element referenciat amb</span>
+<span class="co">       un punter es fa amb &#39;-&gt;&#39; : empleat-&gt;nomina. */</span>
+    empleat-&gt;nomina = nomina;
+}
+
+<span class="dt">void</span> setNomEmpleat(tEmpleat *empleat, <span class="dt">char</span> nom[MAX_CHAR]) {
+
+    <span class="co">/* Idem que en l&#39;acció setNominaEmpleat. En aquest cas</span>
+<span class="co">       a més a més cal recordar que l&#39;assignació d&#39;strings</span>
+<span class="co">       la fem amb la funció strcpy de C, en comptes </span>
+<span class="co">       d&#39;utilitzar l&#39;assignació habitual dels tipus </span>
+<span class="co">       primitius (char, int, float, ...) */</span>
+   
+   strcpy(empleat-&gt;nom, nom);
+}</code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pac05.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pac07.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06-PAC06.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["FAQS-laboratori-FP.pdf", "FAQS-laboratori-FP.epub"],
+"toc": {
+"collapse": "section",
+"toc": true,
+"toc_float": true,
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>
