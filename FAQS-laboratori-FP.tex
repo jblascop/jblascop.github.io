@@ -6,6 +6,7 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
+  \usepackage{eurosym}
 \else % if luatex or xelatex
   \ifxetex
     \usepackage{mathspec}
@@ -13,6 +14,7 @@
     \usepackage{fontspec}
   \fi
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -120,12 +122,12 @@
   \title{Laboratori de Fonaments de Programació}
     \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
-    \author{Jordi Blasco Planesas}
+    \author{Jordi Blasco Planesas\footnote{\href{mailto:jblasco@uoc.edu}{\nolinkurl{jblasco@uoc.edu}}}}
     \preauthor{\centering\large\emph}
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-10-31}
+    \date{2020-02-15}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -145,10 +147,9 @@
 }
 \chapter{Introducció}\label{introduccio}
 
-El present recurs és un petit exemple de la documentació que es pot
-generar amb \textbf{R} i la llibreria \emph{bookdown}, en la qual
-s'exposen FAQS recopilades del \textbf{Laboratori de Fonaments de
-Programació}.
+El present recurs és un recopilatori de qüestions plantejades al
+\textbf{Laboratori de Fonaments de Programació} durant els últims
+semestres.
 
 La documentació utilitza les següents icones per referenciar els blocs:
 
@@ -648,6 +649,82 @@ L'execució serà:
 
 \chapter{PAC02}\label{pac02}
 
+\section{Tipus booleà}\label{tipus-boolea}
+
+\begin{itemize}
+\item
+  Quan utilitzem el tipus \texttt{bool} de C ens cal importar la
+  llibreria \texttt{\textless{}stdbool.h\textgreater{}}, ja que el tipus
+  \texttt{bool} no es va definir a les primeres versions del llenguatge
+  C.
+\item
+  Els valors que pot prendre una variable booleana són \texttt{false} i
+  \texttt{true}. El llenguatge C tracta internament aquests valors com a
+  enters: \texttt{false} correspon a \texttt{0} i \texttt{true} a
+  \texttt{1}.
+\item
+  Quan vulguem introduïr el valor d'un booleà per teclat o bé mostrar-lo
+  per pantalla, utilitzarem l'enter \texttt{0} per referir-nos a
+  \texttt{false} i \texttt{1} per \texttt{true}.
+\item
+  L'especificador de tipus dels booleans és \texttt{\%d}.
+\item
+  Per mostrar el valor d'una variable booleana en C ho podem fer de la
+  següent forma:
+\end{itemize}
+
+\includegraphics{./img/c.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{printf(}\StringTok{"La lletra %c és una vocal (0=false, 1=true) ? %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, lletra, isVocal);}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  Per llegir un booleà des de teclat, ho faríem de la següent forma:
+\end{itemize}
+
+\includegraphics{./img/c.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{char}\NormalTok{ variable;}
+\NormalTok{scanf(}\StringTok{"%u"}\NormalTok{, &variable);}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\item
+  Fixeu-vos que s'ha assignat un valor booleà a la variable
+  \texttt{isVocal} únicament amb una expressió, sense necessitat
+  d'utilitzar cap estructura condicional (if-else).
+\item
+  Recordeu les particularitats de cada llenguatge:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    en algorisme tenim or, en C tenim \textbar{}\textbar{}
+  \item
+    en algorisme comparem amb =, en C amb ==
+  \item
+    en algorisme l'assignació es fa amb :=, amb C amb =
+  \item
+    en algorisme no cal definir el tipus boolean (es dóna per sobreentès
+    que existeix), mentre que en C el definim com a tipus enum
+  \item
+    en algorisme i en C, el nom dels enums sempre va precedit per t +
+    nom de la variable; per exemple tDiesSetmana, tNotes, tMesos, etc.
+    L'única excepció és boolean, que va sense el prefix t.
+  \item
+    en algorisme i en C, el nom de les constants sempre van en
+    majúscules.
+  \end{itemize}
+\end{itemize}
+
 \section{define vs const}\label{define-vs-const}
 
 La definició de constants tant es pot fer amb \texttt{define} com amb
@@ -824,7 +901,84 @@ La sortida que genera és:
 \end{Highlighting}
 \end{Shaded}
 
-\section{Expressions}\label{expressions}
+\section{Semàntica d'una expressió}\label{semantica-duna-expressio}
+
+Si recordem el que es comenta al punt \textbf{3.2. Semàntica d'una
+expressió} del mòdul de la xWiki \textbf{Tipus bàsics de dades}, hem
+d'aconseguir queles expressions i comparacions realitzades als
+algorismes siguin \textbf{semànticament correctes}.
+
+Amb un exemple es veurà més clar: tenim el següent algorisme que indica
+si una persona és major d'edat. Fixeu-vos que l'expressió realitza una
+comparació entre dos enters: la variable \texttt{edat} i el número
+\texttt{17}.
+
+\includegraphics{./img/alg.png}
+
+\begin{verbatim}
+var
+    edat: int;
+    majorEdat: boolean;
+end var
+
+algorithm serMajorEdat
+
+    writeString("Introdueix edat del conductor :");
+    edat := readInteger();
+
+    majorEdat := (edat > 17);
+
+    writeString("El conductor és major d'edat? :");
+    writeBoolean(majorEdat);
+
+end algorithm
+\end{verbatim}
+
+Aquesta expressió \textbf{és semànticament correcta}.
+
+En canvi, imaginem ara que el nostre algorisme accepta decimals per
+l'\texttt{edat}; per exemple, \texttt{19.5} indicaria que l'edat és de
+19 anys i 6 mesos. Així tenim el següent plantejament, on ara la
+variable \texttt{edat} és de tipus \texttt{real}:
+
+\includegraphics{./img/alg.png}
+
+\begin{verbatim}
+var
+    edat: real;
+    majorEdat: boolean;
+end var
+
+algorithm serMajorEdat
+
+    writeString("Introdueix edat del conductor :");
+    edat := readReal();
+
+    majorEdat := (edat > 17);
+
+    writeString("El conductor és major d'edat? :");
+    writeBoolean(majorEdat);
+
+end algorithm
+\end{verbatim}
+
+L'algorisme ara \textbf{no és correcte} ja que conté una expressió
+\textbf{semànticament incorrecta}, en la qual es compara \texttt{edat}
+(real) amb \texttt{17} (enter). Per solucionar-ho, podem utilitzar
+alguna de les funcions de conversió comentades a l'apartat \textbf{4.
+Funcions de conversió de tipus del mateix mòdul}:
+
+\includegraphics{./img/alg.png}
+
+\begin{verbatim}
+{opció 1: fem que els dos valors siguin de tipus enter}
+majorEdat := (realToInteger(edat) > 17);    
+
+{opció 2: fem que els dos valors siguin de tipus real}
+majorEdat := (edat > integerToReal(17));
+\end{verbatim}
+
+\section{Exemples d'expressions}\label{exemples-dexpressions}
 
 \subsection{Exemple 1: esParell}\label{exemple-1-esparell}
 
@@ -933,13 +1087,13 @@ Una possible forma de codificar-ho en llenguatge C és:
 \begin{Shaded}
 \begin{Highlighting}[]
 \PreprocessorTok{#include }\ImportTok{<stdio.h>}
+\PreprocessorTok{#include }\ImportTok{<stdbool.h>}
 
-\KeywordTok{typedef} \KeywordTok{enum}\NormalTok{ \{FALSE, TRUE\} boolean;}
 \KeywordTok{typedef} \KeywordTok{enum}\NormalTok{ \{DILLUNS, DIMARTS, DIMECRES, DIJOUS, DIVENDRES, DISSABTE, DIUMENGE\} dies;}
 
 \DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
 
-\NormalTok{    boolean esCapDeSetmana;}
+\NormalTok{    bool esCapDeSetmana;}
 \NormalTok{    dies diaSetmana;}
 
 \NormalTok{    printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Quin dia de la setmana és avui ?}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
@@ -954,7 +1108,7 @@ Una possible forma de codificar-ho en llenguatge C és:
 \NormalTok{    scanf(}\StringTok{"%u"}\NormalTok{, &diaSetmana);}
 \NormalTok{    esCapDeSetmana = (diaSetmana == DISSABTE || diaSetmana == DIUMENGE);}
 
-\NormalTok{    printf(}\StringTok{"Avui és cap de setmana (0 == FALSE, 1 == TRUE) ? %u}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, esCapDeSetmana);}
+\NormalTok{    printf(}\StringTok{"Avui és cap de setmana (0 == false, 1 == true) ? %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, esCapDeSetmana);}
 
     \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
 \NormalTok{\}}
@@ -966,14 +1120,15 @@ Varis punts a considerar:
 \begin{itemize}
 \tightlist
 \item
-  Recordem que en C no hi ha el tipus primitiu \texttt{boolean}, al
-  mateix nivell que existeix un \texttt{int}, un \texttt{float} o un
-  \texttt{char}\ldots{} Per tant definirem sempre el tipus
-  \texttt{boolean} com un \texttt{enum} amb els components
-  \texttt{\{FALSE,\ TRUE\}}.
+  Recordem que inicialment en C no existia el tipus booleà. Per poder
+  utilitzar \texttt{bool}, i els valors \texttt{true} i \texttt{false}
+  ens cal importar prèviament la llibreria
+  \texttt{\textless{}stdbool.h\textgreater{}}.
 \item
-  Quan definim una variable de tipus \texttt{enum}, la
-  llegirem/escriurem com a \texttt{\%u}. Ho podríem fer com a
+  L'especificador de tipus d'un \texttt{bool} és \texttt{\%d}.
+\item
+  Quan definim una variable de tipus \texttt{enum}, utilitzem
+  l'especificador de tipus \texttt{\%u}. Ho podríem fer com a
   \texttt{\%d}, però us retornarà un warning tot i que el resultat sigui
   correcte. El tipus \texttt{\%u} és igual que un enter \texttt{\%d}
   però sense signe: això significa que amb \texttt{\%d} podem tractar
@@ -981,28 +1136,108 @@ Varis punts a considerar:
   com que sabem que els valors que pot prendre un \texttt{enum} sempre
   seran \textgreater{}= 0, ens convé utilitzar \texttt{\%u}.
 \item
-  Per les particularitats dels \texttt{boolean} en el llenguatge de
-  programació C que ja hem comentat abans, l'entrada i sortida de valors
-  d'un \texttt{boolean} serà numèrica. Per facilitar la comprensió podem
-  mostrar per pantalla un literal que ens indiqui que 0 equival a
-  \texttt{FALSE} i 1 a \texttt{TRUE}.
+  Per les particularitats dels \texttt{bool} en el llenguatge de
+  programació C que ja hem comentat anteriorment, l'entrada i sortida de
+  valors d'un \texttt{boolean} serà numèrica. Per facilitar la
+  comprensió podem mostrar per pantalla un literal que ens indiqui que
+  \texttt{0} equival a \texttt{false} i \texttt{1} a \texttt{true}.
+\item
+  Algunes equivalències a recordar:
+\end{itemize}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+& Llenguatge algorísmic & Llenguatge C\tabularnewline
+\midrule
+\endhead
+Assignació de valors a variables & \texttt{:=} &
+\texttt{=}\tabularnewline
+Comparació & \texttt{=} & \texttt{==}\tabularnewline
+Operand lògic disjunció & \texttt{or} &
+\texttt{\textbar{}\textbar{}}\tabularnewline
+Operand lògic conjunció & \texttt{and} & \texttt{\&\&}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\subsection{Exemple 3: esVocal}\label{exemple-3-esvocal}
+
+Exemple: volem fer un programa que, entrat un caràcter pel canal
+d'entrada, ens indiqui si es tracta o no d'una vocal.
+
+Una possible solució per l'algorisme és la següent:
+
+\includegraphics{./img/alg.png}
+
+\begin{verbatim}
+var
+    lletra: char;
+    isVocal: boolean;
+end var
+
+algorithm trobaVocal
+
+    writeString("Tecleja una lletra :");
+    lletra := readChar();
+
+    { en aquest exemple només tractem les vocals minúscules }
+    isVocal := lletra = 'a' or lletra = 'e' or lletra = 'i' or lletra = 'o' or lletra = 'u';
+
+    writeString("La lletra ");
+    writeChar(lletra);
+    writeString(" és una vocal? ");
+    writeBoolean(isVocal);
+
+end algorithm
+\end{verbatim}
+
+Com es pot veure el plantejament de l'algorisme és:
+
+\begin{itemize}
+\tightlist
+\item
+  Llegim un caràcter des del canal d'entrada.
+\item
+  Comparem el caràcter amb a, e, i, o, u.
 
   \begin{itemize}
   \tightlist
   \item
-    L'assignació de valors en els algorismes la fem amb \texttt{:=},
-    però en llenguatge C es fa amb \texttt{=}.
+    Si coincideix amb alguna d'aquestes vocals, la variable isVocal :=
+    true.
   \item
-    La comparació en els algorismes la fem amb \texttt{=}, però en
-    llenguatge C es fa amb \texttt{==}.
-  \item
-    L'operació lògica \texttt{or} dels algorismes es tradueix en C amb
-    l'operand \texttt{\textbar{}\textbar{}}.
-  \item
-    L'operació lògica \texttt{and} dels algorismes es tradueix en C amb
-    l'operand \texttt{\&\&}.
+    Si no coincideix amb cap de les vocals, la variable isVocal :=
+    false.
   \end{itemize}
+\item
+  Es mostra el resultat per pantalla.
 \end{itemize}
+
+Com ho podem traduir a llenguatge C? Una possible opció és:
+
+\includegraphics{./img/c.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\PreprocessorTok{#include }\ImportTok{<stdio.h>}
+\PreprocessorTok{#include }\ImportTok{<stdbool.h>}
+
+\DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
+
+    \DataTypeTok{char}\NormalTok{ lletra;}
+\NormalTok{    bool isVocal;}
+
+\NormalTok{    printf(}\StringTok{"Introdueix una lletra : "}\NormalTok{);}
+\NormalTok{    scanf(}\StringTok{"%c"}\NormalTok{, &lletra);}
+
+    \CommentTok{/* en aquest exemple només tractem les vocals minúscules */}
+\NormalTok{    isVocal = lletra == }\CharTok{'a'}\NormalTok{ || lletra == }\CharTok{'e'}\NormalTok{ || lletra == }\CharTok{'i'}\NormalTok{ || lletra == }\CharTok{'o'}\NormalTok{ || lletra == }\CharTok{'u'}\NormalTok{;}
+
+\NormalTok{    printf(}\StringTok{"La lletra %c és una vocal (0=FALSE, 1=TRUE) ? %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, lletra, isVocal);}
+
+    \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
 
 \subsection{Exemple 3:
 ginTonicPreparation}\label{exemple-3-gintonicpreparation}
@@ -1147,8 +1382,6 @@ I la codificació en C :
 \PreprocessorTok{#define TONIC 200.0           }\CommentTok{/* in ml */}
 \PreprocessorTok{#define GLASS 620.0           }\CommentTok{/* in ml */}
 \PreprocessorTok{#define METAL_ICE_CUBE 42.875 }\CommentTok{/* in ml */}
-
-\KeywordTok{typedef} \KeywordTok{enum}\NormalTok{ \{FALSE, TRUE\} boolean;}
 
 \DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
 
@@ -1597,6 +1830,229 @@ d'un número parell o senar:
 \end{itemize}
 
 Finalment es mostra per pantalla el missatge ``El número X és parell''.
+
+\section{Com tractar valors en múltiples
+vectors}\label{com-tractar-valors-en-multiples-vectors}
+
+Imaginem que volem introduir per teclat una sèrie de dades dels
+treballadors de la nostra empresa: dni, dies d'antiguitat i sou brut
+anual. Aquestes dades les introduïrem en tres vectors diferents: un pels
+DNI, l'altre per l'antiguitat i l'últim pel sou brut anual. El valor del
+sou net menual es calcularà a partir del brut i es desarà també en un
+vector.
+
+El programa ha de demanar per teclat les dades de 5 empleats, i al
+finalitzar mostrarà els valors per pantalla de la següent forma:
+
+\includegraphics{./img/play.png}
+
+\begin{verbatim}
+>> empleat: 39284019x
+   antiguitat (dies): 784
+   brut anual (€): 36874.78
+   net mensual (€): 1659.36
+
+>> empleat: 31214557m
+   antiguitat (dies): 128
+   brut anual (€): 20015.30
+   net mensual (€): 1086.54
+\end{verbatim}
+
+El sou net mensual es calcula aplicant la següent retenció, i
+posteriorment dividint per 14 pagues:
+
+\begin{longtable}[]{@{}cc@{}}
+\toprule
+sou brut & retenció\tabularnewline
+\midrule
+\endhead
+sou \textless{}12450.0\euro{} & 19.0\%\tabularnewline
+12450.0\euro{} \textless{}= sou \textless{} 20200.0\euro{} &
+24.0\%\tabularnewline
+20200.0\euro{} \textless{}= sou \textless{} 35200.0\euro{} &
+30.0\%\tabularnewline
+35200.0\euro{} \textless{}= sou \textless{} 60000.0\euro{} &
+37.0\%\tabularnewline
+sou \textgreater{} 60000.0\euro{} & 45.0\%\tabularnewline
+\bottomrule
+\end{longtable}
+
+L'algorisme podria ser el següent:
+
+\includegraphics{./img/alg.png}
+
+\begin{verbatim}
+const
+    MAX_ELEMS: integer = 5;
+    TRAM1: float = 12450.0;
+    RETENCIO1: float = 19.0;
+    TRAM2: float = 20200.0;
+    RETENCIO2: float = 24.0;
+    TRAM3: float = 35200.0;
+    RETENCIO3: float = 30.0;
+    TRAM4: float = 60000.0;
+    RETENCIO4: float = 37.0;
+    RETENCIO5: float = 45.0;
+    NUM_PAGUES: integer = 14;
+end const
+
+algorithm vectorsDeVehicles
+
+    var
+        vDni: vector[MAX_ELEMS] of string;
+        vAntiguitat: vector[MAX_ELEMS] of integer;
+        vBrutAnual: vector[MAX_ELEMS] of real;
+        vNetMensual: vector[MAX_ELEMS] of real;
+        i: integer;
+    end var
+
+    { La lectura de dades des del canal d'entrada }
+    { S'utilitza un únic índex, i, per recórrer tots els vectors }
+    for i := 1 to MAX_ELEMS do
+        writeString("dades empleat num. ");
+        writeInteger(i);
+        writeString(":");
+        writeString(">> dni : ");
+        vDni[i] := readString();
+        writeString(">> antiguitat : ");
+        vAntiguitat[i] := readInteger();
+        writeString(">> brut anual : ");
+        vBrutAnual[i] := readReal();
+        
+        { Càlcul del sou net mensual }
+        if (vBrutAnual[i] < TRAM1) then
+            vNetMensual[i] := (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO1/100)) / NUM_PAGUES;
+        else
+            if (vBrutAnual[i] < TRAM2) then
+                vNetMensual[i] := (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO2/100)) / NUM_PAGUES;
+            else
+                if (vBrutAnual[i] < TRAM3) then
+                    vNetMensual[i] := (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO3/100)) / NUM_PAGUES;
+                else
+                    if (vBrutAnual[i] < TRAM4) then
+                        vNetMensual[i] := (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO4/100)) / NUM_PAGUES;
+                    else
+                        vNetMensual[i] := (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO5/100)) / NUM_PAGUES;
+                    end if
+                end if
+            end if
+        end if
+    end for
+   
+    { Es mostren les dades pel canal de sortida }
+    { S'utilitza un únic índex, i, per recórrer tots els vectors }
+    for i := 1 to MAX_ELEMS do
+        writeString(">> empleat: ");
+        writeString(vDni[i]);
+        writeString("   antiguitat (dies): ");
+        writeInteger(vAntiguitat[i]);
+        writeString("   brut anual (€): ");
+        writeInteger(vBrutAnual[i]);
+        writeString("   net mensual (€): ");
+        writeInteger(vNetMensual[i]);
+    end for
+
+end algorithm
+\end{verbatim}
+
+Com ho podem implementar en C? Una possible solució seria la següent:
+
+\includegraphics{./img/c.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\PreprocessorTok{#include }\ImportTok{<stdio.h>}
+
+\PreprocessorTok{#define MAX_ELEMS 5}
+\PreprocessorTok{#define TRAM1 12450.0}
+\PreprocessorTok{#define RETENCIO1 19.0}
+\PreprocessorTok{#define TRAM2 20200.0}
+\PreprocessorTok{#define RETENCIO2 24.0}
+\PreprocessorTok{#define TRAM3 35200.0}
+\PreprocessorTok{#define RETENCIO3 30.0}
+\PreprocessorTok{#define TRAM4 60000.0}
+\PreprocessorTok{#define RETENCIO4 37.0}
+\PreprocessorTok{#define RETENCIO5 45.0}
+\PreprocessorTok{#define NUM_PAGUES 14}
+\PreprocessorTok{#define MAX_DNI 9+1}
+
+\KeywordTok{typedef} \DataTypeTok{char}\NormalTok{ tDni[MAX_DNI];}
+
+\DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
+
+\NormalTok{    tDni vDni[MAX_ELEMS];}
+    \DataTypeTok{int}\NormalTok{ vAntiguitat[MAX_ELEMS];}
+    \DataTypeTok{float}\NormalTok{ vBrutAnual[MAX_ELEMS];}
+    \DataTypeTok{float}\NormalTok{ vNetMensual[MAX_ELEMS];}
+    \DataTypeTok{int}\NormalTok{ i;}
+
+    \CommentTok{/* La lectura de dades des del canal d'entrada.}
+\CommentTok{       S'utilitza un únic índex, i, per recórrer tots els vectors */}
+    \ControlFlowTok{for}\NormalTok{ (i = }\DecValTok{0}\NormalTok{; i < MAX_ELEMS; i++) \{}
+\NormalTok{        printf(}\StringTok{"dades empleat num. %d : }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, i);}
+\NormalTok{        printf(}\StringTok{">> dni : "}\NormalTok{);}
+\NormalTok{        scanf(}\StringTok{"%s"}\NormalTok{, vDni[i]);}
+\NormalTok{        printf(}\StringTok{">> antiguitat : "}\NormalTok{);}
+\NormalTok{        scanf(}\StringTok{"%d"}\NormalTok{, &vAntiguitat[i]);}
+\NormalTok{        printf(}\StringTok{">> brut anual : "}\NormalTok{);}
+\NormalTok{        scanf(}\StringTok{"%f"}\NormalTok{, &vBrutAnual[i]);}
+        
+        \CommentTok{/* Càlcul del sou net mensual */}
+        \ControlFlowTok{if}\NormalTok{ (vBrutAnual[i] < TRAM1) \{}
+\NormalTok{            vNetMensual[i] = (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO1/}\DecValTok{100}\NormalTok{)) / NUM_PAGUES;}
+\NormalTok{        \} }\ControlFlowTok{else}\NormalTok{ \{}
+            \ControlFlowTok{if}\NormalTok{ (vBrutAnual[i] < TRAM2) \{}
+\NormalTok{                vNetMensual[i] = (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO2/}\DecValTok{100}\NormalTok{)) / NUM_PAGUES;}
+\NormalTok{            \} }\ControlFlowTok{else}\NormalTok{ \{}
+                \ControlFlowTok{if}\NormalTok{ (vBrutAnual[i] < TRAM3) \{}
+\NormalTok{                    vNetMensual[i] = (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO3/}\DecValTok{100}\NormalTok{)) / NUM_PAGUES;}
+\NormalTok{                \} }\ControlFlowTok{else}\NormalTok{ \{}
+                    \ControlFlowTok{if}\NormalTok{ (vBrutAnual[i] < TRAM4) \{}
+\NormalTok{                        vNetMensual[i] = (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO4/}\DecValTok{100}\NormalTok{)) / NUM_PAGUES;}
+\NormalTok{                    \} }\ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{                        vNetMensual[i] = (vBrutAnual[i] - (vBrutAnual[i]*RETENCIO5/}\DecValTok{100}\NormalTok{)) / NUM_PAGUES;}
+\NormalTok{                    \}}
+\NormalTok{                \}}
+\NormalTok{            \}}
+\NormalTok{        \}}
+\NormalTok{    \}}
+    
+    \CommentTok{/* Es mostren les dades pel canal de sortida.}
+\CommentTok{       S'utilitza un únic índex, i, per recórrer tots els vectors */}
+    \ControlFlowTok{for}\NormalTok{ (i = }\DecValTok{0}\NormalTok{; i < MAX_ELEMS; i++) \{}
+\NormalTok{        printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{>> empleat: %s }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, vDni[i]);}
+\NormalTok{        printf(}\StringTok{"   antiguitat (dies): %d }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, vAntiguitat[i]);}
+\NormalTok{        printf(}\StringTok{"   brut anual (€): %.2f }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, vBrutAnual[i]);}
+\NormalTok{        printf(}\StringTok{"   net mensual (€): %.2f }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, vNetMensual[i]);}
+\NormalTok{    \}}
+    \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Dins del bucle utilitzem la variable \texttt{i} com a índex per anar
+recorrent tots els vectors alhora.
+
+En els dos casos la inserció dels valors en els vectors la fem de la
+mateixa forma: utilitzem l'índex \texttt{i} per determinar la posició
+del vector on ubicarem els valors:
+
+\includegraphics{./img/c.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{/* ... */}
+\NormalTok{scanf(}\StringTok{"%s"}\NormalTok{, vDni[i]);}
+\CommentTok{/* ... */}
+\NormalTok{scanf(}\StringTok{"%d"}\NormalTok{, &vAntiguitat[i]);}
+\CommentTok{/* ... */}
+\NormalTok{scanf(}\StringTok{"%f"}\NormalTok{, &vBrutAnual[i]);}
+\end{Highlighting}
+\end{Shaded}
+
+Al final de l'exemple mostrem tots els empleats introduïts mitjançant un
+segon bucle, mostrant totes les dades introduïdes anteriorment i les
+calculades.
 
 \chapter{PAC05}\label{pac05}
 
@@ -3788,7 +4244,17 @@ Dins de CodeLite, a la part esquerra se't mostren tots els projects que
 has creat al teu workspace. Si et fixes amb el nom de tots ells, veuràs
 que un d'ells està remarcat en negreta; per exemple pots tenir:
 
-PAC01 \textbf{PAC02} PAC03 PAC04
+\begin{itemize}
+\tightlist
+\item
+  PAC01
+\item
+  \textbf{PAC02}
+\item
+  PAC03
+\item
+  PAC04
+\end{itemize}
 
 Això significa que quan vas a \textbf{CodeLite} --\textgreater{}
 \textbf{Build} --\textgreater{} \textbf{Build and Run Project},
@@ -3798,7 +4264,17 @@ pantalla estiguis mostrant el codi d'un altre project.
 Si fas doble click amb el ratolí sobre el nom del project
 \textbf{PAC04}, veuràs que ara passaràs a visualitzar:
 
-PAC01 PAC02 PAC03 \textbf{PAC04}
+\begin{itemize}
+\tightlist
+\item
+  PAC01
+\item
+  PAC02
+\item
+  PAC03
+\item
+  \textbf{PAC04}
+\end{itemize}
 
 A partir d'aquest moment, el \textbf{Build and Run Project} s'aplicarà
 sobre \textbf{PAC04}.
