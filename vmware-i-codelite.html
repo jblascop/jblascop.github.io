@@ -199,11 +199,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a><ul>
 <li class="chapter" data-level="11.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>11.1</b> Mode menu vs mode test</a></li>
 <li class="chapter" data-level="11.2" data-path="pr1.html"><a href="pr1.html#exemple-tupla-dins-de-tupla"><i class="fa fa-check"></i><b>11.2</b> Exemple: tupla dins de tupla</a></li>
-<li class="chapter" data-level="11.3" data-path="pr1.html"><a href="pr1.html#desplacament-delements-en-un-vector"><i class="fa fa-check"></i><b>11.3</b> Desplaçament d’elements en un vector</a><ul>
-<li class="chapter" data-level="11.3.1" data-path="pr1.html"><a href="pr1.html#afegir-un-element"><i class="fa fa-check"></i><b>11.3.1</b> Afegir un element</a></li>
-<li class="chapter" data-level="11.3.2" data-path="pr1.html"><a href="pr1.html#esborrar-un-element"><i class="fa fa-check"></i><b>11.3.2</b> Esborrar un element</a></li>
-<li class="chapter" data-level="11.3.3" data-path="pr1.html"><a href="pr1.html#exemple-diessetmana"><i class="fa fa-check"></i><b>11.3.3</b> Exemple: diesSetmana</a></li>
-</ul></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a><ul>
 <li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-2"><i class="fa fa-check"></i><b>12.1</b> Exemple</a></li>
@@ -216,6 +211,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="13.5" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>13.5</b> Com activar un projecte</a></li>
 <li class="chapter" data-level="13.6" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>13.6</b> Canviar idioma del teclat</a></li>
 <li class="chapter" data-level="13.7" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#programa-per-defecte-al-crear-un-projecte"><i class="fa fa-check"></i><b>13.7</b> Programa per defecte al crear un projecte</a></li>
+<li class="chapter" data-level="13.8" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-fixar-el-kernel-dinici-amb-lubuntu"><i class="fa fa-check"></i><b>13.8</b> Com fixar el kernel d’inici amb Lubuntu</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>14</b> Altres</a><ul>
 <li class="chapter" data-level="14.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>14.1</b> Bilbliografia</a></li>
@@ -332,6 +328,20 @@ sudo sh ./VBoxLinuxAdditions.run</code></pre></li>
 <li>Editar l’arxiu <code>/usr/share/codelite/templates/projects/executable/main.cpp</code>, que és el que es carrega per defecte en crear cada nou projecte.</li>
 <li>Crear un nou template de CodeLite i utilitzar-lo en el moment de crear un nou projecte. La creació d’un nou templates es fa a partir d’un projecte que tinguem -&gt; botó dret sobre el nom del projecte -&gt; <code>Save as template...</code>.</li>
 </ul>
+</div>
+<div id="com-fixar-el-kernel-dinici-amb-lubuntu" class="section level2">
+<h2><span class="header-section-number">13.8</span> Com fixar el kernel d’inici amb Lubuntu</h2>
+<p>Tot i ser una situació gens habitual, es pot donar el cas que Lubuntu només ens arranqui en un determinat kernel per problemes amb determinades targetes gràfiques. Tot i que el kernel sempre es pot seleccionar en el moment d’inici de Lubuntu, podem fixar quin és el que volem utilitzar malgrat que aquest no sigui el més nou de tots. Una possible opció per fer-ho amb l’aplicació <strong>Grub Customizer</strong>; per instal·lar-la fem:</p>
+<pre><code>sudo add-apt-repository ppa:danielrichter2007/grub-customizer</code></pre>
+<p>Ens identifiquem amb la password de l’usuari <strong>uoc</strong>.</p>
+<p>A continuació, actualitzem la llista de packages de tots els repositoris:</p>
+<pre><code>sudo apt-get update
+sudo apt-get install grub-customizer</code></pre>
+<p>En aquest punt haurem instal·lat <strong>Grub Customizer</strong> dins de la màquina virtual <strong>FP20181</strong>: aquest programa ens permetrà confirmar exactament què hi ha definit a l’arranc grub de la màquina virtual. Per executar el programa: icona de <strong>Lubuntu</strong> —&gt; <strong>System Tools</strong> —&gt; <strong>Grub Customizer</strong> —&gt; posar contrasenya <strong>uoc</strong> —&gt; a la pestanya inicial <strong>List configuration</strong> es mostren tots els kernels de què disposa l’entorn en aquests moments.</p>
+<p>Es recomanable fer una còpia prèvia de les PAC/PR que puguem tenir dins de la <strong>FP20181</strong> abans de canviar el kernel d’inici. Per canviar el kernel d’arranc per defecte: <strong>Grub Customizer</strong> -&gt; pestanya <strong>General Settings</strong> -&gt; com a <strong>default entry</strong>, seleccionar el kernel que funciona correctament d’entre tots els disponibles. Una vegada escollit, es prem el botó <strong>Save</strong> de la part superior esquerra.</p>
+<p>Per aplicar el canvi que s’acaba de desar a l’arranc de Lubuntu cal obrir un terminal de Lubuntu des de <strong>System Tools</strong> -&gt; <strong>LXTerminal</strong>, i des del terminal teclejar:</p>
+<pre><code>sudo update-grub</code></pre>
+<p>Una vegada hagi finalitzat el procés, cal realitzar un reboot de la <strong>FP20181</strong> per tal que agafi ara per defecte el kernel escollit.</p>
 
 </div>
 </div>
