@@ -127,7 +127,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-02-24}
+    \date{2020-03-26}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -2666,6 +2666,138 @@ Exemple:
     
 \NormalTok{    printf(}\StringTok{"%s %c}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, salutacio, exclamacio);}
     \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Exemple: mitjanaPes}\label{exemple-mitjanapes}
+
+Imaginem que volem fer un programa que ens ajudi a calcular el nostre
+pes promig setmanal. Afegirem per teclat les mesures diàries del nostre
+pes al programa i, en cas de trobar algun valor incoherent l'obviarà i
+el tornarà a demanar.
+
+En llenguatge algorísmic ho podem implementar de la següent forma:
+
+\includegraphics{./img/alg.png}
+
+\begin{verbatim}
+const
+    NUM_DIES: integer = 7;
+    PES_MIN: real = 50.0;
+    PES_MAX: real = 110.0;
+end const
+
+algorithm mitjanaPes
+
+    var
+        i: integer;   { Comptador que utilitzarà el nostre programa }
+        aux: float;  { Variable auxiliar per la lectura de pesos }
+        vectorPesos: vector[NUM_DIES] of real;   { Pes en Kg: 79.5, ... }
+        sumaPesos: float;
+    end var
+
+    i := 1;
+    sumaPesos := 0;
+
+    { Es llegeix des de teclat els pesos diaris, un a un }
+    while i ≤ NUM_DIES do
+
+        { Llegim un valor des del canal standard d'entrada }
+        writeString("Introdueix pes (Kg.) : ");
+        aux := readReal();
+
+        { A continuació cal revisar que aquest valor sigui coherent. Prenem com a valors
+        "possibles" aquells que estiguin entre PES_MIN i PES_MAX. Fixeu-vos que la lectura
+        es desa temporalment a la variable aux: quan haguem validat que contingui un valor
+        vàlid, l'afegirem dins del vector de pesos }
+
+        if (PES_MIN ≤ aux) and (aux ≤ PES_MAX) then
+            { En aquest punt, la variable aux conté un valor correcte, amb el que ja el podem
+            afegir al vector de pesos }
+            vectorPesos[i] := aux;
+
+            { El següent punt és molt important: com que ja hem afegit el pes correcte,
+            incrementarem la variable 'i', la qual ens serveix per accedir a una nova posició
+            del vector a la següent iteració del bucle }
+            i = i + 1;
+
+        else
+            { En cas contrari, el pes es incorrecte amb el que mostrem el corresponent
+            missatge d'error }
+            writeString("Pes incorrecte!");
+
+            { Important: aquí no incrementem la variable i, ja que el valor no és correcte; volem
+            que en la següent iteració del bucle, es continuï intentant afegir el valor llegit dins
+            de la posició 'i' del bucle }
+
+        end fi
+
+        { En aquest punt tenim el vectorPesos que té 7 (=NUM_DIES) pesos vàlids }
+
+        { Ara utilitzarem un segon bucle per recórrer tots els valors del vector i fer el càlcul
+        demanat: la mitjana de tots ells. Si haguéssim volgut, ho hauríem pogut fer tot
+        en un únic bucle, però he preferit separar-ho perquè quedi més clar què es fa
+        dins de cadascun dels dos bucles}
+
+        for  i := 1 to NUM_DIES do
+
+            { Dins de la variable sumaPesos hi anem sumant cadascun dels pesos
+            de les posicions del vector }
+            sumaPesos := sumaPesos + vectorPesos[i];
+       
+        end for
+
+        { Per calcular la mitjana, únicament ens falta dividir el valor sumaPesos pel
+        número total de pesos introduïts o, el que és el mateix, NUM_DIES }
+        writeString("La mitjana setmanal del pes és : ");
+        writeReal(sumaPesos / NUM_DIES);
+
+end algorithm
+\end{verbatim}
+
+Una possible implementació en llenguatge C d'aquest algorisme pot ser la
+següent:
+
+\includegraphics{./img/c.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\PreprocessorTok{#include }\ImportTok{<stdio.h>}
+
+\PreprocessorTok{#define NUM_DIES 7}
+\PreprocessorTok{#define PES_MIN 50.0}
+\PreprocessorTok{#define PES_MAX 110.0}
+
+\DataTypeTok{int}\NormalTok{ main (}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv)\{}
+    \DataTypeTok{float}\NormalTok{ vectorPesos[NUM_DIES];}
+    \DataTypeTok{int}\NormalTok{ i;}
+    \DataTypeTok{float}\NormalTok{ aux;}
+    \DataTypeTok{float}\NormalTok{ sumaPesos;}
+
+\NormalTok{    i = }\DecValTok{0}\NormalTok{; }\CommentTok{/* Important! en llenguatge C els vectors comencen pel 0 */}
+\NormalTok{    sumaPesos = }\DecValTok{0}\NormalTok{;}
+
+    \CommentTok{/* Primer bucle: introducció i validació de dades */}
+    \ControlFlowTok{while}\NormalTok{ (i<NUM_DIES) \{}
+
+\NormalTok{        printf(}\StringTok{"Introdueix pes (Kg.) : "}\NormalTok{);}
+\NormalTok{        scanf(}\StringTok{"%f"}\NormalTok{, &aux);}
+
+        \ControlFlowTok{if}\NormalTok{ (PES_MIN <= aux && aux <= PES_MAX) \{}
+\NormalTok{            vectorPesos[i] = aux;}
+\NormalTok{            i = i+}\DecValTok{1}\NormalTok{;}
+\NormalTok{        \} }\ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{            printf(}\StringTok{"Pes incorrecte!}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
+\NormalTok{        \}}
+\NormalTok{    \}}
+
+    \CommentTok{/* Segon bucle: càlcul intermig per la mitjana de pesos */}
+    \ControlFlowTok{for}\NormalTok{ (i=}\DecValTok{0}\NormalTok{; i<NUM_DIES; i++) \{}
+\NormalTok{        sumaPesos = sumaPesos + vectorPesos[i];}
+\NormalTok{    \}}
+
+\NormalTok{    printf(}\StringTok{"La mitjana setmanal del pes és : %.2f"}\NormalTok{, sumaPesos/NUM_DIES);}
 \NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -7156,6 +7288,59 @@ modificar el codi per defecte associat als nous projectes:
   projecte que tinguem -\textgreater{} botó dret sobre el nom del
   projecte -\textgreater{} \texttt{Save\ as\ template...}.
 \end{itemize}
+
+\section{Com fixar el kernel d'inici amb
+Lubuntu}\label{com-fixar-el-kernel-dinici-amb-lubuntu}
+
+Tot i ser una situació gens habitual, es pot donar el cas que Lubuntu
+només ens arranqui en un determinat kernel per problemes amb
+determinades targetes gràfiques. Tot i que el kernel sempre es pot
+seleccionar en el moment d'inici de Lubuntu, podem fixar quin és el que
+volem utilitzar malgrat que aquest no sigui el més nou de tots. Una
+possible opció per fer-ho amb l'aplicació \textbf{Grub Customizer}; per
+instal·lar-la fem:
+
+\begin{verbatim}
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+\end{verbatim}
+
+Ens identifiquem amb la password de l'usuari \textbf{uoc}.
+
+A continuació, actualitzem la llista de packages de tots els
+repositoris:
+
+\begin{verbatim}
+sudo apt-get update
+sudo apt-get install grub-customizer
+\end{verbatim}
+
+En aquest punt haurem instal·lat \textbf{Grub Customizer} dins de la
+màquina virtual \textbf{FP20181}: aquest programa ens permetrà confirmar
+exactament què hi ha definit a l'arranc grub de la màquina virtual. Per
+executar el programa: icona de \textbf{Lubuntu} ---\textgreater{}
+\textbf{System Tools} ---\textgreater{} \textbf{Grub Customizer}
+---\textgreater{} posar contrasenya \textbf{uoc} ---\textgreater{} a la
+pestanya inicial \textbf{List configuration} es mostren tots els kernels
+de què disposa l'entorn en aquests moments.
+
+Es recomanable fer una còpia prèvia de les PAC/PR que puguem tenir dins
+de la \textbf{FP20181} abans de canviar el kernel d'inici. Per canviar
+el kernel d'arranc per defecte: \textbf{Grub Customizer} -\textgreater{}
+pestanya \textbf{General Settings} -\textgreater{} com a \textbf{default
+entry}, seleccionar el kernel que funciona correctament d'entre tots els
+disponibles. Una vegada escollit, es prem el botó \textbf{Save} de la
+part superior esquerra.
+
+Per aplicar el canvi que s'acaba de desar a l'arranc de Lubuntu cal
+obrir un terminal de Lubuntu des de \textbf{System Tools}
+-\textgreater{} \textbf{LXTerminal}, i des del terminal teclejar:
+
+\begin{verbatim}
+sudo update-grub
+\end{verbatim}
+
+Una vegada hagi finalitzat el procés, cal realitzar un reboot de la
+\textbf{FP20181} per tal que agafi ara per defecte el kernel escollit.
 
 \chapter{Altres}\label{altres}
 

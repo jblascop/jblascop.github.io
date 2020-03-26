@@ -24,7 +24,7 @@
 <meta name="author" content="Jordi Blasco Planesas" />
 
 
-<meta name="date" content="2020-02-24" />
+<meta name="date" content="2020-03-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -149,6 +149,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="4.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>4.2</b> Entrada continua de valors amb un bucle</a></li>
 <li class="chapter" data-level="4.3" data-path="pac04.html"><a href="pac04.html#com-tractar-valors-en-multiples-vectors"><i class="fa fa-check"></i><b>4.3</b> Com tractar valors en múltiples vectors</a></li>
 <li class="chapter" data-level="4.4" data-path="pac04.html"><a href="pac04.html#definicio-chars-vs-strings"><i class="fa fa-check"></i><b>4.4</b> Definició chars vs strings</a></li>
+<li class="chapter" data-level="4.5" data-path="pac04.html"><a href="pac04.html#exemple-mitjanapes"><i class="fa fa-check"></i><b>4.5</b> Exemple: mitjanaPes</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a><ul>
 <li class="chapter" data-level="5.1" data-path="pac05.html"><a href="pac05.html#comanda-strcmp"><i class="fa fa-check"></i><b>5.1</b> Comanda strcmp()</a></li>
@@ -216,6 +217,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="13.5" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>13.5</b> Com activar un projecte</a></li>
 <li class="chapter" data-level="13.6" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>13.6</b> Canviar idioma del teclat</a></li>
 <li class="chapter" data-level="13.7" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#programa-per-defecte-al-crear-un-projecte"><i class="fa fa-check"></i><b>13.7</b> Programa per defecte al crear un projecte</a></li>
+<li class="chapter" data-level="13.8" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-fixar-el-kernel-dinici-amb-lubuntu"><i class="fa fa-check"></i><b>13.8</b> Com fixar el kernel d’inici amb Lubuntu</a></li>
 </ul></li>
 <li class="chapter" data-level="14" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>14</b> Altres</a><ul>
 <li class="chapter" data-level="14.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>14.1</b> Bilbliografia</a></li>
@@ -599,6 +601,126 @@ scanf(<span class="st">&quot;%f&quot;</span>, &amp;vBrutAnual[i]);</code></pre><
     
     printf(<span class="st">&quot;%s %c</span><span class="sc">\n</span><span class="st">&quot;</span>, salutacio, exclamacio);
     <span class="cf">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+</div>
+<div id="exemple-mitjanapes" class="section level2">
+<h2><span class="header-section-number">4.5</span> Exemple: mitjanaPes</h2>
+<p>Imaginem que volem fer un programa que ens ajudi a calcular el nostre pes promig setmanal. Afegirem per teclat les mesures diàries del nostre pes al programa i, en cas de trobar algun valor incoherent l’obviarà i el tornarà a demanar.</p>
+<p>En llenguatge algorísmic ho podem implementar de la següent forma:</p>
+<p>
+<img src="img/alg.png" style="float:left; padding:10px" />
+</p>
+<pre><code>const
+    NUM_DIES: integer = 7;
+    PES_MIN: real = 50.0;
+    PES_MAX: real = 110.0;
+end const
+
+algorithm mitjanaPes
+
+    var
+        i: integer;   { Comptador que utilitzarà el nostre programa }
+        aux: float;  { Variable auxiliar per la lectura de pesos }
+        vectorPesos: vector[NUM_DIES] of real;   { Pes en Kg: 79.5, ... }
+        sumaPesos: float;
+    end var
+
+    i := 1;
+    sumaPesos := 0;
+
+    { Es llegeix des de teclat els pesos diaris, un a un }
+    while i ≤ NUM_DIES do
+
+        { Llegim un valor des del canal standard d&#39;entrada }
+        writeString(&quot;Introdueix pes (Kg.) : &quot;);
+        aux := readReal();
+
+        { A continuació cal revisar que aquest valor sigui coherent. Prenem com a valors
+        &quot;possibles&quot; aquells que estiguin entre PES_MIN i PES_MAX. Fixeu-vos que la lectura
+        es desa temporalment a la variable aux: quan haguem validat que contingui un valor
+        vàlid, l&#39;afegirem dins del vector de pesos }
+
+        if (PES_MIN ≤ aux) and (aux ≤ PES_MAX) then
+            { En aquest punt, la variable aux conté un valor correcte, amb el que ja el podem
+            afegir al vector de pesos }
+            vectorPesos[i] := aux;
+
+            { El següent punt és molt important: com que ja hem afegit el pes correcte,
+            incrementarem la variable &#39;i&#39;, la qual ens serveix per accedir a una nova posició
+            del vector a la següent iteració del bucle }
+            i = i + 1;
+
+        else
+            { En cas contrari, el pes es incorrecte amb el que mostrem el corresponent
+            missatge d&#39;error }
+            writeString(&quot;Pes incorrecte!&quot;);
+
+            { Important: aquí no incrementem la variable i, ja que el valor no és correcte; volem
+            que en la següent iteració del bucle, es continuï intentant afegir el valor llegit dins
+            de la posició &#39;i&#39; del bucle }
+
+        end fi
+
+        { En aquest punt tenim el vectorPesos que té 7 (=NUM_DIES) pesos vàlids }
+
+        { Ara utilitzarem un segon bucle per recórrer tots els valors del vector i fer el càlcul
+        demanat: la mitjana de tots ells. Si haguéssim volgut, ho hauríem pogut fer tot
+        en un únic bucle, però he preferit separar-ho perquè quedi més clar què es fa
+        dins de cadascun dels dos bucles}
+
+        for  i := 1 to NUM_DIES do
+
+            { Dins de la variable sumaPesos hi anem sumant cadascun dels pesos
+            de les posicions del vector }
+            sumaPesos := sumaPesos + vectorPesos[i];
+       
+        end for
+
+        { Per calcular la mitjana, únicament ens falta dividir el valor sumaPesos pel
+        número total de pesos introduïts o, el que és el mateix, NUM_DIES }
+        writeString(&quot;La mitjana setmanal del pes és : &quot;);
+        writeReal(sumaPesos / NUM_DIES);
+
+end algorithm</code></pre>
+<p>Una possible implementació en llenguatge C d’aquest algorisme pot ser la següent:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+
+<span class="pp">#define NUM_DIES 7</span>
+<span class="pp">#define PES_MIN 50.0</span>
+<span class="pp">#define PES_MAX 110.0</span>
+
+<span class="dt">int</span> main (<span class="dt">int</span> argc, <span class="dt">char</span> **argv){
+    <span class="dt">float</span> vectorPesos[NUM_DIES];
+    <span class="dt">int</span> i;
+    <span class="dt">float</span> aux;
+    <span class="dt">float</span> sumaPesos;
+
+    i = <span class="dv">0</span>; <span class="co">/* Important! en llenguatge C els vectors comencen pel 0 */</span>
+    sumaPesos = <span class="dv">0</span>;
+
+    <span class="co">/* Primer bucle: introducció i validació de dades */</span>
+    <span class="cf">while</span> (i&lt;NUM_DIES) {
+
+        printf(<span class="st">&quot;Introdueix pes (Kg.) : &quot;</span>);
+        scanf(<span class="st">&quot;%f&quot;</span>, &amp;aux);
+
+        <span class="cf">if</span> (PES_MIN &lt;= aux &amp;&amp; aux &lt;= PES_MAX) {
+            vectorPesos[i] = aux;
+            i = i+<span class="dv">1</span>;
+        } <span class="cf">else</span> {
+            printf(<span class="st">&quot;Pes incorrecte!</span><span class="sc">\n</span><span class="st">&quot;</span>);
+        }
+    }
+
+    <span class="co">/* Segon bucle: càlcul intermig per la mitjana de pesos */</span>
+    <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;NUM_DIES; i++) {
+        sumaPesos = sumaPesos + vectorPesos[i];
+    }
+
+    printf(<span class="st">&quot;La mitjana setmanal del pes és : %.2f&quot;</span>, sumaPesos/NUM_DIES);
 }</code></pre></div>
 
 </div>
