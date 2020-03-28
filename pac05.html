@@ -24,7 +24,7 @@
 <meta name="author" content="Jordi Blasco Planesas" />
 
 
-<meta name="date" content="2020-03-27" />
+<meta name="date" content="2020-03-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -153,11 +153,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a><ul>
 <li class="chapter" data-level="5.1" data-path="pac05.html"><a href="pac05.html#comanda-strcmp"><i class="fa fa-check"></i><b>5.1</b> Comanda strcmp()</a></li>
-<li class="chapter" data-level="5.2" data-path="pac05.html"><a href="pac05.html#exemple-comparaciostrings"><i class="fa fa-check"></i><b>5.2</b> Exemple: comparacioStrings</a></li>
-<li class="chapter" data-level="5.3" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>5.3</b> Exemple: nòmines</a></li>
-<li class="chapter" data-level="5.4" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>5.4</b> Comanda scanf</a></li>
-<li class="chapter" data-level="5.5" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strcmp"><i class="fa fa-check"></i><b>5.5</b> El finalitzador ‘\0’ i strcmp()</a></li>
-<li class="chapter" data-level="5.6" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strlen"><i class="fa fa-check"></i><b>5.6</b> El finalitzador ‘\0’ i strlen()</a></li>
+<li class="chapter" data-level="5.2" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>5.2</b> Comanda scanf</a></li>
+<li class="chapter" data-level="5.3" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strcmp"><i class="fa fa-check"></i><b>5.3</b> El finalitzador ‘\0’ i strcmp()</a></li>
+<li class="chapter" data-level="5.4" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strlen"><i class="fa fa-check"></i><b>5.4</b> El finalitzador ‘\0’ i strlen()</a></li>
+<li class="chapter" data-level="5.5" data-path="pac05.html"><a href="pac05.html#exemple-comparaciostrings"><i class="fa fa-check"></i><b>5.5</b> Exemple: comparacioStrings</a></li>
+<li class="chapter" data-level="5.6" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>5.6</b> Exemple: nòmines</a></li>
+<li class="chapter" data-level="5.7" data-path="pac05.html"><a href="pac05.html#exemple-brisca"><i class="fa fa-check"></i><b>5.7</b> Exemple: brisca</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a><ul>
 <li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a><ul>
@@ -265,8 +266,148 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     }
 }</code></pre></div>
 </div>
+<div id="comanda-scanf" class="section level2">
+<h2><span class="header-section-number">5.2</span> Comanda scanf</h2>
+<p>Quan utilitzem la comanda <code>scanf</code> fins ara sempre li hem passat el nom de la variable precedit per<code>&amp;</code>. Això significa que realment a aquesta comanda li estem passant la posició de la memòria on resideix la variable que li indiquem.</p>
+<p>Així, per exemple, quan fem la següent operació <code>scanf(&quot;%d&quot;, &amp;numero);</code> estem passant el valor que introduïm per teclat directament a la posició de memòria on tenim desada la variable numero. D’aquí ve utilitzar <code>&amp;numero</code> en comptes de <code>numero</code>. El mateix comportament tenim pels tipus primitius <code>char</code>, <code>float</code>, etc.</p>
+<p>Els vectors de caràcters en llenguatge C tenen una característica: el nom de l’array conté l’adreça de memòria on està desada la primera posició de l’array.</p>
+<p>Per exemple, quan executem <code>scanf(&quot;%s&quot;, cadena);</code> el valor de cadena és l’adreça de memòria inicial on està ubicat l’array. Dit d’una altra manera, cadena conté el mateix valor que <code>&amp;cadena[0]</code> (és una altra forma que tenim per referir-nos a la posició inicial en memòria de l’array).</p>
+<p>Adjunto un exemple amb tots aquests conceptes:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#define MAXIM 10</span>
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="dt">char</span> cadena[MAXIM];
+    <span class="dt">int</span> numero;
+
+    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable numero</span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;numero);
+    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable cadena</span><span class="sc">\n</span><span class="st">&quot;</span>, cadena);
+    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable cadena</span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;cadena[<span class="dv">0</span>]);
+
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix un número enter: &quot;</span>);
+    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numero);
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix una cadena: &quot;</span>);
+    scanf(<span class="st">&quot;%s&quot;</span>,cadena);
+
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Has assignat els següents valors :</span><span class="sc">\n</span><span class="st">&quot;</span>);
+    printf(<span class="st">&quot;numero = %d </span><span class="sc">\n</span><span class="st">&quot;</span>, numero);
+    printf(<span class="st">&quot;cadena = %s </span><span class="sc">\n</span><span class="st">&quot;</span>, cadena);
+
+    <span class="cf">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+</div>
+<div id="el-finalitzador-0-i-strcmp" class="section level2">
+<h2><span class="header-section-number">5.3</span> El finalitzador ‘\0’ i strcmp()</h2>
+<p>Com es va veure al mòdul <strong>Cadenes de caràcters en C</strong> de la xWiki, <em>“una cadena de caràcters o string és una seqüència de caràcters finalitzada pel caràcter ‘\0’”</em>. Per tant hem de tenir en compte que el finalitzador ‘\0’ càpiga a la nostra variable, ja que aquesta és la forma que té C de saber on s’acaba un string en memòria.</p>
+<p>Imaginem que tenim tres cadenes, amb el mateix contingut però de mida diferent (podem tenir posicions buides). Què passa si les comparem? I si comparem amb una cadena de mateix contingut però sense finalitzador ‘\0’?</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+
+<span class="dt">int</span> main() {
+
+    <span class="dt">char</span> ciutat1[<span class="dv">7</span>] = <span class="st">&quot;Girona&quot;</span>;
+    <span class="dt">char</span> ciutat2[<span class="dv">8</span>] = <span class="st">&quot;Girona&quot;</span>;
+    <span class="dt">char</span> ciutat3[<span class="dv">6</span>] = <span class="st">&quot;Girona&quot;</span>; <span class="co">/* no conté el &#39;\0&#39; final */</span>
+
+    <span class="co">/* si strcmp retorna 0 significa que les dues cadenes són iguals */</span>
+    printf (<span class="st">&quot;Les variables ciutat1 i ciutat2 són iguals? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, strcmp(ciutat1, ciutat2));
+    printf (<span class="st">&quot;Les variables ciutat1 i ciutat3 són iguals? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, strcmp(ciutat1, ciutat3));
+}</code></pre></div>
+<p>La forma que tenim per forçar que una cadena no contingui el finalitzador és limitant la seva mida als caràcters que contindrà, sense tenir en compte reservar-ne un pel ‘\0’. En aquest cas ho fem amb char <code>ciutat3[6] = &quot;Girona&quot;</code>.</p>
+<p>La sortida generada és la següent:</p>
+<p>
+<img src="img/play.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Les variables ciutat1 i ciutat2 són iguals? <span class="dv">0</span>
+Les variables ciutat1 i ciutat3 són iguals? -<span class="dv">1</span></code></pre></div>
+<p>D’aquí la importància del finalitzador de cadenes de caràcters. Per tant, si per exemple ens diuen que tindrem una variable x de tipus string i de mida màxima 15, realment al nostre programa la definirem amb longitud 15+1, per tal que hi càpiga el finalitzador ‘\0’ en cas que s’ocupin els 15 caràcters anteriors.</p>
+</div>
+<div id="el-finalitzador-0-i-strlen" class="section level2">
+<h2><span class="header-section-number">5.4</span> El finalitzador ‘\0’ i strlen()</h2>
+<p>A continuació s’exposa un exemple en el qual es mostra la importància del finalitzador ‘\0’ en la funció <code>strlen()</code> de C, la qual ens retorna la mida d’una cadena de caràcters :</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
+<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+
+<span class="pp">#define MAX_LLETRES 8+1</span>
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+
+    <span class="dt">char</span> nom[MAX_LLETRES];
+    <span class="dt">int</span> numLletres;
+
+    printf(<span class="st">&quot;Introdueix un nom: &quot;</span>);
+    scanf(<span class="st">&quot;%s&quot;</span>, nom);
+
+    <span class="co">/* Exemple: si en aquest punt hem teclejat el</span>
+<span class="co">     * nom Quim, dins de la cadena de caracters nom</span>
+<span class="co">     * tindrem les següents dades:</span>
+<span class="co">     *</span>
+<span class="co">     * nom[0] = &#39;Q&#39;</span>
+<span class="co">     * nom[1] = &#39;u&#39;</span>
+<span class="co">     * nom[2] = &#39;i&#39;</span>
+<span class="co">     * nom[3] = &#39;m&#39;</span>
+<span class="co">     * nom[4] = &#39;\0&#39; (finalitzador de l&#39;string)</span>
+<span class="co">     * nom[5] = valor aleatori</span>
+<span class="co">     * nom[6] = valor aleatori</span>
+<span class="co">     * nom[7] = valor aleatori</span>
+<span class="co">     * nom[8] = valor aleatori</span>
+<span class="co">     *</span>
+<span class="co">     * El finalitzador &#39;\0&#39; s&#39;afegeix automàticament</span>
+<span class="co">     * en llegir un string per teclat amb scanf.</span>
+<span class="co">     * </span>
+<span class="co">     * La comanda strlen(...) va recorrent l&#39;string posició</span>
+<span class="co">     * a posició per saber la seva longitud. Quan finalitza</span>
+<span class="co">     * aquest recorregut? hi ha dues opcions possibles:</span>
+<span class="co">     *</span>
+<span class="co">     * - quan troba el finalitzador &#39;\0&#39;</span>
+<span class="co">     * - quan arriba a la darrera posició de l&#39;string</span>
+<span class="co">     *</span>
+<span class="co">     * Per tant, si com a nom hem entrat Quim, el valor que </span>
+<span class="co">     * retornarà strlen(...) serà 4.</span>
+<span class="co">     */</span>
+
+    numLletres = strlen(nom);
+
+    printf(<span class="st">&quot;El nom </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> té %d lletres.</span><span class="sc">\n</span><span class="st">&quot;</span>, nom, numLletres);
+
+    <span class="co">/* Què passa si sobreescrivim el finalitzador &#39;\0&#39; amb</span>
+<span class="co">     * un caràcter qualsevol? per exemple &#39;X&#39;</span>
+<span class="co">     */</span>
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Sobreescrivim el finalitzador &#39;</span><span class="sc">\\</span><span class="st">0&#39;.&quot;</span>);
+    nom[numLletres] = <span class="ch">&#39;X&#39;</span>;
+
+    <span class="co">/* Tornem a calcular la longitud de l&#39;string */</span>
+    numLletres = strlen(nom);
+
+    <span class="co">/* Per quin motiu ara ha canviat la longitud de la</span>
+<span class="co">     * variable nom, si no l&#39;hem tornat a redefinir?</span>
+<span class="co">     */</span>
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Ara el nom </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> té %d lletres.</span><span class="sc">\n</span><span class="st">&quot;</span>, nom, numLletres);
+
+    <span class="cf">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+<p>Si s’executa el programa, la sortida obtinguda serà similar a la següent:</p>
+<p>
+<img src="img/play.png" float="right;" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Introdueix un nom: Quim
+El nom <span class="st">&quot;Quim&quot;</span> té <span class="dv">4</span> lletres.
+
+Sobreescrivim el finalitzador &#39;\<span class="dv">0</span>&#39;.
+Ara el nom <span class="st">&quot;QuimX�!��&quot;</span> té <span class="dv">9</span> lletres.</code></pre></div>
+</div>
 <div id="exemple-comparaciostrings" class="section level2">
-<h2><span class="header-section-number">5.2</span> Exemple: comparacioStrings</h2>
+<h2><span class="header-section-number">5.5</span> Exemple: comparacioStrings</h2>
 <p>La forma com comparem strings amb llenguatge algorísmic és diferent que no en llenguatge C:</p>
 <ul>
 <li>Llenguatge algorísmic: la comparació entre strings es fa amb <code>=</code>.</li>
@@ -349,7 +490,7 @@ end algorithm</code></pre>
 El resultat <span class="dv">1</span> significa que l&#39;string <span class="st">&quot;UOC&quot;</span> &gt; string <span class="st">&quot;UAB&quot;</span></code></pre></div>
 </div>
 <div id="exemple-nomines" class="section level2">
-<h2><span class="header-section-number">5.3</span> Exemple: nòmines</h2>
+<h2><span class="header-section-number">5.6</span> Exemple: nòmines</h2>
 <p>Imaginem que volem un programa que ens permeti entrar les nòmines de tots els empleats de la nostra empresa. Un empleat el definim com a nom (cadena de caràcters) + nòmina (real). El programa ha de mostrar al final de tot la relació de nòmines de tots els empleats, la mitjana de totes les nòmines de l’empresa, i qui cobra més i menys a l’empresa.</p>
 <p>Una possible forma de programa-ho seria la següent:</p>
 <p>
@@ -401,145 +542,254 @@ El resultat <span class="dv">1</span> significa que l&#39;string <span class="st
 <p>Com es pot veure, s’utilitza un vector de <code>tEmpleat</code> de forma que donada una longitud màxima del vector, anirem introduint els tEmpleats un a un dins d’ell. Una vegada fet, ja podem tornar a recórrer el vector de tEmpleat i realitzar tots els càlculs que ens demanen, així com mostrar per pantalla les nòmines de tots els empleats.</p>
 <p>En aquest exemple la variable i fa d’índex per recórrer el vector, i les variables maxNomina i minNomina també són índexos: indiquen en quina posició estàn els empleats amb la nòmina més alta i més baixa respectivament.</p>
 </div>
-<div id="comanda-scanf" class="section level2">
-<h2><span class="header-section-number">5.4</span> Comanda scanf</h2>
-<p>Quan utilitzem la comanda <code>scanf</code> fins ara sempre li hem passat el nom de la variable precedit per<code>&amp;</code>. Això significa que realment a aquesta comanda li estem passant la posició de la memòria on resideix la variable que li indiquem.</p>
-<p>Així, per exemple, quan fem la següent operació <code>scanf(&quot;%d&quot;, &amp;numero);</code> estem passant el valor que introduïm per teclat directament a la posició de memòria on tenim desada la variable numero. D’aquí ve utilitzar <code>&amp;numero</code> en comptes de <code>numero</code>. El mateix comportament tenim pels tipus primitius <code>char</code>, <code>float</code>, etc.</p>
-<p>Els vectors de caràcters en llenguatge C tenen una característica: el nom de l’array conté l’adreça de memòria on està desada la primera posició de l’array.</p>
-<p>Per exemple, quan executem <code>scanf(&quot;%s&quot;, cadena);</code> el valor de cadena és l’adreça de memòria inicial on està ubicat l’array. Dit d’una altra manera, cadena conté el mateix valor que <code>&amp;cadena[0]</code> (és una altra forma que tenim per referir-nos a la posició inicial en memòria de l’array).</p>
-<p>Adjunto un exemple amb tots aquests conceptes:</p>
+<div id="exemple-brisca" class="section level2">
+<h2><span class="header-section-number">5.7</span> Exemple: brisca</h2>
+<p>Exemple amb diferents recorreguts realitzat sobre tuples guardades en un vector, utilitzant el joc de cartes de la brisca. Per tal d’explicar millor el plantejament de cada implementació, s’han afegit comentaris detallats dins del codi.</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
 <div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#define MAXIM 10</span>
+<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
+
+<span class="co">/* Punt de partida: sabem jugar perfectament</span>
+<span class="co"> * a la brisca (https://ca.wikipedia.org/wiki/Brisca), </span>
+<span class="co"> * però en canvi som un desastre havent de comptar</span>
+<span class="co"> * la puntuació de totes les cartes guanyades. Per</span>
+<span class="co"> * aquest motiu volem fer un programa que ens ajudi</span>
+<span class="co"> * en aquesta tasca (i altres, per practicar diferents</span>
+<span class="co"> * iteracions amb bucles). El programa demanarà per </span>
+<span class="co"> * teclat carta a carta i finalitzarà quan s&#39;introdueixi</span>
+<span class="co"> * un tipus de coll diferent dels definits.</span>
+<span class="co"> * Haurà de generar les següents sortides:</span>
+<span class="co"> * 1. Llistar totes les cartes introduïdes.</span>
+<span class="co"> * 2. Mostrar la carta amb una puntuació més alta.</span>
+<span class="co"> * 3. Mostrar la puntuació total aconseguida.</span>
+<span class="co"> * 4. Comparar parelles de cartes (1a vs 2a, 2a vs 3a,</span>
+<span class="co"> *    3a vs 4a,...) i indicar si són del mateix coll.</span>
+<span class="co"> */</span>
+
+<span class="pp">#define MAX_NUM_CARTES 48</span>
+<span class="pp">#define NUM_VALORS 13</span>
+<span class="pp">#define MAX_NUM_COLLS 4</span>
+<span class="kw">typedef</span> <span class="kw">enum</span> {MONEDES, COPES, BASTOS, ESPASES, FINALITZAR} tColl;
+
+<span class="kw">typedef</span> <span class="kw">struct</span> {
+    tColl coll;
+    <span class="dt">int</span> numero;
+    <span class="dt">int</span> valor;
+} tCarta;
 
 <span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+    tCarta cartaAux;
+    tCarta cartaDeMajorValor;
+    tCarta vCartes[MAX_NUM_CARTES];
+    bool isFinalitzat;
+    <span class="dt">int</span> puntuacio;
+    <span class="dt">int</span> i, j;
+    bool isMateixColl;
+    
+    <span class="co">/* S&#39;inicialitza el vector vValors amb les</span>
+<span class="co">     * puntuacions de totes les cartes. El nom</span>
+<span class="co">     * de la carta fa d&#39;índex del vector, i el</span>
+<span class="co">     * valor desat en aquella posició és la seva</span>
+<span class="co">     * puntuació. Exemple: </span>
+<span class="co">     * - una carta amb un 1 retornarà 11 punts,</span>
+<span class="co">     *   corresponents al valor de la posició 1.</span>
+<span class="co">     * - una carta amb un 5 retornarà 0 punts,</span>
+<span class="co">     *   corresponents al valor de la posició 5.</span>
+<span class="co">     */</span>
+    <span class="dt">int</span> vValors[NUM_VALORS] = {<span class="dv">0</span>, <span class="dv">11</span>, <span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>};
 
-    <span class="dt">char</span> cadena[MAXIM];
-    <span class="dt">int</span> numero;
+    <span class="co">/* El següent vector ens ajudarà a mostrar</span>
+<span class="co">     * per pantalla de forma automàtica la descripció </span>
+<span class="co">     * associada a cadascun dels valors definits a </span>
+<span class="co">     * l&#39;enumeratiu tColl</span>
+<span class="co">     */</span>
+    <span class="dt">char</span>* vNoms[MAX_NUM_COLLS] = {<span class="st">&quot;Monedes&quot;</span>, <span class="st">&quot;Copes&quot;</span>, <span class="st">&quot;Bastos&quot;</span>, <span class="st">&quot;Espases&quot;</span>};
 
-    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable numero</span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;numero);
-    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable cadena</span><span class="sc">\n</span><span class="st">&quot;</span>, cadena);
-    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable cadena</span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;cadena[<span class="dv">0</span>]);
+    <span class="co">/* La variable booleana s&#39;utilitzarà per</span>
+<span class="co">     * finalitzar el primer bucle d&#39;introducció</span>
+<span class="co">     * de cartes des de teclat</span>
+<span class="co">     */</span>
+    isFinalitzat = false;
+    
+    i = <span class="dv">0</span>;
+    j = <span class="dv">0</span>;
+    puntuacio = <span class="dv">0</span>;
+    
+    printf(<span class="st">&quot;Tipus carta: 0=MONEDES, 1=COPES, 2=BASTOS, 3=ESPASES.</span><span class="sc">\n</span><span class="st">&quot;</span>);
 
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix un número enter: &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numero);
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix una cadena: &quot;</span>);
-    scanf(<span class="st">&quot;%s&quot;</span>,cadena);
+    <span class="cf">while</span> (!isFinalitzat) {
+        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix tipus carta: &quot;</span>);
+        scanf(<span class="st">&quot;%u&quot;</span>, &amp;cartaAux.coll);
+        
+        <span class="co">/* Si el coll introduit no correspon a cap dels</span>
+<span class="co">         * quatre definits, significa que no es vol </span>
+<span class="co">         * entrar cap més carta des de teclat</span>
+<span class="co">         */</span>
+        <span class="cf">if</span> (cartaAux.coll != MONEDES &amp;&amp; cartaAux.coll != COPES
+            &amp;&amp; cartaAux.coll != BASTOS &amp;&amp; cartaAux.coll != ESPASES) {
+            isFinalitzat = true;
 
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Has assignat els següents valors :</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printf(<span class="st">&quot;numero = %d </span><span class="sc">\n</span><span class="st">&quot;</span>, numero);
-    printf(<span class="st">&quot;cadena = %s </span><span class="sc">\n</span><span class="st">&quot;</span>, cadena);
+        } <span class="cf">else</span> {
+            printf(<span class="st">&quot;Introdueix número carta: &quot;</span>);
+            scanf(<span class="st">&quot;%d&quot;</span>, &amp;cartaAux.numero);
+            
+            <span class="co">/* Es valida que el número de la carta</span>
+<span class="co">             * introduïda sigui vàlid: valor comprès</span>
+<span class="co">             * entre 1 i 12</span>
+<span class="co">             */</span>
+            <span class="cf">if</span> (cartaAux.numero &lt; <span class="dv">1</span> || cartaAux.numero &gt; <span class="dv">12</span>) {
+                printf(<span class="st">&quot;Error: número de la carta incorrecte!</span><span class="sc">\n</span><span class="st">&quot;</span>);
+                
+            } <span class="cf">else</span> {
+                <span class="co">/* Es calcula el valor de la carta i </span>
+<span class="co">                 * s&#39;assigna al camp valor de la tupla</span>
+<span class="co">                 * cartaAux (de tipus tCarta)</span>
+<span class="co">                 */</span>
+                cartaAux.valor = vValors[cartaAux.numero];
+                vCartes[i] = cartaAux;
+                
+                <span class="co">/* La variable i contindrà el número</span>
+<span class="co">                 * de cartes vàlides introduïdes per</span>
+<span class="co">                 * teclat.</span>
+<span class="co">                 */</span>
+                i = i + <span class="dv">1</span>;
+            }
+        }
+    }
+    
+    <span class="co">/* Sortida 1:</span>
+<span class="co">     * Recorrem el vector de cartes per mostrar</span>
+<span class="co">     * per pantalla tots els elements (cartes)</span>
+<span class="co">     * que conté.</span>
+<span class="co">     */</span>
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Relació de cartes introduïdes: </span><span class="sc">\n</span><span class="st">&quot;</span>);
+    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i; j++) {
+        printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d de %s (%d punts) </span><span class="sc">\n</span><span class="st">&quot;</span>, vCartes[j].numero, vNoms[vCartes[j].coll], vCartes[j].valor);
+    }
+    
+    <span class="co">/* Sortida 2:</span>
+<span class="co">     * Recorrem el vector de cartes i busquem</span>
+<span class="co">     * la que té una major puntuació. En cas </span>
+<span class="co">     * d&#39;empat, mostrem l&#39;última introduïda.</span>
+<span class="co">     */</span>
 
+    <span class="co">/* Inicialitzem el valor de cartaDeMajorValor</span>
+<span class="co">     * a valor = 0</span>
+<span class="co">     */</span>
+    cartaDeMajorValor.valor = <span class="dv">0</span>;
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Carta de major puntuació: </span><span class="sc">\n</span><span class="st">&quot;</span>);
+    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i; j++) {
+        <span class="co">/* En cada iteració del bucle ens assegurem</span>
+<span class="co">         * que cartaDeMajorValor sigui la carta</span>
+<span class="co">         * amb un valor més gran. Comparem la carta</span>
+<span class="co">         * que estem tractant actualment amb la carta</span>
+<span class="co">         * que fins ara hem trobat de major valor.</span>
+<span class="co">         */</span>
+        <span class="cf">if</span> (vCartes[j].valor &gt;= cartaDeMajorValor.valor) {
+            cartaDeMajorValor.coll = vCartes[j].coll;
+            cartaDeMajorValor.numero = vCartes[j].numero;
+            cartaDeMajorValor.valor = vCartes[j].valor;
+        }
+    }
+    printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d de %s (%d punts) </span><span class="sc">\n</span><span class="st">&quot;</span>, cartaDeMajorValor.numero, vNoms[cartaDeMajorValor.coll], cartaDeMajorValor.valor);
+
+    <span class="co">/* Sortida 3:</span>
+<span class="co">     * Recorrem el vector de cartes i anem sumant</span>
+<span class="co">     * tots els valors, per tal d&#39;obtenir la </span>
+<span class="co">     * puntuació total.</span>
+<span class="co">     */</span>
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Puntuació total: </span><span class="sc">\n</span><span class="st">&quot;</span>);
+    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i; j++) {
+        puntuacio = puntuacio + vCartes[j].valor;
+    }
+    printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d punts </span><span class="sc">\n</span><span class="st">&quot;</span>, puntuacio);
+    
+    <span class="co">/* Sortida 4:</span>
+<span class="co">     * Recorrem el vector de cartes i anem comparant</span>
+<span class="co">     * parelles de carta: la que estem tractant amb</span>
+<span class="co">     * la que ve a continuació. Mostrem per pantalla</span>
+<span class="co">     * si són del mateix coll o no.</span>
+<span class="co">     */</span>
+    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Comparació de cartes: </span><span class="sc">\n</span><span class="st">&quot;</span>);
+    
+    <span class="co">/* Important: en aquest recorregut del vector</span>
+<span class="co">     * de cartes anem comparant la carta de la </span>
+<span class="co">     * posició actual j amb la carta que està</span>
+<span class="co">     * a la següent posició j+1. Això significa</span>
+<span class="co">     * que el límit de les iteracions del </span>
+<span class="co">     * bucle passa a ser i-1 (un element abans</span>
+<span class="co">     * del final), ja que quan tractem aquest</span>
+<span class="co">     * element el compararem amb el següent,</span>
+<span class="co">     * que és l&#39;últim del vector. Si en comptes</span>
+<span class="co">     * de tenir i-1 tinguéssim només i, en </span>
+<span class="co">     * la darrera iteració donaria error, ja </span>
+<span class="co">     * que s&#39;estaria accedint a una posició</span>
+<span class="co">     * incorrecta del vector de cartes (i+1).</span>
+<span class="co">     */</span>
+    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i-<span class="dv">1</span>; j++) {
+        
+        <span class="co">/* Per comparar la carta de la posició actual</span>
+<span class="co">         * amb la que hi ha a la següent posició,</span>
+<span class="co">         * utilitzem els índex j i j+1 respectivament.</span>
+<span class="co">         */</span>
+        isMateixColl = (vCartes[j].coll == vCartes[j+<span class="dv">1</span>].coll);
+        printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d de %s vs %d de %s: &quot;</span>, vCartes[j].numero, vNoms[vCartes[j].coll], vCartes[j+<span class="dv">1</span>].numero, vNoms[vCartes[j+<span class="dv">1</span>].coll]);
+        <span class="cf">if</span> (isMateixColl) {
+            printf(<span class="st">&quot;són del mateix coll!</span><span class="sc">\n</span><span class="st">&quot;</span>);
+        } <span class="cf">else</span> {
+            printf(<span class="st">&quot;són de colls diferents!</span><span class="sc">\n</span><span class="st">&quot;</span>);
+        }
+    }
     <span class="cf">return</span> <span class="dv">0</span>;
 }</code></pre></div>
-</div>
-<div id="el-finalitzador-0-i-strcmp" class="section level2">
-<h2><span class="header-section-number">5.5</span> El finalitzador ‘\0’ i strcmp()</h2>
-<p>Com es va veure al mòdul <strong>Cadenes de caràcters en C</strong> de la xWiki, <em>“una cadena de caràcters o string és una seqüència de caràcters finalitzada pel caràcter ‘\0’”</em>. Per tant hem de tenir en compte que el finalitzador ‘\0’ càpiga a la nostra variable, ja que aquesta és la forma que té C de saber on s’acaba un string en memòria.</p>
-<p>Imaginem que tenim tres cadenes, amb el mateix contingut però de mida diferent (podem tenir posicions buides). Què passa si les comparem? I si comparem amb una cadena de mateix contingut però sense finalitzador ‘\0’?</p>
-<p>
-<img src="img/c.png" style="float:left; padding:10px" />
-</p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
-
-<span class="dt">int</span> main() {
-
-    <span class="dt">char</span> ciutat1[<span class="dv">7</span>] = <span class="st">&quot;Girona&quot;</span>;
-    <span class="dt">char</span> ciutat2[<span class="dv">8</span>] = <span class="st">&quot;Girona&quot;</span>;
-    <span class="dt">char</span> ciutat3[<span class="dv">6</span>] = <span class="st">&quot;Girona&quot;</span>; <span class="co">/* no conté el &#39;\0&#39; final */</span>
-
-    <span class="co">/* si strcmp retorna 0 significa que les dues cadenes són iguals */</span>
-    printf (<span class="st">&quot;Les variables ciutat1 i ciutat2 són iguals? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, strcmp(ciutat1, ciutat2));
-    printf (<span class="st">&quot;Les variables ciutat1 i ciutat3 són iguals? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, strcmp(ciutat1, ciutat3));
-}</code></pre></div>
-<p>La forma que tenim per forçar que una cadena no contingui el finalitzador és limitant la seva mida als caràcters que contindrà, sense tenir en compte reservar-ne un pel ‘\0’. En aquest cas ho fem amb char <code>ciutat3[6] = &quot;Girona&quot;</code>.</p>
-<p>La sortida generada és la següent:</p>
+<p>Un exemple d’execució pot ser el següent:</p>
 <p>
 <img src="img/play.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Les variables ciutat1 i ciutat2 són iguals? <span class="dv">0</span>
-Les variables ciutat1 i ciutat3 són iguals? -<span class="dv">1</span></code></pre></div>
-<p>D’aquí la importància del finalitzador de cadenes de caràcters. Per tant, si per exemple ens diuen que tindrem una variable x de tipus string i de mida màxima 15, realment al nostre programa la definirem amb longitud 15+1, per tal que hi càpiga el finalitzador ‘\0’ en cas que s’ocupin els 15 caràcters anteriors.</p>
-</div>
-<div id="el-finalitzador-0-i-strlen" class="section level2">
-<h2><span class="header-section-number">5.6</span> El finalitzador ‘\0’ i strlen()</h2>
-<p>A continuació s’exposa un exemple en el qual es mostra la importància del finalitzador ‘\0’ en la funció <code>strlen()</code> de C, la qual ens retorna la mida d’una cadena de caràcters :</p>
-<p>
-<img src="img/c.png" style="float:left; padding:10px" />
-</p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
+<pre><code>Tipus carta: 0=MONEDES, 1=COPES, 2=BASTOS, 3=ESPASES.
 
-<span class="pp">#define MAX_LLETRES 8+1</span>
+Introdueix tipus carta: 0
+Introdueix número carta: 1
 
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+Introdueix tipus carta: 0
+Introdueix número carta: 10
 
-    <span class="dt">char</span> nom[MAX_LLETRES];
-    <span class="dt">int</span> numLletres;
+Introdueix tipus carta: 0
+Introdueix número carta: 5
 
-    printf(<span class="st">&quot;Introdueix un nom: &quot;</span>);
-    scanf(<span class="st">&quot;%s&quot;</span>, nom);
+Introdueix tipus carta: 2
+Introdueix número carta: 10
 
-    <span class="co">/* Exemple: si en aquest punt hem teclejat el</span>
-<span class="co">     * nom Quim, dins de la cadena de caracters nom</span>
-<span class="co">     * tindrem les següents dades:</span>
-<span class="co">     *</span>
-<span class="co">     * nom[0] = &#39;Q&#39;</span>
-<span class="co">     * nom[1] = &#39;u&#39;</span>
-<span class="co">     * nom[2] = &#39;i&#39;</span>
-<span class="co">     * nom[3] = &#39;m&#39;</span>
-<span class="co">     * nom[4] = &#39;\0&#39; (finalitzador de l&#39;string)</span>
-<span class="co">     * nom[5] = valor aleatori</span>
-<span class="co">     * nom[6] = valor aleatori</span>
-<span class="co">     * nom[7] = valor aleatori</span>
-<span class="co">     * nom[8] = valor aleatori</span>
-<span class="co">     *</span>
-<span class="co">     * El finalitzador &#39;\0&#39; s&#39;afegeix automàticament</span>
-<span class="co">     * en llegir un string per teclat amb scanf.</span>
-<span class="co">     * </span>
-<span class="co">     * La comanda strlen(...) va recorrent l&#39;string posició</span>
-<span class="co">     * a posició per saber la seva longitud. Quan finalitza</span>
-<span class="co">     * aquest recorregut? hi ha dues opcions possibles:</span>
-<span class="co">     *</span>
-<span class="co">     * - quan troba el finalitzador &#39;\0&#39;</span>
-<span class="co">     * - quan arriba a la darrera posició de l&#39;string</span>
-<span class="co">     *</span>
-<span class="co">     * Per tant, si com a nom hem entrat Quim, el valor que </span>
-<span class="co">     * retornarà strlen(...) serà 4.</span>
-<span class="co">     */</span>
+Introdueix tipus carta: 2
+Introdueix número carta: 1
 
-    numLletres = strlen(nom);
+Introdueix tipus carta: 3
+Introdueix número carta: 4
 
-    printf(<span class="st">&quot;El nom </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> té %d lletres.</span><span class="sc">\n</span><span class="st">&quot;</span>, nom, numLletres);
+Introdueix tipus carta: 9
 
-    <span class="co">/* Què passa si sobreescrivim el finalitzador &#39;\0&#39; amb</span>
-<span class="co">     * un caràcter qualsevol? per exemple &#39;X&#39;</span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Sobreescrivim el finalitzador &#39;</span><span class="sc">\\</span><span class="st">0&#39;.&quot;</span>);
-    nom[numLletres] = <span class="ch">&#39;X&#39;</span>;
+Relació de cartes introduïdes: 
+    1 de Monedes (11 punts) 
+    10 de Monedes (2 punts) 
+    5 de Monedes (0 punts) 
+    10 de Bastos (2 punts) 
+    1 de Bastos (11 punts) 
+    4 de Espases (0 punts) 
 
-    <span class="co">/* Tornem a calcular la longitud de l&#39;string */</span>
-    numLletres = strlen(nom);
+Carta de major puntuació: 
+    1 de Bastos (11 punts) 
 
-    <span class="co">/* Per quin motiu ara ha canviat la longitud de la</span>
-<span class="co">     * variable nom, si no l&#39;hem tornat a redefinir?</span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Ara el nom </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> té %d lletres.</span><span class="sc">\n</span><span class="st">&quot;</span>, nom, numLletres);
+Puntuació total: 
+    26 punts 
 
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
-<p>Si s’executa el programa, la sortida obtinguda serà similar a la següent:</p>
-<p>
-<img src="img/play.png" float="right;" style="float:left; padding:10px" />
-</p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Introdueix un nom: Quim
-El nom <span class="st">&quot;Quim&quot;</span> té <span class="dv">4</span> lletres.
-
-Sobreescrivim el finalitzador &#39;\<span class="dv">0</span>&#39;.
-Ara el nom <span class="st">&quot;QuimX�!��&quot;</span> té <span class="dv">9</span> lletres.</code></pre></div>
+Comparació de cartes: 
+    1 de Monedes vs 10 de Monedes: són del mateix coll!
+    10 de Monedes vs 5 de Monedes: són del mateix coll!
+    5 de Monedes vs 10 de Bastos: són de colls diferents!
+    10 de Bastos vs 1 de Bastos: són del mateix coll!
+    1 de Bastos vs 4 de Espases: són de colls diferents!</code></pre>
 
 </div>
 </div>

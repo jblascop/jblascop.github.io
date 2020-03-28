@@ -127,7 +127,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-03-27}
+    \date{2020-03-28}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -2836,196 +2836,6 @@ nosaltres mateixos de la següent forma:
 \end{Highlighting}
 \end{Shaded}
 
-\section{Exemple: comparacioStrings}\label{exemple-comparaciostrings}
-
-La forma com comparem strings amb llenguatge algorísmic és diferent que
-no en llenguatge C:
-
-\begin{itemize}
-\tightlist
-\item
-  Llenguatge algorísmic: la comparació entre strings es fa amb
-  \texttt{=}.
-\item
-  Llenguatge C: la comparació entre strings es fa amb la funció
-  \texttt{strcmp}, la qual realitza una comparació caràcter a caràcter
-  de les dues cadenes i com a resultat:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Retorna \texttt{0}: si les dues cadenes són iguals.
-  \item
-    Retorna \texttt{-1}: si la primera cadena \textless{} segona cadena.
-  \item
-    Retorna \texttt{1}: si la primera cadena \textgreater{} segona
-    cadena.
-  \end{itemize}
-\end{itemize}
-
-Un exemple on realitza una comparació de dos strings pot ser el següent:
-
-\includegraphics{./img/alg.png}
-
-\begin{verbatim}
-algorithm comparacioStrings
-
-    var
-        cadena1: string;
-        cadena2: string;
-    end var
-
-    cadena1:= "UOC";
-    cadena2:= "UAB";
-
-    if (cadena1 = cadena2) then
-        writeString(cadena1);
-        writeString(" = ");
-        writeString(cadena2);
-    else
-        if (cadena1 > cadena2) then
-            writeString(cadena1);
-            writeString(" > ");
-            writeString(cadena2);
-        else
-            writeString(cadena1);
-            writeString(" < ");
-            writeString(cadena2);
-        end if
-    end if
-
-end algorithm
-\end{verbatim}
-
-En llenguatge C, la comparació caràcter a caràcter entre els string
-``UOC'' i ``UAB'' que realitza la funció \texttt{strcmp} és la següent:
-
-\begin{itemize}
-\tightlist
-\item
-  Caràcters de la posició 0 dels dos string: \textbf{U}OC vs
-  \textbf{U}AB. Són iguals, amb el que passa a comparar el següent
-  caràcter.
-\item
-  Caràcters de la posició 1 dels dos string: U\textbf{O}C vs
-  U\textbf{A}B. Són diferents (`O' \textgreater{} `A'), finalitza la
-  comparació i la funció \texttt{strcmp} retorna el valor 1.
-\end{itemize}
-
-\includegraphics{./img/c.png}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\PreprocessorTok{#include }\ImportTok{<stdio.h>}
-\PreprocessorTok{#include }\ImportTok{<string.h>}
-
-\PreprocessorTok{#define MAX_STRING 3+1}
-
-\DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
-
-    \DataTypeTok{char}\NormalTok{ cadena1[MAX_STRING] = }\StringTok{"UOC"}\NormalTok{;}
-    \DataTypeTok{char}\NormalTok{ cadena2[MAX_STRING] = }\StringTok{"UAB"}\NormalTok{;}
-    \DataTypeTok{int}\NormalTok{ resultatComparacio = }\DecValTok{0}\NormalTok{;}
-    
-\NormalTok{    resultatComparacio = strcmp(cadena1, cadena2);}
-    
-\NormalTok{    printf(}\StringTok{"Comparació strings }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ i }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, cadena1, cadena2, resultatComparacio);}
-    
-    \ControlFlowTok{if}\NormalTok{ (resultatComparacio == }\DecValTok{0}\NormalTok{) \{}
-\NormalTok{        printf(}\StringTok{"El resultat %d significa que l'string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ == string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"\textbackslash{}n}\StringTok{"}\NormalTok{, resultatComparacio, cadena1, cadena2);}
-\NormalTok{    \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{ (resultatComparacio == -}\DecValTok{1}\NormalTok{) \{}
-\NormalTok{        printf(}\StringTok{"El resultat %d significa que l'string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ < string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"\textbackslash{}n}\StringTok{"}\NormalTok{, resultatComparacio, cadena1, cadena2);}
-\NormalTok{    \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{ (resultatComparacio == }\DecValTok{1}\NormalTok{) \{}
-\NormalTok{        printf(}\StringTok{"El resultat %d significa que l'string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ > string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"\textbackslash{}n}\StringTok{"}\NormalTok{, resultatComparacio, cadena1, cadena2);     }
-\NormalTok{    \}}
-    
-    \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
-\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-El resultat de l'execució del programa en C és:
-
-\includegraphics{./img/play.png}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{Comparació strings }\StringTok{"UOC"}\NormalTok{ i }\StringTok{"UAB"}\NormalTok{ = }\DecValTok{1}
-\NormalTok{El resultat }\DecValTok{1}\NormalTok{ significa que l'string }\StringTok{"UOC"}\NormalTok{ > string }\StringTok{"UAB"}
-\end{Highlighting}
-\end{Shaded}
-
-\section{Exemple: nòmines}\label{exemple-nomines}
-
-Imaginem que volem un programa que ens permeti entrar les nòmines de
-tots els empleats de la nostra empresa. Un empleat el definim com a nom
-(cadena de caràcters) + nòmina (real). El programa ha de mostrar al
-final de tot la relació de nòmines de tots els empleats, la mitjana de
-totes les nòmines de l'empresa, i qui cobra més i menys a l'empresa.
-
-Una possible forma de programa-ho seria la següent:
-
-\includegraphics{./img/c.png}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\PreprocessorTok{#include }\ImportTok{<stdio.h>}
-\PreprocessorTok{#include }\ImportTok{<string.h>}
-
-\PreprocessorTok{#define MAX_EMPLEATS 5}
-\PreprocessorTok{#define MAX_NOM 20+1}
-
-\KeywordTok{typedef} \KeywordTok{struct}\NormalTok{ \{}
-   \DataTypeTok{char}\NormalTok{ nom[MAX_NOM];}
-   \DataTypeTok{float}\NormalTok{ nomina;}
-\NormalTok{\} tEmpleat;}
-
-\DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
-
-\NormalTok{   tEmpleat vEmpleats[MAX_EMPLEATS];}
-   \DataTypeTok{int}\NormalTok{ i = }\DecValTok{0}\NormalTok{;}
-   \DataTypeTok{int}\NormalTok{ maxNomina = }\DecValTok{0}\NormalTok{;}
-   \DataTypeTok{int}\NormalTok{ minNomina = }\DecValTok{0}\NormalTok{;}
-   \DataTypeTok{float}\NormalTok{ sumaNomines = }\DecValTok{0}\NormalTok{;}
-
-   \ControlFlowTok{for}\NormalTok{ (i=}\DecValTok{0}\NormalTok{; i<MAX_EMPLEATS; i++) \{}
-\NormalTok{      printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Nom empleat : "}\NormalTok{);}
-\NormalTok{      scanf(}\StringTok{"%s"}\NormalTok{, vEmpleats[i].nom);}
-\NormalTok{      printf(}\StringTok{"Nòmina : "}\NormalTok{);}
-\NormalTok{      scanf(}\StringTok{"%f"}\NormalTok{, &vEmpleats[i].nomina);}
-\NormalTok{   \}}
-
-\NormalTok{   printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Llistat de nòmines d'empleats : }\SpecialCharTok{\textbackslash{}n\textbackslash{}n}\StringTok{"}\NormalTok{);}
-
-   \ControlFlowTok{for}\NormalTok{ (i=}\DecValTok{0}\NormalTok{; i<MAX_EMPLEATS; i++) \{}
-\NormalTok{      sumaNomines = sumaNomines + vEmpleats[i].nomina;}
-      \ControlFlowTok{if}\NormalTok{ (vEmpleats[i].nomina > vEmpleats[maxNomina].nomina) \{}
-\NormalTok{         maxNomina = i;}
-\NormalTok{      \}}
-      \ControlFlowTok{if}\NormalTok{ (vEmpleats[i].nomina < vEmpleats[minNomina].nomina) \{}
-\NormalTok{         minNomina = i;}
-\NormalTok{      \}}
-\NormalTok{      printf(}\StringTok{"%s --> %.2f €}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, vEmpleats[i].nom, vEmpleats[i].nomina);}
-\NormalTok{   \}}
-
-\NormalTok{   printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Mitjana nònimes : %.2f €"}\NormalTok{, sumaNomines/MAX_EMPLEATS);}
-\NormalTok{   printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Nòmina més alta : %.2f € (%s)"}\NormalTok{, vEmpleats[maxNomina].nomina, vEmpleats[maxNomina].nom);}
-\NormalTok{   printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Nòmina més baixa : %.2f € (%s)"}\NormalTok{, vEmpleats[minNomina].nomina, vEmpleats[minNomina].nom);}
-\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-Com es pot veure, s'utilitza un vector de \texttt{tEmpleat} de forma que
-donada una longitud màxima del vector, anirem introduint els tEmpleats
-un a un dins d'ell. Una vegada fet, ja podem tornar a recórrer el vector
-de tEmpleat i realitzar tots els càlculs que ens demanen, així com
-mostrar per pantalla les nòmines de tots els empleats.
-
-En aquest exemple la variable i fa d'índex per recórrer el vector, i les
-variables maxNomina i minNomina també són índexos: indiquen en quina
-posició estàn els empleats amb la nòmina més alta i més baixa
-respectivament.
-
 \section{Comanda scanf}\label{comanda-scanf}
 
 Quan utilitzem la comanda \texttt{scanf} fins ara sempre li hem passat
@@ -3228,6 +3038,455 @@ següent:
 \NormalTok{Ara el nom }\StringTok{"QuimX�!��"}\NormalTok{ té }\DecValTok{9}\NormalTok{ lletres.}
 \end{Highlighting}
 \end{Shaded}
+
+\section{Exemple: comparacioStrings}\label{exemple-comparaciostrings}
+
+La forma com comparem strings amb llenguatge algorísmic és diferent que
+no en llenguatge C:
+
+\begin{itemize}
+\tightlist
+\item
+  Llenguatge algorísmic: la comparació entre strings es fa amb
+  \texttt{=}.
+\item
+  Llenguatge C: la comparació entre strings es fa amb la funció
+  \texttt{strcmp}, la qual realitza una comparació caràcter a caràcter
+  de les dues cadenes i com a resultat:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Retorna \texttt{0}: si les dues cadenes són iguals.
+  \item
+    Retorna \texttt{-1}: si la primera cadena \textless{} segona cadena.
+  \item
+    Retorna \texttt{1}: si la primera cadena \textgreater{} segona
+    cadena.
+  \end{itemize}
+\end{itemize}
+
+Un exemple on realitza una comparació de dos strings pot ser el següent:
+
+\includegraphics{./img/alg.png}
+
+\begin{verbatim}
+algorithm comparacioStrings
+
+    var
+        cadena1: string;
+        cadena2: string;
+    end var
+
+    cadena1:= "UOC";
+    cadena2:= "UAB";
+
+    if (cadena1 = cadena2) then
+        writeString(cadena1);
+        writeString(" = ");
+        writeString(cadena2);
+    else
+        if (cadena1 > cadena2) then
+            writeString(cadena1);
+            writeString(" > ");
+            writeString(cadena2);
+        else
+            writeString(cadena1);
+            writeString(" < ");
+            writeString(cadena2);
+        end if
+    end if
+
+end algorithm
+\end{verbatim}
+
+En llenguatge C, la comparació caràcter a caràcter entre els string
+``UOC'' i ``UAB'' que realitza la funció \texttt{strcmp} és la següent:
+
+\begin{itemize}
+\tightlist
+\item
+  Caràcters de la posició 0 dels dos string: \textbf{U}OC vs
+  \textbf{U}AB. Són iguals, amb el que passa a comparar el següent
+  caràcter.
+\item
+  Caràcters de la posició 1 dels dos string: U\textbf{O}C vs
+  U\textbf{A}B. Són diferents (`O' \textgreater{} `A'), finalitza la
+  comparació i la funció \texttt{strcmp} retorna el valor 1.
+\end{itemize}
+
+\includegraphics{./img/c.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\PreprocessorTok{#include }\ImportTok{<stdio.h>}
+\PreprocessorTok{#include }\ImportTok{<string.h>}
+
+\PreprocessorTok{#define MAX_STRING 3+1}
+
+\DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
+
+    \DataTypeTok{char}\NormalTok{ cadena1[MAX_STRING] = }\StringTok{"UOC"}\NormalTok{;}
+    \DataTypeTok{char}\NormalTok{ cadena2[MAX_STRING] = }\StringTok{"UAB"}\NormalTok{;}
+    \DataTypeTok{int}\NormalTok{ resultatComparacio = }\DecValTok{0}\NormalTok{;}
+    
+\NormalTok{    resultatComparacio = strcmp(cadena1, cadena2);}
+    
+\NormalTok{    printf(}\StringTok{"Comparació strings }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ i }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, cadena1, cadena2, resultatComparacio);}
+    
+    \ControlFlowTok{if}\NormalTok{ (resultatComparacio == }\DecValTok{0}\NormalTok{) \{}
+\NormalTok{        printf(}\StringTok{"El resultat %d significa que l'string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ == string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"\textbackslash{}n}\StringTok{"}\NormalTok{, resultatComparacio, cadena1, cadena2);}
+\NormalTok{    \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{ (resultatComparacio == -}\DecValTok{1}\NormalTok{) \{}
+\NormalTok{        printf(}\StringTok{"El resultat %d significa que l'string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ < string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"\textbackslash{}n}\StringTok{"}\NormalTok{, resultatComparacio, cadena1, cadena2);}
+\NormalTok{    \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{ (resultatComparacio == }\DecValTok{1}\NormalTok{) \{}
+\NormalTok{        printf(}\StringTok{"El resultat %d significa que l'string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"}\StringTok{ > string }\SpecialCharTok{\textbackslash{}"}\StringTok{%s}\SpecialCharTok{\textbackslash{}"\textbackslash{}n}\StringTok{"}\NormalTok{, resultatComparacio, cadena1, cadena2);     }
+\NormalTok{    \}}
+    
+    \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+El resultat de l'execució del programa en C és:
+
+\includegraphics{./img/play.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Comparació strings }\StringTok{"UOC"}\NormalTok{ i }\StringTok{"UAB"}\NormalTok{ = }\DecValTok{1}
+\NormalTok{El resultat }\DecValTok{1}\NormalTok{ significa que l'string }\StringTok{"UOC"}\NormalTok{ > string }\StringTok{"UAB"}
+\end{Highlighting}
+\end{Shaded}
+
+\section{Exemple: nòmines}\label{exemple-nomines}
+
+Imaginem que volem un programa que ens permeti entrar les nòmines de
+tots els empleats de la nostra empresa. Un empleat el definim com a nom
+(cadena de caràcters) + nòmina (real). El programa ha de mostrar al
+final de tot la relació de nòmines de tots els empleats, la mitjana de
+totes les nòmines de l'empresa, i qui cobra més i menys a l'empresa.
+
+Una possible forma de programa-ho seria la següent:
+
+\includegraphics{./img/c.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\PreprocessorTok{#include }\ImportTok{<stdio.h>}
+\PreprocessorTok{#include }\ImportTok{<string.h>}
+
+\PreprocessorTok{#define MAX_EMPLEATS 5}
+\PreprocessorTok{#define MAX_NOM 20+1}
+
+\KeywordTok{typedef} \KeywordTok{struct}\NormalTok{ \{}
+   \DataTypeTok{char}\NormalTok{ nom[MAX_NOM];}
+   \DataTypeTok{float}\NormalTok{ nomina;}
+\NormalTok{\} tEmpleat;}
+
+\DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
+
+\NormalTok{   tEmpleat vEmpleats[MAX_EMPLEATS];}
+   \DataTypeTok{int}\NormalTok{ i = }\DecValTok{0}\NormalTok{;}
+   \DataTypeTok{int}\NormalTok{ maxNomina = }\DecValTok{0}\NormalTok{;}
+   \DataTypeTok{int}\NormalTok{ minNomina = }\DecValTok{0}\NormalTok{;}
+   \DataTypeTok{float}\NormalTok{ sumaNomines = }\DecValTok{0}\NormalTok{;}
+
+   \ControlFlowTok{for}\NormalTok{ (i=}\DecValTok{0}\NormalTok{; i<MAX_EMPLEATS; i++) \{}
+\NormalTok{      printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Nom empleat : "}\NormalTok{);}
+\NormalTok{      scanf(}\StringTok{"%s"}\NormalTok{, vEmpleats[i].nom);}
+\NormalTok{      printf(}\StringTok{"Nòmina : "}\NormalTok{);}
+\NormalTok{      scanf(}\StringTok{"%f"}\NormalTok{, &vEmpleats[i].nomina);}
+\NormalTok{   \}}
+
+\NormalTok{   printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Llistat de nòmines d'empleats : }\SpecialCharTok{\textbackslash{}n\textbackslash{}n}\StringTok{"}\NormalTok{);}
+
+   \ControlFlowTok{for}\NormalTok{ (i=}\DecValTok{0}\NormalTok{; i<MAX_EMPLEATS; i++) \{}
+\NormalTok{      sumaNomines = sumaNomines + vEmpleats[i].nomina;}
+      \ControlFlowTok{if}\NormalTok{ (vEmpleats[i].nomina > vEmpleats[maxNomina].nomina) \{}
+\NormalTok{         maxNomina = i;}
+\NormalTok{      \}}
+      \ControlFlowTok{if}\NormalTok{ (vEmpleats[i].nomina < vEmpleats[minNomina].nomina) \{}
+\NormalTok{         minNomina = i;}
+\NormalTok{      \}}
+\NormalTok{      printf(}\StringTok{"%s --> %.2f €}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, vEmpleats[i].nom, vEmpleats[i].nomina);}
+\NormalTok{   \}}
+
+\NormalTok{   printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Mitjana nònimes : %.2f €"}\NormalTok{, sumaNomines/MAX_EMPLEATS);}
+\NormalTok{   printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Nòmina més alta : %.2f € (%s)"}\NormalTok{, vEmpleats[maxNomina].nomina, vEmpleats[maxNomina].nom);}
+\NormalTok{   printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Nòmina més baixa : %.2f € (%s)"}\NormalTok{, vEmpleats[minNomina].nomina, vEmpleats[minNomina].nom);}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Com es pot veure, s'utilitza un vector de \texttt{tEmpleat} de forma que
+donada una longitud màxima del vector, anirem introduint els tEmpleats
+un a un dins d'ell. Una vegada fet, ja podem tornar a recórrer el vector
+de tEmpleat i realitzar tots els càlculs que ens demanen, així com
+mostrar per pantalla les nòmines de tots els empleats.
+
+En aquest exemple la variable i fa d'índex per recórrer el vector, i les
+variables maxNomina i minNomina també són índexos: indiquen en quina
+posició estàn els empleats amb la nòmina més alta i més baixa
+respectivament.
+
+\section{Exemple: brisca}\label{exemple-brisca}
+
+Exemple amb diferents recorreguts realitzat sobre tuples guardades en un
+vector, utilitzant el joc de cartes de la brisca. Per tal d'explicar
+millor el plantejament de cada implementació, s'han afegit comentaris
+detallats dins del codi.
+
+\includegraphics{./img/c.png}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\PreprocessorTok{#include }\ImportTok{<stdio.h>}
+\PreprocessorTok{#include }\ImportTok{<stdbool.h>}
+
+\CommentTok{/* Punt de partida: sabem jugar perfectament}
+\CommentTok{ * a la brisca (https://ca.wikipedia.org/wiki/Brisca), }
+\CommentTok{ * però en canvi som un desastre havent de comptar}
+\CommentTok{ * la puntuació de totes les cartes guanyades. Per}
+\CommentTok{ * aquest motiu volem fer un programa que ens ajudi}
+\CommentTok{ * en aquesta tasca (i altres, per practicar diferents}
+\CommentTok{ * iteracions amb bucles). El programa demanarà per }
+\CommentTok{ * teclat carta a carta i finalitzarà quan s'introdueixi}
+\CommentTok{ * un tipus de coll diferent dels definits.}
+\CommentTok{ * Haurà de generar les següents sortides:}
+\CommentTok{ * 1. Llistar totes les cartes introduïdes.}
+\CommentTok{ * 2. Mostrar la carta amb una puntuació més alta.}
+\CommentTok{ * 3. Mostrar la puntuació total aconseguida.}
+\CommentTok{ * 4. Comparar parelles de cartes (1a vs 2a, 2a vs 3a,}
+\CommentTok{ *    3a vs 4a,...) i indicar si són del mateix coll.}
+\CommentTok{ */}
+
+\PreprocessorTok{#define MAX_NUM_CARTES 48}
+\PreprocessorTok{#define NUM_VALORS 13}
+\PreprocessorTok{#define MAX_NUM_COLLS 4}
+\KeywordTok{typedef} \KeywordTok{enum}\NormalTok{ \{MONEDES, COPES, BASTOS, ESPASES, FINALITZAR\} tColl;}
+
+\KeywordTok{typedef} \KeywordTok{struct}\NormalTok{ \{}
+\NormalTok{    tColl coll;}
+    \DataTypeTok{int}\NormalTok{ numero;}
+    \DataTypeTok{int}\NormalTok{ valor;}
+\NormalTok{\} tCarta;}
+
+\DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
+\NormalTok{    tCarta cartaAux;}
+\NormalTok{    tCarta cartaDeMajorValor;}
+\NormalTok{    tCarta vCartes[MAX_NUM_CARTES];}
+\NormalTok{    bool isFinalitzat;}
+    \DataTypeTok{int}\NormalTok{ puntuacio;}
+    \DataTypeTok{int}\NormalTok{ i, j;}
+\NormalTok{    bool isMateixColl;}
+    
+    \CommentTok{/* S'inicialitza el vector vValors amb les}
+\CommentTok{     * puntuacions de totes les cartes. El nom}
+\CommentTok{     * de la carta fa d'índex del vector, i el}
+\CommentTok{     * valor desat en aquella posició és la seva}
+\CommentTok{     * puntuació. Exemple: }
+\CommentTok{     * - una carta amb un 1 retornarà 11 punts,}
+\CommentTok{     *   corresponents al valor de la posició 1.}
+\CommentTok{     * - una carta amb un 5 retornarà 0 punts,}
+\CommentTok{     *   corresponents al valor de la posició 5.}
+\CommentTok{     */}
+    \DataTypeTok{int}\NormalTok{ vValors[NUM_VALORS] = \{}\DecValTok{0}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{10}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{, }\DecValTok{4}\NormalTok{\};}
+
+    \CommentTok{/* El següent vector ens ajudarà a mostrar}
+\CommentTok{     * per pantalla de forma automàtica la descripció }
+\CommentTok{     * associada a cadascun dels valors definits a }
+\CommentTok{     * l'enumeratiu tColl}
+\CommentTok{     */}
+    \DataTypeTok{char}\NormalTok{* vNoms[MAX_NUM_COLLS] = \{}\StringTok{"Monedes"}\NormalTok{, }\StringTok{"Copes"}\NormalTok{, }\StringTok{"Bastos"}\NormalTok{, }\StringTok{"Espases"}\NormalTok{\};}
+
+    \CommentTok{/* La variable booleana s'utilitzarà per}
+\CommentTok{     * finalitzar el primer bucle d'introducció}
+\CommentTok{     * de cartes des de teclat}
+\CommentTok{     */}
+\NormalTok{    isFinalitzat = false;}
+    
+\NormalTok{    i = }\DecValTok{0}\NormalTok{;}
+\NormalTok{    j = }\DecValTok{0}\NormalTok{;}
+\NormalTok{    puntuacio = }\DecValTok{0}\NormalTok{;}
+    
+\NormalTok{    printf(}\StringTok{"Tipus carta: 0=MONEDES, 1=COPES, 2=BASTOS, 3=ESPASES.}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
+
+    \ControlFlowTok{while}\NormalTok{ (!isFinalitzat) \{}
+\NormalTok{        printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Introdueix tipus carta: "}\NormalTok{);}
+\NormalTok{        scanf(}\StringTok{"%u"}\NormalTok{, &cartaAux.coll);}
+        
+        \CommentTok{/* Si el coll introduit no correspon a cap dels}
+\CommentTok{         * quatre definits, significa que no es vol }
+\CommentTok{         * entrar cap més carta des de teclat}
+\CommentTok{         */}
+        \ControlFlowTok{if}\NormalTok{ (cartaAux.coll != MONEDES && cartaAux.coll != COPES}
+\NormalTok{            && cartaAux.coll != BASTOS && cartaAux.coll != ESPASES) \{}
+\NormalTok{            isFinalitzat = true;}
+
+\NormalTok{        \} }\ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{            printf(}\StringTok{"Introdueix número carta: "}\NormalTok{);}
+\NormalTok{            scanf(}\StringTok{"%d"}\NormalTok{, &cartaAux.numero);}
+            
+            \CommentTok{/* Es valida que el número de la carta}
+\CommentTok{             * introduïda sigui vàlid: valor comprès}
+\CommentTok{             * entre 1 i 12}
+\CommentTok{             */}
+            \ControlFlowTok{if}\NormalTok{ (cartaAux.numero < }\DecValTok{1}\NormalTok{ || cartaAux.numero > }\DecValTok{12}\NormalTok{) \{}
+\NormalTok{                printf(}\StringTok{"Error: número de la carta incorrecte!}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
+                
+\NormalTok{            \} }\ControlFlowTok{else}\NormalTok{ \{}
+                \CommentTok{/* Es calcula el valor de la carta i }
+\CommentTok{                 * s'assigna al camp valor de la tupla}
+\CommentTok{                 * cartaAux (de tipus tCarta)}
+\CommentTok{                 */}
+\NormalTok{                cartaAux.valor = vValors[cartaAux.numero];}
+\NormalTok{                vCartes[i] = cartaAux;}
+                
+                \CommentTok{/* La variable i contindrà el número}
+\CommentTok{                 * de cartes vàlides introduïdes per}
+\CommentTok{                 * teclat.}
+\CommentTok{                 */}
+\NormalTok{                i = i + }\DecValTok{1}\NormalTok{;}
+\NormalTok{            \}}
+\NormalTok{        \}}
+\NormalTok{    \}}
+    
+    \CommentTok{/* Sortida 1:}
+\CommentTok{     * Recorrem el vector de cartes per mostrar}
+\CommentTok{     * per pantalla tots els elements (cartes)}
+\CommentTok{     * que conté.}
+\CommentTok{     */}
+\NormalTok{    printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Relació de cartes introduïdes: }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
+    \ControlFlowTok{for}\NormalTok{ (j = }\DecValTok{0}\NormalTok{; j < i; j++) \{}
+\NormalTok{        printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}t}\StringTok{%d de %s (%d punts) }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, vCartes[j].numero, vNoms[vCartes[j].coll], vCartes[j].valor);}
+\NormalTok{    \}}
+    
+    \CommentTok{/* Sortida 2:}
+\CommentTok{     * Recorrem el vector de cartes i busquem}
+\CommentTok{     * la que té una major puntuació. En cas }
+\CommentTok{     * d'empat, mostrem l'última introduïda.}
+\CommentTok{     */}
+
+    \CommentTok{/* Inicialitzem el valor de cartaDeMajorValor}
+\CommentTok{     * a valor = 0}
+\CommentTok{     */}
+\NormalTok{    cartaDeMajorValor.valor = }\DecValTok{0}\NormalTok{;}
+\NormalTok{    printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Carta de major puntuació: }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
+    \ControlFlowTok{for}\NormalTok{ (j = }\DecValTok{0}\NormalTok{; j < i; j++) \{}
+        \CommentTok{/* En cada iteració del bucle ens assegurem}
+\CommentTok{         * que cartaDeMajorValor sigui la carta}
+\CommentTok{         * amb un valor més gran. Comparem la carta}
+\CommentTok{         * que estem tractant actualment amb la carta}
+\CommentTok{         * que fins ara hem trobat de major valor.}
+\CommentTok{         */}
+        \ControlFlowTok{if}\NormalTok{ (vCartes[j].valor >= cartaDeMajorValor.valor) \{}
+\NormalTok{            cartaDeMajorValor.coll = vCartes[j].coll;}
+\NormalTok{            cartaDeMajorValor.numero = vCartes[j].numero;}
+\NormalTok{            cartaDeMajorValor.valor = vCartes[j].valor;}
+\NormalTok{        \}}
+\NormalTok{    \}}
+\NormalTok{    printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}t}\StringTok{%d de %s (%d punts) }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, cartaDeMajorValor.numero, vNoms[cartaDeMajorValor.coll], cartaDeMajorValor.valor);}
+
+    \CommentTok{/* Sortida 3:}
+\CommentTok{     * Recorrem el vector de cartes i anem sumant}
+\CommentTok{     * tots els valors, per tal d'obtenir la }
+\CommentTok{     * puntuació total.}
+\CommentTok{     */}
+\NormalTok{    printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Puntuació total: }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
+    \ControlFlowTok{for}\NormalTok{ (j = }\DecValTok{0}\NormalTok{; j < i; j++) \{}
+\NormalTok{        puntuacio = puntuacio + vCartes[j].valor;}
+\NormalTok{    \}}
+\NormalTok{    printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}t}\StringTok{%d punts }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, puntuacio);}
+    
+    \CommentTok{/* Sortida 4:}
+\CommentTok{     * Recorrem el vector de cartes i anem comparant}
+\CommentTok{     * parelles de carta: la que estem tractant amb}
+\CommentTok{     * la que ve a continuació. Mostrem per pantalla}
+\CommentTok{     * si són del mateix coll o no.}
+\CommentTok{     */}
+\NormalTok{    printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}n}\StringTok{Comparació de cartes: }\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
+    
+    \CommentTok{/* Important: en aquest recorregut del vector}
+\CommentTok{     * de cartes anem comparant la carta de la }
+\CommentTok{     * posició actual j amb la carta que està}
+\CommentTok{     * a la següent posició j+1. Això significa}
+\CommentTok{     * que el límit de les iteracions del }
+\CommentTok{     * bucle passa a ser i-1 (un element abans}
+\CommentTok{     * del final), ja que quan tractem aquest}
+\CommentTok{     * element el compararem amb el següent,}
+\CommentTok{     * que és l'últim del vector. Si en comptes}
+\CommentTok{     * de tenir i-1 tinguéssim només i, en }
+\CommentTok{     * la darrera iteració donaria error, ja }
+\CommentTok{     * que s'estaria accedint a una posició}
+\CommentTok{     * incorrecta del vector de cartes (i+1).}
+\CommentTok{     */}
+    \ControlFlowTok{for}\NormalTok{ (j = }\DecValTok{0}\NormalTok{; j < i-}\DecValTok{1}\NormalTok{; j++) \{}
+        
+        \CommentTok{/* Per comparar la carta de la posició actual}
+\CommentTok{         * amb la que hi ha a la següent posició,}
+\CommentTok{         * utilitzem els índex j i j+1 respectivament.}
+\CommentTok{         */}
+\NormalTok{        isMateixColl = (vCartes[j].coll == vCartes[j+}\DecValTok{1}\NormalTok{].coll);}
+\NormalTok{        printf(}\StringTok{"}\SpecialCharTok{\textbackslash{}t}\StringTok{%d de %s vs %d de %s: "}\NormalTok{, vCartes[j].numero, vNoms[vCartes[j].coll], vCartes[j+}\DecValTok{1}\NormalTok{].numero, vNoms[vCartes[j+}\DecValTok{1}\NormalTok{].coll]);}
+        \ControlFlowTok{if}\NormalTok{ (isMateixColl) \{}
+\NormalTok{            printf(}\StringTok{"són del mateix coll!}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
+\NormalTok{        \} }\ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{            printf(}\StringTok{"són de colls diferents!}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{);}
+\NormalTok{        \}}
+\NormalTok{    \}}
+    \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+Un exemple d'execució pot ser el següent:
+
+\includegraphics{./img/play.png}
+
+\begin{verbatim}
+Tipus carta: 0=MONEDES, 1=COPES, 2=BASTOS, 3=ESPASES.
+
+Introdueix tipus carta: 0
+Introdueix número carta: 1
+
+Introdueix tipus carta: 0
+Introdueix número carta: 10
+
+Introdueix tipus carta: 0
+Introdueix número carta: 5
+
+Introdueix tipus carta: 2
+Introdueix número carta: 10
+
+Introdueix tipus carta: 2
+Introdueix número carta: 1
+
+Introdueix tipus carta: 3
+Introdueix número carta: 4
+
+Introdueix tipus carta: 9
+
+Relació de cartes introduïdes: 
+    1 de Monedes (11 punts) 
+    10 de Monedes (2 punts) 
+    5 de Monedes (0 punts) 
+    10 de Bastos (2 punts) 
+    1 de Bastos (11 punts) 
+    4 de Espases (0 punts) 
+
+Carta de major puntuació: 
+    1 de Bastos (11 punts) 
+
+Puntuació total: 
+    26 punts 
+
+Comparació de cartes: 
+    1 de Monedes vs 10 de Monedes: són del mateix coll!
+    10 de Monedes vs 5 de Monedes: són del mateix coll!
+    5 de Monedes vs 10 de Bastos: són de colls diferents!
+    10 de Bastos vs 1 de Bastos: són del mateix coll!
+    1 de Bastos vs 4 de Espases: són de colls diferents!
+\end{verbatim}
 
 \chapter{PAC06}\label{pac06}
 
