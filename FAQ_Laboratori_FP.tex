@@ -127,7 +127,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-03-28}
+    \date{2020-04-13}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -3493,10 +3493,11 @@ Comparació de cartes:
 \section{Diferències entre funcions i
 accions}\label{diferencies-entre-funcions-i-accions}
 
-A continuació explicaré les diferències entre una \textbf{funció} i una
-\textbf{acció}, quins tipus de paràmetres utilitzen, com s'implementen
-en llenguatge C, i finalment què passa quan un paràmetre és una tupla.
-És important que es vagin consolidant tots aquests conceptes.
+A continuació s'expliquen les diferències entre una \textbf{funció} i
+una \textbf{acció}, quins tipus de paràmetres utilitzen, com
+s'implementen en llenguatge C, i finalment què passa quan un paràmetre
+és una tupla. És important que es vagin consolidant tots aquests
+conceptes.
 
 Les principals diferències són:
 
@@ -3549,10 +3550,12 @@ Per exemple, imaginem que volem implementar en llenguatge C la funció
     \DataTypeTok{int}\NormalTok{ resultat = }\DecValTok{0}\NormalTok{;}
 \NormalTok{    printf(}\StringTok{"Valor de num1 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num1);}
 \NormalTok{    printf(}\StringTok{"Valor de num2 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num2);}
-\NormalTok{    printf(}\StringTok{"Inici execució funció\textbackslash{}n"}\NormalTok{);}
+\NormalTok{    printf(}\StringTok{"Valor de resultat = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, resultat);}
+\NormalTok{    printf(}\StringTok{">> Inici execució funció\textbackslash{}n"}\NormalTok{);}
 \NormalTok{    resultat = suma(num1, num2);}
-\NormalTok{    printf(}\StringTok{"Resultat suma = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, resultat);}
-\NormalTok{    printf(}\StringTok{"Fi execució funció\textbackslash{}n"}\NormalTok{);}
+\NormalTok{    printf(}\StringTok{"Suma = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, resultat);}
+\NormalTok{    printf(}\StringTok{">> Fi execució funció\textbackslash{}n"}\NormalTok{);}
+\NormalTok{    printf(}\StringTok{"Valor de resultat = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, resultat);}
     \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
 \NormalTok{\}}
 
@@ -3569,11 +3572,13 @@ L'execució generarà la següent sortida:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{Valor de n1 = }\DecValTok{3}
-\NormalTok{Valor de n2 = }\DecValTok{3}
-\NormalTok{Inici execució funció}
-\NormalTok{suma: }\DecValTok{3}\NormalTok{ + }\DecValTok{2}\NormalTok{ = }\DecValTok{5}
-\NormalTok{Fi execució funció}
+\NormalTok{Valor de num1 = }\DecValTok{3}
+\NormalTok{Valor de num2 = }\DecValTok{2}
+\NormalTok{Valor de resultat = }\DecValTok{0}
+\NormalTok{>> Inici execució funció}
+\NormalTok{Suma = }\DecValTok{5}
+\NormalTok{>> Fi execució funció}
+\NormalTok{Valor de resultat = }\DecValTok{5}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3590,10 +3595,10 @@ entrada, sortida i entrada/sortida.
 
 \subsection{Paràmetres d'entrada (in)}\label{parametres-dentrada-in}
 
-Són aquells paràmetres que es passen a una acció i dels quals únicament
-utilitzarem el seu contingut. Això significa que treballarem amb ells en
-\emph{mode lectura}: obtindrem els seus valors per tal de realitzar
-càlculs, però mai modificarem el seu contingut. Exemple:
+Són aquells paràmetres que es passen a una \textbf{acció} i dels quals
+únicament utilitzarem el seu contingut. Això significa que treballarem
+amb ells en \emph{mode lectura}: obtindrem els seus valors per tal de
+realitzar càlculs, però mai modificarem el seu contingut. Exemple:
 
 \includegraphics{./img/c.png}
 
@@ -3602,25 +3607,25 @@ càlculs, però mai modificarem el seu contingut. Exemple:
 \PreprocessorTok{#include }\ImportTok{<stdio.h>}
 
 \CommentTok{/* Predeclaració de l'acció */}
-\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ num1, }\DataTypeTok{int}\NormalTok{ num2);}
+\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ n1, }\DataTypeTok{int}\NormalTok{ n2);}
 
 \DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
-    \DataTypeTok{int}\NormalTok{ n1 = }\DecValTok{3}\NormalTok{;}
-    \DataTypeTok{int}\NormalTok{ n2 = }\DecValTok{2}\NormalTok{;}
-\NormalTok{    printf(}\StringTok{"Valor de n1 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, n1);}
-\NormalTok{    printf(}\StringTok{"Valor de n2 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, n1);}
-\NormalTok{    printf(}\StringTok{"Inici execució funció\textbackslash{}n"}\NormalTok{);}
-\NormalTok{    suma(n1, n2);}
-\NormalTok{    printf(}\StringTok{"Fi execució funció\textbackslash{}n"}\NormalTok{);}
-\NormalTok{    printf(}\StringTok{"Valor de n1 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, n1);}
-\NormalTok{    printf(}\StringTok{"Valor de n2 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, n1);}
+    \DataTypeTok{int}\NormalTok{ num1 = }\DecValTok{3}\NormalTok{;}
+    \DataTypeTok{int}\NormalTok{ num2 = }\DecValTok{2}\NormalTok{;}
+\NormalTok{    printf(}\StringTok{"Valor de num1 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num1);}
+\NormalTok{    printf(}\StringTok{"Valor de num2 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num2);}
+\NormalTok{    printf(}\StringTok{">> Inici execució acció\textbackslash{}n"}\NormalTok{);}
+\NormalTok{    suma(num1, num2);}
+\NormalTok{    printf(}\StringTok{">> Fi execució acció\textbackslash{}n"}\NormalTok{);}
+\NormalTok{    printf(}\StringTok{"Valor de num1 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num1);}
+\NormalTok{    printf(}\StringTok{"Valor de num2 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num2);}
     \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
-\NormalTok{\}}
+\NormalTok{\}   }
 
 \CommentTok{/* Implementació de l'acció */}
-\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ num1, }\DataTypeTok{int}\NormalTok{ num2) \{}
-    \DataTypeTok{int}\NormalTok{ resultat = num1 + num2;}
-\NormalTok{    printf(}\StringTok{"suma2: %d + %d = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num1, num2, resultat);}
+\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ n1, }\DataTypeTok{int}\NormalTok{ n2) \{}
+    \DataTypeTok{int}\NormalTok{ resultat = n1 + n2;}
+\NormalTok{    printf(}\StringTok{"Suma = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, resultat);}
 \NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -3631,18 +3636,18 @@ L'execució generarà la següent sortida:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{Valor de n1 = }\DecValTok{3}
-\NormalTok{Valor de n2 = }\DecValTok{3}
-\NormalTok{Inici execució acció}
-\NormalTok{suma: }\DecValTok{3}\NormalTok{ + }\DecValTok{2}\NormalTok{ = }\DecValTok{5}
-\NormalTok{Fi execució acció}
-\NormalTok{Valor de n1 = }\DecValTok{3}
-\NormalTok{Valor de n2 = }\DecValTok{3}
+\NormalTok{Valor de num1 = }\DecValTok{3}
+\NormalTok{Valor de num2 = }\DecValTok{2}
+\NormalTok{>> Inici execució acció}
+\NormalTok{Suma = }\DecValTok{5}
+\NormalTok{>> Fi execució acció}
+\NormalTok{Valor de num1 = }\DecValTok{3}
+\NormalTok{Valor de num2 = }\DecValTok{2}
 \end{Highlighting}
 \end{Shaded}
 
-Com es pot observar, ni \texttt{n1} ni \texttt{n2} han modificat el seu
-valor després de l'execució de l'acció: son \textbf{paràmetres
+Com es pot observar, ni \texttt{num1} ni \texttt{num2} han modificat el
+seu valor després de l'execució de l'acció: son \textbf{paràmetres
 d'entrada}.
 
 Aquest tipus de paràmetre també es referencia com a paràmetre per valor,
@@ -3665,25 +3670,27 @@ sortida. Exemple:
 \PreprocessorTok{#include }\ImportTok{<stdio.h>}
 
 \CommentTok{/* Predeclaració de l'acció */}
-\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ num1, }\DataTypeTok{int}\NormalTok{ num2, }\DataTypeTok{int}\NormalTok{ *res);}
+\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ n1, }\DataTypeTok{int}\NormalTok{ n2, }\DataTypeTok{int}\NormalTok{ *res);}
 
 \DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
-    \DataTypeTok{int}\NormalTok{ n1 = }\DecValTok{3}\NormalTok{;}
-    \DataTypeTok{int}\NormalTok{ n2 = }\DecValTok{2}\NormalTok{;}
+    \DataTypeTok{int}\NormalTok{ num1 = }\DecValTok{3}\NormalTok{;}
+    \DataTypeTok{int}\NormalTok{ num2 = }\DecValTok{2}\NormalTok{;}
     \DataTypeTok{int}\NormalTok{ resultat = }\DecValTok{0}\NormalTok{;}
     \DataTypeTok{int}\NormalTok{ *pResultat = &resultat;}
+\NormalTok{    printf(}\StringTok{"Valor de num1 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num1);}
+\NormalTok{    printf(}\StringTok{"Valor de num2 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num2);}
 \NormalTok{    printf(}\StringTok{"Valor de resultat = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, resultat);}
-\NormalTok{    printf(}\StringTok{"Inici execució acció\textbackslash{}n"}\NormalTok{); }
-\NormalTok{    suma(n1, n2, pResultat);}
-\NormalTok{    printf(}\StringTok{"suma: %d + %d = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, n1, n2, resultat);}
-\NormalTok{    printf(}\StringTok{"Fi execució acció\textbackslash{}n"}\NormalTok{);}
+\NormalTok{    printf(}\StringTok{">> Inici execució acció\textbackslash{}n"}\NormalTok{); }
+\NormalTok{    suma(num1, num2, pResultat);}
+\NormalTok{    printf(}\StringTok{"Suma = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, resultat);}
+\NormalTok{    printf(}\StringTok{">> Fi execució acció\textbackslash{}n"}\NormalTok{);}
 \NormalTok{    printf(}\StringTok{"Valor de resultat = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, resultat);}
     \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
 \NormalTok{\}}
 
 \CommentTok{/* Implementació de l'acció */}
-\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ num1, }\DataTypeTok{int}\NormalTok{ num2, }\DataTypeTok{int}\NormalTok{ *res) \{}
-\NormalTok{    *res = num1 + num2;}
+\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ n1, }\DataTypeTok{int}\NormalTok{ n2, }\DataTypeTok{int}\NormalTok{ *res) \{}
+\NormalTok{    *res = n1 + n2;}
 \NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -3694,10 +3701,12 @@ L'execució generarà la següent sortida:
 
 \begin{Shaded}
 \begin{Highlighting}[]
+\NormalTok{Valor de num1 = }\DecValTok{3}
+\NormalTok{Valor de num2 = }\DecValTok{2}
 \NormalTok{Valor de resultat = }\DecValTok{0}
-\NormalTok{Inici execució acció}
-\NormalTok{suma: }\DecValTok{3}\NormalTok{ + }\DecValTok{2}\NormalTok{ = }\DecValTok{5}
-\NormalTok{Fi execució acció}
+\NormalTok{>> Inici execució acció}
+\NormalTok{Suma = }\DecValTok{5}
+\NormalTok{>> Fi execució acció}
 \NormalTok{Valor de resultat = }\DecValTok{5}
 \end{Highlighting}
 \end{Shaded}
@@ -3726,7 +3735,7 @@ Aquest tipus de paràmetre és una suma dels dos comportaments anteriors:
 d'una banda el seu valor importa a l'hora de realitzar els càlculs de
 l'acció, i a la vegada en finalitzar l'execució de l'acció tindrà un
 valor diferent, també significatiu per tractar-se del resultat final del
-càlcul.
+càlcul. Exemple:
 
 \includegraphics{./img/c.png}
 
@@ -3735,25 +3744,25 @@ càlcul.
 \PreprocessorTok{#include }\ImportTok{<stdio.h>}
 
 \CommentTok{/* Predeclaració de l'acció */}
-\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ *pNum1, }\DataTypeTok{int}\NormalTok{ num2);}
+\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ *pN1, }\DataTypeTok{int}\NormalTok{ n2);}
 
 \DataTypeTok{int}\NormalTok{ main(}\DataTypeTok{int}\NormalTok{ argc, }\DataTypeTok{char}\NormalTok{ **argv) \{}
-    \DataTypeTok{int}\NormalTok{ n1 = }\DecValTok{3}\NormalTok{;}
-    \DataTypeTok{int}\NormalTok{ n2 = }\DecValTok{2}\NormalTok{;}
-    \DataTypeTok{int}\NormalTok{ *pNum1 = &n1;}
-\NormalTok{    printf(}\StringTok{"Valor de n1 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, n1);}
-\NormalTok{    printf(}\StringTok{"Valor de n2 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, n2);}
-\NormalTok{    printf(}\StringTok{"Inici execució acció\textbackslash{}n"}\NormalTok{); }
-\NormalTok{    suma(pNum1, n2);}
-\NormalTok{    printf(}\StringTok{"Resultat suma = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, n1);}
-\NormalTok{    printf(}\StringTok{"Fi execució acció\textbackslash{}n"}\NormalTok{);}
-\NormalTok{    printf(}\StringTok{"Resultat (n1=n1+n2) = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, n1);}
+    \DataTypeTok{int}\NormalTok{ num1 = }\DecValTok{3}\NormalTok{;}
+    \DataTypeTok{int}\NormalTok{ num2 = }\DecValTok{2}\NormalTok{;}
+    \DataTypeTok{int}\NormalTok{ *pNum1 = &num1;}
+\NormalTok{    printf(}\StringTok{"Valor de num1 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num1);}
+\NormalTok{    printf(}\StringTok{"Valor de num2 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num2);}
+\NormalTok{    printf(}\StringTok{">> Inici execució acció\textbackslash{}n"}\NormalTok{); }
+\NormalTok{    suma(pNum1, num2);}
+\NormalTok{    printf(}\StringTok{"Suma = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num1);}
+\NormalTok{    printf(}\StringTok{">> Fi execució acció\textbackslash{}n"}\NormalTok{);}
+\NormalTok{    printf(}\StringTok{"Valor de num1 = %d}\SpecialCharTok{\textbackslash{}n}\StringTok{"}\NormalTok{, num1);}
     \ControlFlowTok{return} \DecValTok{0}\NormalTok{;}
 \NormalTok{\}}
 
 \CommentTok{/* Implementació de l'acció */}
-\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ *pNum1, }\DataTypeTok{int}\NormalTok{ num2) \{}
-\NormalTok{    *pNum1 = *pNum1 + num2;}
+\DataTypeTok{void}\NormalTok{ suma(}\DataTypeTok{int}\NormalTok{ *pN1, }\DataTypeTok{int}\NormalTok{ n2) \{}
+\NormalTok{    *pN1 = *pN1 + n2;}
 \NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -3764,20 +3773,20 @@ L'execució generarà la següent sortida:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{Valor de n1 = }\DecValTok{3}
-\NormalTok{Valor de n2 = }\DecValTok{2}
-\NormalTok{Inici execució acció}
-\NormalTok{Resultat suma = }\DecValTok{5}
-\NormalTok{Fi execució acció}
-\NormalTok{Resultat (n1=n1+n2) = }\DecValTok{5}
+\NormalTok{Valor de num1 = }\DecValTok{3}
+\NormalTok{Valor de num2 = }\DecValTok{2}
+\NormalTok{>> Inici execució acció}
+\NormalTok{Suma = }\DecValTok{5}
+\NormalTok{>> Fi execució acció}
+\NormalTok{Valor de num1 = }\DecValTok{5}
 \end{Highlighting}
 \end{Shaded}
 
-En aquest cas s'ha realitzat la suma com a \texttt{n1\ =\ n1\ +\ n2} :
-el resultat de la suma de les dues variables es guarda a la primera
-d'elles. Així doncs el valor de la variable \texttt{n1} importa tant a
-l'entrada com a la sortida de l'acció, amb el que es tracta d'un
-\textbf{paràmetre d'entrada/sortida}.
+En aquest cas s'ha realitzat la suma com a
+\texttt{num1\ =\ num1\ +\ num2} : el resultat de la suma de les dues
+variables es guarda a la primera d'elles. Així doncs el valor de la
+variable \texttt{num1} importa tant a l'entrada com a la sortida de
+l'acció, amb el que es tracta d'un \textbf{paràmetre d'entrada/sortida}.
 
 Aquest tipus de paràmetre també es referencia com a paràmetre per
 referència, o pas per referència, ja que passem un punter.
@@ -3806,8 +3815,8 @@ tipus de paràmetre:
 \section{Exemple: ús d'accions}\label{exemple-us-daccions}
 
 Adjunto un exemple inventat de com es poden definir accions que permetin
-modificar els atributs d'una tupla passada com a punter. He posat
-comentaris detallats al codi per tal que sigui el més clar possible:
+modificar els atributs d'una tupla passada com a punter. Dins del codi
+hi ha comentaris addicionals per tal que quedi el més clar possible:
 
 \includegraphics{./img/c.png}
 
@@ -5589,7 +5598,8 @@ Exemple de funció que retorna un booleà:
 \end{Highlighting}
 \end{Shaded}
 
-\section{Exemple:}\label{exemple}
+\section{Exemple:
+pivotDefensiuTirsLliures}\label{exemple-pivotdefensiutirslliures}
 
 S'afegeix a l'exemple de les jugadores de bàsquet un nou factor de
 comparació: en cas d'empat de les comparacions anteriors, escollirem la
@@ -6289,7 +6299,7 @@ comentaris detallats per tal que cada pas quedi explicat.
 
 \chapter{PAC09}\label{pac09}
 
-\section{Exemple}\label{exemple-1}
+\section{Exemple}\label{exemple}
 
 El plantejament és el següent: imaginem que tenim una llista de cartes
 de tipus \texttt{DIAMANTS}, \texttt{CORS}, \texttt{TREVOLS} i
@@ -7059,7 +7069,7 @@ L'execució del programa genera la següent sortida:
 
 \chapter{PR2}\label{pr2}
 
-\section{Exemple}\label{exemple-2}
+\section{Exemple}\label{exemple-1}
 
 Adjunto un exemple inventat on, donada una pila de cartes inicial, el
 que volem és codificar l'acció \texttt{separarDiamants} que ens permeti

@@ -24,7 +24,7 @@
 <meta name="author" content="Jordi Blasco Planesas" />
 
 
-<meta name="date" content="2020-03-28" />
+<meta name="date" content="2020-04-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -186,7 +186,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.5" data-path="pac07.html"><a href="pac07.html#pas-per-valor-vs-pas-per-referencia"><i class="fa fa-check"></i><b>7.5</b> Pas per valor vs pas per referència</a></li>
 <li class="chapter" data-level="7.6" data-path="pac07.html"><a href="pac07.html#exemple-capgirar"><i class="fa fa-check"></i><b>7.6</b> Exemple: capgirar</a></li>
 <li class="chapter" data-level="7.7" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>7.7</b> Exemple: funció isParell</a></li>
-<li class="chapter" data-level="7.8" data-path="pac07.html"><a href="pac07.html#exemple"><i class="fa fa-check"></i><b>7.8</b> Exemple:</a></li>
+<li class="chapter" data-level="7.8" data-path="pac07.html"><a href="pac07.html#exemple-pivotdefensiutirslliures"><i class="fa fa-check"></i><b>7.8</b> Exemple: pivotDefensiuTirsLliures</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a><ul>
 <li class="chapter" data-level="8.1" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>8.1</b> Com inicialitzar una taula</a></li>
@@ -195,7 +195,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="8.4" data-path="pac08.html"><a href="pac08.html#exemple-recorregut-vs-cerca"><i class="fa fa-check"></i><b>8.4</b> Exemple: recorregut vs cerca</a></li>
 </ul></li>
 <li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a><ul>
-<li class="chapter" data-level="9.1" data-path="pac09.html"><a href="pac09.html#exemple-1"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
+<li class="chapter" data-level="9.1" data-path="pac09.html"><a href="pac09.html#exemple"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>10</b> PAC10</a></li>
 <li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a><ul>
@@ -208,7 +208,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a><ul>
-<li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-2"><i class="fa fa-check"></i><b>12.1</b> Exemple</a></li>
+<li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-1"><i class="fa fa-check"></i><b>12.1</b> Exemple</a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>13</b> VMWare i CodeLite</a><ul>
 <li class="chapter" data-level="13.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>13.1</b> Per què una màquina virtual?</a></li>
@@ -247,7 +247,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h1><span class="header-section-number"> 6</span> PAC06</h1>
 <div id="diferencies-entre-funcions-i-accions" class="section level2">
 <h2><span class="header-section-number">6.1</span> Diferències entre funcions i accions</h2>
-<p>A continuació explicaré les diferències entre una <strong>funció</strong> i una <strong>acció</strong>, quins tipus de paràmetres utilitzen, com s’implementen en llenguatge C, i finalment què passa quan un paràmetre és una tupla. És important que es vagin consolidant tots aquests conceptes.</p>
+<p>A continuació s’expliquen les diferències entre una <strong>funció</strong> i una <strong>acció</strong>, quins tipus de paràmetres utilitzen, com s’implementen en llenguatge C, i finalment què passa quan un paràmetre és una tupla. És important que es vagin consolidant tots aquests conceptes.</p>
 <p>Les principals diferències són:</p>
 <table style="width:50%;">
 <colgroup>
@@ -291,10 +291,12 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
     <span class="dt">int</span> resultat = <span class="dv">0</span>;
     printf(<span class="st">&quot;Valor de num1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num1);
     printf(<span class="st">&quot;Valor de num2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num2);
-    printf(<span class="st">&quot;Inici execució funció\n&quot;</span>);
+    printf(<span class="st">&quot;Valor de resultat = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
+    printf(<span class="st">&quot;&gt;&gt; Inici execució funció\n&quot;</span>);
     resultat = suma(num1, num2);
-    printf(<span class="st">&quot;Resultat suma = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
-    printf(<span class="st">&quot;Fi execució funció\n&quot;</span>);
+    printf(<span class="st">&quot;Suma = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
+    printf(<span class="st">&quot;&gt;&gt; Fi execució funció\n&quot;</span>);
+    printf(<span class="st">&quot;Valor de resultat = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
     <span class="cf">return</span> <span class="dv">0</span>;
 }
 
@@ -306,55 +308,57 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>
 <img src="img/play.png" float="right;" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de n1 = <span class="dv">3</span>
-Valor de n2 = <span class="dv">3</span>
-Inici execució funció
-suma: <span class="dv">3</span> + <span class="dv">2</span> = <span class="dv">5</span>
-Fi execució funció</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de num1 = <span class="dv">3</span>
+Valor de num2 = <span class="dv">2</span>
+Valor de resultat = <span class="dv">0</span>
+&gt;&gt; Inici execució funció
+Suma = <span class="dv">5</span>
+&gt;&gt; Fi execució funció
+Valor de resultat = <span class="dv">5</span></code></pre></div>
 <p>Com es pot veure, el valor de retorn de la funció <code>suma()</code> l’assignem a la variable resultat.</p>
 <p>En una funció, els paràmetres passats sempre seran <strong>d’entrada</strong> (in): això significa que dins de la funció únicament seran valors de consulta, no els modificarem per res.</p>
 <p>Per entendre bé com s’implementa una acció, relacionaré exemples similars amb els diferents tipus de paràmetres que pot tenir una acció: entrada, sortida i entrada/sortida.</p>
 <div id="parametres-dentrada-in" class="section level3">
 <h3><span class="header-section-number">6.1.1</span> Paràmetres d’entrada (in)</h3>
-<p>Són aquells paràmetres que es passen a una acció i dels quals únicament utilitzarem el seu contingut. Això significa que treballarem amb ells en <em>mode lectura</em>: obtindrem els seus valors per tal de realitzar càlculs, però mai modificarem el seu contingut. Exemple:</p>
+<p>Són aquells paràmetres que es passen a una <strong>acció</strong> i dels quals únicament utilitzarem el seu contingut. Això significa que treballarem amb ells en <em>mode lectura</em>: obtindrem els seus valors per tal de realitzar càlculs, però mai modificarem el seu contingut. Exemple:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
 <div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
 
 <span class="co">/* Predeclaració de l&#39;acció */</span>
-<span class="dt">void</span> suma(<span class="dt">int</span> num1, <span class="dt">int</span> num2);
+<span class="dt">void</span> suma(<span class="dt">int</span> n1, <span class="dt">int</span> n2);
 
 <span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-    <span class="dt">int</span> n1 = <span class="dv">3</span>;
-    <span class="dt">int</span> n2 = <span class="dv">2</span>;
-    printf(<span class="st">&quot;Valor de n1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
-    printf(<span class="st">&quot;Valor de n2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
-    printf(<span class="st">&quot;Inici execució funció\n&quot;</span>);
-    suma(n1, n2);
-    printf(<span class="st">&quot;Fi execució funció\n&quot;</span>);
-    printf(<span class="st">&quot;Valor de n1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
-    printf(<span class="st">&quot;Valor de n2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
+    <span class="dt">int</span> num1 = <span class="dv">3</span>;
+    <span class="dt">int</span> num2 = <span class="dv">2</span>;
+    printf(<span class="st">&quot;Valor de num1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num1);
+    printf(<span class="st">&quot;Valor de num2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num2);
+    printf(<span class="st">&quot;&gt;&gt; Inici execució acció\n&quot;</span>);
+    suma(num1, num2);
+    printf(<span class="st">&quot;&gt;&gt; Fi execució acció\n&quot;</span>);
+    printf(<span class="st">&quot;Valor de num1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num1);
+    printf(<span class="st">&quot;Valor de num2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num2);
     <span class="cf">return</span> <span class="dv">0</span>;
-}
+}   
 
 <span class="co">/* Implementació de l&#39;acció */</span>
-<span class="dt">void</span> suma(<span class="dt">int</span> num1, <span class="dt">int</span> num2) {
-    <span class="dt">int</span> resultat = num1 + num2;
-    printf(<span class="st">&quot;suma2: %d + %d = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num1, num2, resultat);
+<span class="dt">void</span> suma(<span class="dt">int</span> n1, <span class="dt">int</span> n2) {
+    <span class="dt">int</span> resultat = n1 + n2;
+    printf(<span class="st">&quot;Suma = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
 }</code></pre></div>
 <p>L’execució generarà la següent sortida:</p>
 <p>
 <img src="img/play.png" float="right;" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de n1 = <span class="dv">3</span>
-Valor de n2 = <span class="dv">3</span>
-Inici execució acció
-suma: <span class="dv">3</span> + <span class="dv">2</span> = <span class="dv">5</span>
-Fi execució acció
-Valor de n1 = <span class="dv">3</span>
-Valor de n2 = <span class="dv">3</span></code></pre></div>
-<p>Com es pot observar, ni <code>n1</code> ni <code>n2</code> han modificat el seu valor després de l’execució de l’acció: son <strong>paràmetres d’entrada</strong>.</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de num1 = <span class="dv">3</span>
+Valor de num2 = <span class="dv">2</span>
+&gt;&gt; Inici execució acció
+Suma = <span class="dv">5</span>
+&gt;&gt; Fi execució acció
+Valor de num1 = <span class="dv">3</span>
+Valor de num2 = <span class="dv">2</span></code></pre></div>
+<p>Com es pot observar, ni <code>num1</code> ni <code>num2</code> han modificat el seu valor després de l’execució de l’acció: son <strong>paràmetres d’entrada</strong>.</p>
 <p>Aquest tipus de paràmetre també es referencia com a paràmetre per valor, o pas per valor, ja que el que estem passant és un valor (no pas un punter).</p>
 </div>
 <div id="parametres-de-sortida-out" class="section level3">
@@ -366,34 +370,38 @@ Valor de n2 = <span class="dv">3</span></code></pre></div>
 <div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
 
 <span class="co">/* Predeclaració de l&#39;acció */</span>
-<span class="dt">void</span> suma(<span class="dt">int</span> num1, <span class="dt">int</span> num2, <span class="dt">int</span> *res);
+<span class="dt">void</span> suma(<span class="dt">int</span> n1, <span class="dt">int</span> n2, <span class="dt">int</span> *res);
 
 <span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-    <span class="dt">int</span> n1 = <span class="dv">3</span>;
-    <span class="dt">int</span> n2 = <span class="dv">2</span>;
+    <span class="dt">int</span> num1 = <span class="dv">3</span>;
+    <span class="dt">int</span> num2 = <span class="dv">2</span>;
     <span class="dt">int</span> resultat = <span class="dv">0</span>;
     <span class="dt">int</span> *pResultat = &amp;resultat;
+    printf(<span class="st">&quot;Valor de num1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num1);
+    printf(<span class="st">&quot;Valor de num2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num2);
     printf(<span class="st">&quot;Valor de resultat = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
-    printf(<span class="st">&quot;Inici execució acció\n&quot;</span>); 
-    suma(n1, n2, pResultat);
-    printf(<span class="st">&quot;suma: %d + %d = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1, n2, resultat);
-    printf(<span class="st">&quot;Fi execució acció\n&quot;</span>);
+    printf(<span class="st">&quot;&gt;&gt; Inici execució acció\n&quot;</span>); 
+    suma(num1, num2, pResultat);
+    printf(<span class="st">&quot;Suma = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
+    printf(<span class="st">&quot;&gt;&gt; Fi execució acció\n&quot;</span>);
     printf(<span class="st">&quot;Valor de resultat = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat);
     <span class="cf">return</span> <span class="dv">0</span>;
 }
 
 <span class="co">/* Implementació de l&#39;acció */</span>
-<span class="dt">void</span> suma(<span class="dt">int</span> num1, <span class="dt">int</span> num2, <span class="dt">int</span> *res) {
-    *res = num1 + num2;
+<span class="dt">void</span> suma(<span class="dt">int</span> n1, <span class="dt">int</span> n2, <span class="dt">int</span> *res) {
+    *res = n1 + n2;
 }</code></pre></div>
 <p>L’execució generarà la següent sortida:</p>
 <p>
 <img src="img/play.png" float="right;" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de resultat = <span class="dv">0</span>
-Inici execució acció
-suma: <span class="dv">3</span> + <span class="dv">2</span> = <span class="dv">5</span>
-Fi execució acció
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de num1 = <span class="dv">3</span>
+Valor de num2 = <span class="dv">2</span>
+Valor de resultat = <span class="dv">0</span>
+&gt;&gt; Inici execució acció
+Suma = <span class="dv">5</span>
+&gt;&gt; Fi execució acció
 Valor de resultat = <span class="dv">5</span></code></pre></div>
 <p>De moment ignorarem que es tracta d’un punter: independientement del valor que tingui res al pasar-se per paràmetre, quan finalitzi l’acció contindrà la suma dels altres dos paràmetres d’entrada <code>num1</code> i <code>num2</code>.</p>
 <p>El valor resultat ha canviat, de <code>0</code> a <code>5</code>. Es considera un <strong>paràmetre de sortida</strong> perquè, independientement del valor inicial que tingui aquest, no s’utilitza per res i en finalitzar l’acció contindrà el resultat de l’operació <code>suma()</code>.</p>
@@ -402,44 +410,44 @@ Valor de resultat = <span class="dv">5</span></code></pre></div>
 </div>
 <div id="parametres-dentradasortida-inout" class="section level3">
 <h3><span class="header-section-number">6.1.3</span> Paràmetres d’entrada/sortida (inout)</h3>
-<p>Aquest tipus de paràmetre és una suma dels dos comportaments anteriors: d’una banda el seu valor importa a l’hora de realitzar els càlculs de l’acció, i a la vegada en finalitzar l’execució de l’acció tindrà un valor diferent, també significatiu per tractar-se del resultat final del càlcul.</p>
+<p>Aquest tipus de paràmetre és una suma dels dos comportaments anteriors: d’una banda el seu valor importa a l’hora de realitzar els càlculs de l’acció, i a la vegada en finalitzar l’execució de l’acció tindrà un valor diferent, també significatiu per tractar-se del resultat final del càlcul. Exemple:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
 <div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
 
 <span class="co">/* Predeclaració de l&#39;acció */</span>
-<span class="dt">void</span> suma(<span class="dt">int</span> *pNum1, <span class="dt">int</span> num2);
+<span class="dt">void</span> suma(<span class="dt">int</span> *pN1, <span class="dt">int</span> n2);
 
 <span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-    <span class="dt">int</span> n1 = <span class="dv">3</span>;
-    <span class="dt">int</span> n2 = <span class="dv">2</span>;
-    <span class="dt">int</span> *pNum1 = &amp;n1;
-    printf(<span class="st">&quot;Valor de n1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
-    printf(<span class="st">&quot;Valor de n2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n2);
-    printf(<span class="st">&quot;Inici execució acció\n&quot;</span>); 
-    suma(pNum1, n2);
-    printf(<span class="st">&quot;Resultat suma = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
-    printf(<span class="st">&quot;Fi execució acció\n&quot;</span>);
-    printf(<span class="st">&quot;Resultat (n1=n1+n2) = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, n1);
+    <span class="dt">int</span> num1 = <span class="dv">3</span>;
+    <span class="dt">int</span> num2 = <span class="dv">2</span>;
+    <span class="dt">int</span> *pNum1 = &amp;num1;
+    printf(<span class="st">&quot;Valor de num1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num1);
+    printf(<span class="st">&quot;Valor de num2 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num2);
+    printf(<span class="st">&quot;&gt;&gt; Inici execució acció\n&quot;</span>); 
+    suma(pNum1, num2);
+    printf(<span class="st">&quot;Suma = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num1);
+    printf(<span class="st">&quot;&gt;&gt; Fi execució acció\n&quot;</span>);
+    printf(<span class="st">&quot;Valor de num1 = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, num1);
     <span class="cf">return</span> <span class="dv">0</span>;
 }
 
 <span class="co">/* Implementació de l&#39;acció */</span>
-<span class="dt">void</span> suma(<span class="dt">int</span> *pNum1, <span class="dt">int</span> num2) {
-    *pNum1 = *pNum1 + num2;
+<span class="dt">void</span> suma(<span class="dt">int</span> *pN1, <span class="dt">int</span> n2) {
+    *pN1 = *pN1 + n2;
 }</code></pre></div>
 <p>L’execució generarà la següent sortida:</p>
 <p>
 <img src="img/play.png" float="right;" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de n1 = <span class="dv">3</span>
-Valor de n2 = <span class="dv">2</span>
-Inici execució acció
-Resultat suma = <span class="dv">5</span>
-Fi execució acció
-Resultat (n1=n1+n2) = <span class="dv">5</span></code></pre></div>
-<p>En aquest cas s’ha realitzat la suma com a <code>n1 = n1 + n2</code> : el resultat de la suma de les dues variables es guarda a la primera d’elles. Així doncs el valor de la variable <code>n1</code> importa tant a l’entrada com a la sortida de l’acció, amb el que es tracta d’un <strong>paràmetre d’entrada/sortida</strong>.</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Valor de num1 = <span class="dv">3</span>
+Valor de num2 = <span class="dv">2</span>
+&gt;&gt; Inici execució acció
+Suma = <span class="dv">5</span>
+&gt;&gt; Fi execució acció
+Valor de num1 = <span class="dv">5</span></code></pre></div>
+<p>En aquest cas s’ha realitzat la suma com a <code>num1 = num1 + num2</code> : el resultat de la suma de les dues variables es guarda a la primera d’elles. Així doncs el valor de la variable <code>num1</code> importa tant a l’entrada com a la sortida de l’acció, amb el que es tracta d’un <strong>paràmetre d’entrada/sortida</strong>.</p>
 <p>Aquest tipus de paràmetre també es referencia com a paràmetre per referència, o pas per referència, ja que passem un punter.</p>
 </div>
 <div id="tuples-com-a-parametres" class="section level3">
@@ -453,7 +461,7 @@ Resultat (n1=n1+n2) = <span class="dv">5</span></code></pre></div>
 </div>
 <div id="exemple-us-daccions" class="section level2">
 <h2><span class="header-section-number">6.2</span> Exemple: ús d’accions</h2>
-<p>Adjunto un exemple inventat de com es poden definir accions que permetin modificar els atributs d’una tupla passada com a punter. He posat comentaris detallats al codi per tal que sigui el més clar possible:</p>
+<p>Adjunto un exemple inventat de com es poden definir accions que permetin modificar els atributs d’una tupla passada com a punter. Dins del codi hi ha comentaris addicionals per tal que quedi el més clar possible:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
