@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title> 11 PR1 | FAQ Laboratori de Fonaments de Programació</title>
+  <title>11 PR1 | FAQ Laboratori de Fonaments de Programació</title>
   <meta name="description" content="FAQ del Laboratori de Fonaments de programació" />
   <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
-  <meta property="og:title" content=" 11 PR1 | FAQ Laboratori de Fonaments de Programació" />
+  <meta property="og:title" content="11 PR1 | FAQ Laboratori de Fonaments de Programació" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content=" 11 PR1 | FAQ Laboratori de Fonaments de Programació" />
+  <meta name="twitter:title" content="11 PR1 | FAQ Laboratori de Fonaments de Programació" />
   
   <meta name="twitter:description" content="FAQ del Laboratori de Fonaments de programació" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Jordi Blasco Planesas" />
 
 
-<meta name="date" content="2020-04-13" />
+<meta name="date" content="2020-04-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,44 +50,79 @@
 
 
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164643024-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164643024-1');
+</script>
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -107,7 +142,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introducció</a></li>
-<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a><ul>
+<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>1.1</b> Llenguatge algorísmic</a></li>
 <li class="chapter" data-level="1.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
 <li class="chapter" data-level="1.3" data-path="pac01.html"><a href="pac01.html#equivalencies-llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.3</b> Equivalències llenguatge algorísmic vs llenguatge C</a></li>
@@ -118,14 +154,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.8" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>1.8</b> Lectura de caràcters en C</a></li>
 <li class="chapter" data-level="1.9" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>1.9</b> Lectura de float en C</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a><ul>
+<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="pac02.html"><a href="pac02.html#booleans"><i class="fa fa-check"></i><b>2.1</b> Booleans en C</a></li>
 <li class="chapter" data-level="2.2" data-path="pac02.html"><a href="pac02.html#booleans-definits-com-a-enumeratius"><i class="fa fa-check"></i><b>2.2</b> Booleans definits com a enumeratius</a></li>
 <li class="chapter" data-level="2.3" data-path="pac02.html"><a href="pac02.html#constants-define-vs-const"><i class="fa fa-check"></i><b>2.3</b> Constants: define vs const</a></li>
 <li class="chapter" data-level="2.4" data-path="pac02.html"><a href="pac02.html#com-mostrar-el-valor-duna-constant"><i class="fa fa-check"></i><b>2.4</b> Com mostrar el valor d’una constant</a></li>
 <li class="chapter" data-level="2.5" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>2.5</b> Precisió en variables float</a></li>
 <li class="chapter" data-level="2.6" data-path="pac02.html"><a href="pac02.html#semantica-duna-expressio"><i class="fa fa-check"></i><b>2.6</b> Semàntica d’una expressió</a></li>
-<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a><ul>
+<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>2.7.1</b> Exemple 1: esParell</a></li>
 <li class="chapter" data-level="2.7.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>2.7.2</b> Exemple 2: capDeSetmana</a></li>
 <li class="chapter" data-level="2.7.3" data-path="pac02.html"><a href="pac02.html#exemple-3-esvocal"><i class="fa fa-check"></i><b>2.7.3</b> Exemple 3: esVocal</a></li>
@@ -135,7 +173,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.7.7" data-path="pac02.html"><a href="pac02.html#exemple-7-scoutingbasquet"><i class="fa fa-check"></i><b>2.7.7</b> Exemple 7: scoutingBasquet</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a><ul>
+<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="pac03.html"><a href="pac03.html#com-declarar-un-vector-en-llenguatge-algorismic"><i class="fa fa-check"></i><b>3.1</b> Com declarar un vector en llenguatge algorísmic</a></li>
 <li class="chapter" data-level="3.2" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>3.2</b> Significat dels arguments del main</a></li>
 <li class="chapter" data-level="3.3" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>3.3</b> Assignar valors a un vector</a></li>
@@ -144,14 +183,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.6" data-path="pac03.html"><a href="pac03.html#importancia-dels-tipus-utilitzats-en-llenguatge-c"><i class="fa fa-check"></i><b>3.6</b> Importància dels tipus utilitzats en llenguatge C</a></li>
 <li class="chapter" data-level="3.7" data-path="pac03.html"><a href="pac03.html#exemple-notafinal"><i class="fa fa-check"></i><b>3.7</b> Exemple: notaFinal</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a><ul>
+<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>4.1</b> Com tractar elements d’un vector amb un bucle</a></li>
 <li class="chapter" data-level="4.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>4.2</b> Entrada continua de valors amb un bucle</a></li>
 <li class="chapter" data-level="4.3" data-path="pac04.html"><a href="pac04.html#com-tractar-valors-en-multiples-vectors"><i class="fa fa-check"></i><b>4.3</b> Com tractar valors en múltiples vectors</a></li>
 <li class="chapter" data-level="4.4" data-path="pac04.html"><a href="pac04.html#definicio-chars-vs-strings"><i class="fa fa-check"></i><b>4.4</b> Definició chars vs strings</a></li>
 <li class="chapter" data-level="4.5" data-path="pac04.html"><a href="pac04.html#exemple-mitjanapes"><i class="fa fa-check"></i><b>4.5</b> Exemple: mitjanaPes</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a><ul>
+<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="pac05.html"><a href="pac05.html#comanda-strcmp"><i class="fa fa-check"></i><b>5.1</b> Comanda strcmp()</a></li>
 <li class="chapter" data-level="5.2" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>5.2</b> Comanda scanf</a></li>
 <li class="chapter" data-level="5.3" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strcmp"><i class="fa fa-check"></i><b>5.3</b> El finalitzador ‘\0’ i strcmp()</a></li>
@@ -160,8 +201,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="5.6" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>5.6</b> Exemple: nòmines</a></li>
 <li class="chapter" data-level="5.7" data-path="pac05.html"><a href="pac05.html#exemple-brisca"><i class="fa fa-check"></i><b>5.7</b> Exemple: brisca</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a><ul>
-<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a><ul>
+<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="pac06.html"><a href="pac06.html#parametres-dentrada-in"><i class="fa fa-check"></i><b>6.1.1</b> Paràmetres d’entrada (in)</a></li>
 <li class="chapter" data-level="6.1.2" data-path="pac06.html"><a href="pac06.html#parametres-de-sortida-out"><i class="fa fa-check"></i><b>6.1.2</b> Paràmetres de sortida (out)</a></li>
 <li class="chapter" data-level="6.1.3" data-path="pac06.html"><a href="pac06.html#parametres-dentradasortida-inout"><i class="fa fa-check"></i><b>6.1.3</b> Paràmetres d’entrada/sortida (inout)</a></li>
@@ -170,13 +213,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.2" data-path="pac06.html"><a href="pac06.html#exemple-us-daccions"><i class="fa fa-check"></i><b>6.2</b> Exemple: ús d’accions</a></li>
 <li class="chapter" data-level="6.3" data-path="pac06.html"><a href="pac06.html#exemple-us-de-funcions"><i class="fa fa-check"></i><b>6.3</b> Exemple: ús de funcions</a></li>
 <li class="chapter" data-level="6.4" data-path="pac06.html"><a href="pac06.html#exemple-nomines-1"><i class="fa fa-check"></i><b>6.4</b> Exemple: nòmines</a></li>
-<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a><ul>
+<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="pac06.html"><a href="pac06.html#explicacio-sobre-laccio-copiarjugadora"><i class="fa fa-check"></i><b>6.5.1</b> Explicació sobre l’acció copiarJugadora()</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a><ul>
+<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="pac07.html"><a href="pac07.html#quan-utilitzar-dins-de-funcionsaccions"><i class="fa fa-check"></i><b>7.1</b> Quan utilitzar &amp; dins de funcions/accions</a></li>
-<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a><ul>
+<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="pac07.html"><a href="pac07.html#funcionament-per-defecte-dun-projecte-a-codelite"><i class="fa fa-check"></i><b>7.2.1</b> Funcionament per defecte d’un projecte a CodeLite:</a></li>
 <li class="chapter" data-level="7.2.2" data-path="pac07.html"><a href="pac07.html#executable-dins-de-bin."><i class="fa fa-check"></i><b>7.2.2</b> Executable dins de /bin.</a></li>
 <li class="chapter" data-level="7.2.3" data-path="pac07.html"><a href="pac07.html#modularitzacio-del-programa-en-un-arxiu-de-capcaleres-i-un-de-funcions."><i class="fa fa-check"></i><b>7.2.3</b> Modularització del programa en un arxiu de capçaleres i un de funcions.</a></li>
@@ -188,40 +234,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.7" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>7.7</b> Exemple: funció isParell</a></li>
 <li class="chapter" data-level="7.8" data-path="pac07.html"><a href="pac07.html#exemple-pivotdefensiutirslliures"><i class="fa fa-check"></i><b>7.8</b> Exemple: pivotDefensiuTirsLliures</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a><ul>
+<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>8.1</b> Com inicialitzar una taula</a></li>
 <li class="chapter" data-level="8.2" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota"><i class="fa fa-check"></i><b>8.2</b> Exemple: calcularNota</a></li>
 <li class="chapter" data-level="8.3" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota-amb-introduccio-iterativa"><i class="fa fa-check"></i><b>8.3</b> Exemple: calcularNota amb introducció iterativa</a></li>
 <li class="chapter" data-level="8.4" data-path="pac08.html"><a href="pac08.html#exemple-recorregut-vs-cerca"><i class="fa fa-check"></i><b>8.4</b> Exemple: recorregut vs cerca</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a><ul>
+<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="pac09.html"><a href="pac09.html#exemple"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>10</b> PAC10</a></li>
-<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a><ul>
+<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a>
+<ul>
 <li class="chapter" data-level="11.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>11.1</b> Mode menu vs mode test</a></li>
 <li class="chapter" data-level="11.2" data-path="pr1.html"><a href="pr1.html#exemple-tupla-dins-de-tupla"><i class="fa fa-check"></i><b>11.2</b> Exemple: tupla dins de tupla</a></li>
-<li class="chapter" data-level="11.3" data-path="pr1.html"><a href="pr1.html#desplacament-delements-en-un-vector"><i class="fa fa-check"></i><b>11.3</b> Desplaçament d’elements en un vector</a><ul>
-<li class="chapter" data-level="11.3.1" data-path="pr1.html"><a href="pr1.html#afegir-un-element"><i class="fa fa-check"></i><b>11.3.1</b> Afegir un element</a></li>
-<li class="chapter" data-level="11.3.2" data-path="pr1.html"><a href="pr1.html#esborrar-un-element"><i class="fa fa-check"></i><b>11.3.2</b> Esborrar un element</a></li>
-<li class="chapter" data-level="11.3.3" data-path="pr1.html"><a href="pr1.html#exemple-diessetmana"><i class="fa fa-check"></i><b>11.3.3</b> Exemple: diesSetmana</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a><ul>
+<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a>
+<ul>
 <li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-1"><i class="fa fa-check"></i><b>12.1</b> Exemple</a></li>
+<li class="chapter" data-level="12.2" data-path="pr2.html"><a href="pr2.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>12.2</b> Com instal·lar les Guest Additions</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>13</b> VMWare i CodeLite</a><ul>
-<li class="chapter" data-level="13.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>13.1</b> Per què una màquina virtual?</a></li>
-<li class="chapter" data-level="13.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#virtualbox-i-requeriments-de-virtualitzacio"><i class="fa fa-check"></i><b>13.2</b> VirtualBox i requeriments de virtualització</a></li>
-<li class="chapter" data-level="13.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>13.3</b> Com instal·lar les Guest Additions</a></li>
-<li class="chapter" data-level="13.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>13.4</b> Primers passos amb CodeLite</a></li>
-<li class="chapter" data-level="13.5" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>13.5</b> Com activar un projecte</a></li>
-<li class="chapter" data-level="13.6" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>13.6</b> Canviar idioma del teclat</a></li>
-<li class="chapter" data-level="13.7" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#programa-per-defecte-al-crear-un-projecte"><i class="fa fa-check"></i><b>13.7</b> Programa per defecte al crear un projecte</a></li>
-<li class="chapter" data-level="13.8" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-fixar-el-kernel-dinici-amb-lubuntu"><i class="fa fa-check"></i><b>13.8</b> Com fixar el kernel d’inici amb Lubuntu</a></li>
-</ul></li>
-<li class="chapter" data-level="14" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>14</b> Altres</a><ul>
-<li class="chapter" data-level="14.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>14.1</b> Bilbliografia</a></li>
+<li class="chapter" data-level="13" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>13</b> Altres</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>13.1</b> Bilbliografia</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://www.uoc.edu" target="blank">www.uoc.edu</a></li>
@@ -243,10 +280,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pr1" class="section level1">
-<h1><span class="header-section-number"> 11</span> PR1</h1>
-<div id="mode-menu-vs-mode-test" class="section level2">
-<h2><span class="header-section-number">11.1</span> Mode menu vs mode test</h2>
+<div id="pr1" class="section level1" number="11">
+<h1 number="11"><span class="header-section-number">11</span> PR1</h1>
+<div id="mode-menu-vs-mode-test" class="section level2" number="11.1">
+<h2 number="11.1"><span class="header-section-number">11.1</span> Mode menu vs mode test</h2>
 <p>El workspace de la PR1 té habilitats dos modes de funcionament/execució. Per activar un mode o un altre fem el següent, amb el workspace de la PR1 obert: <strong>CodeLite</strong> –&gt; <strong>Build</strong> –&gt; <strong>Configuration manager…</strong></p>
 <p>Aquí es mostra un desplegable amb dues opcions:</p>
 <ul>
@@ -255,209 +292,206 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul>
 <p>Tant si s’escull l’opció <strong>Menu</strong> com l’opció <strong>Test</strong>, després hem de fer l’habitual <strong>CodeLite</strong> –&gt; <strong>Build</strong> –&gt; <strong>Build and Run Project</strong> per executar el programa en el mode que hem escollit.</p>
 </div>
-<div id="exemple-tupla-dins-de-tupla" class="section level2">
-<h2><span class="header-section-number">11.2</span> Exemple: tupla dins de tupla</h2>
+<div id="exemple-tupla-dins-de-tupla" class="section level2" number="11.2">
+<h2 number="11.2"><span class="header-section-number">11.2</span> Exemple: tupla dins de tupla</h2>
 <p>De vegades pot costar veure com treballar amb atributs d’una tupla que a la seva vegada està dins d’una altra tupla, si s’hi accedeix per valor, per referència (punter), etc. Per aquest motiu, s’adjunta el següent exemple inventat, en el qual s’hi han afegit comentaris per tal que es vegi clarament com treballar amb atributs d’una tupla continguda dins d’una altra tupla:</p>
 <p>
-<img src="img/c.png" alt="llenguatge C" style="float:left; padding:10px" />
+<img src="img/c.png" title="fig:" style="float:left; padding:10px" alt="llenguatge C" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
-
-<span class="co">/* Un parking d&#39;un centre comercial ens ha </span>
-<span class="co"> * encarregat una app que faciliti els seus</span>
-<span class="co"> * clients a localitzar on ha aparcat el seu</span>
-<span class="co"> * vehicle.</span>
-<span class="co"> * </span>
-<span class="co"> * El parking ja disposa de tres tipus de </span>
-<span class="co"> * càmeres, independents entre elles:</span>
-<span class="co"> * </span>
-<span class="co"> * - d&#39;entrada: càmera posicionada a l&#39;entrada</span>
-<span class="co"> *   del pàrking que, a més de llegir la matrícula,</span>
-<span class="co"> *   permet saber el tipus de vehicle.</span>
-<span class="co"> * </span>
-<span class="co"> * - d&#39;accés: càmeres que ens permeten</span>
-<span class="co"> *   saber si un vehicle ha pujat o ha baixat</span>
-<span class="co"> *   una planta.</span>
-<span class="co"> * </span>
-<span class="co"> * - de planta: càmeres que ens permeten saber</span>
-<span class="co"> *   la fila i eĺ número de plaça on s&#39;ha </span>
-<span class="co"> *   aparcat un vehicle.</span>
-<span class="co"> * </span>
-<span class="co"> * L&#39;identificador de vehicle és la seva </span>
-<span class="co"> * matrícula.</span>
-<span class="co"> * </span>
-<span class="co"> * A partir de la informació obtinguda pels</span>
-<span class="co"> * tres conjunts de càmeres, caldrà indicar</span>
-<span class="co"> * a l&#39;usuari on ha aparcat el seu vehicle.</span>
-<span class="co"> */</span>
-
-<span class="pp">#define MAX_MATRICULA 7+1</span>
-
-<span class="kw">typedef</span> <span class="kw">enum</span> {COTXE, MOTO, FURGONETA} tTipus;
-
-<span class="co">/* El lloc on aparca un vehicle ve donat</span>
-<span class="co"> * per tres valors: la planta, la fila i el </span>
-<span class="co"> * número de la plaça.</span>
-<span class="co"> */</span>
-<span class="kw">typedef</span> <span class="kw">struct</span> {
-    <span class="dt">int</span> planta;
-    <span class="dt">char</span> fila;
-    <span class="dt">int</span> numero;
-} tAparcament;
-
-<span class="co">/* El tipus tVehicle conté la seva matrícula</span>
-<span class="co"> * (identificador únic), el tipus de vehicle</span>
-<span class="co"> * detectat en la primera càmera (COTXE, MOTO,</span>
-<span class="co"> * FURGONETA), i el lloc on ha aparcat (tAparcament)</span>
-<span class="co"> */</span>
-<span class="kw">typedef</span> <span class="kw">struct</span> {
-    <span class="dt">char</span> matricula[MAX_MATRICULA];
-    tTipus tipus;
-    tAparcament aparcament;
-} tVehicle;
-
-<span class="co">/* Predeclaració d&#39;accions */</span>
-<span class="dt">void</span> inicialitzar(tVehicle *vehicle, tTipus tipus, <span class="dt">char</span> *matricula);
-<span class="dt">void</span> pujarPlanta(tVehicle *vehicle);
-<span class="dt">void</span> baixarPlanta(tVehicle *vehicle);
-<span class="dt">void</span> aparcar(tVehicle *vehicle, <span class="dt">char</span> fila, <span class="dt">int</span> numero);
-<span class="dt">void</span> obtenirPosicio(tVehicle);
-
-<span class="co">/* Programa principal */</span>
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv){
-    
-    tVehicle vehicle;
-    
-    <span class="co">/* Es llegeix la matrícula del vehicle amb la </span>
-<span class="co">     * càmera d&#39;entrada del pàrking i s&#39;assigna</span>
-<span class="co">     * a l&#39;element de tipus tVehicle del nostre</span>
-<span class="co">     * pàrking </span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Entrada al pàrking </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    inicialitzar(&amp;vehicle, COTXE, <span class="st">&quot;7472GZZ&quot;</span>);
-    
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Baixar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    baixarPlanta(&amp;vehicle);
-    
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Baixar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    baixarPlanta(&amp;vehicle);
-    
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Pujar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    pujarPlanta(&amp;vehicle);
-    
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Baixar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    baixarPlanta(&amp;vehicle);
-    
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Baixar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    baixarPlanta(&amp;vehicle);
-    
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Aparcar</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    aparcar(&amp;vehicle, <span class="ch">&#39;C&#39;</span>, <span class="dv">23</span>);
-    
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Anem a comprar regals de reis ...&quot;</span>);
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">... passem més de 3 hores ...&quot;</span>);
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">... i ens oblidem d&#39;on hem aparcat el vehicle !!</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Solució: consultem la posició del nostre vehicle &quot;</span>);
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">a l&#39;app del pàrquing : </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    obtenirPosicio(vehicle);
-    
-    <span class="cf">return</span> <span class="dv">0</span>;
-}
-
-<span class="co">/* Com que la posició ve donada pels atributs planta, fila i</span>
-<span class="co"> * numero de tAparcament, és molt important que inicialitzem</span>
-<span class="co"> * els valors (sobretot per la planta). La planta inicial del</span>
-<span class="co"> * pàrking és la 0, i la resta de plantes són soterrades.</span>
-<span class="co"> */</span>
-<span class="dt">void</span> inicialitzar(tVehicle *vehicle, tTipus tipus, <span class="dt">char</span> *matricula) {
-    strcpy(vehicle-&gt;matricula, matricula);
-    vehicle-&gt;tipus = tipus;
-    <span class="co">/* L&#39;accés a l&#39;atribut aparcament (tupla) el fem amb -&gt;</span>
-<span class="co">     * ja que es tracta d&#39;un punter, i accedim</span>
-<span class="co">     * als atributs de la tupla aparcament amb . </span>
-<span class="co">     */</span>
-    vehicle-&gt;aparcament.planta = <span class="dv">0</span>;
-    vehicle-&gt;aparcament.fila = <span class="ch">&#39;-&#39;</span>;
-    vehicle-&gt;aparcament.numero = <span class="dv">0</span>;
-}
-
-<span class="co">/* Quan pugem una planta, incrementem en 1 l&#39;atribut</span>
-<span class="co"> * planta de la tupla tAparcament que conté la tupla tVehicle </span>
-<span class="co"> */</span>
-<span class="dt">void</span> pujarPlanta(tVehicle *vehicle) {
-    vehicle-&gt;aparcament.planta = vehicle-&gt;aparcament.planta + <span class="dv">1</span>;
-}
-
-<span class="co">/* Quan baixem una planta, decrementem en 1 l&#39;atribut</span>
-<span class="co"> * planta de la tupla tAparcament que conté la tupla tVehicle </span>
-<span class="co"> */</span>
-<span class="dt">void</span> baixarPlanta(tVehicle *vehicle) {
-    vehicle-&gt;aparcament.planta = vehicle-&gt;aparcament.planta - <span class="dv">1</span>;
-}
-
-<span class="co">/* Quan aparquem el vehicle, donem valor als atributs</span>
-<span class="co"> * fila i numero de la tupla tAparcament que conté la </span>
-<span class="co"> * tupla tVehicle </span>
-<span class="co"> */</span>
-<span class="dt">void</span> aparcar(tVehicle *vehicle, <span class="dt">char</span> fila, <span class="dt">int</span> numero) {
-    vehicle-&gt;aparcament.fila = fila;
-    vehicle-&gt;aparcament.numero = numero;
-}
-
-<span class="co">/* Mostrem per pantalla la posició del tVehicle */</span> 
-<span class="dt">void</span> obtenirPosicio(tVehicle vehicle) {
-    <span class="cf">if</span> (vehicle.tipus == COTXE) {
-        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Cotxe %s : &quot;</span>, vehicle.matricula);
-    } <span class="cf">else</span> {
-        <span class="cf">if</span> (vehicle.tipus == MOTO) {
-            printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Moto %s : &quot;</span>, vehicle.matricula);
-        } <span class="cf">else</span> {
-            printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Furgoneta %s : &quot;</span>, vehicle.matricula);
-        }
-    }
-    
-    <span class="co">/* En aquest cas l&#39;accés a l&#39;atribut aparcament (tupla)</span>
-<span class="co">     * es fa amb . ja que s&#39;ha passat per valor (no és un punter)</span>
-<span class="co">     * i accedim als atributs de la tupla aparcament amb . </span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;planta %d, &quot;</span>, vehicle.aparcament.planta);
-    printf(<span class="st">&quot;fila %c, &quot;</span>, vehicle.aparcament.fila);
-    printf(<span class="st">&quot;número %d </span><span class="sc">\n</span><span class="st">&quot;</span>, vehicle.aparcament.numero);
-}</code></pre></div>
+<div class="sourceCode" id="cb140"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb140-1"><a href="pr1.html#cb140-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb140-2"><a href="pr1.html#cb140-2"></a><span class="pp">#include </span><span class="im">&lt;string.h&gt;</span></span>
+<span id="cb140-3"><a href="pr1.html#cb140-3"></a></span>
+<span id="cb140-4"><a href="pr1.html#cb140-4"></a><span class="co">/* Un parking d&#39;un centre comercial ens ha </span></span>
+<span id="cb140-5"><a href="pr1.html#cb140-5"></a><span class="co"> * encarregat una app que faciliti els seus</span></span>
+<span id="cb140-6"><a href="pr1.html#cb140-6"></a><span class="co"> * clients a localitzar on ha aparcat el seu</span></span>
+<span id="cb140-7"><a href="pr1.html#cb140-7"></a><span class="co"> * vehicle.</span></span>
+<span id="cb140-8"><a href="pr1.html#cb140-8"></a><span class="co"> * </span></span>
+<span id="cb140-9"><a href="pr1.html#cb140-9"></a><span class="co"> * El parking ja disposa de tres tipus de </span></span>
+<span id="cb140-10"><a href="pr1.html#cb140-10"></a><span class="co"> * càmeres, independents entre elles:</span></span>
+<span id="cb140-11"><a href="pr1.html#cb140-11"></a><span class="co"> * </span></span>
+<span id="cb140-12"><a href="pr1.html#cb140-12"></a><span class="co"> * - d&#39;entrada: càmera posicionada a l&#39;entrada</span></span>
+<span id="cb140-13"><a href="pr1.html#cb140-13"></a><span class="co"> *   del pàrking que, a més de llegir la matrícula,</span></span>
+<span id="cb140-14"><a href="pr1.html#cb140-14"></a><span class="co"> *   permet saber el tipus de vehicle.</span></span>
+<span id="cb140-15"><a href="pr1.html#cb140-15"></a><span class="co"> * </span></span>
+<span id="cb140-16"><a href="pr1.html#cb140-16"></a><span class="co"> * - d&#39;accés: càmeres que ens permeten</span></span>
+<span id="cb140-17"><a href="pr1.html#cb140-17"></a><span class="co"> *   saber si un vehicle ha pujat o ha baixat</span></span>
+<span id="cb140-18"><a href="pr1.html#cb140-18"></a><span class="co"> *   una planta.</span></span>
+<span id="cb140-19"><a href="pr1.html#cb140-19"></a><span class="co"> * </span></span>
+<span id="cb140-20"><a href="pr1.html#cb140-20"></a><span class="co"> * - de planta: càmeres que ens permeten saber</span></span>
+<span id="cb140-21"><a href="pr1.html#cb140-21"></a><span class="co"> *   la fila i eĺ número de plaça on s&#39;ha </span></span>
+<span id="cb140-22"><a href="pr1.html#cb140-22"></a><span class="co"> *   aparcat un vehicle.</span></span>
+<span id="cb140-23"><a href="pr1.html#cb140-23"></a><span class="co"> * </span></span>
+<span id="cb140-24"><a href="pr1.html#cb140-24"></a><span class="co"> * L&#39;identificador de vehicle és la seva </span></span>
+<span id="cb140-25"><a href="pr1.html#cb140-25"></a><span class="co"> * matrícula.</span></span>
+<span id="cb140-26"><a href="pr1.html#cb140-26"></a><span class="co"> * </span></span>
+<span id="cb140-27"><a href="pr1.html#cb140-27"></a><span class="co"> * A partir de la informació obtinguda pels</span></span>
+<span id="cb140-28"><a href="pr1.html#cb140-28"></a><span class="co"> * tres conjunts de càmeres, caldrà indicar</span></span>
+<span id="cb140-29"><a href="pr1.html#cb140-29"></a><span class="co"> * a l&#39;usuari on ha aparcat el seu vehicle.</span></span>
+<span id="cb140-30"><a href="pr1.html#cb140-30"></a><span class="co"> */</span></span>
+<span id="cb140-31"><a href="pr1.html#cb140-31"></a></span>
+<span id="cb140-32"><a href="pr1.html#cb140-32"></a><span class="pp">#define MAX_MATRICULA 7+1</span></span>
+<span id="cb140-33"><a href="pr1.html#cb140-33"></a></span>
+<span id="cb140-34"><a href="pr1.html#cb140-34"></a><span class="kw">typedef</span> <span class="kw">enum</span> {COTXE, MOTO, FURGONETA} tTipus;</span>
+<span id="cb140-35"><a href="pr1.html#cb140-35"></a></span>
+<span id="cb140-36"><a href="pr1.html#cb140-36"></a><span class="co">/* El lloc on aparca un vehicle ve donat</span></span>
+<span id="cb140-37"><a href="pr1.html#cb140-37"></a><span class="co"> * per tres valors: la planta, la fila i el </span></span>
+<span id="cb140-38"><a href="pr1.html#cb140-38"></a><span class="co"> * número de la plaça.</span></span>
+<span id="cb140-39"><a href="pr1.html#cb140-39"></a><span class="co"> */</span></span>
+<span id="cb140-40"><a href="pr1.html#cb140-40"></a><span class="kw">typedef</span> <span class="kw">struct</span> {</span>
+<span id="cb140-41"><a href="pr1.html#cb140-41"></a>    <span class="dt">int</span> planta;</span>
+<span id="cb140-42"><a href="pr1.html#cb140-42"></a>    <span class="dt">char</span> fila;</span>
+<span id="cb140-43"><a href="pr1.html#cb140-43"></a>    <span class="dt">int</span> numero;</span>
+<span id="cb140-44"><a href="pr1.html#cb140-44"></a>} tAparcament;</span>
+<span id="cb140-45"><a href="pr1.html#cb140-45"></a></span>
+<span id="cb140-46"><a href="pr1.html#cb140-46"></a><span class="co">/* El tipus tVehicle conté la seva matrícula</span></span>
+<span id="cb140-47"><a href="pr1.html#cb140-47"></a><span class="co"> * (identificador únic), el tipus de vehicle</span></span>
+<span id="cb140-48"><a href="pr1.html#cb140-48"></a><span class="co"> * detectat en la primera càmera (COTXE, MOTO,</span></span>
+<span id="cb140-49"><a href="pr1.html#cb140-49"></a><span class="co"> * FURGONETA), i el lloc on ha aparcat (tAparcament)</span></span>
+<span id="cb140-50"><a href="pr1.html#cb140-50"></a><span class="co"> */</span></span>
+<span id="cb140-51"><a href="pr1.html#cb140-51"></a><span class="kw">typedef</span> <span class="kw">struct</span> {</span>
+<span id="cb140-52"><a href="pr1.html#cb140-52"></a>    <span class="dt">char</span> matricula[MAX_MATRICULA];</span>
+<span id="cb140-53"><a href="pr1.html#cb140-53"></a>    tTipus tipus;</span>
+<span id="cb140-54"><a href="pr1.html#cb140-54"></a>    tAparcament aparcament;</span>
+<span id="cb140-55"><a href="pr1.html#cb140-55"></a>} tVehicle;</span>
+<span id="cb140-56"><a href="pr1.html#cb140-56"></a></span>
+<span id="cb140-57"><a href="pr1.html#cb140-57"></a><span class="co">/* Predeclaració d&#39;accions */</span></span>
+<span id="cb140-58"><a href="pr1.html#cb140-58"></a><span class="dt">void</span> inicialitzar(tVehicle *vehicle, tTipus tipus, <span class="dt">char</span> *matricula);</span>
+<span id="cb140-59"><a href="pr1.html#cb140-59"></a><span class="dt">void</span> pujarPlanta(tVehicle *vehicle);</span>
+<span id="cb140-60"><a href="pr1.html#cb140-60"></a><span class="dt">void</span> baixarPlanta(tVehicle *vehicle);</span>
+<span id="cb140-61"><a href="pr1.html#cb140-61"></a><span class="dt">void</span> aparcar(tVehicle *vehicle, <span class="dt">char</span> fila, <span class="dt">int</span> numero);</span>
+<span id="cb140-62"><a href="pr1.html#cb140-62"></a><span class="dt">void</span> obtenirPosicio(tVehicle);</span>
+<span id="cb140-63"><a href="pr1.html#cb140-63"></a></span>
+<span id="cb140-64"><a href="pr1.html#cb140-64"></a><span class="co">/* Programa principal */</span></span>
+<span id="cb140-65"><a href="pr1.html#cb140-65"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv){</span>
+<span id="cb140-66"><a href="pr1.html#cb140-66"></a>    </span>
+<span id="cb140-67"><a href="pr1.html#cb140-67"></a>    tVehicle vehicle;</span>
+<span id="cb140-68"><a href="pr1.html#cb140-68"></a>    </span>
+<span id="cb140-69"><a href="pr1.html#cb140-69"></a>    <span class="co">/* Es llegeix la matrícula del vehicle amb la </span></span>
+<span id="cb140-70"><a href="pr1.html#cb140-70"></a><span class="co">     * càmera d&#39;entrada del pàrking i s&#39;assigna</span></span>
+<span id="cb140-71"><a href="pr1.html#cb140-71"></a><span class="co">     * a l&#39;element de tipus tVehicle del nostre</span></span>
+<span id="cb140-72"><a href="pr1.html#cb140-72"></a><span class="co">     * pàrking </span></span>
+<span id="cb140-73"><a href="pr1.html#cb140-73"></a><span class="co">     */</span></span>
+<span id="cb140-74"><a href="pr1.html#cb140-74"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Entrada al pàrking </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb140-75"><a href="pr1.html#cb140-75"></a>    inicialitzar(&amp;vehicle, COTXE, <span class="st">&quot;7472GZZ&quot;</span>);</span>
+<span id="cb140-76"><a href="pr1.html#cb140-76"></a>    </span>
+<span id="cb140-77"><a href="pr1.html#cb140-77"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Baixar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb140-78"><a href="pr1.html#cb140-78"></a>    baixarPlanta(&amp;vehicle);</span>
+<span id="cb140-79"><a href="pr1.html#cb140-79"></a>    </span>
+<span id="cb140-80"><a href="pr1.html#cb140-80"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Baixar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb140-81"><a href="pr1.html#cb140-81"></a>    baixarPlanta(&amp;vehicle);</span>
+<span id="cb140-82"><a href="pr1.html#cb140-82"></a>    </span>
+<span id="cb140-83"><a href="pr1.html#cb140-83"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Pujar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb140-84"><a href="pr1.html#cb140-84"></a>    pujarPlanta(&amp;vehicle);</span>
+<span id="cb140-85"><a href="pr1.html#cb140-85"></a>    </span>
+<span id="cb140-86"><a href="pr1.html#cb140-86"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Baixar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb140-87"><a href="pr1.html#cb140-87"></a>    baixarPlanta(&amp;vehicle);</span>
+<span id="cb140-88"><a href="pr1.html#cb140-88"></a>    </span>
+<span id="cb140-89"><a href="pr1.html#cb140-89"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Baixar una planta</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb140-90"><a href="pr1.html#cb140-90"></a>    baixarPlanta(&amp;vehicle);</span>
+<span id="cb140-91"><a href="pr1.html#cb140-91"></a>    </span>
+<span id="cb140-92"><a href="pr1.html#cb140-92"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&gt;&gt; Aparcar</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb140-93"><a href="pr1.html#cb140-93"></a>    aparcar(&amp;vehicle, <span class="ch">&#39;C&#39;</span>, <span class="dv">23</span>);</span>
+<span id="cb140-94"><a href="pr1.html#cb140-94"></a>    </span>
+<span id="cb140-95"><a href="pr1.html#cb140-95"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Anem a comprar regals de reis ...&quot;</span>);</span>
+<span id="cb140-96"><a href="pr1.html#cb140-96"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">... passem més de 3 hores ...&quot;</span>);</span>
+<span id="cb140-97"><a href="pr1.html#cb140-97"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">... i ens oblidem d&#39;on hem aparcat el vehicle !!</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb140-98"><a href="pr1.html#cb140-98"></a>    </span>
+<span id="cb140-99"><a href="pr1.html#cb140-99"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Solució: consultem la posició del nostre vehicle &quot;</span>);</span>
+<span id="cb140-100"><a href="pr1.html#cb140-100"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">a l&#39;app del pàrquing : </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb140-101"><a href="pr1.html#cb140-101"></a>    obtenirPosicio(vehicle);</span>
+<span id="cb140-102"><a href="pr1.html#cb140-102"></a>    </span>
+<span id="cb140-103"><a href="pr1.html#cb140-103"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb140-104"><a href="pr1.html#cb140-104"></a>}</span>
+<span id="cb140-105"><a href="pr1.html#cb140-105"></a></span>
+<span id="cb140-106"><a href="pr1.html#cb140-106"></a><span class="co">/* Com que la posició ve donada pels atributs planta, fila i</span></span>
+<span id="cb140-107"><a href="pr1.html#cb140-107"></a><span class="co"> * numero de tAparcament, és molt important que inicialitzem</span></span>
+<span id="cb140-108"><a href="pr1.html#cb140-108"></a><span class="co"> * els valors (sobretot per la planta). La planta inicial del</span></span>
+<span id="cb140-109"><a href="pr1.html#cb140-109"></a><span class="co"> * pàrking és la 0, i la resta de plantes són soterrades.</span></span>
+<span id="cb140-110"><a href="pr1.html#cb140-110"></a><span class="co"> */</span></span>
+<span id="cb140-111"><a href="pr1.html#cb140-111"></a><span class="dt">void</span> inicialitzar(tVehicle *vehicle, tTipus tipus, <span class="dt">char</span> *matricula) {</span>
+<span id="cb140-112"><a href="pr1.html#cb140-112"></a>    strcpy(vehicle-&gt;matricula, matricula);</span>
+<span id="cb140-113"><a href="pr1.html#cb140-113"></a>    vehicle-&gt;tipus = tipus;</span>
+<span id="cb140-114"><a href="pr1.html#cb140-114"></a>    <span class="co">/* L&#39;accés a l&#39;atribut aparcament (tupla) el fem amb -&gt;</span></span>
+<span id="cb140-115"><a href="pr1.html#cb140-115"></a><span class="co">     * ja que es tracta d&#39;un punter, i accedim</span></span>
+<span id="cb140-116"><a href="pr1.html#cb140-116"></a><span class="co">     * als atributs de la tupla aparcament amb . </span></span>
+<span id="cb140-117"><a href="pr1.html#cb140-117"></a><span class="co">     */</span></span>
+<span id="cb140-118"><a href="pr1.html#cb140-118"></a>    vehicle-&gt;aparcament.planta = <span class="dv">0</span>;</span>
+<span id="cb140-119"><a href="pr1.html#cb140-119"></a>    vehicle-&gt;aparcament.fila = <span class="ch">&#39;-&#39;</span>;</span>
+<span id="cb140-120"><a href="pr1.html#cb140-120"></a>    vehicle-&gt;aparcament.numero = <span class="dv">0</span>;</span>
+<span id="cb140-121"><a href="pr1.html#cb140-121"></a>}</span>
+<span id="cb140-122"><a href="pr1.html#cb140-122"></a></span>
+<span id="cb140-123"><a href="pr1.html#cb140-123"></a><span class="co">/* Quan pugem una planta, incrementem en 1 l&#39;atribut</span></span>
+<span id="cb140-124"><a href="pr1.html#cb140-124"></a><span class="co"> * planta de la tupla tAparcament que conté la tupla tVehicle </span></span>
+<span id="cb140-125"><a href="pr1.html#cb140-125"></a><span class="co"> */</span></span>
+<span id="cb140-126"><a href="pr1.html#cb140-126"></a><span class="dt">void</span> pujarPlanta(tVehicle *vehicle) {</span>
+<span id="cb140-127"><a href="pr1.html#cb140-127"></a>    vehicle-&gt;aparcament.planta = vehicle-&gt;aparcament.planta + <span class="dv">1</span>;</span>
+<span id="cb140-128"><a href="pr1.html#cb140-128"></a>}</span>
+<span id="cb140-129"><a href="pr1.html#cb140-129"></a></span>
+<span id="cb140-130"><a href="pr1.html#cb140-130"></a><span class="co">/* Quan baixem una planta, decrementem en 1 l&#39;atribut</span></span>
+<span id="cb140-131"><a href="pr1.html#cb140-131"></a><span class="co"> * planta de la tupla tAparcament que conté la tupla tVehicle </span></span>
+<span id="cb140-132"><a href="pr1.html#cb140-132"></a><span class="co"> */</span></span>
+<span id="cb140-133"><a href="pr1.html#cb140-133"></a><span class="dt">void</span> baixarPlanta(tVehicle *vehicle) {</span>
+<span id="cb140-134"><a href="pr1.html#cb140-134"></a>    vehicle-&gt;aparcament.planta = vehicle-&gt;aparcament.planta - <span class="dv">1</span>;</span>
+<span id="cb140-135"><a href="pr1.html#cb140-135"></a>}</span>
+<span id="cb140-136"><a href="pr1.html#cb140-136"></a></span>
+<span id="cb140-137"><a href="pr1.html#cb140-137"></a><span class="co">/* Quan aparquem el vehicle, donem valor als atributs</span></span>
+<span id="cb140-138"><a href="pr1.html#cb140-138"></a><span class="co"> * fila i numero de la tupla tAparcament que conté la </span></span>
+<span id="cb140-139"><a href="pr1.html#cb140-139"></a><span class="co"> * tupla tVehicle </span></span>
+<span id="cb140-140"><a href="pr1.html#cb140-140"></a><span class="co"> */</span></span>
+<span id="cb140-141"><a href="pr1.html#cb140-141"></a><span class="dt">void</span> aparcar(tVehicle *vehicle, <span class="dt">char</span> fila, <span class="dt">int</span> numero) {</span>
+<span id="cb140-142"><a href="pr1.html#cb140-142"></a>    vehicle-&gt;aparcament.fila = fila;</span>
+<span id="cb140-143"><a href="pr1.html#cb140-143"></a>    vehicle-&gt;aparcament.numero = numero;</span>
+<span id="cb140-144"><a href="pr1.html#cb140-144"></a>}</span>
+<span id="cb140-145"><a href="pr1.html#cb140-145"></a></span>
+<span id="cb140-146"><a href="pr1.html#cb140-146"></a><span class="co">/* Mostrem per pantalla la posició del tVehicle */</span> </span>
+<span id="cb140-147"><a href="pr1.html#cb140-147"></a><span class="dt">void</span> obtenirPosicio(tVehicle vehicle) {</span>
+<span id="cb140-148"><a href="pr1.html#cb140-148"></a>    <span class="cf">if</span> (vehicle.tipus == COTXE) {</span>
+<span id="cb140-149"><a href="pr1.html#cb140-149"></a>        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Cotxe %s : &quot;</span>, vehicle.matricula);</span>
+<span id="cb140-150"><a href="pr1.html#cb140-150"></a>    } <span class="cf">else</span> {</span>
+<span id="cb140-151"><a href="pr1.html#cb140-151"></a>        <span class="cf">if</span> (vehicle.tipus == MOTO) {</span>
+<span id="cb140-152"><a href="pr1.html#cb140-152"></a>            printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Moto %s : &quot;</span>, vehicle.matricula);</span>
+<span id="cb140-153"><a href="pr1.html#cb140-153"></a>        } <span class="cf">else</span> {</span>
+<span id="cb140-154"><a href="pr1.html#cb140-154"></a>            printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Furgoneta %s : &quot;</span>, vehicle.matricula);</span>
+<span id="cb140-155"><a href="pr1.html#cb140-155"></a>        }</span>
+<span id="cb140-156"><a href="pr1.html#cb140-156"></a>    }</span>
+<span id="cb140-157"><a href="pr1.html#cb140-157"></a>    </span>
+<span id="cb140-158"><a href="pr1.html#cb140-158"></a>    <span class="co">/* En aquest cas l&#39;accés a l&#39;atribut aparcament (tupla)</span></span>
+<span id="cb140-159"><a href="pr1.html#cb140-159"></a><span class="co">     * es fa amb . ja que s&#39;ha passat per valor (no és un punter)</span></span>
+<span id="cb140-160"><a href="pr1.html#cb140-160"></a><span class="co">     * i accedim als atributs de la tupla aparcament amb . </span></span>
+<span id="cb140-161"><a href="pr1.html#cb140-161"></a><span class="co">     */</span></span>
+<span id="cb140-162"><a href="pr1.html#cb140-162"></a>    printf(<span class="st">&quot;planta %d, &quot;</span>, vehicle.aparcament.planta);</span>
+<span id="cb140-163"><a href="pr1.html#cb140-163"></a>    printf(<span class="st">&quot;fila %c, &quot;</span>, vehicle.aparcament.fila);</span>
+<span id="cb140-164"><a href="pr1.html#cb140-164"></a>    printf(<span class="st">&quot;número %d </span><span class="sc">\n</span><span class="st">&quot;</span>, vehicle.aparcament.numero);</span>
+<span id="cb140-165"><a href="pr1.html#cb140-165"></a>}</span></code></pre></div>
 <p>El resultat de l’execució d’aquest programa és:</p>
 <p>
 <img src="img/play.png" float="right;" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">&gt;&gt; Entrada al pàrking 
-
-&gt;&gt; Baixar una planta
-
-&gt;&gt; Baixar una planta
-
-&gt;&gt; Pujar una planta
-
-&gt;&gt; Baixar una planta
-
-&gt;&gt; Baixar una planta
-
-&gt;&gt; Aparcar
-
-Anem a comprar regals de reis ...
-... passem més de <span class="dv">3</span> hores ...
-... i ens oblidem d&#39;on hem aparcat el vehicle !!
-
-Solució: consultem la posició del nostre vehicle 
-a l&#39;app del parking : 
-
-Cotxe 7472GZZ : planta -<span class="dv">3</span>, fila C, número <span class="dv">23</span></code></pre></div>
-</div>
-<div id="desplacament-delements-en-un-vector" class="section level2">
-<h2><span class="header-section-number">11.3</span> Desplaçament d’elements en un vector</h2>
+<div class="sourceCode" id="cb141"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb141-1"><a href="pr1.html#cb141-1"></a>&gt;&gt; Entrada al pàrking </span>
+<span id="cb141-2"><a href="pr1.html#cb141-2"></a></span>
+<span id="cb141-3"><a href="pr1.html#cb141-3"></a>&gt;&gt; Baixar una planta</span>
+<span id="cb141-4"><a href="pr1.html#cb141-4"></a></span>
+<span id="cb141-5"><a href="pr1.html#cb141-5"></a>&gt;&gt; Baixar una planta</span>
+<span id="cb141-6"><a href="pr1.html#cb141-6"></a></span>
+<span id="cb141-7"><a href="pr1.html#cb141-7"></a>&gt;&gt; Pujar una planta</span>
+<span id="cb141-8"><a href="pr1.html#cb141-8"></a></span>
+<span id="cb141-9"><a href="pr1.html#cb141-9"></a>&gt;&gt; Baixar una planta</span>
+<span id="cb141-10"><a href="pr1.html#cb141-10"></a></span>
+<span id="cb141-11"><a href="pr1.html#cb141-11"></a>&gt;&gt; Baixar una planta</span>
+<span id="cb141-12"><a href="pr1.html#cb141-12"></a></span>
+<span id="cb141-13"><a href="pr1.html#cb141-13"></a>&gt;&gt; Aparcar</span>
+<span id="cb141-14"><a href="pr1.html#cb141-14"></a></span>
+<span id="cb141-15"><a href="pr1.html#cb141-15"></a>Anem a comprar regals de reis ...</span>
+<span id="cb141-16"><a href="pr1.html#cb141-16"></a>... passem més de <span class="dv">3</span> hores ...</span>
+<span id="cb141-17"><a href="pr1.html#cb141-17"></a>... i ens oblidem d&#39;on hem aparcat el vehicle !!</span>
+<span id="cb141-18"><a href="pr1.html#cb141-18"></a></span>
+<span id="cb141-19"><a href="pr1.html#cb141-19"></a>Solució: consultem la posició del nostre vehicle </span>
+<span id="cb141-20"><a href="pr1.html#cb141-20"></a>a l&#39;app del parking : </span>
+<span id="cb141-21"><a href="pr1.html#cb141-21"></a></span>
+<span id="cb141-22"><a href="pr1.html#cb141-22"></a>Cotxe <span class="dv">7472</span><span class="er">GZZ</span> : planta -<span class="dv">3</span>, fila C, número <span class="dv">23</span></span></code></pre></div>
+<p>##Desplaçament d’elements en un vector</p>
 <p>Els desplaçaments en un vector es poden produir quan s’afegeix o s’elimina un element d’un vector.</p>
-<div id="afegir-un-element" class="section level3">
-<h3><span class="header-section-number">11.3.1</span> Afegir un element</h3>
+<p>###Afegir un element</p>
 <p>Volem afegir un element dins del vector de la taula en una posició que no és l’última. Per exemple, si volem que els elements que afegim a un vector vagin a la posició inicial, caldrà abans desplaçar la resta d’elements una posició a la dreta:</p>
 <p>Contingut inicial del vector:</p>
 <pre><code>[element2] [element5] [element1] [element7]</code></pre>
@@ -466,240 +500,235 @@ Cotxe 7472GZZ : planta -<span class="dv">3</span>, fila C, número <span class="
 <p>Ara ja es pot afegir l’element6 a la primera posició del vector:</p>
 <pre><code>[element6] [element2] [element5] [element1] [element7]</code></pre>
 <p><strong>Important</strong>: com a darrer pas, incrementar en 1 l’atribut que conté la mida de la taula.</p>
-</div>
-<div id="esborrar-un-element" class="section level3">
-<h3><span class="header-section-number">11.3.2</span> Esborrar un element</h3>
+<p>###Esborrar un element</p>
 <p>Quan volem eliminar un element d’un vector també es pot produir un desplaçament d’elements. Per exemple:</p>
 <p>Contingut inicial del vector:</p>
 <pre><code>[element2] [element5] [element1] [element7]</code></pre>
 <p>Per eliminar l’<code>element5</code> simplement desplacem la resta d’elements que van a continuació una posició cap a l’esquerra:</p>
 <pre><code>[element2] [element1] [element7]</code></pre>
 <p><strong>Important</strong>: com a darrer pas, decrementar en 1 l’atribut que conté la mida de la taula.</p>
-</div>
-<div id="exemple-diessetmana" class="section level3">
-<h3><span class="header-section-number">11.3.3</span> Exemple: diesSetmana</h3>
+<p>###Exemple: diesSetmana</p>
 <p>A continuació s’adjunta un exemple inventat per consolidar aquesta explicació: la idea és que pugueu comparar la inserció d’elements a una taula com hem fet habitualment fins ara (afegits al final de tot), amb una altra acció que permet afegir de forma ordenada els elements a la taula. En aquesta segona inserció caldrà anar realitzant desplaçaments cap a la dreta dels elements del vector de la taula per tal que vagin quedant ordenats.</p>
 <p>
-<img src="img/c.png" alt="llenguatge C" style="float:left; padding:10px" />
+<img src="img/c.png" title="fig:" style="float:left; padding:10px" alt="llenguatge C" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
-
-<span class="co">/* Definició de constants */</span>
-<span class="pp">#define MAX_DIES 7</span>
-<span class="pp">#define MAX_NOM 9+1</span>
-
-<span class="co">/* Definició de la tupla tDia */</span>
-<span class="kw">typedef</span> <span class="kw">struct</span> {
-    <span class="dt">char</span> nom[MAX_NOM];
-    <span class="dt">int</span> id;
-} tDia;
-
-<span class="co">/* Definició de la taula tSetmana */</span>
-<span class="kw">typedef</span> <span class="kw">struct</span> {
-    tDia dies[MAX_DIES];
-    <span class="dt">int</span> numDies;
-} tSetmana;
-
-<span class="co">/* Predeclaració de les accions */</span>
-
-<span class="co">/* Acció que inicialitza la taula tSetmana,</span>
-<span class="co"> * tot posant l&#39;atribut numDies a 0 </span>
-<span class="co"> */</span>
-<span class="dt">void</span> inicialitzar(tSetmana *setmana);
-
-<span class="co">/* Acció que afegeix un element de tipus tDia</span>
-<span class="co"> * a la taula tSetmana </span>
-<span class="co"> */</span>
-<span class="dt">void</span> afegirDia(tSetmana *setmana, tDia dia);
-
-<span class="co">/* Acció que afegeix un element de tipus tDia</span>
-<span class="co"> * a la taula tSetmana de forma ordenada </span>
-<span class="co"> */</span>
-<span class="dt">void</span> afegirDiaOrdenat(tSetmana *setmana, tDia dia);
-
-<span class="co">/* Acció que copia el contingut d&#39;un tDia origen (src)</span>
-<span class="co"> * a un tDia destí (dst) </span>
-<span class="co"> */</span>
-<span class="dt">void</span> copiarDia(tDia *dst, tDia src);
-
-<span class="co">/* Acció que mostra per pantalla el contingut</span>
-<span class="co"> * de la taula tSetmana </span>
-<span class="co"> */</span>
-<span class="dt">void</span> mostrar(tSetmana setmana);
-
-<span class="co">/* Programa principal */</span>
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv)
-{
-    <span class="co">/* Definim les variables */</span>
-    tSetmana setmana, setmanaOrdenada;
-    tDia dl, dm, dc, dj, dv, ds, dg; 
-    
-    <span class="co">/* Inicialitzem les variables de tipus tDia */</span>
-    strcpy(dl.nom, <span class="st">&quot;dilluns&quot;</span>);
-    dl.id = <span class="dv">1</span>;
-    strcpy(dm.nom, <span class="st">&quot;dimarts&quot;</span>);
-    dm.id = <span class="dv">2</span>;
-    strcpy(dc.nom, <span class="st">&quot;dimecres&quot;</span>);
-    dc.id = <span class="dv">3</span>;
-    strcpy(dj.nom, <span class="st">&quot;dijous&quot;</span>);
-    dj.id = <span class="dv">4</span>;
-    strcpy(dv.nom, <span class="st">&quot;divendres&quot;</span>);
-    dv.id = <span class="dv">5</span>;
-    strcpy(ds.nom, <span class="st">&quot;dissabte&quot;</span>);
-    ds.id = <span class="dv">6</span>;
-    strcpy(dg.nom, <span class="st">&quot;diumenge&quot;</span>);
-    dg.id = <span class="dv">7</span>;
-    
-    <span class="co">/* Inicialitzem les variables de tipus</span>
-<span class="co">     * tSetmana </span>
-<span class="co">     */</span>
-    inicialitzar(&amp;setmana);
-    inicialitzar(&amp;setmanaOrdenada);
-    
-    <span class="co">/* Afegim sense ordre les variables</span>
-<span class="co">     * tDia dins de les taules setmana</span>
-<span class="co">     * i setmanaOrdenada. La diferència</span>
-<span class="co">     * entre elles serà el mètode utilitzat</span>
-<span class="co">     * per inserir els tDia: mentre que </span>
-<span class="co">     * la inserció per setmana serà </span>
-<span class="co">     * l&#39;habitual d&#39;afegir com a darrer</span>
-<span class="co">     * element de la taula, per la </span>
-<span class="co">     * setmanaOrdenada utilitzarem l&#39;acció</span>
-<span class="co">     * afegirDiaOrdenat()</span>
-<span class="co">     */</span>
-    afegirDia(&amp;setmana, dj);
-    afegirDia(&amp;setmana, dl);
-    afegirDia(&amp;setmana, dc);
-    afegirDia(&amp;setmana, dg);
-    afegirDia(&amp;setmana, ds);
-    afegirDia(&amp;setmana, dm);
-    afegirDia(&amp;setmana, dv);
-    afegirDiaOrdenat(&amp;setmanaOrdenada, dj);
-    afegirDiaOrdenat(&amp;setmanaOrdenada, dl);    
-    afegirDiaOrdenat(&amp;setmanaOrdenada, dc);
-    afegirDiaOrdenat(&amp;setmanaOrdenada, dg);
-    afegirDiaOrdenat(&amp;setmanaOrdenada, ds);
-    afegirDiaOrdenat(&amp;setmanaOrdenada, dm);
-    afegirDiaOrdenat(&amp;setmanaOrdenada, dv);
-
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Setmana sense ordenar : </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    mostrar(setmana);
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Setmana ordenada : </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    mostrar(setmanaOrdenada);
-
-    <span class="cf">return</span> <span class="dv">0</span>;
-}
-
-<span class="co">/* Implementació de les accions */</span>
-
-<span class="dt">void</span> inicialitzar(tSetmana *setmana) {
-    setmana-&gt;numDies = <span class="dv">0</span>;
-}
-
-<span class="dt">void</span> afegirDia(tSetmana *setmana, tDia dia) {
-    <span class="co">/* numDies conté el número d&#39;elements </span>
-<span class="co">     * de tipus tDia que conté la taula </span>
-<span class="co">     * tSetmana en cada moment </span>
-<span class="co">     */</span>
-    copiarDia(&amp;setmana-&gt;dies[setmana-&gt;numDies], dia);
-
-    <span class="co">/* Una vegada assignat un element nou </span>
-<span class="co">     * tDia a la taula, incrementem el valor </span>
-<span class="co">     * de numDies </span>
-<span class="co">     */</span>
-    setmana-&gt;numDies = setmana-&gt;numDies + <span class="dv">1</span>;
-}
-
-<span class="co">/* Acció que afegeix un element de tipus tDia</span>
-<span class="co"> * a la taula tSetmana de forma ordenada </span>
-<span class="co"> */</span>
-<span class="dt">void</span> afegirDiaOrdenat(tSetmana *setmana, tDia dia) {
-    
-    <span class="dt">int</span> i, j;
-    bool isAfegit;
-    
-    isAfegit = false;
-    i = <span class="dv">0</span>;
-    
-    <span class="co">/* Per fer l&#39;ordenació s&#39;utilitzarà el camp</span>
-<span class="co">     * id de tDia </span>
-<span class="co">     */</span>
-    <span class="cf">for</span> (i = <span class="dv">0</span>; i &lt; setmana-&gt;numDies &amp;&amp; !isAfegit; i++) {
-        
-        <span class="co">/* Si l&#39;id del tDia de la tSetmana &gt; id del</span>
-<span class="co">         * paràmetre dia, a partir d&#39;aquest punt </span>
-<span class="co">         * caldrà desplaçar les tuples tDia cap </span>
-<span class="co">         * a la dreta. L&#39;objectiu és aconseguir un</span>
-<span class="co">         * lloc lliure, on s&#39;afegirà el tDia dia </span>
-<span class="co">         * passat com a paràmetre a l&#39;acció</span>
-<span class="co">         */</span>
-        <span class="cf">if</span> (setmana-&gt;dies[i].id &gt; dia.id) {
-            
-            <span class="co">/* Desplaçament dels tDia cap a la dreta, a</span>
-<span class="co">             * partir de la posició on caldrà afegir </span>
-<span class="co">             * el paràmetre dia passat per valor </span>
-<span class="co">             */</span>
-            <span class="cf">for</span> (j = setmana-&gt;numDies; j &gt; i; j--) {
-                copiarDia(&amp;setmana-&gt;dies[j], setmana-&gt;dies[j-<span class="dv">1</span>]);    
-            }
-            
-            <span class="co">/* S&#39;afegeix el paràmetre dia a la </span>
-<span class="co">             * posició que li correspon, una vegada</span>
-<span class="co">             * desplaçats la resta de tuples tDia </span>
-<span class="co">             * cap a dreta </span>
-<span class="co">             */</span>
-            copiarDia(&amp;setmana-&gt;dies[j], dia);
-            setmana-&gt;numDies = setmana-&gt;numDies + <span class="dv">1</span>;
-            isAfegit = true;
-        }
-    }
-
-    <span class="co">/* Si en aquest punt encara no s&#39;ha </span>
-<span class="co">     * afegit el tDia, significa que ha d&#39;anar</span>
-<span class="co">     * al final de tot de la taula tSetmana </span>
-<span class="co">     */</span>
-    <span class="cf">if</span> (!isAfegit) {
-        copiarDia(&amp;setmana-&gt;dies[i], dia);
-        setmana-&gt;numDies = setmana-&gt;numDies + <span class="dv">1</span>;
-    }
-}
-
-<span class="dt">void</span> copiarDia(tDia *dst, tDia src) {    
-    dst-&gt;id = src.id; 
-    strcpy(dst-&gt;nom, src.nom);
-}
-
-<span class="dt">void</span> mostrar(tSetmana setmana) {
-    <span class="dt">int</span> i;
-    <span class="cf">for</span> (i = <span class="dv">0</span>; i &lt; setmana.numDies; i++) {
-        printf(<span class="st">&quot;%s</span><span class="sc">\n</span><span class="st">&quot;</span>, setmana.dies[i].nom);
-    }
-}</code></pre></div>
+<div class="sourceCode" id="cb147"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb147-1"><a href="pr1.html#cb147-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb147-2"><a href="pr1.html#cb147-2"></a><span class="pp">#include </span><span class="im">&lt;string.h&gt;</span></span>
+<span id="cb147-3"><a href="pr1.html#cb147-3"></a><span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span></span>
+<span id="cb147-4"><a href="pr1.html#cb147-4"></a></span>
+<span id="cb147-5"><a href="pr1.html#cb147-5"></a><span class="co">/* Definició de constants */</span></span>
+<span id="cb147-6"><a href="pr1.html#cb147-6"></a><span class="pp">#define MAX_DIES 7</span></span>
+<span id="cb147-7"><a href="pr1.html#cb147-7"></a><span class="pp">#define MAX_NOM 9+1</span></span>
+<span id="cb147-8"><a href="pr1.html#cb147-8"></a></span>
+<span id="cb147-9"><a href="pr1.html#cb147-9"></a><span class="co">/* Definició de la tupla tDia */</span></span>
+<span id="cb147-10"><a href="pr1.html#cb147-10"></a><span class="kw">typedef</span> <span class="kw">struct</span> {</span>
+<span id="cb147-11"><a href="pr1.html#cb147-11"></a>    <span class="dt">char</span> nom[MAX_NOM];</span>
+<span id="cb147-12"><a href="pr1.html#cb147-12"></a>    <span class="dt">int</span> id;</span>
+<span id="cb147-13"><a href="pr1.html#cb147-13"></a>} tDia;</span>
+<span id="cb147-14"><a href="pr1.html#cb147-14"></a></span>
+<span id="cb147-15"><a href="pr1.html#cb147-15"></a><span class="co">/* Definició de la taula tSetmana */</span></span>
+<span id="cb147-16"><a href="pr1.html#cb147-16"></a><span class="kw">typedef</span> <span class="kw">struct</span> {</span>
+<span id="cb147-17"><a href="pr1.html#cb147-17"></a>    tDia dies[MAX_DIES];</span>
+<span id="cb147-18"><a href="pr1.html#cb147-18"></a>    <span class="dt">int</span> numDies;</span>
+<span id="cb147-19"><a href="pr1.html#cb147-19"></a>} tSetmana;</span>
+<span id="cb147-20"><a href="pr1.html#cb147-20"></a></span>
+<span id="cb147-21"><a href="pr1.html#cb147-21"></a><span class="co">/* Predeclaració de les accions */</span></span>
+<span id="cb147-22"><a href="pr1.html#cb147-22"></a></span>
+<span id="cb147-23"><a href="pr1.html#cb147-23"></a><span class="co">/* Acció que inicialitza la taula tSetmana,</span></span>
+<span id="cb147-24"><a href="pr1.html#cb147-24"></a><span class="co"> * tot posant l&#39;atribut numDies a 0 </span></span>
+<span id="cb147-25"><a href="pr1.html#cb147-25"></a><span class="co"> */</span></span>
+<span id="cb147-26"><a href="pr1.html#cb147-26"></a><span class="dt">void</span> inicialitzar(tSetmana *setmana);</span>
+<span id="cb147-27"><a href="pr1.html#cb147-27"></a></span>
+<span id="cb147-28"><a href="pr1.html#cb147-28"></a><span class="co">/* Acció que afegeix un element de tipus tDia</span></span>
+<span id="cb147-29"><a href="pr1.html#cb147-29"></a><span class="co"> * a la taula tSetmana </span></span>
+<span id="cb147-30"><a href="pr1.html#cb147-30"></a><span class="co"> */</span></span>
+<span id="cb147-31"><a href="pr1.html#cb147-31"></a><span class="dt">void</span> afegirDia(tSetmana *setmana, tDia dia);</span>
+<span id="cb147-32"><a href="pr1.html#cb147-32"></a></span>
+<span id="cb147-33"><a href="pr1.html#cb147-33"></a><span class="co">/* Acció que afegeix un element de tipus tDia</span></span>
+<span id="cb147-34"><a href="pr1.html#cb147-34"></a><span class="co"> * a la taula tSetmana de forma ordenada </span></span>
+<span id="cb147-35"><a href="pr1.html#cb147-35"></a><span class="co"> */</span></span>
+<span id="cb147-36"><a href="pr1.html#cb147-36"></a><span class="dt">void</span> afegirDiaOrdenat(tSetmana *setmana, tDia dia);</span>
+<span id="cb147-37"><a href="pr1.html#cb147-37"></a></span>
+<span id="cb147-38"><a href="pr1.html#cb147-38"></a><span class="co">/* Acció que copia el contingut d&#39;un tDia origen (src)</span></span>
+<span id="cb147-39"><a href="pr1.html#cb147-39"></a><span class="co"> * a un tDia destí (dst) </span></span>
+<span id="cb147-40"><a href="pr1.html#cb147-40"></a><span class="co"> */</span></span>
+<span id="cb147-41"><a href="pr1.html#cb147-41"></a><span class="dt">void</span> copiarDia(tDia *dst, tDia src);</span>
+<span id="cb147-42"><a href="pr1.html#cb147-42"></a></span>
+<span id="cb147-43"><a href="pr1.html#cb147-43"></a><span class="co">/* Acció que mostra per pantalla el contingut</span></span>
+<span id="cb147-44"><a href="pr1.html#cb147-44"></a><span class="co"> * de la taula tSetmana </span></span>
+<span id="cb147-45"><a href="pr1.html#cb147-45"></a><span class="co"> */</span></span>
+<span id="cb147-46"><a href="pr1.html#cb147-46"></a><span class="dt">void</span> mostrar(tSetmana setmana);</span>
+<span id="cb147-47"><a href="pr1.html#cb147-47"></a></span>
+<span id="cb147-48"><a href="pr1.html#cb147-48"></a><span class="co">/* Programa principal */</span></span>
+<span id="cb147-49"><a href="pr1.html#cb147-49"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv)</span>
+<span id="cb147-50"><a href="pr1.html#cb147-50"></a>{</span>
+<span id="cb147-51"><a href="pr1.html#cb147-51"></a>    <span class="co">/* Definim les variables */</span></span>
+<span id="cb147-52"><a href="pr1.html#cb147-52"></a>    tSetmana setmana, setmanaOrdenada;</span>
+<span id="cb147-53"><a href="pr1.html#cb147-53"></a>    tDia dl, dm, dc, dj, dv, ds, dg; </span>
+<span id="cb147-54"><a href="pr1.html#cb147-54"></a>    </span>
+<span id="cb147-55"><a href="pr1.html#cb147-55"></a>    <span class="co">/* Inicialitzem les variables de tipus tDia */</span></span>
+<span id="cb147-56"><a href="pr1.html#cb147-56"></a>    strcpy(dl.nom, <span class="st">&quot;dilluns&quot;</span>);</span>
+<span id="cb147-57"><a href="pr1.html#cb147-57"></a>    dl.id = <span class="dv">1</span>;</span>
+<span id="cb147-58"><a href="pr1.html#cb147-58"></a>    strcpy(dm.nom, <span class="st">&quot;dimarts&quot;</span>);</span>
+<span id="cb147-59"><a href="pr1.html#cb147-59"></a>    dm.id = <span class="dv">2</span>;</span>
+<span id="cb147-60"><a href="pr1.html#cb147-60"></a>    strcpy(dc.nom, <span class="st">&quot;dimecres&quot;</span>);</span>
+<span id="cb147-61"><a href="pr1.html#cb147-61"></a>    dc.id = <span class="dv">3</span>;</span>
+<span id="cb147-62"><a href="pr1.html#cb147-62"></a>    strcpy(dj.nom, <span class="st">&quot;dijous&quot;</span>);</span>
+<span id="cb147-63"><a href="pr1.html#cb147-63"></a>    dj.id = <span class="dv">4</span>;</span>
+<span id="cb147-64"><a href="pr1.html#cb147-64"></a>    strcpy(dv.nom, <span class="st">&quot;divendres&quot;</span>);</span>
+<span id="cb147-65"><a href="pr1.html#cb147-65"></a>    dv.id = <span class="dv">5</span>;</span>
+<span id="cb147-66"><a href="pr1.html#cb147-66"></a>    strcpy(ds.nom, <span class="st">&quot;dissabte&quot;</span>);</span>
+<span id="cb147-67"><a href="pr1.html#cb147-67"></a>    ds.id = <span class="dv">6</span>;</span>
+<span id="cb147-68"><a href="pr1.html#cb147-68"></a>    strcpy(dg.nom, <span class="st">&quot;diumenge&quot;</span>);</span>
+<span id="cb147-69"><a href="pr1.html#cb147-69"></a>    dg.id = <span class="dv">7</span>;</span>
+<span id="cb147-70"><a href="pr1.html#cb147-70"></a>    </span>
+<span id="cb147-71"><a href="pr1.html#cb147-71"></a>    <span class="co">/* Inicialitzem les variables de tipus</span></span>
+<span id="cb147-72"><a href="pr1.html#cb147-72"></a><span class="co">     * tSetmana </span></span>
+<span id="cb147-73"><a href="pr1.html#cb147-73"></a><span class="co">     */</span></span>
+<span id="cb147-74"><a href="pr1.html#cb147-74"></a>    inicialitzar(&amp;setmana);</span>
+<span id="cb147-75"><a href="pr1.html#cb147-75"></a>    inicialitzar(&amp;setmanaOrdenada);</span>
+<span id="cb147-76"><a href="pr1.html#cb147-76"></a>    </span>
+<span id="cb147-77"><a href="pr1.html#cb147-77"></a>    <span class="co">/* Afegim sense ordre les variables</span></span>
+<span id="cb147-78"><a href="pr1.html#cb147-78"></a><span class="co">     * tDia dins de les taules setmana</span></span>
+<span id="cb147-79"><a href="pr1.html#cb147-79"></a><span class="co">     * i setmanaOrdenada. La diferència</span></span>
+<span id="cb147-80"><a href="pr1.html#cb147-80"></a><span class="co">     * entre elles serà el mètode utilitzat</span></span>
+<span id="cb147-81"><a href="pr1.html#cb147-81"></a><span class="co">     * per inserir els tDia: mentre que </span></span>
+<span id="cb147-82"><a href="pr1.html#cb147-82"></a><span class="co">     * la inserció per setmana serà </span></span>
+<span id="cb147-83"><a href="pr1.html#cb147-83"></a><span class="co">     * l&#39;habitual d&#39;afegir com a darrer</span></span>
+<span id="cb147-84"><a href="pr1.html#cb147-84"></a><span class="co">     * element de la taula, per la </span></span>
+<span id="cb147-85"><a href="pr1.html#cb147-85"></a><span class="co">     * setmanaOrdenada utilitzarem l&#39;acció</span></span>
+<span id="cb147-86"><a href="pr1.html#cb147-86"></a><span class="co">     * afegirDiaOrdenat()</span></span>
+<span id="cb147-87"><a href="pr1.html#cb147-87"></a><span class="co">     */</span></span>
+<span id="cb147-88"><a href="pr1.html#cb147-88"></a>    afegirDia(&amp;setmana, dj);</span>
+<span id="cb147-89"><a href="pr1.html#cb147-89"></a>    afegirDia(&amp;setmana, dl);</span>
+<span id="cb147-90"><a href="pr1.html#cb147-90"></a>    afegirDia(&amp;setmana, dc);</span>
+<span id="cb147-91"><a href="pr1.html#cb147-91"></a>    afegirDia(&amp;setmana, dg);</span>
+<span id="cb147-92"><a href="pr1.html#cb147-92"></a>    afegirDia(&amp;setmana, ds);</span>
+<span id="cb147-93"><a href="pr1.html#cb147-93"></a>    afegirDia(&amp;setmana, dm);</span>
+<span id="cb147-94"><a href="pr1.html#cb147-94"></a>    afegirDia(&amp;setmana, dv);</span>
+<span id="cb147-95"><a href="pr1.html#cb147-95"></a>    afegirDiaOrdenat(&amp;setmanaOrdenada, dj);</span>
+<span id="cb147-96"><a href="pr1.html#cb147-96"></a>    afegirDiaOrdenat(&amp;setmanaOrdenada, dl);    </span>
+<span id="cb147-97"><a href="pr1.html#cb147-97"></a>    afegirDiaOrdenat(&amp;setmanaOrdenada, dc);</span>
+<span id="cb147-98"><a href="pr1.html#cb147-98"></a>    afegirDiaOrdenat(&amp;setmanaOrdenada, dg);</span>
+<span id="cb147-99"><a href="pr1.html#cb147-99"></a>    afegirDiaOrdenat(&amp;setmanaOrdenada, ds);</span>
+<span id="cb147-100"><a href="pr1.html#cb147-100"></a>    afegirDiaOrdenat(&amp;setmanaOrdenada, dm);</span>
+<span id="cb147-101"><a href="pr1.html#cb147-101"></a>    afegirDiaOrdenat(&amp;setmanaOrdenada, dv);</span>
+<span id="cb147-102"><a href="pr1.html#cb147-102"></a></span>
+<span id="cb147-103"><a href="pr1.html#cb147-103"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Setmana sense ordenar : </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb147-104"><a href="pr1.html#cb147-104"></a>    mostrar(setmana);</span>
+<span id="cb147-105"><a href="pr1.html#cb147-105"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Setmana ordenada : </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb147-106"><a href="pr1.html#cb147-106"></a>    mostrar(setmanaOrdenada);</span>
+<span id="cb147-107"><a href="pr1.html#cb147-107"></a></span>
+<span id="cb147-108"><a href="pr1.html#cb147-108"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb147-109"><a href="pr1.html#cb147-109"></a>}</span>
+<span id="cb147-110"><a href="pr1.html#cb147-110"></a></span>
+<span id="cb147-111"><a href="pr1.html#cb147-111"></a><span class="co">/* Implementació de les accions */</span></span>
+<span id="cb147-112"><a href="pr1.html#cb147-112"></a></span>
+<span id="cb147-113"><a href="pr1.html#cb147-113"></a><span class="dt">void</span> inicialitzar(tSetmana *setmana) {</span>
+<span id="cb147-114"><a href="pr1.html#cb147-114"></a>    setmana-&gt;numDies = <span class="dv">0</span>;</span>
+<span id="cb147-115"><a href="pr1.html#cb147-115"></a>}</span>
+<span id="cb147-116"><a href="pr1.html#cb147-116"></a></span>
+<span id="cb147-117"><a href="pr1.html#cb147-117"></a><span class="dt">void</span> afegirDia(tSetmana *setmana, tDia dia) {</span>
+<span id="cb147-118"><a href="pr1.html#cb147-118"></a>    <span class="co">/* numDies conté el número d&#39;elements </span></span>
+<span id="cb147-119"><a href="pr1.html#cb147-119"></a><span class="co">     * de tipus tDia que conté la taula </span></span>
+<span id="cb147-120"><a href="pr1.html#cb147-120"></a><span class="co">     * tSetmana en cada moment </span></span>
+<span id="cb147-121"><a href="pr1.html#cb147-121"></a><span class="co">     */</span></span>
+<span id="cb147-122"><a href="pr1.html#cb147-122"></a>    copiarDia(&amp;setmana-&gt;dies[setmana-&gt;numDies], dia);</span>
+<span id="cb147-123"><a href="pr1.html#cb147-123"></a></span>
+<span id="cb147-124"><a href="pr1.html#cb147-124"></a>    <span class="co">/* Una vegada assignat un element nou </span></span>
+<span id="cb147-125"><a href="pr1.html#cb147-125"></a><span class="co">     * tDia a la taula, incrementem el valor </span></span>
+<span id="cb147-126"><a href="pr1.html#cb147-126"></a><span class="co">     * de numDies </span></span>
+<span id="cb147-127"><a href="pr1.html#cb147-127"></a><span class="co">     */</span></span>
+<span id="cb147-128"><a href="pr1.html#cb147-128"></a>    setmana-&gt;numDies = setmana-&gt;numDies + <span class="dv">1</span>;</span>
+<span id="cb147-129"><a href="pr1.html#cb147-129"></a>}</span>
+<span id="cb147-130"><a href="pr1.html#cb147-130"></a></span>
+<span id="cb147-131"><a href="pr1.html#cb147-131"></a><span class="co">/* Acció que afegeix un element de tipus tDia</span></span>
+<span id="cb147-132"><a href="pr1.html#cb147-132"></a><span class="co"> * a la taula tSetmana de forma ordenada </span></span>
+<span id="cb147-133"><a href="pr1.html#cb147-133"></a><span class="co"> */</span></span>
+<span id="cb147-134"><a href="pr1.html#cb147-134"></a><span class="dt">void</span> afegirDiaOrdenat(tSetmana *setmana, tDia dia) {</span>
+<span id="cb147-135"><a href="pr1.html#cb147-135"></a>    </span>
+<span id="cb147-136"><a href="pr1.html#cb147-136"></a>    <span class="dt">int</span> i, j;</span>
+<span id="cb147-137"><a href="pr1.html#cb147-137"></a>    <span class="dt">bool</span> isAfegit;</span>
+<span id="cb147-138"><a href="pr1.html#cb147-138"></a>    </span>
+<span id="cb147-139"><a href="pr1.html#cb147-139"></a>    isAfegit = false;</span>
+<span id="cb147-140"><a href="pr1.html#cb147-140"></a>    i = <span class="dv">0</span>;</span>
+<span id="cb147-141"><a href="pr1.html#cb147-141"></a>    </span>
+<span id="cb147-142"><a href="pr1.html#cb147-142"></a>    <span class="co">/* Per fer l&#39;ordenació s&#39;utilitzarà el camp</span></span>
+<span id="cb147-143"><a href="pr1.html#cb147-143"></a><span class="co">     * id de tDia </span></span>
+<span id="cb147-144"><a href="pr1.html#cb147-144"></a><span class="co">     */</span></span>
+<span id="cb147-145"><a href="pr1.html#cb147-145"></a>    <span class="cf">for</span> (i = <span class="dv">0</span>; i &lt; setmana-&gt;numDies &amp;&amp; !isAfegit; i++) {</span>
+<span id="cb147-146"><a href="pr1.html#cb147-146"></a>        </span>
+<span id="cb147-147"><a href="pr1.html#cb147-147"></a>        <span class="co">/* Si l&#39;id del tDia de la tSetmana &gt; id del</span></span>
+<span id="cb147-148"><a href="pr1.html#cb147-148"></a><span class="co">         * paràmetre dia, a partir d&#39;aquest punt </span></span>
+<span id="cb147-149"><a href="pr1.html#cb147-149"></a><span class="co">         * caldrà desplaçar les tuples tDia cap </span></span>
+<span id="cb147-150"><a href="pr1.html#cb147-150"></a><span class="co">         * a la dreta. L&#39;objectiu és aconseguir un</span></span>
+<span id="cb147-151"><a href="pr1.html#cb147-151"></a><span class="co">         * lloc lliure, on s&#39;afegirà el tDia dia </span></span>
+<span id="cb147-152"><a href="pr1.html#cb147-152"></a><span class="co">         * passat com a paràmetre a l&#39;acció</span></span>
+<span id="cb147-153"><a href="pr1.html#cb147-153"></a><span class="co">         */</span></span>
+<span id="cb147-154"><a href="pr1.html#cb147-154"></a>        <span class="cf">if</span> (setmana-&gt;dies[i].id &gt; dia.id) {</span>
+<span id="cb147-155"><a href="pr1.html#cb147-155"></a>            </span>
+<span id="cb147-156"><a href="pr1.html#cb147-156"></a>            <span class="co">/* Desplaçament dels tDia cap a la dreta, a</span></span>
+<span id="cb147-157"><a href="pr1.html#cb147-157"></a><span class="co">             * partir de la posició on caldrà afegir </span></span>
+<span id="cb147-158"><a href="pr1.html#cb147-158"></a><span class="co">             * el paràmetre dia passat per valor </span></span>
+<span id="cb147-159"><a href="pr1.html#cb147-159"></a><span class="co">             */</span></span>
+<span id="cb147-160"><a href="pr1.html#cb147-160"></a>            <span class="cf">for</span> (j = setmana-&gt;numDies; j &gt; i; j--) {</span>
+<span id="cb147-161"><a href="pr1.html#cb147-161"></a>                copiarDia(&amp;setmana-&gt;dies[j], setmana-&gt;dies[j-<span class="dv">1</span>]);    </span>
+<span id="cb147-162"><a href="pr1.html#cb147-162"></a>            }</span>
+<span id="cb147-163"><a href="pr1.html#cb147-163"></a>            </span>
+<span id="cb147-164"><a href="pr1.html#cb147-164"></a>            <span class="co">/* S&#39;afegeix el paràmetre dia a la </span></span>
+<span id="cb147-165"><a href="pr1.html#cb147-165"></a><span class="co">             * posició que li correspon, una vegada</span></span>
+<span id="cb147-166"><a href="pr1.html#cb147-166"></a><span class="co">             * desplaçats la resta de tuples tDia </span></span>
+<span id="cb147-167"><a href="pr1.html#cb147-167"></a><span class="co">             * cap a dreta </span></span>
+<span id="cb147-168"><a href="pr1.html#cb147-168"></a><span class="co">             */</span></span>
+<span id="cb147-169"><a href="pr1.html#cb147-169"></a>            copiarDia(&amp;setmana-&gt;dies[j], dia);</span>
+<span id="cb147-170"><a href="pr1.html#cb147-170"></a>            setmana-&gt;numDies = setmana-&gt;numDies + <span class="dv">1</span>;</span>
+<span id="cb147-171"><a href="pr1.html#cb147-171"></a>            isAfegit = true;</span>
+<span id="cb147-172"><a href="pr1.html#cb147-172"></a>        }</span>
+<span id="cb147-173"><a href="pr1.html#cb147-173"></a>    }</span>
+<span id="cb147-174"><a href="pr1.html#cb147-174"></a></span>
+<span id="cb147-175"><a href="pr1.html#cb147-175"></a>    <span class="co">/* Si en aquest punt encara no s&#39;ha </span></span>
+<span id="cb147-176"><a href="pr1.html#cb147-176"></a><span class="co">     * afegit el tDia, significa que ha d&#39;anar</span></span>
+<span id="cb147-177"><a href="pr1.html#cb147-177"></a><span class="co">     * al final de tot de la taula tSetmana </span></span>
+<span id="cb147-178"><a href="pr1.html#cb147-178"></a><span class="co">     */</span></span>
+<span id="cb147-179"><a href="pr1.html#cb147-179"></a>    <span class="cf">if</span> (!isAfegit) {</span>
+<span id="cb147-180"><a href="pr1.html#cb147-180"></a>        copiarDia(&amp;setmana-&gt;dies[i], dia);</span>
+<span id="cb147-181"><a href="pr1.html#cb147-181"></a>        setmana-&gt;numDies = setmana-&gt;numDies + <span class="dv">1</span>;</span>
+<span id="cb147-182"><a href="pr1.html#cb147-182"></a>    }</span>
+<span id="cb147-183"><a href="pr1.html#cb147-183"></a>}</span>
+<span id="cb147-184"><a href="pr1.html#cb147-184"></a></span>
+<span id="cb147-185"><a href="pr1.html#cb147-185"></a><span class="dt">void</span> copiarDia(tDia *dst, tDia src) {    </span>
+<span id="cb147-186"><a href="pr1.html#cb147-186"></a>    dst-&gt;id = src.id; </span>
+<span id="cb147-187"><a href="pr1.html#cb147-187"></a>    strcpy(dst-&gt;nom, src.nom);</span>
+<span id="cb147-188"><a href="pr1.html#cb147-188"></a>}</span>
+<span id="cb147-189"><a href="pr1.html#cb147-189"></a></span>
+<span id="cb147-190"><a href="pr1.html#cb147-190"></a><span class="dt">void</span> mostrar(tSetmana setmana) {</span>
+<span id="cb147-191"><a href="pr1.html#cb147-191"></a>    <span class="dt">int</span> i;</span>
+<span id="cb147-192"><a href="pr1.html#cb147-192"></a>    <span class="cf">for</span> (i = <span class="dv">0</span>; i &lt; setmana.numDies; i++) {</span>
+<span id="cb147-193"><a href="pr1.html#cb147-193"></a>        printf(<span class="st">&quot;%s</span><span class="sc">\n</span><span class="st">&quot;</span>, setmana.dies[i].nom);</span>
+<span id="cb147-194"><a href="pr1.html#cb147-194"></a>    }</span>
+<span id="cb147-195"><a href="pr1.html#cb147-195"></a>}</span></code></pre></div>
 <p>L’execució del programa genera la següent sortida:</p>
 <p>
-<img src="img/play.png" alt="llenguatge C" style="float:left; padding:10px" />
+<img src="img/play.png" title="fig:" style="float:left; padding:10px" alt="llenguatge C" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Setmana sense ordenar : 
-dijous
-dilluns
-dimecres
-diumenge
-dissabte
-dimarts
-divendres
+<div class="sourceCode" id="cb148"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb148-1"><a href="pr1.html#cb148-1"></a>Setmana sense ordenar : </span>
+<span id="cb148-2"><a href="pr1.html#cb148-2"></a>dijous</span>
+<span id="cb148-3"><a href="pr1.html#cb148-3"></a>dilluns</span>
+<span id="cb148-4"><a href="pr1.html#cb148-4"></a>dimecres</span>
+<span id="cb148-5"><a href="pr1.html#cb148-5"></a>diumenge</span>
+<span id="cb148-6"><a href="pr1.html#cb148-6"></a>dissabte</span>
+<span id="cb148-7"><a href="pr1.html#cb148-7"></a>dimarts</span>
+<span id="cb148-8"><a href="pr1.html#cb148-8"></a>divendres</span>
+<span id="cb148-9"><a href="pr1.html#cb148-9"></a></span>
+<span id="cb148-10"><a href="pr1.html#cb148-10"></a>Setmana ordenada : </span>
+<span id="cb148-11"><a href="pr1.html#cb148-11"></a>dilluns</span>
+<span id="cb148-12"><a href="pr1.html#cb148-12"></a>dimarts</span>
+<span id="cb148-13"><a href="pr1.html#cb148-13"></a>dimecres</span>
+<span id="cb148-14"><a href="pr1.html#cb148-14"></a>dijous</span>
+<span id="cb148-15"><a href="pr1.html#cb148-15"></a>divendres</span>
+<span id="cb148-16"><a href="pr1.html#cb148-16"></a>dissabte</span>
+<span id="cb148-17"><a href="pr1.html#cb148-17"></a>diumenge</span></code></pre></div>
 
-Setmana ordenada : 
-dilluns
-dimarts
-dimecres
-dijous
-divendres
-dissabte
-diumenge</code></pre></div>
-
-</div>
 </div>
 </div>
             </section>

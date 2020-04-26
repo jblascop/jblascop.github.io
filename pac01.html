@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title> 1 PAC01 | FAQ Laboratori de Fonaments de Programació</title>
+  <title>1 PAC01 | FAQ Laboratori de Fonaments de Programació</title>
   <meta name="description" content="FAQ del Laboratori de Fonaments de programació" />
   <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
-  <meta property="og:title" content=" 1 PAC01 | FAQ Laboratori de Fonaments de Programació" />
+  <meta property="og:title" content="1 PAC01 | FAQ Laboratori de Fonaments de Programació" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content=" 1 PAC01 | FAQ Laboratori de Fonaments de Programació" />
+  <meta name="twitter:title" content="1 PAC01 | FAQ Laboratori de Fonaments de Programació" />
   
   <meta name="twitter:description" content="FAQ del Laboratori de Fonaments de programació" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Jordi Blasco Planesas" />
 
 
-<meta name="date" content="2020-04-13" />
+<meta name="date" content="2020-04-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,44 +50,79 @@
 
 
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164643024-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164643024-1');
+</script>
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -107,7 +142,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introducció</a></li>
-<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a><ul>
+<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>1.1</b> Llenguatge algorísmic</a></li>
 <li class="chapter" data-level="1.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
 <li class="chapter" data-level="1.3" data-path="pac01.html"><a href="pac01.html#equivalencies-llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.3</b> Equivalències llenguatge algorísmic vs llenguatge C</a></li>
@@ -118,14 +154,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.8" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>1.8</b> Lectura de caràcters en C</a></li>
 <li class="chapter" data-level="1.9" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>1.9</b> Lectura de float en C</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a><ul>
+<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="pac02.html"><a href="pac02.html#booleans"><i class="fa fa-check"></i><b>2.1</b> Booleans en C</a></li>
 <li class="chapter" data-level="2.2" data-path="pac02.html"><a href="pac02.html#booleans-definits-com-a-enumeratius"><i class="fa fa-check"></i><b>2.2</b> Booleans definits com a enumeratius</a></li>
 <li class="chapter" data-level="2.3" data-path="pac02.html"><a href="pac02.html#constants-define-vs-const"><i class="fa fa-check"></i><b>2.3</b> Constants: define vs const</a></li>
 <li class="chapter" data-level="2.4" data-path="pac02.html"><a href="pac02.html#com-mostrar-el-valor-duna-constant"><i class="fa fa-check"></i><b>2.4</b> Com mostrar el valor d’una constant</a></li>
 <li class="chapter" data-level="2.5" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>2.5</b> Precisió en variables float</a></li>
 <li class="chapter" data-level="2.6" data-path="pac02.html"><a href="pac02.html#semantica-duna-expressio"><i class="fa fa-check"></i><b>2.6</b> Semàntica d’una expressió</a></li>
-<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a><ul>
+<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>2.7.1</b> Exemple 1: esParell</a></li>
 <li class="chapter" data-level="2.7.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>2.7.2</b> Exemple 2: capDeSetmana</a></li>
 <li class="chapter" data-level="2.7.3" data-path="pac02.html"><a href="pac02.html#exemple-3-esvocal"><i class="fa fa-check"></i><b>2.7.3</b> Exemple 3: esVocal</a></li>
@@ -135,7 +173,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.7.7" data-path="pac02.html"><a href="pac02.html#exemple-7-scoutingbasquet"><i class="fa fa-check"></i><b>2.7.7</b> Exemple 7: scoutingBasquet</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a><ul>
+<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="pac03.html"><a href="pac03.html#com-declarar-un-vector-en-llenguatge-algorismic"><i class="fa fa-check"></i><b>3.1</b> Com declarar un vector en llenguatge algorísmic</a></li>
 <li class="chapter" data-level="3.2" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>3.2</b> Significat dels arguments del main</a></li>
 <li class="chapter" data-level="3.3" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>3.3</b> Assignar valors a un vector</a></li>
@@ -144,14 +183,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.6" data-path="pac03.html"><a href="pac03.html#importancia-dels-tipus-utilitzats-en-llenguatge-c"><i class="fa fa-check"></i><b>3.6</b> Importància dels tipus utilitzats en llenguatge C</a></li>
 <li class="chapter" data-level="3.7" data-path="pac03.html"><a href="pac03.html#exemple-notafinal"><i class="fa fa-check"></i><b>3.7</b> Exemple: notaFinal</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a><ul>
+<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>4.1</b> Com tractar elements d’un vector amb un bucle</a></li>
 <li class="chapter" data-level="4.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>4.2</b> Entrada continua de valors amb un bucle</a></li>
 <li class="chapter" data-level="4.3" data-path="pac04.html"><a href="pac04.html#com-tractar-valors-en-multiples-vectors"><i class="fa fa-check"></i><b>4.3</b> Com tractar valors en múltiples vectors</a></li>
 <li class="chapter" data-level="4.4" data-path="pac04.html"><a href="pac04.html#definicio-chars-vs-strings"><i class="fa fa-check"></i><b>4.4</b> Definició chars vs strings</a></li>
 <li class="chapter" data-level="4.5" data-path="pac04.html"><a href="pac04.html#exemple-mitjanapes"><i class="fa fa-check"></i><b>4.5</b> Exemple: mitjanaPes</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a><ul>
+<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="pac05.html"><a href="pac05.html#comanda-strcmp"><i class="fa fa-check"></i><b>5.1</b> Comanda strcmp()</a></li>
 <li class="chapter" data-level="5.2" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>5.2</b> Comanda scanf</a></li>
 <li class="chapter" data-level="5.3" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strcmp"><i class="fa fa-check"></i><b>5.3</b> El finalitzador ‘\0’ i strcmp()</a></li>
@@ -160,8 +201,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="5.6" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>5.6</b> Exemple: nòmines</a></li>
 <li class="chapter" data-level="5.7" data-path="pac05.html"><a href="pac05.html#exemple-brisca"><i class="fa fa-check"></i><b>5.7</b> Exemple: brisca</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a><ul>
-<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a><ul>
+<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="pac06.html"><a href="pac06.html#parametres-dentrada-in"><i class="fa fa-check"></i><b>6.1.1</b> Paràmetres d’entrada (in)</a></li>
 <li class="chapter" data-level="6.1.2" data-path="pac06.html"><a href="pac06.html#parametres-de-sortida-out"><i class="fa fa-check"></i><b>6.1.2</b> Paràmetres de sortida (out)</a></li>
 <li class="chapter" data-level="6.1.3" data-path="pac06.html"><a href="pac06.html#parametres-dentradasortida-inout"><i class="fa fa-check"></i><b>6.1.3</b> Paràmetres d’entrada/sortida (inout)</a></li>
@@ -170,13 +213,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.2" data-path="pac06.html"><a href="pac06.html#exemple-us-daccions"><i class="fa fa-check"></i><b>6.2</b> Exemple: ús d’accions</a></li>
 <li class="chapter" data-level="6.3" data-path="pac06.html"><a href="pac06.html#exemple-us-de-funcions"><i class="fa fa-check"></i><b>6.3</b> Exemple: ús de funcions</a></li>
 <li class="chapter" data-level="6.4" data-path="pac06.html"><a href="pac06.html#exemple-nomines-1"><i class="fa fa-check"></i><b>6.4</b> Exemple: nòmines</a></li>
-<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a><ul>
+<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="pac06.html"><a href="pac06.html#explicacio-sobre-laccio-copiarjugadora"><i class="fa fa-check"></i><b>6.5.1</b> Explicació sobre l’acció copiarJugadora()</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a><ul>
+<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="pac07.html"><a href="pac07.html#quan-utilitzar-dins-de-funcionsaccions"><i class="fa fa-check"></i><b>7.1</b> Quan utilitzar &amp; dins de funcions/accions</a></li>
-<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a><ul>
+<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="pac07.html"><a href="pac07.html#funcionament-per-defecte-dun-projecte-a-codelite"><i class="fa fa-check"></i><b>7.2.1</b> Funcionament per defecte d’un projecte a CodeLite:</a></li>
 <li class="chapter" data-level="7.2.2" data-path="pac07.html"><a href="pac07.html#executable-dins-de-bin."><i class="fa fa-check"></i><b>7.2.2</b> Executable dins de /bin.</a></li>
 <li class="chapter" data-level="7.2.3" data-path="pac07.html"><a href="pac07.html#modularitzacio-del-programa-en-un-arxiu-de-capcaleres-i-un-de-funcions."><i class="fa fa-check"></i><b>7.2.3</b> Modularització del programa en un arxiu de capçaleres i un de funcions.</a></li>
@@ -188,40 +234,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.7" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>7.7</b> Exemple: funció isParell</a></li>
 <li class="chapter" data-level="7.8" data-path="pac07.html"><a href="pac07.html#exemple-pivotdefensiutirslliures"><i class="fa fa-check"></i><b>7.8</b> Exemple: pivotDefensiuTirsLliures</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a><ul>
+<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>8.1</b> Com inicialitzar una taula</a></li>
 <li class="chapter" data-level="8.2" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota"><i class="fa fa-check"></i><b>8.2</b> Exemple: calcularNota</a></li>
 <li class="chapter" data-level="8.3" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota-amb-introduccio-iterativa"><i class="fa fa-check"></i><b>8.3</b> Exemple: calcularNota amb introducció iterativa</a></li>
 <li class="chapter" data-level="8.4" data-path="pac08.html"><a href="pac08.html#exemple-recorregut-vs-cerca"><i class="fa fa-check"></i><b>8.4</b> Exemple: recorregut vs cerca</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a><ul>
+<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="pac09.html"><a href="pac09.html#exemple"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>10</b> PAC10</a></li>
-<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a><ul>
+<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a>
+<ul>
 <li class="chapter" data-level="11.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>11.1</b> Mode menu vs mode test</a></li>
 <li class="chapter" data-level="11.2" data-path="pr1.html"><a href="pr1.html#exemple-tupla-dins-de-tupla"><i class="fa fa-check"></i><b>11.2</b> Exemple: tupla dins de tupla</a></li>
-<li class="chapter" data-level="11.3" data-path="pr1.html"><a href="pr1.html#desplacament-delements-en-un-vector"><i class="fa fa-check"></i><b>11.3</b> Desplaçament d’elements en un vector</a><ul>
-<li class="chapter" data-level="11.3.1" data-path="pr1.html"><a href="pr1.html#afegir-un-element"><i class="fa fa-check"></i><b>11.3.1</b> Afegir un element</a></li>
-<li class="chapter" data-level="11.3.2" data-path="pr1.html"><a href="pr1.html#esborrar-un-element"><i class="fa fa-check"></i><b>11.3.2</b> Esborrar un element</a></li>
-<li class="chapter" data-level="11.3.3" data-path="pr1.html"><a href="pr1.html#exemple-diessetmana"><i class="fa fa-check"></i><b>11.3.3</b> Exemple: diesSetmana</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a><ul>
+<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a>
+<ul>
 <li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-1"><i class="fa fa-check"></i><b>12.1</b> Exemple</a></li>
+<li class="chapter" data-level="12.2" data-path="pr2.html"><a href="pr2.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>12.2</b> Com instal·lar les Guest Additions</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>13</b> VMWare i CodeLite</a><ul>
-<li class="chapter" data-level="13.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>13.1</b> Per què una màquina virtual?</a></li>
-<li class="chapter" data-level="13.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#virtualbox-i-requeriments-de-virtualitzacio"><i class="fa fa-check"></i><b>13.2</b> VirtualBox i requeriments de virtualització</a></li>
-<li class="chapter" data-level="13.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>13.3</b> Com instal·lar les Guest Additions</a></li>
-<li class="chapter" data-level="13.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>13.4</b> Primers passos amb CodeLite</a></li>
-<li class="chapter" data-level="13.5" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>13.5</b> Com activar un projecte</a></li>
-<li class="chapter" data-level="13.6" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>13.6</b> Canviar idioma del teclat</a></li>
-<li class="chapter" data-level="13.7" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#programa-per-defecte-al-crear-un-projecte"><i class="fa fa-check"></i><b>13.7</b> Programa per defecte al crear un projecte</a></li>
-<li class="chapter" data-level="13.8" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-fixar-el-kernel-dinici-amb-lubuntu"><i class="fa fa-check"></i><b>13.8</b> Com fixar el kernel d’inici amb Lubuntu</a></li>
-</ul></li>
-<li class="chapter" data-level="14" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>14</b> Altres</a><ul>
-<li class="chapter" data-level="14.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>14.1</b> Bilbliografia</a></li>
+<li class="chapter" data-level="13" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>13</b> Altres</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>13.1</b> Bilbliografia</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://www.uoc.edu" target="blank">www.uoc.edu</a></li>
@@ -243,10 +280,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pac01" class="section level1">
-<h1><span class="header-section-number"> 1</span> PAC01</h1>
-<div id="llenguatge-algorismic" class="section level2">
-<h2><span class="header-section-number">1.1</span> Llenguatge algorísmic</h2>
+<div id="pac01" class="section level1" number="1">
+<h1 number="1"><span class="header-section-number">1</span> PAC01</h1>
+<div id="llenguatge-algorismic" class="section level2" number="1.1">
+<h2 number="1.1"><span class="header-section-number">1.1</span> Llenguatge algorísmic</h2>
 <p>El llenguatge algorísmic l’hem d’entendre com una aproximació al món real, el qual utilitza unes normes definides per nosaltres mateixos. En aquest punt encara no parlem de programes escrits en <strong>C</strong>, en <strong>Java</strong>, en <strong>Python</strong> o en <strong>PHP</strong>, per dir alguns llenguatges de programació.</p>
 <p>Per exemple, en el llenguatge algorísmic que utilitzem a l’assignatura definim un bloc de variables de la següent forma:</p>
 <p>
@@ -272,13 +309,13 @@ fvariable</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">int</span> edat;
-<span class="dt">float</span> pes;</code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb3-1"><a href="pac01.html#cb3-1"></a><span class="dt">int</span> edat;</span>
+<span id="cb3-2"><a href="pac01.html#cb3-2"></a><span class="dt">float</span> pes;</span></code></pre></div>
 <p>El codi en C no el podem canviar, ja que si en comptes de posar int utilitzem enter, el compilador de C no comprèn el mot i ens donarà un error de codi.</p>
 <p>Si mai hem programat és normal que aquest plantejament sobti al principi, però és important que poc a poc es vagi veient les diferències entre llenguatge algorísmic i llenguatge C.</p>
 </div>
-<div id="llenguatge-algorismic-vs-llenguatge-c" class="section level2">
-<h2><span class="header-section-number">1.2</span> Llenguatge algorísmic vs llenguatge C</h2>
+<div id="llenguatge-algorismic-vs-llenguatge-c" class="section level2" number="1.2">
+<h2 number="1.2"><span class="header-section-number">1.2</span> Llenguatge algorísmic vs llenguatge C</h2>
 <p>En general:</p>
 <ul>
 <li><strong>Llenguatge algorísmic</strong>: proper al llenguatge natural, es tracta d’una convenció que adoptem nosaltres mateixos per definir el un programa formalment. Els algorismes tenen una sèrie de normes i sentències que nosaltres definim (<strong>Nomenclàtor</strong>), però que no són de cap forma interpretables per un ordinador. Per tant un algorisme <strong>no pot ser compilat ni executat</strong>.</li>
@@ -303,19 +340,19 @@ end algorithm</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) { 
-    <span class="dt">int</span> lecturaMensual;
-
-    printf(<span class="st">&quot;Introdueix la lectura mensual de la llum (kWh): &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;lecturaMensual);
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb5-1"><a href="pac01.html#cb5-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb5-2"><a href="pac01.html#cb5-2"></a></span>
+<span id="cb5-3"><a href="pac01.html#cb5-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) { </span>
+<span id="cb5-4"><a href="pac01.html#cb5-4"></a>    <span class="dt">int</span> lecturaMensual;</span>
+<span id="cb5-5"><a href="pac01.html#cb5-5"></a></span>
+<span id="cb5-6"><a href="pac01.html#cb5-6"></a>    printf(<span class="st">&quot;Introdueix la lectura mensual de la llum (kWh): &quot;</span>);</span>
+<span id="cb5-7"><a href="pac01.html#cb5-7"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;lecturaMensual);</span>
+<span id="cb5-8"><a href="pac01.html#cb5-8"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb5-9"><a href="pac01.html#cb5-9"></a>}</span></code></pre></div>
 <p>És molt important que es vegi clarament què és un algorisme i què és un programa en C.</p>
 </div>
-<div id="equivalencies-llenguatge-algorismic-vs-llenguatge-c" class="section level2">
-<h2><span class="header-section-number">1.3</span> Equivalències llenguatge algorísmic vs llenguatge C</h2>
+<div id="equivalencies-llenguatge-algorismic-vs-llenguatge-c" class="section level2" number="1.3">
+<h2 number="1.3"><span class="header-section-number">1.3</span> Equivalències llenguatge algorísmic vs llenguatge C</h2>
 <p>A continuació s’indiquen algunes de les equivalències existents entre llenguatge algorísmic i el llenguatge de programació C:</p>
 <table>
 <thead>
@@ -414,57 +451,57 @@ end algorithm</code></pre>
 </tbody>
 </table>
 </div>
-<div id="impressio-de-valors-incorrecta" class="section level2">
-<h2><span class="header-section-number">1.4</span> Impressió de valors incorrecta</h2>
+<div id="impressio-de-valors-incorrecta" class="section level2" number="1.4">
+<h2 number="1.4"><span class="header-section-number">1.4</span> Impressió de valors incorrecta</h2>
 <p>Quan es mostra per pantalla el contingut d’alguna variable amb <code>printf()</code>, és important eliminar el prefix <code>&amp;</code> de la variable. Per exemple, si no ho fem tenim que:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv){
-
-    <span class="dt">int</span> idAvio;
-
-    printf(<span class="st">&quot;Introdueix l&#39;identificador d&#39;avió : &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;idAvio);
-    
-    printf(<span class="st">&quot;&gt;&gt; Has escollit l&#39;avió amb id %d </span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;idAvio);
-
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb6-1"><a href="pac01.html#cb6-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb6-2"><a href="pac01.html#cb6-2"></a></span>
+<span id="cb6-3"><a href="pac01.html#cb6-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv){</span>
+<span id="cb6-4"><a href="pac01.html#cb6-4"></a></span>
+<span id="cb6-5"><a href="pac01.html#cb6-5"></a>    <span class="dt">int</span> idAvio;</span>
+<span id="cb6-6"><a href="pac01.html#cb6-6"></a></span>
+<span id="cb6-7"><a href="pac01.html#cb6-7"></a>    printf(<span class="st">&quot;Introdueix l&#39;identificador d&#39;avió : &quot;</span>);</span>
+<span id="cb6-8"><a href="pac01.html#cb6-8"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;idAvio);</span>
+<span id="cb6-9"><a href="pac01.html#cb6-9"></a>    </span>
+<span id="cb6-10"><a href="pac01.html#cb6-10"></a>    printf(<span class="st">&quot;&gt;&gt; Has escollit l&#39;avió amb id %d </span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;idAvio);</span>
+<span id="cb6-11"><a href="pac01.html#cb6-11"></a></span>
+<span id="cb6-12"><a href="pac01.html#cb6-12"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb6-13"><a href="pac01.html#cb6-13"></a>}</span></code></pre></div>
 <p>El resultat de l’execució és:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Introdueix l&#39;identificador d&#39;avió : <span class="dv">9</span>
-&gt;&gt; Has escollit l&#39;avió amb id -<span class="dv">1078693464</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb7-1"><a href="pac01.html#cb7-1"></a>Introdueix l&#39;identificador d&#39;avió : <span class="dv">9</span></span>
+<span id="cb7-2"><a href="pac01.html#cb7-2"></a>&gt;&gt; Has escollit l&#39;avió amb id -<span class="dv">1078693464</span></span></code></pre></div>
 <p>Per quin motiu obtenim el valor estrany en l’identificador d’avió? Quan fem referència a <code>&amp;idAvio</code> estem obtenint realment la posició de memòria on resideix la variable <code>idAvio</code>, no pas el valor de la variable. Per obtenir el seu valor cal eliminar de dins <code>printf()</code> el prefix <code>&amp;</code> de la variable <code>idAvio</code>:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv){
-
-    <span class="dt">int</span> idAvio;
-
-    printf(<span class="st">&quot;Introdueix l&#39;identificador d&#39;avió : &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;idAvio);
-    
-    printf(<span class="st">&quot;&gt;&gt; Has escollit l&#39;avió amb id %d </span><span class="sc">\n</span><span class="st">&quot;</span>, idAvio);
-
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb8-1"><a href="pac01.html#cb8-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb8-2"><a href="pac01.html#cb8-2"></a></span>
+<span id="cb8-3"><a href="pac01.html#cb8-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv){</span>
+<span id="cb8-4"><a href="pac01.html#cb8-4"></a></span>
+<span id="cb8-5"><a href="pac01.html#cb8-5"></a>    <span class="dt">int</span> idAvio;</span>
+<span id="cb8-6"><a href="pac01.html#cb8-6"></a></span>
+<span id="cb8-7"><a href="pac01.html#cb8-7"></a>    printf(<span class="st">&quot;Introdueix l&#39;identificador d&#39;avió : &quot;</span>);</span>
+<span id="cb8-8"><a href="pac01.html#cb8-8"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;idAvio);</span>
+<span id="cb8-9"><a href="pac01.html#cb8-9"></a>    </span>
+<span id="cb8-10"><a href="pac01.html#cb8-10"></a>    printf(<span class="st">&quot;&gt;&gt; Has escollit l&#39;avió amb id %d </span><span class="sc">\n</span><span class="st">&quot;</span>, idAvio);</span>
+<span id="cb8-11"><a href="pac01.html#cb8-11"></a></span>
+<span id="cb8-12"><a href="pac01.html#cb8-12"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb8-13"><a href="pac01.html#cb8-13"></a>}</span></code></pre></div>
 <p>La sortida generada ara sí és correcta:</p>
 <p>
 <img src="img/play.png" float="right;" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Introdueix l&#39;identificador d&#39;avió : <span class="dv">9</span>
-&gt;&gt; Has escollit l&#39;avió amb id <span class="dv">9</span> </code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb9-1"><a href="pac01.html#cb9-1"></a>Introdueix l&#39;identificador d&#39;avió : <span class="dv">9</span></span>
+<span id="cb9-2"><a href="pac01.html#cb9-2"></a>&gt;&gt; Has escollit l&#39;avió amb id <span class="dv">9</span> </span></code></pre></div>
 </div>
-<div id="com-definir-un-enumeratiu" class="section level2">
-<h2><span class="header-section-number">1.5</span> Com definir un enumeratiu</h2>
+<div id="com-definir-un-enumeratiu" class="section level2" number="1.5">
+<h2 number="1.5"><span class="header-section-number">1.5</span> Com definir un enumeratiu</h2>
 <p>La definició d’un tipus enumeratiu en llenguatge algorísmic es fa de la següent forma:</p>
 <p>
 <img src="img/alg.png" style="float:left; padding:10px" />
@@ -483,156 +520,156 @@ VALUE3 = 2
 VALUEn = n-1</code></pre>
 <p>Posteriorment no és possible fer un canvi de valor d’aquests elements de tipus enumeratiu.</p>
 </div>
-<div id="com-utilitzar-un-enumeratiu" class="section level2">
-<h2><span class="header-section-number">1.6</span> Com utilitzar un enumeratiu</h2>
+<div id="com-utilitzar-un-enumeratiu" class="section level2" number="1.6">
+<h2 number="1.6"><span class="header-section-number">1.6</span> Com utilitzar un enumeratiu</h2>
 <p>Una enumeració és una assignació d’un valor enter a la sèrie d’elements que s’hi ha definit, començant pel 0 i incrementant-se en 1 en cada element.</p>
 <p>Per exemple, podem tenir la següent definició:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="kw">typedef</span> <span class="kw">enum</span> {MALE, FEMALE} tGender;</code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb12-1"><a href="pac01.html#cb12-1"></a><span class="kw">typedef</span> <span class="kw">enum</span> {MALE, FEMALE} tGender;</span></code></pre></div>
 <p>Això significa que <code>MALE == 0</code> i <code>FEMALE == 1</code>. Si l’ordre de la definició l’haguessis fet al revés, <code>{FEMALE, MALE}</code>, tindríem que <code>FEMALE == 0</code> i <code>MALE == 1</code>.</p>
 <p>Una possible forma d’utilitzar els enumeratius es llegir un enter i comparar-lo amb l’element corresponent definit dins de l’<code>enum</code>, per tal de realitzar una acció o una altra. Una possible implementació en llenguatge C seria:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="kw">typedef</span> <span class="kw">enum</span> {MALE, FEMALE} tGender;
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-   tGender gender;
-
-   printf(<span class="st">&quot;Type patient gender: 0 for MALE, 1 for FEMALE</span><span class="sc">\n</span><span class="st">&quot;</span>);
-   scanf(<span class="st">&quot;%u&quot;</span>, &amp;gender);
-
-   <span class="cf">if</span> (gender == MALE) {
-      printf(<span class="st">&quot;Patient gender MALE</span><span class="sc">\n</span><span class="st">&quot;</span>);
-   } <span class="cf">else</span> {
-      <span class="cf">if</span> (gender == FEMALE) {
-         printf(<span class="st">&quot;Patient gender FEMALE</span><span class="sc">\n</span><span class="st">&quot;</span>);
-      } <span class="cf">else</span> {
-         printf(<span class="st">&quot;Incorrect option</span><span class="sc">\n</span><span class="st">&quot;</span>);
-      }
-   }
-   <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb13-1"><a href="pac01.html#cb13-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb13-2"><a href="pac01.html#cb13-2"></a></span>
+<span id="cb13-3"><a href="pac01.html#cb13-3"></a><span class="kw">typedef</span> <span class="kw">enum</span> {MALE, FEMALE} tGender;</span>
+<span id="cb13-4"><a href="pac01.html#cb13-4"></a></span>
+<span id="cb13-5"><a href="pac01.html#cb13-5"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb13-6"><a href="pac01.html#cb13-6"></a>   tGender gender;</span>
+<span id="cb13-7"><a href="pac01.html#cb13-7"></a></span>
+<span id="cb13-8"><a href="pac01.html#cb13-8"></a>   printf(<span class="st">&quot;Type patient gender: 0 for MALE, 1 for FEMALE</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb13-9"><a href="pac01.html#cb13-9"></a>   scanf(<span class="st">&quot;%u&quot;</span>, &amp;gender);</span>
+<span id="cb13-10"><a href="pac01.html#cb13-10"></a></span>
+<span id="cb13-11"><a href="pac01.html#cb13-11"></a>   <span class="cf">if</span> (gender == MALE) {</span>
+<span id="cb13-12"><a href="pac01.html#cb13-12"></a>      printf(<span class="st">&quot;Patient gender MALE</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb13-13"><a href="pac01.html#cb13-13"></a>   } <span class="cf">else</span> {</span>
+<span id="cb13-14"><a href="pac01.html#cb13-14"></a>      <span class="cf">if</span> (gender == FEMALE) {</span>
+<span id="cb13-15"><a href="pac01.html#cb13-15"></a>         printf(<span class="st">&quot;Patient gender FEMALE</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb13-16"><a href="pac01.html#cb13-16"></a>      } <span class="cf">else</span> {</span>
+<span id="cb13-17"><a href="pac01.html#cb13-17"></a>         printf(<span class="st">&quot;Incorrect option</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb13-18"><a href="pac01.html#cb13-18"></a>      }</span>
+<span id="cb13-19"><a href="pac01.html#cb13-19"></a>   }</span>
+<span id="cb13-20"><a href="pac01.html#cb13-20"></a>   <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb13-21"><a href="pac01.html#cb13-21"></a>}</span></code></pre></div>
 </div>
-<div id="especificador-dun-enumeratiu" class="section level2">
-<h2><span class="header-section-number">1.7</span> Especificador d’un enumeratiu</h2>
+<div id="especificador-dun-enumeratiu" class="section level2" number="1.7">
+<h2 number="1.7"><span class="header-section-number">1.7</span> Especificador d’un enumeratiu</h2>
 <p>Els enumeratius en llenguatge C, <code>enum</code>, utilitzen l’especificador <code>%u</code> independentment del tipus que s’hagi definit per l’enumeratiu.</p>
 <p>Exemple:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="kw">typedef</span> <span class="kw">enum</span> {PRIVAT, PUBLIC} tTransport;
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-    tTransport tipusTransport;
-
-    printf(<span class="st">&quot;Amb quin tipus de transport et desplaces a la feina (0=privat, 1=públic) ? : &quot;</span>);
-    scanf(<span class="st">&quot;%u&quot;</span>, &amp;tipusTransport);
-    printf(<span class="st">&quot;Et desplaces a la feina amb transport (0=privat, 1=públic) : &quot;</span>);
-    printf(<span class="st">&quot;%u</span><span class="sc">\n</span><span class="st">&quot;</span>, tipusTransport);
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb14-1"><a href="pac01.html#cb14-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb14-2"><a href="pac01.html#cb14-2"></a></span>
+<span id="cb14-3"><a href="pac01.html#cb14-3"></a><span class="kw">typedef</span> <span class="kw">enum</span> {PRIVAT, PUBLIC} tTransport;</span>
+<span id="cb14-4"><a href="pac01.html#cb14-4"></a></span>
+<span id="cb14-5"><a href="pac01.html#cb14-5"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb14-6"><a href="pac01.html#cb14-6"></a>    tTransport tipusTransport;</span>
+<span id="cb14-7"><a href="pac01.html#cb14-7"></a></span>
+<span id="cb14-8"><a href="pac01.html#cb14-8"></a>    printf(<span class="st">&quot;Amb quin tipus de transport et desplaces a la feina (0=privat, 1=públic) ? : &quot;</span>);</span>
+<span id="cb14-9"><a href="pac01.html#cb14-9"></a>    scanf(<span class="st">&quot;%u&quot;</span>, &amp;tipusTransport);</span>
+<span id="cb14-10"><a href="pac01.html#cb14-10"></a>    printf(<span class="st">&quot;Et desplaces a la feina amb transport (0=privat, 1=públic) : &quot;</span>);</span>
+<span id="cb14-11"><a href="pac01.html#cb14-11"></a>    printf(<span class="st">&quot;%u</span><span class="sc">\n</span><span class="st">&quot;</span>, tipusTransport);</span>
+<span id="cb14-12"><a href="pac01.html#cb14-12"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb14-13"><a href="pac01.html#cb14-13"></a>}</span></code></pre></div>
 </div>
-<div id="lectura-de-caracters-en-c" class="section level2">
-<h2><span class="header-section-number">1.8</span> Lectura de caràcters en C</h2>
+<div id="lectura-de-caracters-en-c" class="section level2" number="1.8">
+<h2 number="1.8"><span class="header-section-number">1.8</span> Lectura de caràcters en C</h2>
 <p>En el llenguatge C la lectura d’un <code>char</code> pot comportar-se de forma inadequada si prèviament el buffer d’entrada conté algun caràcter previ.</p>
 <p>Imaginem que volem crear un programa molt senzill que donat un número de DNI i la seva lletra, ens concateni els dos valors i ho mostri per pantalla. Una possible forma d’implementar aquest programa en C seria:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">int</span> dniNum;    <span class="co">/* número del DNI */</span>
-    <span class="dt">char</span> dniChar;  <span class="co">/* lletra del DNI */</span>
-
-    printf(<span class="st">&quot;Introdueix el número del DNI: &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;dniNum);
-    printf(<span class="st">&quot;Introdueix la lletra del DNI: &quot;</span>);
-    scanf(<span class="st">&quot;%c&quot;</span>, &amp;dniChar);
-
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">El DNI introduit és: %d-%c</span><span class="sc">\n</span><span class="st">&quot;</span>, dniNum, dniChar);
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb15-1"><a href="pac01.html#cb15-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb15-2"><a href="pac01.html#cb15-2"></a></span>
+<span id="cb15-3"><a href="pac01.html#cb15-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb15-4"><a href="pac01.html#cb15-4"></a></span>
+<span id="cb15-5"><a href="pac01.html#cb15-5"></a>    <span class="dt">int</span> dniNum;    <span class="co">/* número del DNI */</span></span>
+<span id="cb15-6"><a href="pac01.html#cb15-6"></a>    <span class="dt">char</span> dniChar;  <span class="co">/* lletra del DNI */</span></span>
+<span id="cb15-7"><a href="pac01.html#cb15-7"></a></span>
+<span id="cb15-8"><a href="pac01.html#cb15-8"></a>    printf(<span class="st">&quot;Introdueix el número del DNI: &quot;</span>);</span>
+<span id="cb15-9"><a href="pac01.html#cb15-9"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;dniNum);</span>
+<span id="cb15-10"><a href="pac01.html#cb15-10"></a>    printf(<span class="st">&quot;Introdueix la lletra del DNI: &quot;</span>);</span>
+<span id="cb15-11"><a href="pac01.html#cb15-11"></a>    scanf(<span class="st">&quot;%c&quot;</span>, &amp;dniChar);</span>
+<span id="cb15-12"><a href="pac01.html#cb15-12"></a></span>
+<span id="cb15-13"><a href="pac01.html#cb15-13"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">El DNI introduit és: %d-%c</span><span class="sc">\n</span><span class="st">&quot;</span>, dniNum, dniChar);</span>
+<span id="cb15-14"><a href="pac01.html#cb15-14"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb15-15"><a href="pac01.html#cb15-15"></a>}</span></code></pre></div>
 <p>Què passa si executem aquest codi? Que veiem que es comporta de forma incorrecta, ja que no ens arriba a demanar la lletra del DNI, mostrant directament el resultat:</p>
 <p>
 <img src="img/play.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Introdueix el número del DNI: <span class="dv">12345678</span>
-Introdueix la lletra del DNI:
-El DNI introduit és: <span class="dv">12345678</span>-</code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb16-1"><a href="pac01.html#cb16-1"></a>Introdueix el número del DNI: <span class="dv">12345678</span></span>
+<span id="cb16-2"><a href="pac01.html#cb16-2"></a>Introdueix la lletra del DNI:</span>
+<span id="cb16-3"><a href="pac01.html#cb16-3"></a>El DNI introduit és: <span class="dv">12345678</span>-</span></code></pre></div>
 <p>Quan teclegem el primer enter el que fem realment és introduir un número + un <code>intro</code> al final de tot. El número queda assignat a la variable <code>dni_num</code>, i l’<code>intro</code> és llegit com un caràcter i s’assigna a la variable <code>dni_char</code>. Per aquest motiu C interpreta que les dues variables ja tenen valor i finalitza el programa.</p>
 <p>Com podem solucionar aquest comportament? Buidant l’<code>intro</code> del buffer d’entrada abans de llegir el caràcter, i això ho podem fer amb la comanda <code>getchar()</code>. Aquesta comanda llegeix un caràcter del buffer d’entrada i el buida del buffer.</p>
 <p>Per tant es pot corregir el programa anterior de la següent forma:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">int</span> dni_num;    <span class="co">/* número del DNI */</span>
-    <span class="dt">char</span> dni_char;  <span class="co">/* lletra del DNI */</span>
-
-    printf(<span class="st">&quot;Introdueix el número del DNI: &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;dni_num);
-    getchar();
-    printf(<span class="st">&quot;Introdueix la lletra del DNI: &quot;</span>);
-    scanf(<span class="st">&quot;%c&quot;</span>, &amp;dni_char);
-
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">El DNI introduit és: %d-%c</span><span class="sc">\n</span><span class="st">&quot;</span>, dni_num, dni_char);
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb17-1"><a href="pac01.html#cb17-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb17-2"><a href="pac01.html#cb17-2"></a></span>
+<span id="cb17-3"><a href="pac01.html#cb17-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb17-4"><a href="pac01.html#cb17-4"></a></span>
+<span id="cb17-5"><a href="pac01.html#cb17-5"></a>    <span class="dt">int</span> dni_num;    <span class="co">/* número del DNI */</span></span>
+<span id="cb17-6"><a href="pac01.html#cb17-6"></a>    <span class="dt">char</span> dni_char;  <span class="co">/* lletra del DNI */</span></span>
+<span id="cb17-7"><a href="pac01.html#cb17-7"></a></span>
+<span id="cb17-8"><a href="pac01.html#cb17-8"></a>    printf(<span class="st">&quot;Introdueix el número del DNI: &quot;</span>);</span>
+<span id="cb17-9"><a href="pac01.html#cb17-9"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;dni_num);</span>
+<span id="cb17-10"><a href="pac01.html#cb17-10"></a>    getchar();</span>
+<span id="cb17-11"><a href="pac01.html#cb17-11"></a>    printf(<span class="st">&quot;Introdueix la lletra del DNI: &quot;</span>);</span>
+<span id="cb17-12"><a href="pac01.html#cb17-12"></a>    scanf(<span class="st">&quot;%c&quot;</span>, &amp;dni_char);</span>
+<span id="cb17-13"><a href="pac01.html#cb17-13"></a></span>
+<span id="cb17-14"><a href="pac01.html#cb17-14"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">El DNI introduit és: %d-%c</span><span class="sc">\n</span><span class="st">&quot;</span>, dni_num, dni_char);</span>
+<span id="cb17-15"><a href="pac01.html#cb17-15"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb17-16"><a href="pac01.html#cb17-16"></a>}</span></code></pre></div>
 <p>Si ara executem, ja funcionarà com desitgem:</p>
 <p>
 <img src="img/play.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Introdueix el número del DNI: <span class="dv">12345678</span>
-Introdueix la lletra del DNI: B
-
-El DNI introduit és: <span class="dv">12345678</span>-B</code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb18-1"><a href="pac01.html#cb18-1"></a>Introdueix el número del DNI: <span class="dv">12345678</span></span>
+<span id="cb18-2"><a href="pac01.html#cb18-2"></a>Introdueix la lletra del DNI: B</span>
+<span id="cb18-3"><a href="pac01.html#cb18-3"></a></span>
+<span id="cb18-4"><a href="pac01.html#cb18-4"></a>El DNI introduit és: <span class="dv">12345678</span>-B</span></code></pre></div>
 <p>En cas de necessitat, amb <code>getChar()</code> es pot guardar el caràcter del buffer en una variable, per tal de tractar-lo posteriorment:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="dt">char</span> nomVariable;
-nomVariable = getChar();</code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb19-1"><a href="pac01.html#cb19-1"></a><span class="dt">char</span> nomVariable;</span>
+<span id="cb19-2"><a href="pac01.html#cb19-2"></a>nomVariable = getChar();</span></code></pre></div>
 </div>
-<div id="lectura-de-float-en-c" class="section level2">
-<h2><span class="header-section-number">1.9</span> Lectura de float en C</h2>
+<div id="lectura-de-float-en-c" class="section level2" number="1.9">
+<h2 number="1.9"><span class="header-section-number">1.9</span> Lectura de float en C</h2>
 <p>El separador de valors decimals (tipus <code>float</code>) en C <strong>és el punt</strong>, no la coma. Per aquest motiu quan s’introdueix un valor decimal des de teclat, sempre ho farem amb un punt:</p>
 <p>Exemple:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {}
-
-    <span class="co">/* Variable que contindrà el pes d’una persona */</span>
-    <span class="dt">float</span> pes;
-
-    <span class="co">/* Lectura de la dada per teclat (el separador de decimals és un . ) */</span>
-    printf(<span class="st">&quot;Introdueix el pes (kg) d’una persona : &quot;</span>);
-    scanf(<span class="st">&quot;%f&quot;</span>, &amp;pes);
-
-   <span class="co">/* Es mostra el valor decimal per pantalla */</span>
-   printf(<span class="st">&quot;Has introduit el pes = %.1f kg.</span><span class="sc">\n</span><span class="st">&quot;</span>, pes);
-   <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb20-1"><a href="pac01.html#cb20-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb20-2"><a href="pac01.html#cb20-2"></a></span>
+<span id="cb20-3"><a href="pac01.html#cb20-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {}</span>
+<span id="cb20-4"><a href="pac01.html#cb20-4"></a></span>
+<span id="cb20-5"><a href="pac01.html#cb20-5"></a>    <span class="co">/* Variable que contindrà el pes d’una persona */</span></span>
+<span id="cb20-6"><a href="pac01.html#cb20-6"></a>    <span class="dt">float</span> pes;</span>
+<span id="cb20-7"><a href="pac01.html#cb20-7"></a></span>
+<span id="cb20-8"><a href="pac01.html#cb20-8"></a>    <span class="co">/* Lectura de la dada per teclat (el separador de decimals és un . ) */</span></span>
+<span id="cb20-9"><a href="pac01.html#cb20-9"></a>    printf(<span class="st">&quot;Introdueix el pes (kg) d’una persona : &quot;</span>);</span>
+<span id="cb20-10"><a href="pac01.html#cb20-10"></a>    scanf(<span class="st">&quot;%f&quot;</span>, &amp;pes);</span>
+<span id="cb20-11"><a href="pac01.html#cb20-11"></a></span>
+<span id="cb20-12"><a href="pac01.html#cb20-12"></a>   <span class="co">/* Es mostra el valor decimal per pantalla */</span></span>
+<span id="cb20-13"><a href="pac01.html#cb20-13"></a>   printf(<span class="st">&quot;Has introduit el pes = %.1f kg.</span><span class="sc">\n</span><span class="st">&quot;</span>, pes);</span>
+<span id="cb20-14"><a href="pac01.html#cb20-14"></a>   <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb20-15"><a href="pac01.html#cb20-15"></a>}</span></code></pre></div>
 <p>L’execució serà:</p>
 <p>
 <img src="img/play.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Introdueix el pes (kg) d’una persona : <span class="fl">79.440</span>
-Has introduit el pes = <span class="fl">79.4</span> kg.</code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb21-1"><a href="pac01.html#cb21-1"></a>Introdueix el pes (kg) d’una persona : <span class="fl">79.440</span></span>
+<span id="cb21-2"><a href="pac01.html#cb21-2"></a>Has introduit el pes = <span class="fl">79.4</span> kg.</span></code></pre></div>
 
 </div>
 </div>

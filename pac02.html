@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title> 2 PAC02 | FAQ Laboratori de Fonaments de Programació</title>
+  <title>2 PAC02 | FAQ Laboratori de Fonaments de Programació</title>
   <meta name="description" content="FAQ del Laboratori de Fonaments de programació" />
   <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
-  <meta property="og:title" content=" 2 PAC02 | FAQ Laboratori de Fonaments de Programació" />
+  <meta property="og:title" content="2 PAC02 | FAQ Laboratori de Fonaments de Programació" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content=" 2 PAC02 | FAQ Laboratori de Fonaments de Programació" />
+  <meta name="twitter:title" content="2 PAC02 | FAQ Laboratori de Fonaments de Programació" />
   
   <meta name="twitter:description" content="FAQ del Laboratori de Fonaments de programació" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Jordi Blasco Planesas" />
 
 
-<meta name="date" content="2020-04-13" />
+<meta name="date" content="2020-04-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,44 +50,79 @@
 
 
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164643024-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164643024-1');
+</script>
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -107,7 +142,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introducció</a></li>
-<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a><ul>
+<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>1.1</b> Llenguatge algorísmic</a></li>
 <li class="chapter" data-level="1.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
 <li class="chapter" data-level="1.3" data-path="pac01.html"><a href="pac01.html#equivalencies-llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.3</b> Equivalències llenguatge algorísmic vs llenguatge C</a></li>
@@ -118,14 +154,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.8" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>1.8</b> Lectura de caràcters en C</a></li>
 <li class="chapter" data-level="1.9" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>1.9</b> Lectura de float en C</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a><ul>
+<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="pac02.html"><a href="pac02.html#booleans"><i class="fa fa-check"></i><b>2.1</b> Booleans en C</a></li>
 <li class="chapter" data-level="2.2" data-path="pac02.html"><a href="pac02.html#booleans-definits-com-a-enumeratius"><i class="fa fa-check"></i><b>2.2</b> Booleans definits com a enumeratius</a></li>
 <li class="chapter" data-level="2.3" data-path="pac02.html"><a href="pac02.html#constants-define-vs-const"><i class="fa fa-check"></i><b>2.3</b> Constants: define vs const</a></li>
 <li class="chapter" data-level="2.4" data-path="pac02.html"><a href="pac02.html#com-mostrar-el-valor-duna-constant"><i class="fa fa-check"></i><b>2.4</b> Com mostrar el valor d’una constant</a></li>
 <li class="chapter" data-level="2.5" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>2.5</b> Precisió en variables float</a></li>
 <li class="chapter" data-level="2.6" data-path="pac02.html"><a href="pac02.html#semantica-duna-expressio"><i class="fa fa-check"></i><b>2.6</b> Semàntica d’una expressió</a></li>
-<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a><ul>
+<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>2.7.1</b> Exemple 1: esParell</a></li>
 <li class="chapter" data-level="2.7.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>2.7.2</b> Exemple 2: capDeSetmana</a></li>
 <li class="chapter" data-level="2.7.3" data-path="pac02.html"><a href="pac02.html#exemple-3-esvocal"><i class="fa fa-check"></i><b>2.7.3</b> Exemple 3: esVocal</a></li>
@@ -135,7 +173,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.7.7" data-path="pac02.html"><a href="pac02.html#exemple-7-scoutingbasquet"><i class="fa fa-check"></i><b>2.7.7</b> Exemple 7: scoutingBasquet</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a><ul>
+<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="pac03.html"><a href="pac03.html#com-declarar-un-vector-en-llenguatge-algorismic"><i class="fa fa-check"></i><b>3.1</b> Com declarar un vector en llenguatge algorísmic</a></li>
 <li class="chapter" data-level="3.2" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>3.2</b> Significat dels arguments del main</a></li>
 <li class="chapter" data-level="3.3" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>3.3</b> Assignar valors a un vector</a></li>
@@ -144,14 +183,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.6" data-path="pac03.html"><a href="pac03.html#importancia-dels-tipus-utilitzats-en-llenguatge-c"><i class="fa fa-check"></i><b>3.6</b> Importància dels tipus utilitzats en llenguatge C</a></li>
 <li class="chapter" data-level="3.7" data-path="pac03.html"><a href="pac03.html#exemple-notafinal"><i class="fa fa-check"></i><b>3.7</b> Exemple: notaFinal</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a><ul>
+<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>4.1</b> Com tractar elements d’un vector amb un bucle</a></li>
 <li class="chapter" data-level="4.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>4.2</b> Entrada continua de valors amb un bucle</a></li>
 <li class="chapter" data-level="4.3" data-path="pac04.html"><a href="pac04.html#com-tractar-valors-en-multiples-vectors"><i class="fa fa-check"></i><b>4.3</b> Com tractar valors en múltiples vectors</a></li>
 <li class="chapter" data-level="4.4" data-path="pac04.html"><a href="pac04.html#definicio-chars-vs-strings"><i class="fa fa-check"></i><b>4.4</b> Definició chars vs strings</a></li>
 <li class="chapter" data-level="4.5" data-path="pac04.html"><a href="pac04.html#exemple-mitjanapes"><i class="fa fa-check"></i><b>4.5</b> Exemple: mitjanaPes</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a><ul>
+<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="pac05.html"><a href="pac05.html#comanda-strcmp"><i class="fa fa-check"></i><b>5.1</b> Comanda strcmp()</a></li>
 <li class="chapter" data-level="5.2" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>5.2</b> Comanda scanf</a></li>
 <li class="chapter" data-level="5.3" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strcmp"><i class="fa fa-check"></i><b>5.3</b> El finalitzador ‘\0’ i strcmp()</a></li>
@@ -160,8 +201,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="5.6" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>5.6</b> Exemple: nòmines</a></li>
 <li class="chapter" data-level="5.7" data-path="pac05.html"><a href="pac05.html#exemple-brisca"><i class="fa fa-check"></i><b>5.7</b> Exemple: brisca</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a><ul>
-<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a><ul>
+<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="pac06.html"><a href="pac06.html#parametres-dentrada-in"><i class="fa fa-check"></i><b>6.1.1</b> Paràmetres d’entrada (in)</a></li>
 <li class="chapter" data-level="6.1.2" data-path="pac06.html"><a href="pac06.html#parametres-de-sortida-out"><i class="fa fa-check"></i><b>6.1.2</b> Paràmetres de sortida (out)</a></li>
 <li class="chapter" data-level="6.1.3" data-path="pac06.html"><a href="pac06.html#parametres-dentradasortida-inout"><i class="fa fa-check"></i><b>6.1.3</b> Paràmetres d’entrada/sortida (inout)</a></li>
@@ -170,13 +213,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.2" data-path="pac06.html"><a href="pac06.html#exemple-us-daccions"><i class="fa fa-check"></i><b>6.2</b> Exemple: ús d’accions</a></li>
 <li class="chapter" data-level="6.3" data-path="pac06.html"><a href="pac06.html#exemple-us-de-funcions"><i class="fa fa-check"></i><b>6.3</b> Exemple: ús de funcions</a></li>
 <li class="chapter" data-level="6.4" data-path="pac06.html"><a href="pac06.html#exemple-nomines-1"><i class="fa fa-check"></i><b>6.4</b> Exemple: nòmines</a></li>
-<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a><ul>
+<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="pac06.html"><a href="pac06.html#explicacio-sobre-laccio-copiarjugadora"><i class="fa fa-check"></i><b>6.5.1</b> Explicació sobre l’acció copiarJugadora()</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a><ul>
+<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="pac07.html"><a href="pac07.html#quan-utilitzar-dins-de-funcionsaccions"><i class="fa fa-check"></i><b>7.1</b> Quan utilitzar &amp; dins de funcions/accions</a></li>
-<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a><ul>
+<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="pac07.html"><a href="pac07.html#funcionament-per-defecte-dun-projecte-a-codelite"><i class="fa fa-check"></i><b>7.2.1</b> Funcionament per defecte d’un projecte a CodeLite:</a></li>
 <li class="chapter" data-level="7.2.2" data-path="pac07.html"><a href="pac07.html#executable-dins-de-bin."><i class="fa fa-check"></i><b>7.2.2</b> Executable dins de /bin.</a></li>
 <li class="chapter" data-level="7.2.3" data-path="pac07.html"><a href="pac07.html#modularitzacio-del-programa-en-un-arxiu-de-capcaleres-i-un-de-funcions."><i class="fa fa-check"></i><b>7.2.3</b> Modularització del programa en un arxiu de capçaleres i un de funcions.</a></li>
@@ -188,40 +234,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.7" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>7.7</b> Exemple: funció isParell</a></li>
 <li class="chapter" data-level="7.8" data-path="pac07.html"><a href="pac07.html#exemple-pivotdefensiutirslliures"><i class="fa fa-check"></i><b>7.8</b> Exemple: pivotDefensiuTirsLliures</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a><ul>
+<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>8.1</b> Com inicialitzar una taula</a></li>
 <li class="chapter" data-level="8.2" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota"><i class="fa fa-check"></i><b>8.2</b> Exemple: calcularNota</a></li>
 <li class="chapter" data-level="8.3" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota-amb-introduccio-iterativa"><i class="fa fa-check"></i><b>8.3</b> Exemple: calcularNota amb introducció iterativa</a></li>
 <li class="chapter" data-level="8.4" data-path="pac08.html"><a href="pac08.html#exemple-recorregut-vs-cerca"><i class="fa fa-check"></i><b>8.4</b> Exemple: recorregut vs cerca</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a><ul>
+<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="pac09.html"><a href="pac09.html#exemple"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>10</b> PAC10</a></li>
-<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a><ul>
+<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a>
+<ul>
 <li class="chapter" data-level="11.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>11.1</b> Mode menu vs mode test</a></li>
 <li class="chapter" data-level="11.2" data-path="pr1.html"><a href="pr1.html#exemple-tupla-dins-de-tupla"><i class="fa fa-check"></i><b>11.2</b> Exemple: tupla dins de tupla</a></li>
-<li class="chapter" data-level="11.3" data-path="pr1.html"><a href="pr1.html#desplacament-delements-en-un-vector"><i class="fa fa-check"></i><b>11.3</b> Desplaçament d’elements en un vector</a><ul>
-<li class="chapter" data-level="11.3.1" data-path="pr1.html"><a href="pr1.html#afegir-un-element"><i class="fa fa-check"></i><b>11.3.1</b> Afegir un element</a></li>
-<li class="chapter" data-level="11.3.2" data-path="pr1.html"><a href="pr1.html#esborrar-un-element"><i class="fa fa-check"></i><b>11.3.2</b> Esborrar un element</a></li>
-<li class="chapter" data-level="11.3.3" data-path="pr1.html"><a href="pr1.html#exemple-diessetmana"><i class="fa fa-check"></i><b>11.3.3</b> Exemple: diesSetmana</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a><ul>
+<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a>
+<ul>
 <li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-1"><i class="fa fa-check"></i><b>12.1</b> Exemple</a></li>
+<li class="chapter" data-level="12.2" data-path="pr2.html"><a href="pr2.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>12.2</b> Com instal·lar les Guest Additions</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>13</b> VMWare i CodeLite</a><ul>
-<li class="chapter" data-level="13.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>13.1</b> Per què una màquina virtual?</a></li>
-<li class="chapter" data-level="13.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#virtualbox-i-requeriments-de-virtualitzacio"><i class="fa fa-check"></i><b>13.2</b> VirtualBox i requeriments de virtualització</a></li>
-<li class="chapter" data-level="13.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>13.3</b> Com instal·lar les Guest Additions</a></li>
-<li class="chapter" data-level="13.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>13.4</b> Primers passos amb CodeLite</a></li>
-<li class="chapter" data-level="13.5" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>13.5</b> Com activar un projecte</a></li>
-<li class="chapter" data-level="13.6" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>13.6</b> Canviar idioma del teclat</a></li>
-<li class="chapter" data-level="13.7" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#programa-per-defecte-al-crear-un-projecte"><i class="fa fa-check"></i><b>13.7</b> Programa per defecte al crear un projecte</a></li>
-<li class="chapter" data-level="13.8" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-fixar-el-kernel-dinici-amb-lubuntu"><i class="fa fa-check"></i><b>13.8</b> Com fixar el kernel d’inici amb Lubuntu</a></li>
-</ul></li>
-<li class="chapter" data-level="14" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>14</b> Altres</a><ul>
-<li class="chapter" data-level="14.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>14.1</b> Bilbliografia</a></li>
+<li class="chapter" data-level="13" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>13</b> Altres</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>13.1</b> Bilbliografia</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://www.uoc.edu" target="blank">www.uoc.edu</a></li>
@@ -243,10 +280,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pac02" class="section level1">
-<h1><span class="header-section-number"> 2</span> PAC02</h1>
-<div id="booleans" class="section level2">
-<h2><span class="header-section-number">2.1</span> Booleans en C</h2>
+<div id="pac02" class="section level1" number="2">
+<h1 number="2"><span class="header-section-number">2</span> PAC02</h1>
+<div id="booleans" class="section level2" number="2.1">
+<h2 number="2.1"><span class="header-section-number">2.1</span> Booleans en C</h2>
 <p>Alguns punts a considerar amb els booleans en C:</p>
 <ul>
 <li>Quan utilitzem el tipus <code>bool</code> de C ens cal importar la llibreria <code>&lt;stdbool.h&gt;</code>, ja que el tipus <code>bool</code> no es va definir a les primeres versions del llenguatge C.</li>
@@ -256,40 +293,46 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>Per mostrar el valor d’una variable booleana en C ho podem fer de la següent forma:
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
-</p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">bool isVocal;
-printf(<span class="st">&quot;La lletra %c és una vocal (0=false, 1=true) ? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, lletra, isVocal);</code></pre></div></li>
+</p></li>
+</ul>
+<div class="sourceCode" id="cb22"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb22-1"><a href="pac02.html#cb22-1"></a><span class="dt">bool</span> isVocal;</span>
+<span id="cb22-2"><a href="pac02.html#cb22-2"></a>printf(<span class="st">&quot;La lletra %c és una vocal (0=false, 1=true) ? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, lletra, isVocal);</span></code></pre></div>
+<ul>
 <li>Per llegir un booleà des de teclat, ho faríem de la següent forma:
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
-</p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">bool variable;
-scanf(<span class="st">&quot;%d&quot;</span>, &amp;variable);</code></pre></div></li>
+</p></li>
+</ul>
+<div class="sourceCode" id="cb23"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb23-1"><a href="pac02.html#cb23-1"></a><span class="dt">bool</span> variable;</span>
+<span id="cb23-2"><a href="pac02.html#cb23-2"></a>scanf(<span class="st">&quot;%d&quot;</span>, &amp;variable);</span></code></pre></div>
+<ul>
 <li>La lectura per teclat d’un booleà, feta tal i com s’indica al punt anterior, generarà un <em>warning</em> del següent tipus: <code>warning: format '%d' expects argument of type 'int *', but argument 2 has type '_Bool *' [-Wformat=]</code>. Aquest avís significa que estem utilitzant un especificador de tipus (<code>%d</code>) diferent del que li correspondria al tipus <code>bool</code>, el qual treballa únicament amb 1 bit. Com que C no disposa de cap especificador de tipus que treballi només amb 1 bit, podem fer dues coses:
 <ul>
 <li>Utilitzar una variable auxiliar que ens ajudi a fer una conversió intermitja a <code>int</code>, per tal de transformar posteriorment el valor a <code>bool</code>:
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
-</p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">bool variable;
-<span class="dt">int</span> aux;
-scanf(<span class="st">&quot;%d&quot;</span>, &amp;aux);
-variable = aux;</code></pre></div></li>
+</p></li>
+</ul>
+<div class="sourceCode" id="cb24"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb24-1"><a href="pac02.html#cb24-1"></a><span class="dt">bool</span> variable;</span>
+<span id="cb24-2"><a href="pac02.html#cb24-2"></a><span class="dt">int</span> aux;</span>
+<span id="cb24-3"><a href="pac02.html#cb24-3"></a>scanf(<span class="st">&quot;%d&quot;</span>, &amp;aux);</span>
+<span id="cb24-4"><a href="pac02.html#cb24-4"></a>variable = aux;</span></code></pre></div>
+<ul>
 <li>Ignorar el warning d’aquesta situació específica: tot i l’avís, el programa es pot compilar i executar.</li>
 </ul></li>
 </ul>
 </div>
-<div id="booleans-definits-com-a-enumeratius" class="section level2">
-<h2><span class="header-section-number">2.2</span> Booleans definits com a enumeratius</h2>
+<div id="booleans-definits-com-a-enumeratius" class="section level2" number="2.2">
+<h2 number="2.2"><span class="header-section-number">2.2</span> Booleans definits com a enumeratius</h2>
 En semestres anteriors de l’assignatura de <strong>Fonaments de Programació</strong>, s’utilitzava un <strong>enumeratiu</strong> per definir el tipus booleà:
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;</code></pre></div>
-<p>Aquesta forma de definir el tipus booleà és <strong>obsoleta</strong> i <strong>no s’utilitza</strong> aquest semestre; tal i com s’ha comentat a l’apartat <a href="pac02.html#booleans">2.1</a>, els booleans els definirem mitjançant la llibreria <code>&lt;stdbool.h&gt;</code>. Tingueu-ho present quan consulteu PAC<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>, PR<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> i PS<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a> de semestres anteriors, en els quals s’utilitzava la nomenclatura ara obsoleta.</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb25-1"><a href="pac02.html#cb25-1"></a><span class="kw">typedef</span> <span class="kw">enum</span> {FALSE, TRUE} boolean;</span></code></pre></div>
+<p>Aquesta forma de definir el tipus booleà és <strong>obsoleta</strong> i <strong>no s’utilitza</strong> aquest semestre; tal i com s’ha comentat a l’apartat <a href="pac02.html#booleans"><strong>??</strong></a>, els booleans els definirem mitjançant la llibreria <code>&lt;stdbool.h&gt;</code>. Tingueu-ho present quan consulteu PAC<a href="altres.html#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, PR<a href="altres.html#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> i PS<a href="altres.html#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> de semestres anteriors, en els quals s’utilitzava la nomenclatura ara obsoleta.</p>
 </div>
-<div id="constants-define-vs-const" class="section level2">
-<h2><span class="header-section-number">2.3</span> Constants: define vs const</h2>
+<div id="constants-define-vs-const" class="section level2" number="2.3">
+<h2 number="2.3"><span class="header-section-number">2.3</span> Constants: define vs const</h2>
 <p>La definició de constants tant es pot fer amb <code>define</code> com amb <code>const</code>. Tot i això, la forma de comportar-se d’aquestes dues opcions és completament diferent, si ve el resultat final és el mateix:</p>
 <ul>
 <li><code>define</code>: quan utilitzem aquesta opció no es desa en cap posició de memòria el valor de la constant. El que es fa realment és que en els passos previs a la pròpia compilació del programa, el preprocessador substitueix totes les referencies del define pel valor indicat.</li>
@@ -298,40 +341,40 @@ En semestres anteriors de l’assignatura de <strong>Fonaments de Programació</
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#define MIDA 8</span>
-
-<span class="dt">char</span> lletres[] = {<span class="ch">&#39;a&#39;</span>, <span class="ch">&#39;b&#39;</span>, <span class="ch">&#39;c&#39;</span>, <span class="ch">&#39;d&#39;</span>, <span class="ch">&#39;e&#39;</span>, <span class="ch">&#39;f&#39;</span>, <span class="ch">&#39;g&#39;</span>, <span class="ch">&#39;h&#39;</span>};
-<span class="dt">int</span> vertical, horitzontal;
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-    <span class="co">/* font: https://en.wikipedia.org/wiki/Chess */</span>
-
-    <span class="cf">for</span> (vertical=MIDA; vertical&gt;=<span class="dv">1</span>; vertical--) {
-        <span class="cf">for</span> (horitzontal=<span class="dv">0</span>; horitzontal&lt;=MIDA-<span class="dv">1</span>; horitzontal++) {
-            printf(<span class="st">&quot;%c%d &quot;</span>, lletres[horitzontal], vertical);
-        }
-        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    }
-}</code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb26-1"><a href="pac02.html#cb26-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb26-2"><a href="pac02.html#cb26-2"></a><span class="pp">#define MIDA 8</span></span>
+<span id="cb26-3"><a href="pac02.html#cb26-3"></a></span>
+<span id="cb26-4"><a href="pac02.html#cb26-4"></a><span class="dt">char</span> lletres[] = {<span class="ch">&#39;a&#39;</span>, <span class="ch">&#39;b&#39;</span>, <span class="ch">&#39;c&#39;</span>, <span class="ch">&#39;d&#39;</span>, <span class="ch">&#39;e&#39;</span>, <span class="ch">&#39;f&#39;</span>, <span class="ch">&#39;g&#39;</span>, <span class="ch">&#39;h&#39;</span>};</span>
+<span id="cb26-5"><a href="pac02.html#cb26-5"></a><span class="dt">int</span> vertical, horitzontal;</span>
+<span id="cb26-6"><a href="pac02.html#cb26-6"></a></span>
+<span id="cb26-7"><a href="pac02.html#cb26-7"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb26-8"><a href="pac02.html#cb26-8"></a>    <span class="co">/* font: https://en.wikipedia.org/wiki/Chess */</span></span>
+<span id="cb26-9"><a href="pac02.html#cb26-9"></a></span>
+<span id="cb26-10"><a href="pac02.html#cb26-10"></a>    <span class="cf">for</span> (vertical=MIDA; vertical&gt;=<span class="dv">1</span>; vertical--) {</span>
+<span id="cb26-11"><a href="pac02.html#cb26-11"></a>        <span class="cf">for</span> (horitzontal=<span class="dv">0</span>; horitzontal&lt;=MIDA-<span class="dv">1</span>; horitzontal++) {</span>
+<span id="cb26-12"><a href="pac02.html#cb26-12"></a>            printf(<span class="st">&quot;%c%d &quot;</span>, lletres[horitzontal], vertical);</span>
+<span id="cb26-13"><a href="pac02.html#cb26-13"></a>        }</span>
+<span id="cb26-14"><a href="pac02.html#cb26-14"></a>        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb26-15"><a href="pac02.html#cb26-15"></a>    }</span>
+<span id="cb26-16"><a href="pac02.html#cb26-16"></a>}</span></code></pre></div>
 <p>Abans de la compilació, el preprocessador entre altres accions elimina comentaris i substitueix totes les referències <code>MIDA</code> per <code>8</code>:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="dt">char</span> lletres[] = {<span class="ch">&#39;a&#39;</span>, <span class="ch">&#39;b&#39;</span>, <span class="ch">&#39;c&#39;</span>, <span class="ch">&#39;d&#39;</span>, <span class="ch">&#39;e&#39;</span>, <span class="ch">&#39;f&#39;</span>, <span class="ch">&#39;g&#39;</span>, <span class="ch">&#39;h&#39;</span>};
-<span class="dt">int</span> vertical, horitzontal;
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="cf">for</span> (vertical=<span class="dv">8</span>; vertical&gt;=<span class="dv">1</span>; vertical--) {
-        <span class="cf">for</span> (horitzontal=<span class="dv">0</span>; horitzontal&lt;=<span class="dv">8</span>-<span class="dv">1</span>; horitzontal++) {
-            printf(<span class="st">&quot;%c%d &quot;</span>, lletres[horitzontal], vertical);
-        }
-        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    }
-}</code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb27-1"><a href="pac02.html#cb27-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb27-2"><a href="pac02.html#cb27-2"></a></span>
+<span id="cb27-3"><a href="pac02.html#cb27-3"></a><span class="dt">char</span> lletres[] = {<span class="ch">&#39;a&#39;</span>, <span class="ch">&#39;b&#39;</span>, <span class="ch">&#39;c&#39;</span>, <span class="ch">&#39;d&#39;</span>, <span class="ch">&#39;e&#39;</span>, <span class="ch">&#39;f&#39;</span>, <span class="ch">&#39;g&#39;</span>, <span class="ch">&#39;h&#39;</span>};</span>
+<span id="cb27-4"><a href="pac02.html#cb27-4"></a><span class="dt">int</span> vertical, horitzontal;</span>
+<span id="cb27-5"><a href="pac02.html#cb27-5"></a></span>
+<span id="cb27-6"><a href="pac02.html#cb27-6"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb27-7"><a href="pac02.html#cb27-7"></a></span>
+<span id="cb27-8"><a href="pac02.html#cb27-8"></a>    <span class="cf">for</span> (vertical=<span class="dv">8</span>; vertical&gt;=<span class="dv">1</span>; vertical--) {</span>
+<span id="cb27-9"><a href="pac02.html#cb27-9"></a>        <span class="cf">for</span> (horitzontal=<span class="dv">0</span>; horitzontal&lt;=<span class="dv">8</span>-<span class="dv">1</span>; horitzontal++) {</span>
+<span id="cb27-10"><a href="pac02.html#cb27-10"></a>            printf(<span class="st">&quot;%c%d &quot;</span>, lletres[horitzontal], vertical);</span>
+<span id="cb27-11"><a href="pac02.html#cb27-11"></a>        }</span>
+<span id="cb27-12"><a href="pac02.html#cb27-12"></a>        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb27-13"><a href="pac02.html#cb27-13"></a>    }</span>
+<span id="cb27-14"><a href="pac02.html#cb27-14"></a>}</span></code></pre></div>
 <p>Per tant la definició de constants amb <code>define</code> es comporta com si d’un “cercar-reemplaçar” d’un processador de textos es tractés. No es desa cap constant en memòria, però per contra, el programa ocuparà una mica més per la substitució directa de referències que fa; la substitució la fa en tot el programa, no es pot limitar a un àmbit concret (per exemple només dins d’una funció).</p>
 <ul>
 <li><code>const</code>: en aquest cas sí que es reserva una posició de memòria. En C es comporta igual com si fos una variable, però la qual únicament funciona en mode lectura: no li podem modificar el valor.</li>
@@ -341,83 +384,83 @@ En semestres anteriors de l’assignatura de <strong>Fonaments de Programació</
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="dt">const</span> <span class="dt">int</span> MIDA <span class="dv">8</span>
-
-<span class="dt">char</span> lletres[] = {<span class="ch">&#39;a&#39;</span>, <span class="ch">&#39;b&#39;</span>, <span class="ch">&#39;c&#39;</span>, <span class="ch">&#39;d&#39;</span>, <span class="ch">&#39;e&#39;</span>, <span class="ch">&#39;f&#39;</span>, <span class="ch">&#39;g&#39;</span>, <span class="ch">&#39;h&#39;</span>};
-<span class="dt">int</span> vertical, horitzontal;
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="co">/* La constant MIDA està desada en memòria */</span>
-    printf(<span class="st">&quot;posició en memòria de la constant MIDA : %p </span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;MIDA);
-
-    <span class="cf">for</span> (vertical=MIDA; vertical&gt;=<span class="dv">1</span>; vertical--) {
-        <span class="cf">for</span> (horitzontal=<span class="dv">0</span>; horitzontal&lt;=MIDA-<span class="dv">1</span>; horitzontal++) {
-            printf(<span class="st">&quot;%c%d &quot;</span>, lletres[horitzontal], vertical);
-        }
-        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    }
-}</code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb28-1"><a href="pac02.html#cb28-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb28-2"><a href="pac02.html#cb28-2"></a><span class="dt">const</span> <span class="dt">int</span> MIDA <span class="dv">8</span></span>
+<span id="cb28-3"><a href="pac02.html#cb28-3"></a></span>
+<span id="cb28-4"><a href="pac02.html#cb28-4"></a><span class="dt">char</span> lletres[] = {<span class="ch">&#39;a&#39;</span>, <span class="ch">&#39;b&#39;</span>, <span class="ch">&#39;c&#39;</span>, <span class="ch">&#39;d&#39;</span>, <span class="ch">&#39;e&#39;</span>, <span class="ch">&#39;f&#39;</span>, <span class="ch">&#39;g&#39;</span>, <span class="ch">&#39;h&#39;</span>};</span>
+<span id="cb28-5"><a href="pac02.html#cb28-5"></a><span class="dt">int</span> vertical, horitzontal;</span>
+<span id="cb28-6"><a href="pac02.html#cb28-6"></a></span>
+<span id="cb28-7"><a href="pac02.html#cb28-7"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb28-8"><a href="pac02.html#cb28-8"></a></span>
+<span id="cb28-9"><a href="pac02.html#cb28-9"></a>    <span class="co">/* La constant MIDA està desada en memòria */</span></span>
+<span id="cb28-10"><a href="pac02.html#cb28-10"></a>    printf(<span class="st">&quot;posició en memòria de la constant MIDA : %p </span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;MIDA);</span>
+<span id="cb28-11"><a href="pac02.html#cb28-11"></a></span>
+<span id="cb28-12"><a href="pac02.html#cb28-12"></a>    <span class="cf">for</span> (vertical=MIDA; vertical&gt;=<span class="dv">1</span>; vertical--) {</span>
+<span id="cb28-13"><a href="pac02.html#cb28-13"></a>        <span class="cf">for</span> (horitzontal=<span class="dv">0</span>; horitzontal&lt;=MIDA-<span class="dv">1</span>; horitzontal++) {</span>
+<span id="cb28-14"><a href="pac02.html#cb28-14"></a>            printf(<span class="st">&quot;%c%d &quot;</span>, lletres[horitzontal], vertical);</span>
+<span id="cb28-15"><a href="pac02.html#cb28-15"></a>        }</span>
+<span id="cb28-16"><a href="pac02.html#cb28-16"></a>        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb28-17"><a href="pac02.html#cb28-17"></a>    }</span>
+<span id="cb28-18"><a href="pac02.html#cb28-18"></a>}</span></code></pre></div>
 <p>Com es pot veure, és possible obtinir l’adreça en memòria on es desa la constant <code>MIDA</code>. En aquest cas, sí que pots definir una constant amb <code>const</code> i fer que només afecti un àmbit determinat (per exemple, que la constant estigui definida únicament dins d’una funció).</p>
 <p>Aquestes són les principals diferències entre <code>define</code> i <code>const</code> a l’hora de definir una constant; <code>define</code> es va crear molt abans que no la sentència <code>const</code>, amb el que és un habit força habitual decantar-se per aquesta opció per temes més històrics.</p>
 </div>
-<div id="com-mostrar-el-valor-duna-constant" class="section level2">
-<h2><span class="header-section-number">2.4</span> Com mostrar el valor d’una constant</h2>
+<div id="com-mostrar-el-valor-duna-constant" class="section level2" number="2.4">
+<h2 number="2.4"><span class="header-section-number">2.4</span> Com mostrar el valor d’una constant</h2>
 <p>En C podem mostrar per pantalla el valor d’una constant definida amb <code>#define</code> mitjançant <code>printf()</code>. Exemple:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="pp">#define PARAULA &quot;world&quot;</span>
-<span class="pp">#define ANY 2019</span>
-<span class="pp">#define EXCLAMACIO &#39;!&#39;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-    printf(<span class="st">&quot;hello %s and happy %d %c</span><span class="sc">\n</span><span class="st">&quot;</span>, PARAULA, ANY, EXCLAMACIO);
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb29-1"><a href="pac02.html#cb29-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb29-2"><a href="pac02.html#cb29-2"></a></span>
+<span id="cb29-3"><a href="pac02.html#cb29-3"></a><span class="pp">#define PARAULA &quot;world&quot;</span></span>
+<span id="cb29-4"><a href="pac02.html#cb29-4"></a><span class="pp">#define ANY 2019</span></span>
+<span id="cb29-5"><a href="pac02.html#cb29-5"></a><span class="pp">#define EXCLAMACIO &#39;!&#39;</span></span>
+<span id="cb29-6"><a href="pac02.html#cb29-6"></a></span>
+<span id="cb29-7"><a href="pac02.html#cb29-7"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb29-8"><a href="pac02.html#cb29-8"></a>    printf(<span class="st">&quot;hello %s and happy %d %c</span><span class="sc">\n</span><span class="st">&quot;</span>, PARAULA, ANY, EXCLAMACIO);</span>
+<span id="cb29-9"><a href="pac02.html#cb29-9"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb29-10"><a href="pac02.html#cb29-10"></a>}</span></code></pre></div>
 <p>El resultat que es mostrarà per pantalla serà:</p>
 <p>
 <img src="img/play.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">hello world and happy <span class="dv">2019</span> !</code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb30-1"><a href="pac02.html#cb30-1"></a>hello world and happy <span class="dv">2019</span> !</span></code></pre></div>
 </div>
-<div id="precisio-en-variables-float" class="section level2">
-<h2><span class="header-section-number">2.5</span> Precisió en variables float</h2>
+<div id="precisio-en-variables-float" class="section level2" number="2.5">
+<h2 number="2.5"><span class="header-section-number">2.5</span> Precisió en variables float</h2>
 <p>Hi ha alguns valors decimals determinats que no es poden representar de forma precisa en una variable de tipus <code>float</code>. La millor solució pels casos que tractem és arrodonir al número de decimals que realment necessitem.</p>
 <p>Si en canvi volem sí o sí treballar amb tots els decimals, podem optar per utilitzar un tipus de dada que tingui major precisió que <code>float</code>: <code>double</code>.</p>
 <p>Per exemple, el següent programa retorna el resultat esperat si es desa en un <code>double</code>, i no així si es fa en un <code>float</code>:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) { 
-
-    <span class="dt">float</span> num1; 
-    <span class="dt">float</span> num2;
-    <span class="dt">float</span> resultat1; 
-    <span class="dt">double</span> resultat2; 
-    
-    num1 = <span class="fl">1.3</span>; 
-    num2 = <span class="dv">17</span>;
-    resultat1 = num1 + num2; 
-    printf(<span class="st">&quot;resultat amb float: %f</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat1); 
-    resultat2 = num1 + num2; 
-    printf(<span class="st">&quot;resultat amb double: %f</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat2); 
-    <span class="cf">return</span> <span class="dv">0</span>; 
-}</code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb31-1"><a href="pac02.html#cb31-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb31-2"><a href="pac02.html#cb31-2"></a></span>
+<span id="cb31-3"><a href="pac02.html#cb31-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) { </span>
+<span id="cb31-4"><a href="pac02.html#cb31-4"></a></span>
+<span id="cb31-5"><a href="pac02.html#cb31-5"></a>    <span class="dt">float</span> num1; </span>
+<span id="cb31-6"><a href="pac02.html#cb31-6"></a>    <span class="dt">float</span> num2;</span>
+<span id="cb31-7"><a href="pac02.html#cb31-7"></a>    <span class="dt">float</span> resultat1; </span>
+<span id="cb31-8"><a href="pac02.html#cb31-8"></a>    <span class="dt">double</span> resultat2; </span>
+<span id="cb31-9"><a href="pac02.html#cb31-9"></a>    </span>
+<span id="cb31-10"><a href="pac02.html#cb31-10"></a>    num1 = <span class="fl">1.3</span>; </span>
+<span id="cb31-11"><a href="pac02.html#cb31-11"></a>    num2 = <span class="dv">17</span>;</span>
+<span id="cb31-12"><a href="pac02.html#cb31-12"></a>    resultat1 = num1 + num2; </span>
+<span id="cb31-13"><a href="pac02.html#cb31-13"></a>    printf(<span class="st">&quot;resultat amb float: %f</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat1); </span>
+<span id="cb31-14"><a href="pac02.html#cb31-14"></a>    resultat2 = num1 + num2; </span>
+<span id="cb31-15"><a href="pac02.html#cb31-15"></a>    printf(<span class="st">&quot;resultat amb double: %f</span><span class="sc">\n</span><span class="st">&quot;</span>, resultat2); </span>
+<span id="cb31-16"><a href="pac02.html#cb31-16"></a>    <span class="cf">return</span> <span class="dv">0</span>; </span>
+<span id="cb31-17"><a href="pac02.html#cb31-17"></a>}</span></code></pre></div>
 <p>La sortida que genera és:</p>
 <p>
 <img src="img/play.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">resultat amb  <span class="dt">float</span>: <span class="fl">18.299999</span>
-resultat amb <span class="dt">double</span>: <span class="fl">18.300000</span></code></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb32-1"><a href="pac02.html#cb32-1"></a>resultat amb  <span class="dt">float</span>: <span class="fl">18.299999</span></span>
+<span id="cb32-2"><a href="pac02.html#cb32-2"></a>resultat amb <span class="dt">double</span>: <span class="fl">18.300000</span></span></code></pre></div>
 </div>
-<div id="semantica-duna-expressio" class="section level2">
-<h2><span class="header-section-number">2.6</span> Semàntica d’una expressió</h2>
+<div id="semantica-duna-expressio" class="section level2" number="2.6">
+<h2 number="2.6"><span class="header-section-number">2.6</span> Semàntica d’una expressió</h2>
 <p>Si recordem el que es comenta al punt <strong>3.2. Semàntica d’una expressió</strong> del mòdul de la xWiki <strong>Tipus bàsics de dades</strong>, hem d’aconseguir queles expressions i comparacions realitzades als algorismes siguin <strong>semànticament correctes</strong>.</p>
 <p>Amb un exemple es veurà més clar: tenim el següent algorisme que indica si una persona és major d’edat. Fixeu-vos que l’expressió realitza una comparació entre dos enters: la variable <code>edat</code> i el número <code>17</code>.</p>
 <p>
@@ -470,10 +513,10 @@ majorEdat := (realToInteger(edat) &gt; 17);
 {opció 2: fem que els dos valors siguin de tipus real}
 majorEdat := (edat &gt; integerToReal(17));</code></pre>
 </div>
-<div id="exemples-dexpressions" class="section level2">
-<h2><span class="header-section-number">2.7</span> Exemples d’expressions</h2>
-<div id="exemple-1-esparell" class="section level3">
-<h3><span class="header-section-number">2.7.1</span> Exemple 1: esParell</h3>
+<div id="exemples-dexpressions" class="section level2" number="2.7">
+<h2 number="2.7"><span class="header-section-number">2.7</span> Exemples d’expressions</h2>
+<div id="exemple-1-esparell" class="section level3" number="2.7.1">
+<h3 number="2.7.1"><span class="header-section-number">2.7.1</span> Exemple 1: esParell</h3>
 <p>Imaginem que ens demanen un algorisme que indiqui si un número és parell.</p>
 <p>Una possible solució seria:</p>
 <p>
@@ -500,25 +543,25 @@ end algorithm</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">int</span> numero;
-    bool isParell;
-
-    printf(<span class="st">&quot;Introdueix un número : &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numero);
-    isParell = (numero % <span class="dv">2</span> == <span class="dv">0</span>);
-    
-    printf(<span class="st">&quot;El número %d és parell? (0=FALSE, 1=TRUE) : %d </span><span class="sc">\n</span><span class="st">&quot;</span>, numero, isParell);
-
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb37-1"><a href="pac02.html#cb37-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb37-2"><a href="pac02.html#cb37-2"></a><span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span></span>
+<span id="cb37-3"><a href="pac02.html#cb37-3"></a></span>
+<span id="cb37-4"><a href="pac02.html#cb37-4"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb37-5"><a href="pac02.html#cb37-5"></a></span>
+<span id="cb37-6"><a href="pac02.html#cb37-6"></a>    <span class="dt">int</span> numero;</span>
+<span id="cb37-7"><a href="pac02.html#cb37-7"></a>    <span class="dt">bool</span> isParell;</span>
+<span id="cb37-8"><a href="pac02.html#cb37-8"></a></span>
+<span id="cb37-9"><a href="pac02.html#cb37-9"></a>    printf(<span class="st">&quot;Introdueix un número : &quot;</span>);</span>
+<span id="cb37-10"><a href="pac02.html#cb37-10"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numero);</span>
+<span id="cb37-11"><a href="pac02.html#cb37-11"></a>    isParell = (numero % <span class="dv">2</span> == <span class="dv">0</span>);</span>
+<span id="cb37-12"><a href="pac02.html#cb37-12"></a>    </span>
+<span id="cb37-13"><a href="pac02.html#cb37-13"></a>    printf(<span class="st">&quot;El número %d és parell? (0=FALSE, 1=TRUE) : %d </span><span class="sc">\n</span><span class="st">&quot;</span>, numero, isParell);</span>
+<span id="cb37-14"><a href="pac02.html#cb37-14"></a></span>
+<span id="cb37-15"><a href="pac02.html#cb37-15"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb37-16"><a href="pac02.html#cb37-16"></a>}</span></code></pre></div>
 </div>
-<div id="exemple-2-capdesetmana" class="section level3">
-<h3><span class="header-section-number">2.7.2</span> Exemple 2: capDeSetmana</h3>
+<div id="exemple-2-capdesetmana" class="section level3" number="2.7.2">
+<h3 number="2.7.2"><span class="header-section-number">2.7.2</span> Exemple 2: capDeSetmana</h3>
 <p>Imaginem que volem fer un programa molt senzill que ens digui si avui és cap de setmana o no. El seu algorisme seria el següent:</p>
 <p>
 <img src="img/alg.png" style="float:left; padding:10px" />
@@ -555,32 +598,32 @@ end algorithm</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
-
-<span class="kw">typedef</span> <span class="kw">enum</span> {DILLUNS, DIMARTS, DIMECRES, DIJOUS, DIVENDRES, DISSABTE, DIUMENGE} dies;
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    bool esCapDeSetmana;
-    dies diaSetmana;
-
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Quin dia de la setmana és avui ?</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printf(<span class="st">&quot;Per DILLUNS tecleja 0</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printf(<span class="st">&quot;Per DIMARTS tecleja 1</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printf(<span class="st">&quot;Per DIMECRES tecleja 2</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printf(<span class="st">&quot;Per DIJOUS tecleja 3</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printf(<span class="st">&quot;Per DIVENDRES tecleja 4</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printf(<span class="st">&quot;Per DISSABTE tecleja 5</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printf(<span class="st">&quot;Per DIUMENGE tecleja 6</span><span class="sc">\n</span><span class="st">&quot;</span>);
-
-    scanf(<span class="st">&quot;%u&quot;</span>, &amp;diaSetmana);
-    esCapDeSetmana = (diaSetmana == DISSABTE || diaSetmana == DIUMENGE);
-
-    printf(<span class="st">&quot;Avui és cap de setmana (0 == false, 1 == true) ? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, esCapDeSetmana);
-
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb39-1"><a href="pac02.html#cb39-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb39-2"><a href="pac02.html#cb39-2"></a><span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span></span>
+<span id="cb39-3"><a href="pac02.html#cb39-3"></a></span>
+<span id="cb39-4"><a href="pac02.html#cb39-4"></a><span class="kw">typedef</span> <span class="kw">enum</span> {DILLUNS, DIMARTS, DIMECRES, DIJOUS, DIVENDRES, DISSABTE, DIUMENGE} dies;</span>
+<span id="cb39-5"><a href="pac02.html#cb39-5"></a></span>
+<span id="cb39-6"><a href="pac02.html#cb39-6"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb39-7"><a href="pac02.html#cb39-7"></a></span>
+<span id="cb39-8"><a href="pac02.html#cb39-8"></a>    <span class="dt">bool</span> esCapDeSetmana;</span>
+<span id="cb39-9"><a href="pac02.html#cb39-9"></a>    dies diaSetmana;</span>
+<span id="cb39-10"><a href="pac02.html#cb39-10"></a></span>
+<span id="cb39-11"><a href="pac02.html#cb39-11"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Quin dia de la setmana és avui ?</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb39-12"><a href="pac02.html#cb39-12"></a>    printf(<span class="st">&quot;Per DILLUNS tecleja 0</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb39-13"><a href="pac02.html#cb39-13"></a>    printf(<span class="st">&quot;Per DIMARTS tecleja 1</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb39-14"><a href="pac02.html#cb39-14"></a>    printf(<span class="st">&quot;Per DIMECRES tecleja 2</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb39-15"><a href="pac02.html#cb39-15"></a>    printf(<span class="st">&quot;Per DIJOUS tecleja 3</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb39-16"><a href="pac02.html#cb39-16"></a>    printf(<span class="st">&quot;Per DIVENDRES tecleja 4</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb39-17"><a href="pac02.html#cb39-17"></a>    printf(<span class="st">&quot;Per DISSABTE tecleja 5</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb39-18"><a href="pac02.html#cb39-18"></a>    printf(<span class="st">&quot;Per DIUMENGE tecleja 6</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb39-19"><a href="pac02.html#cb39-19"></a></span>
+<span id="cb39-20"><a href="pac02.html#cb39-20"></a>    scanf(<span class="st">&quot;%u&quot;</span>, &amp;diaSetmana);</span>
+<span id="cb39-21"><a href="pac02.html#cb39-21"></a>    esCapDeSetmana = (diaSetmana == DISSABTE || diaSetmana == DIUMENGE);</span>
+<span id="cb39-22"><a href="pac02.html#cb39-22"></a></span>
+<span id="cb39-23"><a href="pac02.html#cb39-23"></a>    printf(<span class="st">&quot;Avui és cap de setmana (0 == false, 1 == true) ? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, esCapDeSetmana);</span>
+<span id="cb39-24"><a href="pac02.html#cb39-24"></a></span>
+<span id="cb39-25"><a href="pac02.html#cb39-25"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb39-26"><a href="pac02.html#cb39-26"></a>}</span></code></pre></div>
 <p>Varis punts a considerar:</p>
 <ul>
 <li>Recordem que inicialment en C no existia el tipus booleà. Per poder utilitzar <code>bool</code>, i els valors <code>true</code> i <code>false</code> ens cal importar prèviament la llibreria <code>&lt;stdbool.h&gt;</code>.</li>
@@ -589,8 +632,8 @@ end algorithm</code></pre>
 <li>Per les particularitats dels <code>bool</code> en el llenguatge de programació C que ja hem comentat anteriorment, l’entrada i sortida de valors d’un <code>boolean</code> serà numèrica. Per facilitar la comprensió podem mostrar per pantalla un literal que ens indiqui que <code>0</code> equival a <code>false</code> i <code>1</code> a <code>true</code>.</li>
 </ul>
 </div>
-<div id="exemple-3-esvocal" class="section level3">
-<h3><span class="header-section-number">2.7.3</span> Exemple 3: esVocal</h3>
+<div id="exemple-3-esvocal" class="section level3" number="2.7.3">
+<h3 number="2.7.3"><span class="header-section-number">2.7.3</span> Exemple 3: esVocal</h3>
 <p>Exemple: volem fer un programa que, entrat un caràcter pel canal d’entrada, ens indiqui si es tracta o no d’una vocal.</p>
 <p>Una possible solució per l’algorisme és la següent:</p>
 <p>
@@ -629,27 +672,27 @@ end algorithm</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">char</span> lletra;
-    bool isVocal;
-
-    printf(<span class="st">&quot;Introdueix una lletra : &quot;</span>);
-    scanf(<span class="st">&quot;%c&quot;</span>, &amp;lletra);
-
-    <span class="co">/* en aquest exemple només tractem les vocals minúscules */</span>
-    isVocal = lletra == <span class="ch">&#39;a&#39;</span> || lletra == <span class="ch">&#39;e&#39;</span> || lletra == <span class="ch">&#39;i&#39;</span> || lletra == <span class="ch">&#39;o&#39;</span> || lletra == <span class="ch">&#39;u&#39;</span>;
-
-    printf(<span class="st">&quot;La lletra %c és una vocal (0=FALSE, 1=TRUE) ? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, lletra, isVocal);
-
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb41-1"><a href="pac02.html#cb41-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb41-2"><a href="pac02.html#cb41-2"></a><span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span></span>
+<span id="cb41-3"><a href="pac02.html#cb41-3"></a></span>
+<span id="cb41-4"><a href="pac02.html#cb41-4"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb41-5"><a href="pac02.html#cb41-5"></a></span>
+<span id="cb41-6"><a href="pac02.html#cb41-6"></a>    <span class="dt">char</span> lletra;</span>
+<span id="cb41-7"><a href="pac02.html#cb41-7"></a>    <span class="dt">bool</span> isVocal;</span>
+<span id="cb41-8"><a href="pac02.html#cb41-8"></a></span>
+<span id="cb41-9"><a href="pac02.html#cb41-9"></a>    printf(<span class="st">&quot;Introdueix una lletra : &quot;</span>);</span>
+<span id="cb41-10"><a href="pac02.html#cb41-10"></a>    scanf(<span class="st">&quot;%c&quot;</span>, &amp;lletra);</span>
+<span id="cb41-11"><a href="pac02.html#cb41-11"></a></span>
+<span id="cb41-12"><a href="pac02.html#cb41-12"></a>    <span class="co">/* en aquest exemple només tractem les vocals minúscules */</span></span>
+<span id="cb41-13"><a href="pac02.html#cb41-13"></a>    isVocal = lletra == <span class="ch">&#39;a&#39;</span> || lletra == <span class="ch">&#39;e&#39;</span> || lletra == <span class="ch">&#39;i&#39;</span> || lletra == <span class="ch">&#39;o&#39;</span> || lletra == <span class="ch">&#39;u&#39;</span>;</span>
+<span id="cb41-14"><a href="pac02.html#cb41-14"></a></span>
+<span id="cb41-15"><a href="pac02.html#cb41-15"></a>    printf(<span class="st">&quot;La lletra %c és una vocal (0=FALSE, 1=TRUE) ? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, lletra, isVocal);</span>
+<span id="cb41-16"><a href="pac02.html#cb41-16"></a></span>
+<span id="cb41-17"><a href="pac02.html#cb41-17"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb41-18"><a href="pac02.html#cb41-18"></a>}</span></code></pre></div>
 </div>
-<div id="exemple-4-votacions" class="section level3">
-<h3><span class="header-section-number">2.7.4</span> Exemple 4: votacions</h3>
+<div id="exemple-4-votacions" class="section level3" number="2.7.4">
+<h3 number="2.7.4"><span class="header-section-number">2.7.4</span> Exemple 4: votacions</h3>
 <p>Imaginem que hem de fer un programa que validi si una persona pot anar a votar o no; la condició que ens diuen que cal complir és que la persona sigui major d’edat i a més estigui al cens electoral de la localitat on està votant.</p>
 <p>L’algorisme podria ser el següent:</p>
 <p>
@@ -678,38 +721,38 @@ end algorithm</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    bool isMajorEdat;
-    bool isCensat;
-    bool isVotar;
-
-    printf(<span class="st">&quot;Ets major d&#39;edat (0=FALSE, 1=TRUE) ? : &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;isMajorEdat);
-
-    printf(<span class="st">&quot;Estàs al cens electoral (0=FALSE, 1=TRUE) ? : &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;isCensat);
-
-    { expressió }
-    isVotar = isMajorEdat &amp;&amp; isCensat;
-
-    printf(<span class="st">&quot;Pots anar a votar (0=FALSE, 1=TRUE) : %d</span><span class="sc">\n</span><span class="st">&quot;</span>, isVotar);
-
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb43-1"><a href="pac02.html#cb43-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb43-2"><a href="pac02.html#cb43-2"></a><span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span></span>
+<span id="cb43-3"><a href="pac02.html#cb43-3"></a></span>
+<span id="cb43-4"><a href="pac02.html#cb43-4"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb43-5"><a href="pac02.html#cb43-5"></a></span>
+<span id="cb43-6"><a href="pac02.html#cb43-6"></a>    <span class="dt">bool</span> isMajorEdat;</span>
+<span id="cb43-7"><a href="pac02.html#cb43-7"></a>    <span class="dt">bool</span> isCensat;</span>
+<span id="cb43-8"><a href="pac02.html#cb43-8"></a>    <span class="dt">bool</span> isVotar;</span>
+<span id="cb43-9"><a href="pac02.html#cb43-9"></a></span>
+<span id="cb43-10"><a href="pac02.html#cb43-10"></a>    printf(<span class="st">&quot;Ets major d&#39;edat (0=FALSE, 1=TRUE) ? : &quot;</span>);</span>
+<span id="cb43-11"><a href="pac02.html#cb43-11"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;isMajorEdat);</span>
+<span id="cb43-12"><a href="pac02.html#cb43-12"></a></span>
+<span id="cb43-13"><a href="pac02.html#cb43-13"></a>    printf(<span class="st">&quot;Estàs al cens electoral (0=FALSE, 1=TRUE) ? : &quot;</span>);</span>
+<span id="cb43-14"><a href="pac02.html#cb43-14"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;isCensat);</span>
+<span id="cb43-15"><a href="pac02.html#cb43-15"></a></span>
+<span id="cb43-16"><a href="pac02.html#cb43-16"></a>    { expressió }</span>
+<span id="cb43-17"><a href="pac02.html#cb43-17"></a>    isVotar = isMajorEdat &amp;&amp; isCensat;</span>
+<span id="cb43-18"><a href="pac02.html#cb43-18"></a></span>
+<span id="cb43-19"><a href="pac02.html#cb43-19"></a>    printf(<span class="st">&quot;Pots anar a votar (0=FALSE, 1=TRUE) : %d</span><span class="sc">\n</span><span class="st">&quot;</span>, isVotar);</span>
+<span id="cb43-20"><a href="pac02.html#cb43-20"></a></span>
+<span id="cb43-21"><a href="pac02.html#cb43-21"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb43-22"><a href="pac02.html#cb43-22"></a>}</span></code></pre></div>
 <p>Un possible execució d’aquest exemple seria:</p>
 <p>
 <img src="img/play.png" float="right;" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Ets major d&#39;edat (<span class="dv">0</span>=FALSE, <span class="dv">1</span>=TRUE) ? : <span class="dv">1</span>
-Estàs al cens electoral (<span class="dv">0</span>=FALSE, <span class="dv">1</span>=TRUE) ? : <span class="dv">0</span>
-Pots anar a votar (<span class="dv">0</span>=FALSE, <span class="dv">1</span>=TRUE) : <span class="dv">0</span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb44-1"><a href="pac02.html#cb44-1"></a>Ets major d&#39;edat (<span class="dv">0</span>=FALSE, <span class="dv">1</span>=TRUE) ? : <span class="dv">1</span></span>
+<span id="cb44-2"><a href="pac02.html#cb44-2"></a>Estàs al cens electoral (<span class="dv">0</span>=FALSE, <span class="dv">1</span>=TRUE) ? : <span class="dv">0</span></span>
+<span id="cb44-3"><a href="pac02.html#cb44-3"></a>Pots anar a votar (<span class="dv">0</span>=FALSE, <span class="dv">1</span>=TRUE) : <span class="dv">0</span></span></code></pre></div>
 </div>
-<div id="exemple-5-gintonicpreparation" class="section level3">
-<h3><span class="header-section-number">2.7.5</span> Exemple 5: ginTonicPreparation</h3>
+<div id="exemple-5-gintonicpreparation" class="section level3" number="2.7.5">
+<h3 number="2.7.5"><span class="header-section-number">2.7.5</span> Exemple 5: ginTonicPreparation</h3>
 <p>Imaginem que volem preparar un gintònic. Sabem el volum de ginebra i de tònica que utilitzarem, i quina és la capacitat de la copa de baló que el contindrà.</p>
 <p>Hem vist una oferta per internet i hem comprat glaçons metàl·lics d’acer inoxidable… però se’ns ha anat una mica el cap i n’hem comprat un total de 20 unitats.</p>
 <p>Volem fer un programa que, utilitzant únicament expressions, ens digui si podem preparar o no el gintònic en funció del número de glaçons que li volem posar:</p>
@@ -750,32 +793,32 @@ end algorithm</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
-
-<span class="pp">#define GIN 50.0              </span><span class="co">/* in ml */</span>
-<span class="pp">#define TONIC 200.0           </span><span class="co">/* in ml */</span>
-<span class="pp">#define GLASS 620.0           </span><span class="co">/* in ml */</span>
-<span class="pp">#define METAL_ICE_CUBE 42.875 </span><span class="co">/* in ml */</span><span class="pp"> </span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">int</span> numMetalIceCubes;
-    bool isPossible;
-
-    printf(<span class="st">&quot;Number of metal ice cubes ? (integer) : &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numMetalIceCubes);
-
-    isPossible = GLASS &gt;= (GIN + TONIC + METAL_ICE_CUBE * numMetalIceCubes);
-
-    printf(<span class="st">&quot;Can you make a gin &amp; tonic? (0=FALSE, 1=TRUE) : %d</span><span class="sc">\n</span><span class="st">&quot;</span>, isPossible);
-    
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb46-1"><a href="pac02.html#cb46-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb46-2"><a href="pac02.html#cb46-2"></a><span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span></span>
+<span id="cb46-3"><a href="pac02.html#cb46-3"></a></span>
+<span id="cb46-4"><a href="pac02.html#cb46-4"></a><span class="pp">#define GIN 50.0              </span><span class="co">/* in ml */</span></span>
+<span id="cb46-5"><a href="pac02.html#cb46-5"></a><span class="pp">#define TONIC 200.0           </span><span class="co">/* in ml */</span></span>
+<span id="cb46-6"><a href="pac02.html#cb46-6"></a><span class="pp">#define GLASS 620.0           </span><span class="co">/* in ml */</span></span>
+<span id="cb46-7"><a href="pac02.html#cb46-7"></a><span class="pp">#define METAL_ICE_CUBE 42.875 </span><span class="co">/* in ml */</span><span class="pp"> </span></span>
+<span id="cb46-8"><a href="pac02.html#cb46-8"></a></span>
+<span id="cb46-9"><a href="pac02.html#cb46-9"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb46-10"><a href="pac02.html#cb46-10"></a></span>
+<span id="cb46-11"><a href="pac02.html#cb46-11"></a>    <span class="dt">int</span> numMetalIceCubes;</span>
+<span id="cb46-12"><a href="pac02.html#cb46-12"></a>    <span class="dt">bool</span> isPossible;</span>
+<span id="cb46-13"><a href="pac02.html#cb46-13"></a></span>
+<span id="cb46-14"><a href="pac02.html#cb46-14"></a>    printf(<span class="st">&quot;Number of metal ice cubes ? (integer) : &quot;</span>);</span>
+<span id="cb46-15"><a href="pac02.html#cb46-15"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numMetalIceCubes);</span>
+<span id="cb46-16"><a href="pac02.html#cb46-16"></a></span>
+<span id="cb46-17"><a href="pac02.html#cb46-17"></a>    isPossible = GLASS &gt;= (GIN + TONIC + METAL_ICE_CUBE * numMetalIceCubes);</span>
+<span id="cb46-18"><a href="pac02.html#cb46-18"></a></span>
+<span id="cb46-19"><a href="pac02.html#cb46-19"></a>    printf(<span class="st">&quot;Can you make a gin &amp; tonic? (0=FALSE, 1=TRUE) : %d</span><span class="sc">\n</span><span class="st">&quot;</span>, isPossible);</span>
+<span id="cb46-20"><a href="pac02.html#cb46-20"></a>    </span>
+<span id="cb46-21"><a href="pac02.html#cb46-21"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb46-22"><a href="pac02.html#cb46-22"></a>}</span></code></pre></div>
 <p>Per realitzar el càlcul en C també s’ha utilitzat una expressió.</p>
 </div>
-<div id="exemple-6-gintonicfreeml" class="section level3">
-<h3><span class="header-section-number">2.7.6</span> Exemple 6: ginTonicFreeMl</h3>
+<div id="exemple-6-gintonicfreeml" class="section level3" number="2.7.6">
+<h3 number="2.7.6"><span class="header-section-number">2.7.6</span> Exemple 6: ginTonicFreeMl</h3>
 <p>Anem a evolucionar l’exemple anterior del gintònic: imaginem ara que volem que el nostre programa ens digui el volum (en mililitres) que queda lliure a la copa una vegada posat un determinat nombre de glaçons.</p>
 <p>L’algorisme quedaria de la següent forma:</p>
 <p>
@@ -808,30 +851,30 @@ end algorithm</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="pp">#define GIN 50.0              </span><span class="co">/* in ml */</span>
-<span class="pp">#define TONIC 200.0           </span><span class="co">/* in ml */</span>
-<span class="pp">#define GLASS 620.0           </span><span class="co">/* in ml */</span>
-<span class="pp">#define METAL_ICE_CUBE 42.875 </span><span class="co">/* in ml */</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">int</span> numMetalIceCubes;
-    <span class="dt">float</span> volumeFree;
-
-    printf(<span class="st">&quot;Number of metal ice cubes ? (integer) : &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numMetalIceCubes);
-
-    volumeFree = GLASS - (GIN + TONIC + METAL_ICE_CUBE * numMetalIceCubes);
-
-    printf(<span class="st">&quot;How many free ml in the glass ? : %.3f ml </span><span class="sc">\n</span><span class="st">&quot;</span>, volumeFree);
-    
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb48-1"><a href="pac02.html#cb48-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb48-2"><a href="pac02.html#cb48-2"></a></span>
+<span id="cb48-3"><a href="pac02.html#cb48-3"></a><span class="pp">#define GIN 50.0              </span><span class="co">/* in ml */</span></span>
+<span id="cb48-4"><a href="pac02.html#cb48-4"></a><span class="pp">#define TONIC 200.0           </span><span class="co">/* in ml */</span></span>
+<span id="cb48-5"><a href="pac02.html#cb48-5"></a><span class="pp">#define GLASS 620.0           </span><span class="co">/* in ml */</span></span>
+<span id="cb48-6"><a href="pac02.html#cb48-6"></a><span class="pp">#define METAL_ICE_CUBE 42.875 </span><span class="co">/* in ml */</span></span>
+<span id="cb48-7"><a href="pac02.html#cb48-7"></a></span>
+<span id="cb48-8"><a href="pac02.html#cb48-8"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb48-9"><a href="pac02.html#cb48-9"></a></span>
+<span id="cb48-10"><a href="pac02.html#cb48-10"></a>    <span class="dt">int</span> numMetalIceCubes;</span>
+<span id="cb48-11"><a href="pac02.html#cb48-11"></a>    <span class="dt">float</span> volumeFree;</span>
+<span id="cb48-12"><a href="pac02.html#cb48-12"></a></span>
+<span id="cb48-13"><a href="pac02.html#cb48-13"></a>    printf(<span class="st">&quot;Number of metal ice cubes ? (integer) : &quot;</span>);</span>
+<span id="cb48-14"><a href="pac02.html#cb48-14"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numMetalIceCubes);</span>
+<span id="cb48-15"><a href="pac02.html#cb48-15"></a></span>
+<span id="cb48-16"><a href="pac02.html#cb48-16"></a>    volumeFree = GLASS - (GIN + TONIC + METAL_ICE_CUBE * numMetalIceCubes);</span>
+<span id="cb48-17"><a href="pac02.html#cb48-17"></a></span>
+<span id="cb48-18"><a href="pac02.html#cb48-18"></a>    printf(<span class="st">&quot;How many free ml in the glass ? : %.3f ml </span><span class="sc">\n</span><span class="st">&quot;</span>, volumeFree);</span>
+<span id="cb48-19"><a href="pac02.html#cb48-19"></a>    </span>
+<span id="cb48-20"><a href="pac02.html#cb48-20"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb48-21"><a href="pac02.html#cb48-21"></a>}</span></code></pre></div>
 </div>
-<div id="exemple-7-scoutingbasquet" class="section level3">
-<h3><span class="header-section-number">2.7.7</span> Exemple 7: scoutingBasquet</h3>
+<div id="exemple-7-scoutingbasquet" class="section level3" number="2.7.7">
+<h3 number="2.7.7"><span class="header-section-number">2.7.7</span> Exemple 7: scoutingBasquet</h3>
 <p>Imaginem que fem tasques d’scouting per les seccions de bàsquet femení i masculí del nostre club, i ens han encarregat cobrir alguna de les tres places següents:</p>
 <ul>
 <li>Per l’equip femení: una pivot que com a mínim faci 195cm d’alçada.</li>
@@ -843,53 +886,45 @@ end algorithm</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
-
-<span class="kw">typedef</span> <span class="kw">enum</span> {MALE, FEMALE} tGender;
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    bool isPointGuard; <span class="co">/* Point Guard = base */</span>
-    bool isCenter;     <span class="co">/* Center = pivot */</span>
-    bool isDrafted;
-    <span class="dt">int</span> height;
-    tGender gender;
-
-    printf(<span class="st">&quot;Gender (0=MALE, 1=FEMALE) : &quot;</span>);
-    scanf(<span class="st">&quot;%u&quot;</span>, &amp;gender);
-    printf(<span class="st">&quot;Heigth (integer value) : &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;height);
-
-    <span class="co">/* Primer mirem si la posició de base femení o masculí la podem cobrir o no */</span>
-    isPointGuard = 
-        (height &lt; <span class="dv">170</span> &amp;&amp; (gender == FEMALE)) ||
-        (height &lt; <span class="dv">190</span> &amp;&amp; height &gt; <span class="dv">175</span> &amp;&amp; (gender == MALE));
-
-    <span class="co">/* A continuació comprovem si es tracta de la pívot femenina que busquem */</span>
-    isCenter = (height &gt;= <span class="dv">195</span> &amp;&amp; (gender == FEMALE));
-
-    <span class="co">/* Només que es compleixi alguna de les dues expressions anteriors </span>
-<span class="co">       (que isPointGuard sigui TRUE o que isCenter sigui TRUE), el jugador/a </span>
-<span class="co">       serà escollit per formar part de les nostres seccions de bàsquet */</span>
-    isDrafted = isPointGuard || isCenter;
-
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Is drafted (0=FALSE, 1=TRUE) ? : &quot;</span>);
-    printf(<span class="st">&quot;%d</span><span class="sc">\n</span><span class="st">&quot;</span>, isDrafted);
-}</code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb49-1"><a href="pac02.html#cb49-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb49-2"><a href="pac02.html#cb49-2"></a><span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span></span>
+<span id="cb49-3"><a href="pac02.html#cb49-3"></a></span>
+<span id="cb49-4"><a href="pac02.html#cb49-4"></a><span class="kw">typedef</span> <span class="kw">enum</span> {MALE, FEMALE} tGender;</span>
+<span id="cb49-5"><a href="pac02.html#cb49-5"></a></span>
+<span id="cb49-6"><a href="pac02.html#cb49-6"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb49-7"><a href="pac02.html#cb49-7"></a></span>
+<span id="cb49-8"><a href="pac02.html#cb49-8"></a>    <span class="dt">bool</span> isPointGuard; <span class="co">/* Point Guard = base */</span></span>
+<span id="cb49-9"><a href="pac02.html#cb49-9"></a>    <span class="dt">bool</span> isCenter;     <span class="co">/* Center = pivot */</span></span>
+<span id="cb49-10"><a href="pac02.html#cb49-10"></a>    <span class="dt">bool</span> isDrafted;</span>
+<span id="cb49-11"><a href="pac02.html#cb49-11"></a>    <span class="dt">int</span> height;</span>
+<span id="cb49-12"><a href="pac02.html#cb49-12"></a>    tGender gender;</span>
+<span id="cb49-13"><a href="pac02.html#cb49-13"></a></span>
+<span id="cb49-14"><a href="pac02.html#cb49-14"></a>    printf(<span class="st">&quot;Gender (0=MALE, 1=FEMALE) : &quot;</span>);</span>
+<span id="cb49-15"><a href="pac02.html#cb49-15"></a>    scanf(<span class="st">&quot;%u&quot;</span>, &amp;gender);</span>
+<span id="cb49-16"><a href="pac02.html#cb49-16"></a>    printf(<span class="st">&quot;Heigth (integer value) : &quot;</span>);</span>
+<span id="cb49-17"><a href="pac02.html#cb49-17"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;height);</span>
+<span id="cb49-18"><a href="pac02.html#cb49-18"></a></span>
+<span id="cb49-19"><a href="pac02.html#cb49-19"></a>    <span class="co">/* Primer mirem si la posició de base femení o masculí la podem cobrir o no */</span></span>
+<span id="cb49-20"><a href="pac02.html#cb49-20"></a>    isPointGuard = </span>
+<span id="cb49-21"><a href="pac02.html#cb49-21"></a>        (height &lt; <span class="dv">170</span> &amp;&amp; (gender == FEMALE)) ||</span>
+<span id="cb49-22"><a href="pac02.html#cb49-22"></a>        (height &lt; <span class="dv">190</span> &amp;&amp; height &gt; <span class="dv">175</span> &amp;&amp; (gender == MALE));</span>
+<span id="cb49-23"><a href="pac02.html#cb49-23"></a></span>
+<span id="cb49-24"><a href="pac02.html#cb49-24"></a>    <span class="co">/* A continuació comprovem si es tracta de la pívot femenina que busquem */</span></span>
+<span id="cb49-25"><a href="pac02.html#cb49-25"></a>    isCenter = (height &gt;= <span class="dv">195</span> &amp;&amp; (gender == FEMALE));</span>
+<span id="cb49-26"><a href="pac02.html#cb49-26"></a></span>
+<span id="cb49-27"><a href="pac02.html#cb49-27"></a>    <span class="co">/* Només que es compleixi alguna de les dues expressions anteriors </span></span>
+<span id="cb49-28"><a href="pac02.html#cb49-28"></a><span class="co">       (que isPointGuard sigui TRUE o que isCenter sigui TRUE), el jugador/a </span></span>
+<span id="cb49-29"><a href="pac02.html#cb49-29"></a><span class="co">       serà escollit per formar part de les nostres seccions de bàsquet */</span></span>
+<span id="cb49-30"><a href="pac02.html#cb49-30"></a>    isDrafted = isPointGuard || isCenter;</span>
+<span id="cb49-31"><a href="pac02.html#cb49-31"></a></span>
+<span id="cb49-32"><a href="pac02.html#cb49-32"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Is drafted (0=FALSE, 1=TRUE) ? : &quot;</span>);</span>
+<span id="cb49-33"><a href="pac02.html#cb49-33"></a>    printf(<span class="st">&quot;%d</span><span class="sc">\n</span><span class="st">&quot;</span>, isDrafted);</span>
+<span id="cb49-34"><a href="pac02.html#cb49-34"></a>}</span></code></pre></div>
 <p>Fixeu-vos que <code>isPointGuard</code> i <code>isCenter</code> són variables de tipus <code>bool</code>, ja que l’avaluació de les expressions també serà de tipus <code>bool</code>.</p>
 <p>Hi poden haver altres codificacions igual de vàlides, aquesta no és la única solució possible.</p>
 
 </div>
 </div>
-</div>
-<div class="footnotes">
-<hr />
-<ol start="1">
-<li id="fn1"><p>Prova d’Avaluació Continua<a href="pac02.html#fnref1">↩</a></p></li>
-<li id="fn2"><p>Pràctica<a href="pac02.html#fnref2">↩</a></p></li>
-<li id="fn3"><p>Prova de Síntesi<a href="pac02.html#fnref3">↩</a></p></li>
-</ol>
 </div>
             </section>
 

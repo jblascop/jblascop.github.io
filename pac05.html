@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title> 5 PAC05 | FAQ Laboratori de Fonaments de Programació</title>
+  <title>5 PAC05 | FAQ Laboratori de Fonaments de Programació</title>
   <meta name="description" content="FAQ del Laboratori de Fonaments de programació" />
   <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
-  <meta property="og:title" content=" 5 PAC05 | FAQ Laboratori de Fonaments de Programació" />
+  <meta property="og:title" content="5 PAC05 | FAQ Laboratori de Fonaments de Programació" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content=" 5 PAC05 | FAQ Laboratori de Fonaments de Programació" />
+  <meta name="twitter:title" content="5 PAC05 | FAQ Laboratori de Fonaments de Programació" />
   
   <meta name="twitter:description" content="FAQ del Laboratori de Fonaments de programació" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Jordi Blasco Planesas" />
 
 
-<meta name="date" content="2020-04-13" />
+<meta name="date" content="2020-04-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,44 +50,79 @@
 
 
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164643024-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164643024-1');
+</script>
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -107,7 +142,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introducció</a></li>
-<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a><ul>
+<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>1.1</b> Llenguatge algorísmic</a></li>
 <li class="chapter" data-level="1.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
 <li class="chapter" data-level="1.3" data-path="pac01.html"><a href="pac01.html#equivalencies-llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.3</b> Equivalències llenguatge algorísmic vs llenguatge C</a></li>
@@ -118,14 +154,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.8" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>1.8</b> Lectura de caràcters en C</a></li>
 <li class="chapter" data-level="1.9" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>1.9</b> Lectura de float en C</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a><ul>
+<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="pac02.html"><a href="pac02.html#booleans"><i class="fa fa-check"></i><b>2.1</b> Booleans en C</a></li>
 <li class="chapter" data-level="2.2" data-path="pac02.html"><a href="pac02.html#booleans-definits-com-a-enumeratius"><i class="fa fa-check"></i><b>2.2</b> Booleans definits com a enumeratius</a></li>
 <li class="chapter" data-level="2.3" data-path="pac02.html"><a href="pac02.html#constants-define-vs-const"><i class="fa fa-check"></i><b>2.3</b> Constants: define vs const</a></li>
 <li class="chapter" data-level="2.4" data-path="pac02.html"><a href="pac02.html#com-mostrar-el-valor-duna-constant"><i class="fa fa-check"></i><b>2.4</b> Com mostrar el valor d’una constant</a></li>
 <li class="chapter" data-level="2.5" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>2.5</b> Precisió en variables float</a></li>
 <li class="chapter" data-level="2.6" data-path="pac02.html"><a href="pac02.html#semantica-duna-expressio"><i class="fa fa-check"></i><b>2.6</b> Semàntica d’una expressió</a></li>
-<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a><ul>
+<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>2.7.1</b> Exemple 1: esParell</a></li>
 <li class="chapter" data-level="2.7.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>2.7.2</b> Exemple 2: capDeSetmana</a></li>
 <li class="chapter" data-level="2.7.3" data-path="pac02.html"><a href="pac02.html#exemple-3-esvocal"><i class="fa fa-check"></i><b>2.7.3</b> Exemple 3: esVocal</a></li>
@@ -135,7 +173,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.7.7" data-path="pac02.html"><a href="pac02.html#exemple-7-scoutingbasquet"><i class="fa fa-check"></i><b>2.7.7</b> Exemple 7: scoutingBasquet</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a><ul>
+<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="pac03.html"><a href="pac03.html#com-declarar-un-vector-en-llenguatge-algorismic"><i class="fa fa-check"></i><b>3.1</b> Com declarar un vector en llenguatge algorísmic</a></li>
 <li class="chapter" data-level="3.2" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>3.2</b> Significat dels arguments del main</a></li>
 <li class="chapter" data-level="3.3" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>3.3</b> Assignar valors a un vector</a></li>
@@ -144,14 +183,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.6" data-path="pac03.html"><a href="pac03.html#importancia-dels-tipus-utilitzats-en-llenguatge-c"><i class="fa fa-check"></i><b>3.6</b> Importància dels tipus utilitzats en llenguatge C</a></li>
 <li class="chapter" data-level="3.7" data-path="pac03.html"><a href="pac03.html#exemple-notafinal"><i class="fa fa-check"></i><b>3.7</b> Exemple: notaFinal</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a><ul>
+<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>4.1</b> Com tractar elements d’un vector amb un bucle</a></li>
 <li class="chapter" data-level="4.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>4.2</b> Entrada continua de valors amb un bucle</a></li>
 <li class="chapter" data-level="4.3" data-path="pac04.html"><a href="pac04.html#com-tractar-valors-en-multiples-vectors"><i class="fa fa-check"></i><b>4.3</b> Com tractar valors en múltiples vectors</a></li>
 <li class="chapter" data-level="4.4" data-path="pac04.html"><a href="pac04.html#definicio-chars-vs-strings"><i class="fa fa-check"></i><b>4.4</b> Definició chars vs strings</a></li>
 <li class="chapter" data-level="4.5" data-path="pac04.html"><a href="pac04.html#exemple-mitjanapes"><i class="fa fa-check"></i><b>4.5</b> Exemple: mitjanaPes</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a><ul>
+<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="pac05.html"><a href="pac05.html#comanda-strcmp"><i class="fa fa-check"></i><b>5.1</b> Comanda strcmp()</a></li>
 <li class="chapter" data-level="5.2" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>5.2</b> Comanda scanf</a></li>
 <li class="chapter" data-level="5.3" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strcmp"><i class="fa fa-check"></i><b>5.3</b> El finalitzador ‘\0’ i strcmp()</a></li>
@@ -160,8 +201,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="5.6" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>5.6</b> Exemple: nòmines</a></li>
 <li class="chapter" data-level="5.7" data-path="pac05.html"><a href="pac05.html#exemple-brisca"><i class="fa fa-check"></i><b>5.7</b> Exemple: brisca</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a><ul>
-<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a><ul>
+<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="pac06.html"><a href="pac06.html#parametres-dentrada-in"><i class="fa fa-check"></i><b>6.1.1</b> Paràmetres d’entrada (in)</a></li>
 <li class="chapter" data-level="6.1.2" data-path="pac06.html"><a href="pac06.html#parametres-de-sortida-out"><i class="fa fa-check"></i><b>6.1.2</b> Paràmetres de sortida (out)</a></li>
 <li class="chapter" data-level="6.1.3" data-path="pac06.html"><a href="pac06.html#parametres-dentradasortida-inout"><i class="fa fa-check"></i><b>6.1.3</b> Paràmetres d’entrada/sortida (inout)</a></li>
@@ -170,13 +213,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.2" data-path="pac06.html"><a href="pac06.html#exemple-us-daccions"><i class="fa fa-check"></i><b>6.2</b> Exemple: ús d’accions</a></li>
 <li class="chapter" data-level="6.3" data-path="pac06.html"><a href="pac06.html#exemple-us-de-funcions"><i class="fa fa-check"></i><b>6.3</b> Exemple: ús de funcions</a></li>
 <li class="chapter" data-level="6.4" data-path="pac06.html"><a href="pac06.html#exemple-nomines-1"><i class="fa fa-check"></i><b>6.4</b> Exemple: nòmines</a></li>
-<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a><ul>
+<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="pac06.html"><a href="pac06.html#explicacio-sobre-laccio-copiarjugadora"><i class="fa fa-check"></i><b>6.5.1</b> Explicació sobre l’acció copiarJugadora()</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a><ul>
+<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="pac07.html"><a href="pac07.html#quan-utilitzar-dins-de-funcionsaccions"><i class="fa fa-check"></i><b>7.1</b> Quan utilitzar &amp; dins de funcions/accions</a></li>
-<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a><ul>
+<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="pac07.html"><a href="pac07.html#funcionament-per-defecte-dun-projecte-a-codelite"><i class="fa fa-check"></i><b>7.2.1</b> Funcionament per defecte d’un projecte a CodeLite:</a></li>
 <li class="chapter" data-level="7.2.2" data-path="pac07.html"><a href="pac07.html#executable-dins-de-bin."><i class="fa fa-check"></i><b>7.2.2</b> Executable dins de /bin.</a></li>
 <li class="chapter" data-level="7.2.3" data-path="pac07.html"><a href="pac07.html#modularitzacio-del-programa-en-un-arxiu-de-capcaleres-i-un-de-funcions."><i class="fa fa-check"></i><b>7.2.3</b> Modularització del programa en un arxiu de capçaleres i un de funcions.</a></li>
@@ -188,40 +234,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.7" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>7.7</b> Exemple: funció isParell</a></li>
 <li class="chapter" data-level="7.8" data-path="pac07.html"><a href="pac07.html#exemple-pivotdefensiutirslliures"><i class="fa fa-check"></i><b>7.8</b> Exemple: pivotDefensiuTirsLliures</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a><ul>
+<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>8.1</b> Com inicialitzar una taula</a></li>
 <li class="chapter" data-level="8.2" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota"><i class="fa fa-check"></i><b>8.2</b> Exemple: calcularNota</a></li>
 <li class="chapter" data-level="8.3" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota-amb-introduccio-iterativa"><i class="fa fa-check"></i><b>8.3</b> Exemple: calcularNota amb introducció iterativa</a></li>
 <li class="chapter" data-level="8.4" data-path="pac08.html"><a href="pac08.html#exemple-recorregut-vs-cerca"><i class="fa fa-check"></i><b>8.4</b> Exemple: recorregut vs cerca</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a><ul>
+<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="pac09.html"><a href="pac09.html#exemple"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>10</b> PAC10</a></li>
-<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a><ul>
+<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a>
+<ul>
 <li class="chapter" data-level="11.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>11.1</b> Mode menu vs mode test</a></li>
 <li class="chapter" data-level="11.2" data-path="pr1.html"><a href="pr1.html#exemple-tupla-dins-de-tupla"><i class="fa fa-check"></i><b>11.2</b> Exemple: tupla dins de tupla</a></li>
-<li class="chapter" data-level="11.3" data-path="pr1.html"><a href="pr1.html#desplacament-delements-en-un-vector"><i class="fa fa-check"></i><b>11.3</b> Desplaçament d’elements en un vector</a><ul>
-<li class="chapter" data-level="11.3.1" data-path="pr1.html"><a href="pr1.html#afegir-un-element"><i class="fa fa-check"></i><b>11.3.1</b> Afegir un element</a></li>
-<li class="chapter" data-level="11.3.2" data-path="pr1.html"><a href="pr1.html#esborrar-un-element"><i class="fa fa-check"></i><b>11.3.2</b> Esborrar un element</a></li>
-<li class="chapter" data-level="11.3.3" data-path="pr1.html"><a href="pr1.html#exemple-diessetmana"><i class="fa fa-check"></i><b>11.3.3</b> Exemple: diesSetmana</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a><ul>
+<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a>
+<ul>
 <li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-1"><i class="fa fa-check"></i><b>12.1</b> Exemple</a></li>
+<li class="chapter" data-level="12.2" data-path="pr2.html"><a href="pr2.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>12.2</b> Com instal·lar les Guest Additions</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>13</b> VMWare i CodeLite</a><ul>
-<li class="chapter" data-level="13.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>13.1</b> Per què una màquina virtual?</a></li>
-<li class="chapter" data-level="13.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#virtualbox-i-requeriments-de-virtualitzacio"><i class="fa fa-check"></i><b>13.2</b> VirtualBox i requeriments de virtualització</a></li>
-<li class="chapter" data-level="13.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>13.3</b> Com instal·lar les Guest Additions</a></li>
-<li class="chapter" data-level="13.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>13.4</b> Primers passos amb CodeLite</a></li>
-<li class="chapter" data-level="13.5" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>13.5</b> Com activar un projecte</a></li>
-<li class="chapter" data-level="13.6" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>13.6</b> Canviar idioma del teclat</a></li>
-<li class="chapter" data-level="13.7" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#programa-per-defecte-al-crear-un-projecte"><i class="fa fa-check"></i><b>13.7</b> Programa per defecte al crear un projecte</a></li>
-<li class="chapter" data-level="13.8" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-fixar-el-kernel-dinici-amb-lubuntu"><i class="fa fa-check"></i><b>13.8</b> Com fixar el kernel d’inici amb Lubuntu</a></li>
-</ul></li>
-<li class="chapter" data-level="14" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>14</b> Altres</a><ul>
-<li class="chapter" data-level="14.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>14.1</b> Bilbliografia</a></li>
+<li class="chapter" data-level="13" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>13</b> Altres</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>13.1</b> Bilbliografia</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://www.uoc.edu" target="blank">www.uoc.edu</a></li>
@@ -243,171 +280,171 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pac05" class="section level1">
-<h1><span class="header-section-number"> 5</span> PAC05</h1>
-<div id="comanda-strcmp" class="section level2">
-<h2><span class="header-section-number">5.1</span> Comanda strcmp()</h2>
+<div id="pac05" class="section level1" number="5">
+<h1 number="5"><span class="header-section-number">5</span> PAC05</h1>
+<div id="comanda-strcmp" class="section level2" number="5.1">
+<h2 number="5.1"><span class="header-section-number">5.1</span> Comanda strcmp()</h2>
 <p>En què es basa <code>strcmp()</code> per decidir que, per exemple, la lletra ‘O’ és més gran que la lletra ‘A’?</p>
 <p>La resposta la tenim en el codi ASCII (numèric) que té associat cada caràcter. Per aquest motiu és normal que interpreti diferent una ‘A’ i una ‘a’, ja que són caràcters diferents; de fet segons els valors ASCII, tenim que ‘A’ &lt; ‘a’.</p>
 <p>Per si volem consultar la taula ASCII per internet, la podem generar nosaltres mateixos de la següent forma:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">int</span> i = <span class="dv">0</span>;
-
-    <span class="co">/* Relació de caràcters ASCII (només és un subconjunt!)</span>
-<span class="co">       ordenats de més petit a més gran */</span>
-    <span class="cf">for</span> (i=<span class="dv">33</span>; i&lt;=<span class="dv">126</span>; i++) {
-        printf(<span class="st">&quot;%d : %c</span><span class="sc">\n</span><span class="st">&quot;</span>, i, i);
-    }
-}</code></pre></div>
+<div class="sourceCode" id="cb75"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb75-1"><a href="pac05.html#cb75-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb75-2"><a href="pac05.html#cb75-2"></a></span>
+<span id="cb75-3"><a href="pac05.html#cb75-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb75-4"><a href="pac05.html#cb75-4"></a></span>
+<span id="cb75-5"><a href="pac05.html#cb75-5"></a>    <span class="dt">int</span> i = <span class="dv">0</span>;</span>
+<span id="cb75-6"><a href="pac05.html#cb75-6"></a></span>
+<span id="cb75-7"><a href="pac05.html#cb75-7"></a>    <span class="co">/* Relació de caràcters ASCII (només és un subconjunt!)</span></span>
+<span id="cb75-8"><a href="pac05.html#cb75-8"></a><span class="co">       ordenats de més petit a més gran */</span></span>
+<span id="cb75-9"><a href="pac05.html#cb75-9"></a>    <span class="cf">for</span> (i=<span class="dv">33</span>; i&lt;=<span class="dv">126</span>; i++) {</span>
+<span id="cb75-10"><a href="pac05.html#cb75-10"></a>        printf(<span class="st">&quot;%d : %c</span><span class="sc">\n</span><span class="st">&quot;</span>, i, i);</span>
+<span id="cb75-11"><a href="pac05.html#cb75-11"></a>    }</span>
+<span id="cb75-12"><a href="pac05.html#cb75-12"></a>}</span></code></pre></div>
 </div>
-<div id="comanda-scanf" class="section level2">
-<h2><span class="header-section-number">5.2</span> Comanda scanf</h2>
+<div id="comanda-scanf" class="section level2" number="5.2">
+<h2 number="5.2"><span class="header-section-number">5.2</span> Comanda scanf</h2>
 <p>Quan utilitzem la comanda <code>scanf</code> fins ara sempre li hem passat el nom de la variable precedit per<code>&amp;</code>. Això significa que realment a aquesta comanda li estem passant la posició de la memòria on resideix la variable que li indiquem.</p>
-<p>Així, per exemple, quan fem la següent operació <code>scanf(&quot;%d&quot;, &amp;numero);</code> estem passant el valor que introduïm per teclat directament a la posició de memòria on tenim desada la variable numero. D’aquí ve utilitzar <code>&amp;numero</code> en comptes de <code>numero</code>. El mateix comportament tenim pels tipus primitius <code>char</code>, <code>float</code>, etc.</p>
+<p>Així, per exemple, quan fem la següent operació <code>scanf("%d", &amp;numero);</code> estem passant el valor que introduïm per teclat directament a la posició de memòria on tenim desada la variable numero. D’aquí ve utilitzar <code>&amp;numero</code> en comptes de <code>numero</code>. El mateix comportament tenim pels tipus primitius <code>char</code>, <code>float</code>, etc.</p>
 <p>Els vectors de caràcters en llenguatge C tenen una característica: el nom de l’array conté l’adreça de memòria on està desada la primera posició de l’array.</p>
-<p>Per exemple, quan executem <code>scanf(&quot;%s&quot;, cadena);</code> el valor de cadena és l’adreça de memòria inicial on està ubicat l’array. Dit d’una altra manera, cadena conté el mateix valor que <code>&amp;cadena[0]</code> (és una altra forma que tenim per referir-nos a la posició inicial en memòria de l’array).</p>
+<p>Per exemple, quan executem <code>scanf("%s", cadena);</code> el valor de cadena és l’adreça de memòria inicial on està ubicat l’array. Dit d’una altra manera, cadena conté el mateix valor que <code>&amp;cadena[0]</code> (és una altra forma que tenim per referir-nos a la posició inicial en memòria de l’array).</p>
 <p>Adjunto un exemple amb tots aquests conceptes:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#define MAXIM 10</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">char</span> cadena[MAXIM];
-    <span class="dt">int</span> numero;
-
-    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable numero</span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;numero);
-    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable cadena</span><span class="sc">\n</span><span class="st">&quot;</span>, cadena);
-    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable cadena</span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;cadena[<span class="dv">0</span>]);
-
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix un número enter: &quot;</span>);
-    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numero);
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix una cadena: &quot;</span>);
-    scanf(<span class="st">&quot;%s&quot;</span>,cadena);
-
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Has assignat els següents valors :</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printf(<span class="st">&quot;numero = %d </span><span class="sc">\n</span><span class="st">&quot;</span>, numero);
-    printf(<span class="st">&quot;cadena = %s </span><span class="sc">\n</span><span class="st">&quot;</span>, cadena);
-
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb76"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb76-1"><a href="pac05.html#cb76-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb76-2"><a href="pac05.html#cb76-2"></a><span class="pp">#define MAXIM 10</span></span>
+<span id="cb76-3"><a href="pac05.html#cb76-3"></a></span>
+<span id="cb76-4"><a href="pac05.html#cb76-4"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb76-5"><a href="pac05.html#cb76-5"></a></span>
+<span id="cb76-6"><a href="pac05.html#cb76-6"></a>    <span class="dt">char</span> cadena[MAXIM];</span>
+<span id="cb76-7"><a href="pac05.html#cb76-7"></a>    <span class="dt">int</span> numero;</span>
+<span id="cb76-8"><a href="pac05.html#cb76-8"></a></span>
+<span id="cb76-9"><a href="pac05.html#cb76-9"></a>    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable numero</span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;numero);</span>
+<span id="cb76-10"><a href="pac05.html#cb76-10"></a>    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable cadena</span><span class="sc">\n</span><span class="st">&quot;</span>, cadena);</span>
+<span id="cb76-11"><a href="pac05.html#cb76-11"></a>    printf(<span class="st">&quot;Reservada la posició de memòria %p per la variable cadena</span><span class="sc">\n</span><span class="st">&quot;</span>, &amp;cadena[<span class="dv">0</span>]);</span>
+<span id="cb76-12"><a href="pac05.html#cb76-12"></a></span>
+<span id="cb76-13"><a href="pac05.html#cb76-13"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix un número enter: &quot;</span>);</span>
+<span id="cb76-14"><a href="pac05.html#cb76-14"></a>    scanf(<span class="st">&quot;%d&quot;</span>, &amp;numero);</span>
+<span id="cb76-15"><a href="pac05.html#cb76-15"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix una cadena: &quot;</span>);</span>
+<span id="cb76-16"><a href="pac05.html#cb76-16"></a>    scanf(<span class="st">&quot;%s&quot;</span>,cadena);</span>
+<span id="cb76-17"><a href="pac05.html#cb76-17"></a></span>
+<span id="cb76-18"><a href="pac05.html#cb76-18"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Has assignat els següents valors :</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb76-19"><a href="pac05.html#cb76-19"></a>    printf(<span class="st">&quot;numero = %d </span><span class="sc">\n</span><span class="st">&quot;</span>, numero);</span>
+<span id="cb76-20"><a href="pac05.html#cb76-20"></a>    printf(<span class="st">&quot;cadena = %s </span><span class="sc">\n</span><span class="st">&quot;</span>, cadena);</span>
+<span id="cb76-21"><a href="pac05.html#cb76-21"></a></span>
+<span id="cb76-22"><a href="pac05.html#cb76-22"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb76-23"><a href="pac05.html#cb76-23"></a>}</span></code></pre></div>
 </div>
-<div id="el-finalitzador-0-i-strcmp" class="section level2">
-<h2><span class="header-section-number">5.3</span> El finalitzador ‘\0’ i strcmp()</h2>
+<div id="el-finalitzador-0-i-strcmp" class="section level2" number="5.3">
+<h2 number="5.3"><span class="header-section-number">5.3</span> El finalitzador ‘\0’ i strcmp()</h2>
 <p>Com es va veure al mòdul <strong>Cadenes de caràcters en C</strong> de la xWiki, <em>“una cadena de caràcters o string és una seqüència de caràcters finalitzada pel caràcter ‘\0’”</em>. Per tant hem de tenir en compte que el finalitzador ‘\0’ càpiga a la nostra variable, ja que aquesta és la forma que té C de saber on s’acaba un string en memòria.</p>
 <p>Imaginem que tenim tres cadenes, amb el mateix contingut però de mida diferent (podem tenir posicions buides). Què passa si les comparem? I si comparem amb una cadena de mateix contingut però sense finalitzador ‘\0’?</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
-
-<span class="dt">int</span> main() {
-
-    <span class="dt">char</span> ciutat1[<span class="dv">7</span>] = <span class="st">&quot;Girona&quot;</span>;
-    <span class="dt">char</span> ciutat2[<span class="dv">8</span>] = <span class="st">&quot;Girona&quot;</span>;
-    <span class="dt">char</span> ciutat3[<span class="dv">6</span>] = <span class="st">&quot;Girona&quot;</span>; <span class="co">/* no conté el &#39;\0&#39; final */</span>
-
-    <span class="co">/* si strcmp retorna 0 significa que les dues cadenes són iguals */</span>
-    printf (<span class="st">&quot;Les variables ciutat1 i ciutat2 són iguals? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, strcmp(ciutat1, ciutat2));
-    printf (<span class="st">&quot;Les variables ciutat1 i ciutat3 són iguals? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, strcmp(ciutat1, ciutat3));
-}</code></pre></div>
-<p>La forma que tenim per forçar que una cadena no contingui el finalitzador és limitant la seva mida als caràcters que contindrà, sense tenir en compte reservar-ne un pel ‘\0’. En aquest cas ho fem amb char <code>ciutat3[6] = &quot;Girona&quot;</code>.</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb77-1"><a href="pac05.html#cb77-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb77-2"><a href="pac05.html#cb77-2"></a><span class="pp">#include </span><span class="im">&lt;string.h&gt;</span></span>
+<span id="cb77-3"><a href="pac05.html#cb77-3"></a></span>
+<span id="cb77-4"><a href="pac05.html#cb77-4"></a><span class="dt">int</span> main() {</span>
+<span id="cb77-5"><a href="pac05.html#cb77-5"></a></span>
+<span id="cb77-6"><a href="pac05.html#cb77-6"></a>    <span class="dt">char</span> ciutat1[<span class="dv">7</span>] = <span class="st">&quot;Girona&quot;</span>;</span>
+<span id="cb77-7"><a href="pac05.html#cb77-7"></a>    <span class="dt">char</span> ciutat2[<span class="dv">8</span>] = <span class="st">&quot;Girona&quot;</span>;</span>
+<span id="cb77-8"><a href="pac05.html#cb77-8"></a>    <span class="dt">char</span> ciutat3[<span class="dv">6</span>] = <span class="st">&quot;Girona&quot;</span>; <span class="co">/* no conté el &#39;\0&#39; final */</span></span>
+<span id="cb77-9"><a href="pac05.html#cb77-9"></a></span>
+<span id="cb77-10"><a href="pac05.html#cb77-10"></a>    <span class="co">/* si strcmp retorna 0 significa que les dues cadenes són iguals */</span></span>
+<span id="cb77-11"><a href="pac05.html#cb77-11"></a>    printf (<span class="st">&quot;Les variables ciutat1 i ciutat2 són iguals? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, strcmp(ciutat1, ciutat2));</span>
+<span id="cb77-12"><a href="pac05.html#cb77-12"></a>    printf (<span class="st">&quot;Les variables ciutat1 i ciutat3 són iguals? %d</span><span class="sc">\n</span><span class="st">&quot;</span>, strcmp(ciutat1, ciutat3));</span>
+<span id="cb77-13"><a href="pac05.html#cb77-13"></a>}</span></code></pre></div>
+<p>La forma que tenim per forçar que una cadena no contingui el finalitzador és limitant la seva mida als caràcters que contindrà, sense tenir en compte reservar-ne un pel ‘\0’. En aquest cas ho fem amb char <code>ciutat3[6] = "Girona"</code>.</p>
 <p>La sortida generada és la següent:</p>
 <p>
 <img src="img/play.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Les variables ciutat1 i ciutat2 són iguals? <span class="dv">0</span>
-Les variables ciutat1 i ciutat3 són iguals? -<span class="dv">1</span></code></pre></div>
+<div class="sourceCode" id="cb78"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb78-1"><a href="pac05.html#cb78-1"></a>Les variables ciutat1 i ciutat2 són iguals? <span class="dv">0</span></span>
+<span id="cb78-2"><a href="pac05.html#cb78-2"></a>Les variables ciutat1 i ciutat3 són iguals? -<span class="dv">1</span></span></code></pre></div>
 <p>D’aquí la importància del finalitzador de cadenes de caràcters. Per tant, si per exemple ens diuen que tindrem una variable x de tipus string i de mida màxima 15, realment al nostre programa la definirem amb longitud 15+1, per tal que hi càpiga el finalitzador ‘\0’ en cas que s’ocupin els 15 caràcters anteriors.</p>
 </div>
-<div id="el-finalitzador-0-i-strlen" class="section level2">
-<h2><span class="header-section-number">5.4</span> El finalitzador ‘\0’ i strlen()</h2>
+<div id="el-finalitzador-0-i-strlen" class="section level2" number="5.4">
+<h2 number="5.4"><span class="header-section-number">5.4</span> El finalitzador ‘\0’ i strlen()</h2>
 <p>A continuació s’exposa un exemple en el qual es mostra la importància del finalitzador ‘\0’ en la funció <code>strlen()</code> de C, la qual ens retorna la mida d’una cadena de caràcters :</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
-
-<span class="pp">#define MAX_LLETRES 8+1</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">char</span> nom[MAX_LLETRES];
-    <span class="dt">int</span> numLletres;
-
-    printf(<span class="st">&quot;Introdueix un nom: &quot;</span>);
-    scanf(<span class="st">&quot;%s&quot;</span>, nom);
-
-    <span class="co">/* Exemple: si en aquest punt hem teclejat el</span>
-<span class="co">     * nom Quim, dins de la cadena de caracters nom</span>
-<span class="co">     * tindrem les següents dades:</span>
-<span class="co">     *</span>
-<span class="co">     * nom[0] = &#39;Q&#39;</span>
-<span class="co">     * nom[1] = &#39;u&#39;</span>
-<span class="co">     * nom[2] = &#39;i&#39;</span>
-<span class="co">     * nom[3] = &#39;m&#39;</span>
-<span class="co">     * nom[4] = &#39;\0&#39; (finalitzador de l&#39;string)</span>
-<span class="co">     * nom[5] = valor aleatori</span>
-<span class="co">     * nom[6] = valor aleatori</span>
-<span class="co">     * nom[7] = valor aleatori</span>
-<span class="co">     * nom[8] = valor aleatori</span>
-<span class="co">     *</span>
-<span class="co">     * El finalitzador &#39;\0&#39; s&#39;afegeix automàticament</span>
-<span class="co">     * en llegir un string per teclat amb scanf.</span>
-<span class="co">     * </span>
-<span class="co">     * La comanda strlen(...) va recorrent l&#39;string posició</span>
-<span class="co">     * a posició per saber la seva longitud. Quan finalitza</span>
-<span class="co">     * aquest recorregut? hi ha dues opcions possibles:</span>
-<span class="co">     *</span>
-<span class="co">     * - quan troba el finalitzador &#39;\0&#39;</span>
-<span class="co">     * - quan arriba a la darrera posició de l&#39;string</span>
-<span class="co">     *</span>
-<span class="co">     * Per tant, si com a nom hem entrat Quim, el valor que </span>
-<span class="co">     * retornarà strlen(...) serà 4.</span>
-<span class="co">     */</span>
-
-    numLletres = strlen(nom);
-
-    printf(<span class="st">&quot;El nom </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> té %d lletres.</span><span class="sc">\n</span><span class="st">&quot;</span>, nom, numLletres);
-
-    <span class="co">/* Què passa si sobreescrivim el finalitzador &#39;\0&#39; amb</span>
-<span class="co">     * un caràcter qualsevol? per exemple &#39;X&#39;</span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Sobreescrivim el finalitzador &#39;</span><span class="sc">\\</span><span class="st">0&#39;.&quot;</span>);
-    nom[numLletres] = <span class="ch">&#39;X&#39;</span>;
-
-    <span class="co">/* Tornem a calcular la longitud de l&#39;string */</span>
-    numLletres = strlen(nom);
-
-    <span class="co">/* Per quin motiu ara ha canviat la longitud de la</span>
-<span class="co">     * variable nom, si no l&#39;hem tornat a redefinir?</span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Ara el nom </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> té %d lletres.</span><span class="sc">\n</span><span class="st">&quot;</span>, nom, numLletres);
-
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb79"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb79-1"><a href="pac05.html#cb79-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb79-2"><a href="pac05.html#cb79-2"></a><span class="pp">#include </span><span class="im">&lt;string.h&gt;</span></span>
+<span id="cb79-3"><a href="pac05.html#cb79-3"></a></span>
+<span id="cb79-4"><a href="pac05.html#cb79-4"></a><span class="pp">#define MAX_LLETRES 8+1</span></span>
+<span id="cb79-5"><a href="pac05.html#cb79-5"></a></span>
+<span id="cb79-6"><a href="pac05.html#cb79-6"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb79-7"><a href="pac05.html#cb79-7"></a></span>
+<span id="cb79-8"><a href="pac05.html#cb79-8"></a>    <span class="dt">char</span> nom[MAX_LLETRES];</span>
+<span id="cb79-9"><a href="pac05.html#cb79-9"></a>    <span class="dt">int</span> numLletres;</span>
+<span id="cb79-10"><a href="pac05.html#cb79-10"></a></span>
+<span id="cb79-11"><a href="pac05.html#cb79-11"></a>    printf(<span class="st">&quot;Introdueix un nom: &quot;</span>);</span>
+<span id="cb79-12"><a href="pac05.html#cb79-12"></a>    scanf(<span class="st">&quot;%s&quot;</span>, nom);</span>
+<span id="cb79-13"><a href="pac05.html#cb79-13"></a></span>
+<span id="cb79-14"><a href="pac05.html#cb79-14"></a>    <span class="co">/* Exemple: si en aquest punt hem teclejat el</span></span>
+<span id="cb79-15"><a href="pac05.html#cb79-15"></a><span class="co">     * nom Quim, dins de la cadena de caracters nom</span></span>
+<span id="cb79-16"><a href="pac05.html#cb79-16"></a><span class="co">     * tindrem les següents dades:</span></span>
+<span id="cb79-17"><a href="pac05.html#cb79-17"></a><span class="co">     *</span></span>
+<span id="cb79-18"><a href="pac05.html#cb79-18"></a><span class="co">     * nom[0] = &#39;Q&#39;</span></span>
+<span id="cb79-19"><a href="pac05.html#cb79-19"></a><span class="co">     * nom[1] = &#39;u&#39;</span></span>
+<span id="cb79-20"><a href="pac05.html#cb79-20"></a><span class="co">     * nom[2] = &#39;i&#39;</span></span>
+<span id="cb79-21"><a href="pac05.html#cb79-21"></a><span class="co">     * nom[3] = &#39;m&#39;</span></span>
+<span id="cb79-22"><a href="pac05.html#cb79-22"></a><span class="co">     * nom[4] = &#39;\0&#39; (finalitzador de l&#39;string)</span></span>
+<span id="cb79-23"><a href="pac05.html#cb79-23"></a><span class="co">     * nom[5] = valor aleatori</span></span>
+<span id="cb79-24"><a href="pac05.html#cb79-24"></a><span class="co">     * nom[6] = valor aleatori</span></span>
+<span id="cb79-25"><a href="pac05.html#cb79-25"></a><span class="co">     * nom[7] = valor aleatori</span></span>
+<span id="cb79-26"><a href="pac05.html#cb79-26"></a><span class="co">     * nom[8] = valor aleatori</span></span>
+<span id="cb79-27"><a href="pac05.html#cb79-27"></a><span class="co">     *</span></span>
+<span id="cb79-28"><a href="pac05.html#cb79-28"></a><span class="co">     * El finalitzador &#39;\0&#39; s&#39;afegeix automàticament</span></span>
+<span id="cb79-29"><a href="pac05.html#cb79-29"></a><span class="co">     * en llegir un string per teclat amb scanf.</span></span>
+<span id="cb79-30"><a href="pac05.html#cb79-30"></a><span class="co">     * </span></span>
+<span id="cb79-31"><a href="pac05.html#cb79-31"></a><span class="co">     * La comanda strlen(...) va recorrent l&#39;string posició</span></span>
+<span id="cb79-32"><a href="pac05.html#cb79-32"></a><span class="co">     * a posició per saber la seva longitud. Quan finalitza</span></span>
+<span id="cb79-33"><a href="pac05.html#cb79-33"></a><span class="co">     * aquest recorregut? hi ha dues opcions possibles:</span></span>
+<span id="cb79-34"><a href="pac05.html#cb79-34"></a><span class="co">     *</span></span>
+<span id="cb79-35"><a href="pac05.html#cb79-35"></a><span class="co">     * - quan troba el finalitzador &#39;\0&#39;</span></span>
+<span id="cb79-36"><a href="pac05.html#cb79-36"></a><span class="co">     * - quan arriba a la darrera posició de l&#39;string</span></span>
+<span id="cb79-37"><a href="pac05.html#cb79-37"></a><span class="co">     *</span></span>
+<span id="cb79-38"><a href="pac05.html#cb79-38"></a><span class="co">     * Per tant, si com a nom hem entrat Quim, el valor que </span></span>
+<span id="cb79-39"><a href="pac05.html#cb79-39"></a><span class="co">     * retornarà strlen(...) serà 4.</span></span>
+<span id="cb79-40"><a href="pac05.html#cb79-40"></a><span class="co">     */</span></span>
+<span id="cb79-41"><a href="pac05.html#cb79-41"></a></span>
+<span id="cb79-42"><a href="pac05.html#cb79-42"></a>    numLletres = strlen(nom);</span>
+<span id="cb79-43"><a href="pac05.html#cb79-43"></a></span>
+<span id="cb79-44"><a href="pac05.html#cb79-44"></a>    printf(<span class="st">&quot;El nom </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> té %d lletres.</span><span class="sc">\n</span><span class="st">&quot;</span>, nom, numLletres);</span>
+<span id="cb79-45"><a href="pac05.html#cb79-45"></a></span>
+<span id="cb79-46"><a href="pac05.html#cb79-46"></a>    <span class="co">/* Què passa si sobreescrivim el finalitzador &#39;\0&#39; amb</span></span>
+<span id="cb79-47"><a href="pac05.html#cb79-47"></a><span class="co">     * un caràcter qualsevol? per exemple &#39;X&#39;</span></span>
+<span id="cb79-48"><a href="pac05.html#cb79-48"></a><span class="co">     */</span></span>
+<span id="cb79-49"><a href="pac05.html#cb79-49"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Sobreescrivim el finalitzador &#39;</span><span class="sc">\\</span><span class="st">0&#39;.&quot;</span>);</span>
+<span id="cb79-50"><a href="pac05.html#cb79-50"></a>    nom[numLletres] = <span class="ch">&#39;X&#39;</span>;</span>
+<span id="cb79-51"><a href="pac05.html#cb79-51"></a></span>
+<span id="cb79-52"><a href="pac05.html#cb79-52"></a>    <span class="co">/* Tornem a calcular la longitud de l&#39;string */</span></span>
+<span id="cb79-53"><a href="pac05.html#cb79-53"></a>    numLletres = strlen(nom);</span>
+<span id="cb79-54"><a href="pac05.html#cb79-54"></a></span>
+<span id="cb79-55"><a href="pac05.html#cb79-55"></a>    <span class="co">/* Per quin motiu ara ha canviat la longitud de la</span></span>
+<span id="cb79-56"><a href="pac05.html#cb79-56"></a><span class="co">     * variable nom, si no l&#39;hem tornat a redefinir?</span></span>
+<span id="cb79-57"><a href="pac05.html#cb79-57"></a><span class="co">     */</span></span>
+<span id="cb79-58"><a href="pac05.html#cb79-58"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Ara el nom </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> té %d lletres.</span><span class="sc">\n</span><span class="st">&quot;</span>, nom, numLletres);</span>
+<span id="cb79-59"><a href="pac05.html#cb79-59"></a></span>
+<span id="cb79-60"><a href="pac05.html#cb79-60"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb79-61"><a href="pac05.html#cb79-61"></a>}</span></code></pre></div>
 <p>Si s’executa el programa, la sortida obtinguda serà similar a la següent:</p>
 <p>
 <img src="img/play.png" float="right;" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Introdueix un nom: Quim
-El nom <span class="st">&quot;Quim&quot;</span> té <span class="dv">4</span> lletres.
-
-Sobreescrivim el finalitzador &#39;\<span class="dv">0</span>&#39;.
-Ara el nom <span class="st">&quot;QuimX�!��&quot;</span> té <span class="dv">9</span> lletres.</code></pre></div>
+<div class="sourceCode" id="cb80"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb80-1"><a href="pac05.html#cb80-1"></a>Introdueix un nom: Quim</span>
+<span id="cb80-2"><a href="pac05.html#cb80-2"></a>El nom <span class="st">&quot;Quim&quot;</span> té <span class="dv">4</span> lletres.</span>
+<span id="cb80-3"><a href="pac05.html#cb80-3"></a></span>
+<span id="cb80-4"><a href="pac05.html#cb80-4"></a>Sobreescrivim el finalitzador <span class="ch">&#39;\0&#39;</span>.</span>
+<span id="cb80-5"><a href="pac05.html#cb80-5"></a>Ara el nom <span class="st">&quot;QuimX�!��&quot;</span> té <span class="dv">9</span> lletres.</span></code></pre></div>
 </div>
-<div id="exemple-comparaciostrings" class="section level2">
-<h2><span class="header-section-number">5.5</span> Exemple: comparacioStrings</h2>
+<div id="exemple-comparaciostrings" class="section level2" number="5.5">
+<h2 number="5.5"><span class="header-section-number">5.5</span> Exemple: comparacioStrings</h2>
 <p>La forma com comparem strings amb llenguatge algorísmic és diferent que no en llenguatge C:</p>
 <ul>
 <li>Llenguatge algorísmic: la comparació entre strings es fa amb <code>=</code>.</li>
@@ -457,293 +494,293 @@ end algorithm</code></pre>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
-
-<span class="pp">#define MAX_STRING 3+1</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-    <span class="dt">char</span> cadena1[MAX_STRING] = <span class="st">&quot;UOC&quot;</span>;
-    <span class="dt">char</span> cadena2[MAX_STRING] = <span class="st">&quot;UAB&quot;</span>;
-    <span class="dt">int</span> resultatComparacio = <span class="dv">0</span>;
-    
-    resultatComparacio = strcmp(cadena1, cadena2);
-    
-    printf(<span class="st">&quot;Comparació strings </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> i </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, cadena1, cadena2, resultatComparacio);
-    
-    <span class="cf">if</span> (resultatComparacio == <span class="dv">0</span>) {
-        printf(<span class="st">&quot;El resultat %d significa que l&#39;string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> == string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;\n</span><span class="st">&quot;</span>, resultatComparacio, cadena1, cadena2);
-    } <span class="cf">else</span> <span class="cf">if</span> (resultatComparacio == -<span class="dv">1</span>) {
-        printf(<span class="st">&quot;El resultat %d significa que l&#39;string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> &lt; string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;\n</span><span class="st">&quot;</span>, resultatComparacio, cadena1, cadena2);
-    } <span class="cf">else</span> <span class="cf">if</span> (resultatComparacio == <span class="dv">1</span>) {
-        printf(<span class="st">&quot;El resultat %d significa que l&#39;string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> &gt; string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;\n</span><span class="st">&quot;</span>, resultatComparacio, cadena1, cadena2);     
-    }
-    
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb82"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb82-1"><a href="pac05.html#cb82-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb82-2"><a href="pac05.html#cb82-2"></a><span class="pp">#include </span><span class="im">&lt;string.h&gt;</span></span>
+<span id="cb82-3"><a href="pac05.html#cb82-3"></a></span>
+<span id="cb82-4"><a href="pac05.html#cb82-4"></a><span class="pp">#define MAX_STRING 3+1</span></span>
+<span id="cb82-5"><a href="pac05.html#cb82-5"></a></span>
+<span id="cb82-6"><a href="pac05.html#cb82-6"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb82-7"><a href="pac05.html#cb82-7"></a></span>
+<span id="cb82-8"><a href="pac05.html#cb82-8"></a>    <span class="dt">char</span> cadena1[MAX_STRING] = <span class="st">&quot;UOC&quot;</span>;</span>
+<span id="cb82-9"><a href="pac05.html#cb82-9"></a>    <span class="dt">char</span> cadena2[MAX_STRING] = <span class="st">&quot;UAB&quot;</span>;</span>
+<span id="cb82-10"><a href="pac05.html#cb82-10"></a>    <span class="dt">int</span> resultatComparacio = <span class="dv">0</span>;</span>
+<span id="cb82-11"><a href="pac05.html#cb82-11"></a>    </span>
+<span id="cb82-12"><a href="pac05.html#cb82-12"></a>    resultatComparacio = strcmp(cadena1, cadena2);</span>
+<span id="cb82-13"><a href="pac05.html#cb82-13"></a>    </span>
+<span id="cb82-14"><a href="pac05.html#cb82-14"></a>    printf(<span class="st">&quot;Comparació strings </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> i </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> = %d</span><span class="sc">\n</span><span class="st">&quot;</span>, cadena1, cadena2, resultatComparacio);</span>
+<span id="cb82-15"><a href="pac05.html#cb82-15"></a>    </span>
+<span id="cb82-16"><a href="pac05.html#cb82-16"></a>    <span class="cf">if</span> (resultatComparacio == <span class="dv">0</span>) {</span>
+<span id="cb82-17"><a href="pac05.html#cb82-17"></a>        printf(<span class="st">&quot;El resultat %d significa que l&#39;string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> == string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;\n</span><span class="st">&quot;</span>, resultatComparacio, cadena1, cadena2);</span>
+<span id="cb82-18"><a href="pac05.html#cb82-18"></a>    } <span class="cf">else</span> <span class="cf">if</span> (resultatComparacio == -<span class="dv">1</span>) {</span>
+<span id="cb82-19"><a href="pac05.html#cb82-19"></a>        printf(<span class="st">&quot;El resultat %d significa que l&#39;string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> &lt; string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;\n</span><span class="st">&quot;</span>, resultatComparacio, cadena1, cadena2);</span>
+<span id="cb82-20"><a href="pac05.html#cb82-20"></a>    } <span class="cf">else</span> <span class="cf">if</span> (resultatComparacio == <span class="dv">1</span>) {</span>
+<span id="cb82-21"><a href="pac05.html#cb82-21"></a>        printf(<span class="st">&quot;El resultat %d significa que l&#39;string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;</span><span class="st"> &gt; string </span><span class="sc">\&quot;</span><span class="st">%s</span><span class="sc">\&quot;\n</span><span class="st">&quot;</span>, resultatComparacio, cadena1, cadena2);     </span>
+<span id="cb82-22"><a href="pac05.html#cb82-22"></a>    }</span>
+<span id="cb82-23"><a href="pac05.html#cb82-23"></a>    </span>
+<span id="cb82-24"><a href="pac05.html#cb82-24"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb82-25"><a href="pac05.html#cb82-25"></a>}</span></code></pre></div>
 <p>El resultat de l’execució del programa en C és:</p>
 <p>
 <img src="img/play.png" float="right;" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c">Comparació strings <span class="st">&quot;UOC&quot;</span> i <span class="st">&quot;UAB&quot;</span> = <span class="dv">1</span>
-El resultat <span class="dv">1</span> significa que l&#39;string <span class="st">&quot;UOC&quot;</span> &gt; string <span class="st">&quot;UAB&quot;</span></code></pre></div>
+<div class="sourceCode" id="cb83"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb83-1"><a href="pac05.html#cb83-1"></a>Comparació strings <span class="st">&quot;UOC&quot;</span> i <span class="st">&quot;UAB&quot;</span> = <span class="dv">1</span></span>
+<span id="cb83-2"><a href="pac05.html#cb83-2"></a>El resultat <span class="dv">1</span> significa que l&#39;string <span class="st">&quot;UOC&quot;</span> &gt; string <span class="st">&quot;UAB&quot;</span></span></code></pre></div>
 </div>
-<div id="exemple-nomines" class="section level2">
-<h2><span class="header-section-number">5.6</span> Exemple: nòmines</h2>
+<div id="exemple-nomines" class="section level2" number="5.6">
+<h2 number="5.6"><span class="header-section-number">5.6</span> Exemple: nòmines</h2>
 <p>Imaginem que volem un programa que ens permeti entrar les nòmines de tots els empleats de la nostra empresa. Un empleat el definim com a nom (cadena de caràcters) + nòmina (real). El programa ha de mostrar al final de tot la relació de nòmines de tots els empleats, la mitjana de totes les nòmines de l’empresa, i qui cobra més i menys a l’empresa.</p>
 <p>Una possible forma de programa-ho seria la següent:</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;string.h&gt;</span>
-
-<span class="pp">#define MAX_EMPLEATS 5</span>
-<span class="pp">#define MAX_NOM 20+1</span>
-
-<span class="kw">typedef</span> <span class="kw">struct</span> {
-   <span class="dt">char</span> nom[MAX_NOM];
-   <span class="dt">float</span> nomina;
-} tEmpleat;
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-
-   tEmpleat vEmpleats[MAX_EMPLEATS];
-   <span class="dt">int</span> i = <span class="dv">0</span>;
-   <span class="dt">int</span> maxNomina = <span class="dv">0</span>;
-   <span class="dt">int</span> minNomina = <span class="dv">0</span>;
-   <span class="dt">float</span> sumaNomines = <span class="dv">0</span>;
-
-   <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
-      printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nom empleat : &quot;</span>);
-      scanf(<span class="st">&quot;%s&quot;</span>, vEmpleats[i].nom);
-      printf(<span class="st">&quot;Nòmina : &quot;</span>);
-      scanf(<span class="st">&quot;%f&quot;</span>, &amp;vEmpleats[i].nomina);
-   }
-
-   printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Llistat de nòmines d&#39;empleats : </span><span class="sc">\n\n</span><span class="st">&quot;</span>);
-
-   <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {
-      sumaNomines = sumaNomines + vEmpleats[i].nomina;
-      <span class="cf">if</span> (vEmpleats[i].nomina &gt; vEmpleats[maxNomina].nomina) {
-         maxNomina = i;
-      }
-      <span class="cf">if</span> (vEmpleats[i].nomina &lt; vEmpleats[minNomina].nomina) {
-         minNomina = i;
-      }
-      printf(<span class="st">&quot;%s --&gt; %.2f €</span><span class="sc">\n</span><span class="st">&quot;</span>, vEmpleats[i].nom, vEmpleats[i].nomina);
-   }
-
-   printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Mitjana nònimes : %.2f €&quot;</span>, sumaNomines/MAX_EMPLEATS);
-   printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nòmina més alta : %.2f € (%s)&quot;</span>, vEmpleats[maxNomina].nomina, vEmpleats[maxNomina].nom);
-   printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nòmina més baixa : %.2f € (%s)&quot;</span>, vEmpleats[minNomina].nomina, vEmpleats[minNomina].nom);
-}</code></pre></div>
+<div class="sourceCode" id="cb84"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb84-1"><a href="pac05.html#cb84-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb84-2"><a href="pac05.html#cb84-2"></a><span class="pp">#include </span><span class="im">&lt;string.h&gt;</span></span>
+<span id="cb84-3"><a href="pac05.html#cb84-3"></a></span>
+<span id="cb84-4"><a href="pac05.html#cb84-4"></a><span class="pp">#define MAX_EMPLEATS 5</span></span>
+<span id="cb84-5"><a href="pac05.html#cb84-5"></a><span class="pp">#define MAX_NOM 20+1</span></span>
+<span id="cb84-6"><a href="pac05.html#cb84-6"></a></span>
+<span id="cb84-7"><a href="pac05.html#cb84-7"></a><span class="kw">typedef</span> <span class="kw">struct</span> {</span>
+<span id="cb84-8"><a href="pac05.html#cb84-8"></a>   <span class="dt">char</span> nom[MAX_NOM];</span>
+<span id="cb84-9"><a href="pac05.html#cb84-9"></a>   <span class="dt">float</span> nomina;</span>
+<span id="cb84-10"><a href="pac05.html#cb84-10"></a>} tEmpleat;</span>
+<span id="cb84-11"><a href="pac05.html#cb84-11"></a></span>
+<span id="cb84-12"><a href="pac05.html#cb84-12"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb84-13"><a href="pac05.html#cb84-13"></a></span>
+<span id="cb84-14"><a href="pac05.html#cb84-14"></a>   tEmpleat vEmpleats[MAX_EMPLEATS];</span>
+<span id="cb84-15"><a href="pac05.html#cb84-15"></a>   <span class="dt">int</span> i = <span class="dv">0</span>;</span>
+<span id="cb84-16"><a href="pac05.html#cb84-16"></a>   <span class="dt">int</span> maxNomina = <span class="dv">0</span>;</span>
+<span id="cb84-17"><a href="pac05.html#cb84-17"></a>   <span class="dt">int</span> minNomina = <span class="dv">0</span>;</span>
+<span id="cb84-18"><a href="pac05.html#cb84-18"></a>   <span class="dt">float</span> sumaNomines = <span class="dv">0</span>;</span>
+<span id="cb84-19"><a href="pac05.html#cb84-19"></a></span>
+<span id="cb84-20"><a href="pac05.html#cb84-20"></a>   <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {</span>
+<span id="cb84-21"><a href="pac05.html#cb84-21"></a>      printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nom empleat : &quot;</span>);</span>
+<span id="cb84-22"><a href="pac05.html#cb84-22"></a>      scanf(<span class="st">&quot;%s&quot;</span>, vEmpleats[i].nom);</span>
+<span id="cb84-23"><a href="pac05.html#cb84-23"></a>      printf(<span class="st">&quot;Nòmina : &quot;</span>);</span>
+<span id="cb84-24"><a href="pac05.html#cb84-24"></a>      scanf(<span class="st">&quot;%f&quot;</span>, &amp;vEmpleats[i].nomina);</span>
+<span id="cb84-25"><a href="pac05.html#cb84-25"></a>   }</span>
+<span id="cb84-26"><a href="pac05.html#cb84-26"></a></span>
+<span id="cb84-27"><a href="pac05.html#cb84-27"></a>   printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Llistat de nòmines d&#39;empleats : </span><span class="sc">\n\n</span><span class="st">&quot;</span>);</span>
+<span id="cb84-28"><a href="pac05.html#cb84-28"></a></span>
+<span id="cb84-29"><a href="pac05.html#cb84-29"></a>   <span class="cf">for</span> (i=<span class="dv">0</span>; i&lt;MAX_EMPLEATS; i++) {</span>
+<span id="cb84-30"><a href="pac05.html#cb84-30"></a>      sumaNomines = sumaNomines + vEmpleats[i].nomina;</span>
+<span id="cb84-31"><a href="pac05.html#cb84-31"></a>      <span class="cf">if</span> (vEmpleats[i].nomina &gt; vEmpleats[maxNomina].nomina) {</span>
+<span id="cb84-32"><a href="pac05.html#cb84-32"></a>         maxNomina = i;</span>
+<span id="cb84-33"><a href="pac05.html#cb84-33"></a>      }</span>
+<span id="cb84-34"><a href="pac05.html#cb84-34"></a>      <span class="cf">if</span> (vEmpleats[i].nomina &lt; vEmpleats[minNomina].nomina) {</span>
+<span id="cb84-35"><a href="pac05.html#cb84-35"></a>         minNomina = i;</span>
+<span id="cb84-36"><a href="pac05.html#cb84-36"></a>      }</span>
+<span id="cb84-37"><a href="pac05.html#cb84-37"></a>      printf(<span class="st">&quot;%s --&gt; %.2f €</span><span class="sc">\n</span><span class="st">&quot;</span>, vEmpleats[i].nom, vEmpleats[i].nomina);</span>
+<span id="cb84-38"><a href="pac05.html#cb84-38"></a>   }</span>
+<span id="cb84-39"><a href="pac05.html#cb84-39"></a></span>
+<span id="cb84-40"><a href="pac05.html#cb84-40"></a>   printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Mitjana nònimes : %.2f €&quot;</span>, sumaNomines/MAX_EMPLEATS);</span>
+<span id="cb84-41"><a href="pac05.html#cb84-41"></a>   printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nòmina més alta : %.2f € (%s)&quot;</span>, vEmpleats[maxNomina].nomina, vEmpleats[maxNomina].nom);</span>
+<span id="cb84-42"><a href="pac05.html#cb84-42"></a>   printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Nòmina més baixa : %.2f € (%s)&quot;</span>, vEmpleats[minNomina].nomina, vEmpleats[minNomina].nom);</span>
+<span id="cb84-43"><a href="pac05.html#cb84-43"></a>}</span></code></pre></div>
 <p>Com es pot veure, s’utilitza un vector de <code>tEmpleat</code> de forma que donada una longitud màxima del vector, anirem introduint els tEmpleats un a un dins d’ell. Una vegada fet, ja podem tornar a recórrer el vector de tEmpleat i realitzar tots els càlculs que ens demanen, així com mostrar per pantalla les nòmines de tots els empleats.</p>
 <p>En aquest exemple la variable i fa d’índex per recórrer el vector, i les variables maxNomina i minNomina també són índexos: indiquen en quina posició estàn els empleats amb la nòmina més alta i més baixa respectivament.</p>
 </div>
-<div id="exemple-brisca" class="section level2">
-<h2><span class="header-section-number">5.7</span> Exemple: brisca</h2>
+<div id="exemple-brisca" class="section level2" number="5.7">
+<h2 number="5.7"><span class="header-section-number">5.7</span> Exemple: brisca</h2>
 <p>Exemple amb diferents recorreguts realitzat sobre tuples guardades en un vector, utilitzant el joc de cartes de la brisca. Per tal d’explicar millor el plantejament de cada implementació, s’han afegit comentaris detallats dins del codi.</p>
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
-
-<span class="co">/* Punt de partida: sabem jugar perfectament</span>
-<span class="co"> * a la brisca (https://ca.wikipedia.org/wiki/Brisca), </span>
-<span class="co"> * però en canvi som un desastre havent de comptar</span>
-<span class="co"> * la puntuació de totes les cartes guanyades. Per</span>
-<span class="co"> * aquest motiu volem fer un programa que ens ajudi</span>
-<span class="co"> * en aquesta tasca (i altres, per practicar diferents</span>
-<span class="co"> * iteracions amb bucles). El programa demanarà per </span>
-<span class="co"> * teclat carta a carta i finalitzarà quan s&#39;introdueixi</span>
-<span class="co"> * un tipus de coll diferent dels definits.</span>
-<span class="co"> * Haurà de generar les següents sortides:</span>
-<span class="co"> * 1. Llistar totes les cartes introduïdes.</span>
-<span class="co"> * 2. Mostrar la carta amb una puntuació més alta.</span>
-<span class="co"> * 3. Mostrar la puntuació total aconseguida.</span>
-<span class="co"> * 4. Comparar parelles de cartes (1a vs 2a, 2a vs 3a,</span>
-<span class="co"> *    3a vs 4a,...) i indicar si són del mateix coll.</span>
-<span class="co"> */</span>
-
-<span class="pp">#define MAX_NUM_CARTES 48</span>
-<span class="pp">#define NUM_VALORS 13</span>
-<span class="pp">#define MAX_NUM_COLLS 4</span>
-
-<span class="kw">typedef</span> <span class="kw">enum</span> {MONEDES, COPES, BASTOS, ESPASES, FINALITZAR} tColl;
-<span class="kw">typedef</span> <span class="kw">struct</span> {
-    tColl coll;
-    <span class="dt">int</span> numero;
-    <span class="dt">int</span> valor;
-} tCarta;
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-    tCarta cartaAux;
-    tCarta cartaDeMajorValor;
-    tCarta vCartes[MAX_NUM_CARTES];
-    bool isFinalitzat;
-    <span class="dt">int</span> puntuacio;
-    <span class="dt">int</span> i, j;
-    bool isMateixColl;
-    
-    <span class="co">/* S&#39;inicialitza el vector vValors amb les</span>
-<span class="co">     * puntuacions de totes les cartes. El nom</span>
-<span class="co">     * de la carta fa d&#39;índex del vector, i el</span>
-<span class="co">     * valor desat en aquella posició és la seva</span>
-<span class="co">     * puntuació. Exemple: </span>
-<span class="co">     * - una carta amb un 1 retornarà 11 punts,</span>
-<span class="co">     *   corresponents al valor de la posició 1.</span>
-<span class="co">     * - una carta amb un 5 retornarà 0 punts,</span>
-<span class="co">     *   corresponents al valor de la posició 5.</span>
-<span class="co">     */</span>
-    <span class="dt">int</span> vValors[NUM_VALORS] = {<span class="dv">0</span>, <span class="dv">11</span>, <span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>};
-
-    <span class="co">/* El següent vector ens ajudarà a mostrar</span>
-<span class="co">     * per pantalla de forma automàtica la descripció </span>
-<span class="co">     * associada a cadascun dels valors definits a </span>
-<span class="co">     * l&#39;enumeratiu tColl</span>
-<span class="co">     */</span>
-    <span class="dt">char</span>* vNoms[MAX_NUM_COLLS] = {<span class="st">&quot;Monedes&quot;</span>, <span class="st">&quot;Copes&quot;</span>, <span class="st">&quot;Bastos&quot;</span>, <span class="st">&quot;Espases&quot;</span>};
-
-    <span class="co">/* La variable booleana s&#39;utilitzarà per</span>
-<span class="co">     * finalitzar el primer bucle d&#39;introducció</span>
-<span class="co">     * de cartes des de teclat</span>
-<span class="co">     */</span>
-    isFinalitzat = false;
-    
-    i = <span class="dv">0</span>;
-    j = <span class="dv">0</span>;
-    puntuacio = <span class="dv">0</span>;
-    
-    printf(<span class="st">&quot;Tipus carta: 0=MONEDES, 1=COPES, 2=BASTOS, 3=ESPASES.</span><span class="sc">\n</span><span class="st">&quot;</span>);
-
-    <span class="cf">while</span> (!isFinalitzat) {
-        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix tipus carta: &quot;</span>);
-        scanf(<span class="st">&quot;%u&quot;</span>, &amp;cartaAux.coll);
-        
-        <span class="co">/* Si el coll introduit no correspon a cap dels</span>
-<span class="co">         * quatre definits, significa que no es vol </span>
-<span class="co">         * entrar cap més carta des de teclat</span>
-<span class="co">         */</span>
-        <span class="cf">if</span> (cartaAux.coll != MONEDES &amp;&amp; cartaAux.coll != COPES
-            &amp;&amp; cartaAux.coll != BASTOS &amp;&amp; cartaAux.coll != ESPASES) {
-            isFinalitzat = true;
-
-        } <span class="cf">else</span> {
-            printf(<span class="st">&quot;Introdueix número carta: &quot;</span>);
-            scanf(<span class="st">&quot;%d&quot;</span>, &amp;cartaAux.numero);
-            
-            <span class="co">/* Es valida que el número de la carta</span>
-<span class="co">             * introduïda sigui vàlid: valor comprès</span>
-<span class="co">             * entre 1 i 12</span>
-<span class="co">             */</span>
-            <span class="cf">if</span> (cartaAux.numero &lt; <span class="dv">1</span> || cartaAux.numero &gt; <span class="dv">12</span>) {
-                printf(<span class="st">&quot;Error: número de la carta incorrecte!</span><span class="sc">\n</span><span class="st">&quot;</span>);
-                
-            } <span class="cf">else</span> {
-                <span class="co">/* Es calcula el valor de la carta i </span>
-<span class="co">                 * s&#39;assigna al camp valor de la tupla</span>
-<span class="co">                 * cartaAux (de tipus tCarta)</span>
-<span class="co">                 */</span>
-                cartaAux.valor = vValors[cartaAux.numero];
-                vCartes[i] = cartaAux;
-                
-                <span class="co">/* La variable i contindrà el número</span>
-<span class="co">                 * de cartes vàlides introduïdes per</span>
-<span class="co">                 * teclat.</span>
-<span class="co">                 */</span>
-                i = i + <span class="dv">1</span>;
-            }
-        }
-    }
-    
-    <span class="co">/* Sortida 1:</span>
-<span class="co">     * Recorrem el vector de cartes per mostrar</span>
-<span class="co">     * per pantalla tots els elements (cartes)</span>
-<span class="co">     * que conté.</span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Relació de cartes introduïdes: </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i; j++) {
-        printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d de %s (%d punts) </span><span class="sc">\n</span><span class="st">&quot;</span>, vCartes[j].numero, vNoms[vCartes[j].coll], vCartes[j].valor);
-    }
-    
-    <span class="co">/* Sortida 2:</span>
-<span class="co">     * Recorrem el vector de cartes i busquem</span>
-<span class="co">     * la que té una major puntuació. En cas </span>
-<span class="co">     * d&#39;empat, mostrem l&#39;última introduïda.</span>
-<span class="co">     */</span>
-
-    <span class="co">/* Inicialitzem el valor de cartaDeMajorValor</span>
-<span class="co">     * a valor = 0</span>
-<span class="co">     */</span>
-    cartaDeMajorValor.valor = <span class="dv">0</span>;
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Carta de major puntuació: </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i; j++) {
-        <span class="co">/* En cada iteració del bucle ens assegurem</span>
-<span class="co">         * que cartaDeMajorValor sigui la carta</span>
-<span class="co">         * amb un valor més gran. Comparem la carta</span>
-<span class="co">         * que estem tractant actualment amb la carta</span>
-<span class="co">         * que fins ara hem trobat de major valor.</span>
-<span class="co">         */</span>
-        <span class="cf">if</span> (vCartes[j].valor &gt;= cartaDeMajorValor.valor) {
-            cartaDeMajorValor.coll = vCartes[j].coll;
-            cartaDeMajorValor.numero = vCartes[j].numero;
-            cartaDeMajorValor.valor = vCartes[j].valor;
-        }
-    }
-    printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d de %s (%d punts) </span><span class="sc">\n</span><span class="st">&quot;</span>, cartaDeMajorValor.numero, vNoms[cartaDeMajorValor.coll], cartaDeMajorValor.valor);
-
-    <span class="co">/* Sortida 3:</span>
-<span class="co">     * Recorrem el vector de cartes i anem sumant</span>
-<span class="co">     * tots els valors, per tal d&#39;obtenir la </span>
-<span class="co">     * puntuació total.</span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Puntuació total: </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i; j++) {
-        puntuacio = puntuacio + vCartes[j].valor;
-    }
-    printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d punts </span><span class="sc">\n</span><span class="st">&quot;</span>, puntuacio);
-    
-    <span class="co">/* Sortida 4:</span>
-<span class="co">     * Recorrem el vector de cartes i anem comparant</span>
-<span class="co">     * parelles de carta: la que estem tractant amb</span>
-<span class="co">     * la que ve a continuació. Mostrem per pantalla</span>
-<span class="co">     * si són del mateix coll o no.</span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Comparació de cartes: </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    
-    <span class="co">/* Important: en aquest recorregut del vector</span>
-<span class="co">     * de cartes anem comparant la carta de la </span>
-<span class="co">     * posició actual j amb la carta que està</span>
-<span class="co">     * a la següent posició j+1. Això significa</span>
-<span class="co">     * que el límit de les iteracions del </span>
-<span class="co">     * bucle passa a ser i-1 (un element abans</span>
-<span class="co">     * del final), ja que quan tractem aquest</span>
-<span class="co">     * element el compararem amb el següent,</span>
-<span class="co">     * que és l&#39;últim del vector. Si en comptes</span>
-<span class="co">     * de tenir i-1 tinguéssim només i, en </span>
-<span class="co">     * la darrera iteració donaria error, ja </span>
-<span class="co">     * que s&#39;estaria accedint a una posició</span>
-<span class="co">     * incorrecta del vector de cartes (i+1).</span>
-<span class="co">     */</span>
-    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i-<span class="dv">1</span>; j++) {
-        
-        <span class="co">/* Per comparar la carta de la posició actual</span>
-<span class="co">         * amb la que hi ha a la següent posició,</span>
-<span class="co">         * utilitzem els índex j i j+1 respectivament.</span>
-<span class="co">         */</span>
-        isMateixColl = (vCartes[j].coll == vCartes[j+<span class="dv">1</span>].coll);
-        printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d de %s vs %d de %s: &quot;</span>, vCartes[j].numero, vNoms[vCartes[j].coll], vCartes[j+<span class="dv">1</span>].numero, vNoms[vCartes[j+<span class="dv">1</span>].coll]);
-        <span class="cf">if</span> (isMateixColl) {
-            printf(<span class="st">&quot;són del mateix coll!</span><span class="sc">\n</span><span class="st">&quot;</span>);
-        } <span class="cf">else</span> {
-            printf(<span class="st">&quot;són de colls diferents!</span><span class="sc">\n</span><span class="st">&quot;</span>);
-        }
-    }
-    <span class="cf">return</span> <span class="dv">0</span>;
-}</code></pre></div>
+<div class="sourceCode" id="cb85"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb85-1"><a href="pac05.html#cb85-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb85-2"><a href="pac05.html#cb85-2"></a><span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span></span>
+<span id="cb85-3"><a href="pac05.html#cb85-3"></a></span>
+<span id="cb85-4"><a href="pac05.html#cb85-4"></a><span class="co">/* Punt de partida: sabem jugar perfectament</span></span>
+<span id="cb85-5"><a href="pac05.html#cb85-5"></a><span class="co"> * a la brisca (https://ca.wikipedia.org/wiki/Brisca), </span></span>
+<span id="cb85-6"><a href="pac05.html#cb85-6"></a><span class="co"> * però en canvi som un desastre havent de comptar</span></span>
+<span id="cb85-7"><a href="pac05.html#cb85-7"></a><span class="co"> * la puntuació de totes les cartes guanyades. Per</span></span>
+<span id="cb85-8"><a href="pac05.html#cb85-8"></a><span class="co"> * aquest motiu volem fer un programa que ens ajudi</span></span>
+<span id="cb85-9"><a href="pac05.html#cb85-9"></a><span class="co"> * en aquesta tasca (i altres, per practicar diferents</span></span>
+<span id="cb85-10"><a href="pac05.html#cb85-10"></a><span class="co"> * iteracions amb bucles). El programa demanarà per </span></span>
+<span id="cb85-11"><a href="pac05.html#cb85-11"></a><span class="co"> * teclat carta a carta i finalitzarà quan s&#39;introdueixi</span></span>
+<span id="cb85-12"><a href="pac05.html#cb85-12"></a><span class="co"> * un tipus de coll diferent dels definits.</span></span>
+<span id="cb85-13"><a href="pac05.html#cb85-13"></a><span class="co"> * Haurà de generar les següents sortides:</span></span>
+<span id="cb85-14"><a href="pac05.html#cb85-14"></a><span class="co"> * 1. Llistar totes les cartes introduïdes.</span></span>
+<span id="cb85-15"><a href="pac05.html#cb85-15"></a><span class="co"> * 2. Mostrar la carta amb una puntuació més alta.</span></span>
+<span id="cb85-16"><a href="pac05.html#cb85-16"></a><span class="co"> * 3. Mostrar la puntuació total aconseguida.</span></span>
+<span id="cb85-17"><a href="pac05.html#cb85-17"></a><span class="co"> * 4. Comparar parelles de cartes (1a vs 2a, 2a vs 3a,</span></span>
+<span id="cb85-18"><a href="pac05.html#cb85-18"></a><span class="co"> *    3a vs 4a,...) i indicar si són del mateix coll.</span></span>
+<span id="cb85-19"><a href="pac05.html#cb85-19"></a><span class="co"> */</span></span>
+<span id="cb85-20"><a href="pac05.html#cb85-20"></a></span>
+<span id="cb85-21"><a href="pac05.html#cb85-21"></a><span class="pp">#define MAX_NUM_CARTES 48</span></span>
+<span id="cb85-22"><a href="pac05.html#cb85-22"></a><span class="pp">#define NUM_VALORS 13</span></span>
+<span id="cb85-23"><a href="pac05.html#cb85-23"></a><span class="pp">#define MAX_NUM_COLLS 4</span></span>
+<span id="cb85-24"><a href="pac05.html#cb85-24"></a></span>
+<span id="cb85-25"><a href="pac05.html#cb85-25"></a><span class="kw">typedef</span> <span class="kw">enum</span> {MONEDES, COPES, BASTOS, ESPASES, FINALITZAR} tColl;</span>
+<span id="cb85-26"><a href="pac05.html#cb85-26"></a><span class="kw">typedef</span> <span class="kw">struct</span> {</span>
+<span id="cb85-27"><a href="pac05.html#cb85-27"></a>    tColl coll;</span>
+<span id="cb85-28"><a href="pac05.html#cb85-28"></a>    <span class="dt">int</span> numero;</span>
+<span id="cb85-29"><a href="pac05.html#cb85-29"></a>    <span class="dt">int</span> valor;</span>
+<span id="cb85-30"><a href="pac05.html#cb85-30"></a>} tCarta;</span>
+<span id="cb85-31"><a href="pac05.html#cb85-31"></a></span>
+<span id="cb85-32"><a href="pac05.html#cb85-32"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb85-33"><a href="pac05.html#cb85-33"></a>    tCarta cartaAux;</span>
+<span id="cb85-34"><a href="pac05.html#cb85-34"></a>    tCarta cartaDeMajorValor;</span>
+<span id="cb85-35"><a href="pac05.html#cb85-35"></a>    tCarta vCartes[MAX_NUM_CARTES];</span>
+<span id="cb85-36"><a href="pac05.html#cb85-36"></a>    <span class="dt">bool</span> isFinalitzat;</span>
+<span id="cb85-37"><a href="pac05.html#cb85-37"></a>    <span class="dt">int</span> puntuacio;</span>
+<span id="cb85-38"><a href="pac05.html#cb85-38"></a>    <span class="dt">int</span> i, j;</span>
+<span id="cb85-39"><a href="pac05.html#cb85-39"></a>    <span class="dt">bool</span> isMateixColl;</span>
+<span id="cb85-40"><a href="pac05.html#cb85-40"></a>    </span>
+<span id="cb85-41"><a href="pac05.html#cb85-41"></a>    <span class="co">/* S&#39;inicialitza el vector vValors amb les</span></span>
+<span id="cb85-42"><a href="pac05.html#cb85-42"></a><span class="co">     * puntuacions de totes les cartes. El nom</span></span>
+<span id="cb85-43"><a href="pac05.html#cb85-43"></a><span class="co">     * de la carta fa d&#39;índex del vector, i el</span></span>
+<span id="cb85-44"><a href="pac05.html#cb85-44"></a><span class="co">     * valor desat en aquella posició és la seva</span></span>
+<span id="cb85-45"><a href="pac05.html#cb85-45"></a><span class="co">     * puntuació. Exemple: </span></span>
+<span id="cb85-46"><a href="pac05.html#cb85-46"></a><span class="co">     * - una carta amb un 1 retornarà 11 punts,</span></span>
+<span id="cb85-47"><a href="pac05.html#cb85-47"></a><span class="co">     *   corresponents al valor de la posició 1.</span></span>
+<span id="cb85-48"><a href="pac05.html#cb85-48"></a><span class="co">     * - una carta amb un 5 retornarà 0 punts,</span></span>
+<span id="cb85-49"><a href="pac05.html#cb85-49"></a><span class="co">     *   corresponents al valor de la posició 5.</span></span>
+<span id="cb85-50"><a href="pac05.html#cb85-50"></a><span class="co">     */</span></span>
+<span id="cb85-51"><a href="pac05.html#cb85-51"></a>    <span class="dt">int</span> vValors[NUM_VALORS] = {<span class="dv">0</span>, <span class="dv">11</span>, <span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>};</span>
+<span id="cb85-52"><a href="pac05.html#cb85-52"></a></span>
+<span id="cb85-53"><a href="pac05.html#cb85-53"></a>    <span class="co">/* El següent vector ens ajudarà a mostrar</span></span>
+<span id="cb85-54"><a href="pac05.html#cb85-54"></a><span class="co">     * per pantalla de forma automàtica la descripció </span></span>
+<span id="cb85-55"><a href="pac05.html#cb85-55"></a><span class="co">     * associada a cadascun dels valors definits a </span></span>
+<span id="cb85-56"><a href="pac05.html#cb85-56"></a><span class="co">     * l&#39;enumeratiu tColl</span></span>
+<span id="cb85-57"><a href="pac05.html#cb85-57"></a><span class="co">     */</span></span>
+<span id="cb85-58"><a href="pac05.html#cb85-58"></a>    <span class="dt">char</span>* vNoms[MAX_NUM_COLLS] = {<span class="st">&quot;Monedes&quot;</span>, <span class="st">&quot;Copes&quot;</span>, <span class="st">&quot;Bastos&quot;</span>, <span class="st">&quot;Espases&quot;</span>};</span>
+<span id="cb85-59"><a href="pac05.html#cb85-59"></a></span>
+<span id="cb85-60"><a href="pac05.html#cb85-60"></a>    <span class="co">/* La variable booleana s&#39;utilitzarà per</span></span>
+<span id="cb85-61"><a href="pac05.html#cb85-61"></a><span class="co">     * finalitzar el primer bucle d&#39;introducció</span></span>
+<span id="cb85-62"><a href="pac05.html#cb85-62"></a><span class="co">     * de cartes des de teclat</span></span>
+<span id="cb85-63"><a href="pac05.html#cb85-63"></a><span class="co">     */</span></span>
+<span id="cb85-64"><a href="pac05.html#cb85-64"></a>    isFinalitzat = false;</span>
+<span id="cb85-65"><a href="pac05.html#cb85-65"></a>    </span>
+<span id="cb85-66"><a href="pac05.html#cb85-66"></a>    i = <span class="dv">0</span>;</span>
+<span id="cb85-67"><a href="pac05.html#cb85-67"></a>    j = <span class="dv">0</span>;</span>
+<span id="cb85-68"><a href="pac05.html#cb85-68"></a>    puntuacio = <span class="dv">0</span>;</span>
+<span id="cb85-69"><a href="pac05.html#cb85-69"></a>    </span>
+<span id="cb85-70"><a href="pac05.html#cb85-70"></a>    printf(<span class="st">&quot;Tipus carta: 0=MONEDES, 1=COPES, 2=BASTOS, 3=ESPASES.</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb85-71"><a href="pac05.html#cb85-71"></a></span>
+<span id="cb85-72"><a href="pac05.html#cb85-72"></a>    <span class="cf">while</span> (!isFinalitzat) {</span>
+<span id="cb85-73"><a href="pac05.html#cb85-73"></a>        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Introdueix tipus carta: &quot;</span>);</span>
+<span id="cb85-74"><a href="pac05.html#cb85-74"></a>        scanf(<span class="st">&quot;%u&quot;</span>, &amp;cartaAux.coll);</span>
+<span id="cb85-75"><a href="pac05.html#cb85-75"></a>        </span>
+<span id="cb85-76"><a href="pac05.html#cb85-76"></a>        <span class="co">/* Si el coll introduit no correspon a cap dels</span></span>
+<span id="cb85-77"><a href="pac05.html#cb85-77"></a><span class="co">         * quatre definits, significa que no es vol </span></span>
+<span id="cb85-78"><a href="pac05.html#cb85-78"></a><span class="co">         * entrar cap més carta des de teclat</span></span>
+<span id="cb85-79"><a href="pac05.html#cb85-79"></a><span class="co">         */</span></span>
+<span id="cb85-80"><a href="pac05.html#cb85-80"></a>        <span class="cf">if</span> (cartaAux.coll != MONEDES &amp;&amp; cartaAux.coll != COPES</span>
+<span id="cb85-81"><a href="pac05.html#cb85-81"></a>            &amp;&amp; cartaAux.coll != BASTOS &amp;&amp; cartaAux.coll != ESPASES) {</span>
+<span id="cb85-82"><a href="pac05.html#cb85-82"></a>            isFinalitzat = true;</span>
+<span id="cb85-83"><a href="pac05.html#cb85-83"></a></span>
+<span id="cb85-84"><a href="pac05.html#cb85-84"></a>        } <span class="cf">else</span> {</span>
+<span id="cb85-85"><a href="pac05.html#cb85-85"></a>            printf(<span class="st">&quot;Introdueix número carta: &quot;</span>);</span>
+<span id="cb85-86"><a href="pac05.html#cb85-86"></a>            scanf(<span class="st">&quot;%d&quot;</span>, &amp;cartaAux.numero);</span>
+<span id="cb85-87"><a href="pac05.html#cb85-87"></a>            </span>
+<span id="cb85-88"><a href="pac05.html#cb85-88"></a>            <span class="co">/* Es valida que el número de la carta</span></span>
+<span id="cb85-89"><a href="pac05.html#cb85-89"></a><span class="co">             * introduïda sigui vàlid: valor comprès</span></span>
+<span id="cb85-90"><a href="pac05.html#cb85-90"></a><span class="co">             * entre 1 i 12</span></span>
+<span id="cb85-91"><a href="pac05.html#cb85-91"></a><span class="co">             */</span></span>
+<span id="cb85-92"><a href="pac05.html#cb85-92"></a>            <span class="cf">if</span> (cartaAux.numero &lt; <span class="dv">1</span> || cartaAux.numero &gt; <span class="dv">12</span>) {</span>
+<span id="cb85-93"><a href="pac05.html#cb85-93"></a>                printf(<span class="st">&quot;Error: número de la carta incorrecte!</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb85-94"><a href="pac05.html#cb85-94"></a>                </span>
+<span id="cb85-95"><a href="pac05.html#cb85-95"></a>            } <span class="cf">else</span> {</span>
+<span id="cb85-96"><a href="pac05.html#cb85-96"></a>                <span class="co">/* Es calcula el valor de la carta i </span></span>
+<span id="cb85-97"><a href="pac05.html#cb85-97"></a><span class="co">                 * s&#39;assigna al camp valor de la tupla</span></span>
+<span id="cb85-98"><a href="pac05.html#cb85-98"></a><span class="co">                 * cartaAux (de tipus tCarta)</span></span>
+<span id="cb85-99"><a href="pac05.html#cb85-99"></a><span class="co">                 */</span></span>
+<span id="cb85-100"><a href="pac05.html#cb85-100"></a>                cartaAux.valor = vValors[cartaAux.numero];</span>
+<span id="cb85-101"><a href="pac05.html#cb85-101"></a>                vCartes[i] = cartaAux;</span>
+<span id="cb85-102"><a href="pac05.html#cb85-102"></a>                </span>
+<span id="cb85-103"><a href="pac05.html#cb85-103"></a>                <span class="co">/* La variable i contindrà el número</span></span>
+<span id="cb85-104"><a href="pac05.html#cb85-104"></a><span class="co">                 * de cartes vàlides introduïdes per</span></span>
+<span id="cb85-105"><a href="pac05.html#cb85-105"></a><span class="co">                 * teclat.</span></span>
+<span id="cb85-106"><a href="pac05.html#cb85-106"></a><span class="co">                 */</span></span>
+<span id="cb85-107"><a href="pac05.html#cb85-107"></a>                i = i + <span class="dv">1</span>;</span>
+<span id="cb85-108"><a href="pac05.html#cb85-108"></a>            }</span>
+<span id="cb85-109"><a href="pac05.html#cb85-109"></a>        }</span>
+<span id="cb85-110"><a href="pac05.html#cb85-110"></a>    }</span>
+<span id="cb85-111"><a href="pac05.html#cb85-111"></a>    </span>
+<span id="cb85-112"><a href="pac05.html#cb85-112"></a>    <span class="co">/* Sortida 1:</span></span>
+<span id="cb85-113"><a href="pac05.html#cb85-113"></a><span class="co">     * Recorrem el vector de cartes per mostrar</span></span>
+<span id="cb85-114"><a href="pac05.html#cb85-114"></a><span class="co">     * per pantalla tots els elements (cartes)</span></span>
+<span id="cb85-115"><a href="pac05.html#cb85-115"></a><span class="co">     * que conté.</span></span>
+<span id="cb85-116"><a href="pac05.html#cb85-116"></a><span class="co">     */</span></span>
+<span id="cb85-117"><a href="pac05.html#cb85-117"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Relació de cartes introduïdes: </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb85-118"><a href="pac05.html#cb85-118"></a>    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i; j++) {</span>
+<span id="cb85-119"><a href="pac05.html#cb85-119"></a>        printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d de %s (%d punts) </span><span class="sc">\n</span><span class="st">&quot;</span>, vCartes[j].numero, vNoms[vCartes[j].coll], vCartes[j].valor);</span>
+<span id="cb85-120"><a href="pac05.html#cb85-120"></a>    }</span>
+<span id="cb85-121"><a href="pac05.html#cb85-121"></a>    </span>
+<span id="cb85-122"><a href="pac05.html#cb85-122"></a>    <span class="co">/* Sortida 2:</span></span>
+<span id="cb85-123"><a href="pac05.html#cb85-123"></a><span class="co">     * Recorrem el vector de cartes i busquem</span></span>
+<span id="cb85-124"><a href="pac05.html#cb85-124"></a><span class="co">     * la que té una major puntuació. En cas </span></span>
+<span id="cb85-125"><a href="pac05.html#cb85-125"></a><span class="co">     * d&#39;empat, mostrem l&#39;última introduïda.</span></span>
+<span id="cb85-126"><a href="pac05.html#cb85-126"></a><span class="co">     */</span></span>
+<span id="cb85-127"><a href="pac05.html#cb85-127"></a></span>
+<span id="cb85-128"><a href="pac05.html#cb85-128"></a>    <span class="co">/* Inicialitzem el valor de cartaDeMajorValor</span></span>
+<span id="cb85-129"><a href="pac05.html#cb85-129"></a><span class="co">     * a valor = 0</span></span>
+<span id="cb85-130"><a href="pac05.html#cb85-130"></a><span class="co">     */</span></span>
+<span id="cb85-131"><a href="pac05.html#cb85-131"></a>    cartaDeMajorValor.valor = <span class="dv">0</span>;</span>
+<span id="cb85-132"><a href="pac05.html#cb85-132"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Carta de major puntuació: </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb85-133"><a href="pac05.html#cb85-133"></a>    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i; j++) {</span>
+<span id="cb85-134"><a href="pac05.html#cb85-134"></a>        <span class="co">/* En cada iteració del bucle ens assegurem</span></span>
+<span id="cb85-135"><a href="pac05.html#cb85-135"></a><span class="co">         * que cartaDeMajorValor sigui la carta</span></span>
+<span id="cb85-136"><a href="pac05.html#cb85-136"></a><span class="co">         * amb un valor més gran. Comparem la carta</span></span>
+<span id="cb85-137"><a href="pac05.html#cb85-137"></a><span class="co">         * que estem tractant actualment amb la carta</span></span>
+<span id="cb85-138"><a href="pac05.html#cb85-138"></a><span class="co">         * que fins ara hem trobat de major valor.</span></span>
+<span id="cb85-139"><a href="pac05.html#cb85-139"></a><span class="co">         */</span></span>
+<span id="cb85-140"><a href="pac05.html#cb85-140"></a>        <span class="cf">if</span> (vCartes[j].valor &gt;= cartaDeMajorValor.valor) {</span>
+<span id="cb85-141"><a href="pac05.html#cb85-141"></a>            cartaDeMajorValor.coll = vCartes[j].coll;</span>
+<span id="cb85-142"><a href="pac05.html#cb85-142"></a>            cartaDeMajorValor.numero = vCartes[j].numero;</span>
+<span id="cb85-143"><a href="pac05.html#cb85-143"></a>            cartaDeMajorValor.valor = vCartes[j].valor;</span>
+<span id="cb85-144"><a href="pac05.html#cb85-144"></a>        }</span>
+<span id="cb85-145"><a href="pac05.html#cb85-145"></a>    }</span>
+<span id="cb85-146"><a href="pac05.html#cb85-146"></a>    printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d de %s (%d punts) </span><span class="sc">\n</span><span class="st">&quot;</span>, cartaDeMajorValor.numero, vNoms[cartaDeMajorValor.coll], cartaDeMajorValor.valor);</span>
+<span id="cb85-147"><a href="pac05.html#cb85-147"></a></span>
+<span id="cb85-148"><a href="pac05.html#cb85-148"></a>    <span class="co">/* Sortida 3:</span></span>
+<span id="cb85-149"><a href="pac05.html#cb85-149"></a><span class="co">     * Recorrem el vector de cartes i anem sumant</span></span>
+<span id="cb85-150"><a href="pac05.html#cb85-150"></a><span class="co">     * tots els valors, per tal d&#39;obtenir la </span></span>
+<span id="cb85-151"><a href="pac05.html#cb85-151"></a><span class="co">     * puntuació total.</span></span>
+<span id="cb85-152"><a href="pac05.html#cb85-152"></a><span class="co">     */</span></span>
+<span id="cb85-153"><a href="pac05.html#cb85-153"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Puntuació total: </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb85-154"><a href="pac05.html#cb85-154"></a>    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i; j++) {</span>
+<span id="cb85-155"><a href="pac05.html#cb85-155"></a>        puntuacio = puntuacio + vCartes[j].valor;</span>
+<span id="cb85-156"><a href="pac05.html#cb85-156"></a>    }</span>
+<span id="cb85-157"><a href="pac05.html#cb85-157"></a>    printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d punts </span><span class="sc">\n</span><span class="st">&quot;</span>, puntuacio);</span>
+<span id="cb85-158"><a href="pac05.html#cb85-158"></a>    </span>
+<span id="cb85-159"><a href="pac05.html#cb85-159"></a>    <span class="co">/* Sortida 4:</span></span>
+<span id="cb85-160"><a href="pac05.html#cb85-160"></a><span class="co">     * Recorrem el vector de cartes i anem comparant</span></span>
+<span id="cb85-161"><a href="pac05.html#cb85-161"></a><span class="co">     * parelles de carta: la que estem tractant amb</span></span>
+<span id="cb85-162"><a href="pac05.html#cb85-162"></a><span class="co">     * la que ve a continuació. Mostrem per pantalla</span></span>
+<span id="cb85-163"><a href="pac05.html#cb85-163"></a><span class="co">     * si són del mateix coll o no.</span></span>
+<span id="cb85-164"><a href="pac05.html#cb85-164"></a><span class="co">     */</span></span>
+<span id="cb85-165"><a href="pac05.html#cb85-165"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Comparació de cartes: </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb85-166"><a href="pac05.html#cb85-166"></a>    </span>
+<span id="cb85-167"><a href="pac05.html#cb85-167"></a>    <span class="co">/* Important: en aquest recorregut del vector</span></span>
+<span id="cb85-168"><a href="pac05.html#cb85-168"></a><span class="co">     * de cartes anem comparant la carta de la </span></span>
+<span id="cb85-169"><a href="pac05.html#cb85-169"></a><span class="co">     * posició actual j amb la carta que està</span></span>
+<span id="cb85-170"><a href="pac05.html#cb85-170"></a><span class="co">     * a la següent posició j+1. Això significa</span></span>
+<span id="cb85-171"><a href="pac05.html#cb85-171"></a><span class="co">     * que el límit de les iteracions del </span></span>
+<span id="cb85-172"><a href="pac05.html#cb85-172"></a><span class="co">     * bucle passa a ser i-1 (un element abans</span></span>
+<span id="cb85-173"><a href="pac05.html#cb85-173"></a><span class="co">     * del final), ja que quan tractem aquest</span></span>
+<span id="cb85-174"><a href="pac05.html#cb85-174"></a><span class="co">     * element el compararem amb el següent,</span></span>
+<span id="cb85-175"><a href="pac05.html#cb85-175"></a><span class="co">     * que és l&#39;últim del vector. Si en comptes</span></span>
+<span id="cb85-176"><a href="pac05.html#cb85-176"></a><span class="co">     * de tenir i-1 tinguéssim només i, en </span></span>
+<span id="cb85-177"><a href="pac05.html#cb85-177"></a><span class="co">     * la darrera iteració donaria error, ja </span></span>
+<span id="cb85-178"><a href="pac05.html#cb85-178"></a><span class="co">     * que s&#39;estaria accedint a una posició</span></span>
+<span id="cb85-179"><a href="pac05.html#cb85-179"></a><span class="co">     * incorrecta del vector de cartes (i+1).</span></span>
+<span id="cb85-180"><a href="pac05.html#cb85-180"></a><span class="co">     */</span></span>
+<span id="cb85-181"><a href="pac05.html#cb85-181"></a>    <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; i-<span class="dv">1</span>; j++) {</span>
+<span id="cb85-182"><a href="pac05.html#cb85-182"></a>        </span>
+<span id="cb85-183"><a href="pac05.html#cb85-183"></a>        <span class="co">/* Per comparar la carta de la posició actual</span></span>
+<span id="cb85-184"><a href="pac05.html#cb85-184"></a><span class="co">         * amb la que hi ha a la següent posició,</span></span>
+<span id="cb85-185"><a href="pac05.html#cb85-185"></a><span class="co">         * utilitzem els índex j i j+1 respectivament.</span></span>
+<span id="cb85-186"><a href="pac05.html#cb85-186"></a><span class="co">         */</span></span>
+<span id="cb85-187"><a href="pac05.html#cb85-187"></a>        isMateixColl = (vCartes[j].coll == vCartes[j+<span class="dv">1</span>].coll);</span>
+<span id="cb85-188"><a href="pac05.html#cb85-188"></a>        printf(<span class="st">&quot;</span><span class="sc">\t</span><span class="st">%d de %s vs %d de %s: &quot;</span>, vCartes[j].numero, vNoms[vCartes[j].coll], vCartes[j+<span class="dv">1</span>].numero, vNoms[vCartes[j+<span class="dv">1</span>].coll]);</span>
+<span id="cb85-189"><a href="pac05.html#cb85-189"></a>        <span class="cf">if</span> (isMateixColl) {</span>
+<span id="cb85-190"><a href="pac05.html#cb85-190"></a>            printf(<span class="st">&quot;són del mateix coll!</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb85-191"><a href="pac05.html#cb85-191"></a>        } <span class="cf">else</span> {</span>
+<span id="cb85-192"><a href="pac05.html#cb85-192"></a>            printf(<span class="st">&quot;són de colls diferents!</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb85-193"><a href="pac05.html#cb85-193"></a>        }</span>
+<span id="cb85-194"><a href="pac05.html#cb85-194"></a>    }</span>
+<span id="cb85-195"><a href="pac05.html#cb85-195"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb85-196"><a href="pac05.html#cb85-196"></a>}</span></code></pre></div>
 <p>Un exemple d’execució pot ser el següent:</p>
 <p>
 <img src="img/play.png" style="float:left; padding:10px" />

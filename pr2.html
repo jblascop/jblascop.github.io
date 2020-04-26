@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title> 12 PR2 | FAQ Laboratori de Fonaments de Programació</title>
+  <title>12 PR2 | FAQ Laboratori de Fonaments de Programació</title>
   <meta name="description" content="FAQ del Laboratori de Fonaments de programació" />
   <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
-  <meta property="og:title" content=" 12 PR2 | FAQ Laboratori de Fonaments de Programació" />
+  <meta property="og:title" content="12 PR2 | FAQ Laboratori de Fonaments de Programació" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content=" 12 PR2 | FAQ Laboratori de Fonaments de Programació" />
+  <meta name="twitter:title" content="12 PR2 | FAQ Laboratori de Fonaments de Programació" />
   
   <meta name="twitter:description" content="FAQ del Laboratori de Fonaments de programació" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Jordi Blasco Planesas" />
 
 
-<meta name="date" content="2020-04-13" />
+<meta name="date" content="2020-04-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="pr1.html"/>
-<link rel="next" href="vmware-i-codelite.html"/>
+<link rel="next" href="altres.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,44 +50,79 @@
 
 
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164643024-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164643024-1');
+</script>
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -107,7 +142,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introducció</a></li>
-<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a><ul>
+<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a>
+<ul>
 <li class="chapter" data-level="1.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic"><i class="fa fa-check"></i><b>1.1</b> Llenguatge algorísmic</a></li>
 <li class="chapter" data-level="1.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
 <li class="chapter" data-level="1.3" data-path="pac01.html"><a href="pac01.html#equivalencies-llenguatge-algorismic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.3</b> Equivalències llenguatge algorísmic vs llenguatge C</a></li>
@@ -118,14 +154,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="1.8" data-path="pac01.html"><a href="pac01.html#lectura-de-caracters-en-c"><i class="fa fa-check"></i><b>1.8</b> Lectura de caràcters en C</a></li>
 <li class="chapter" data-level="1.9" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>1.9</b> Lectura de float en C</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a><ul>
+<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="pac02.html"><a href="pac02.html#booleans"><i class="fa fa-check"></i><b>2.1</b> Booleans en C</a></li>
 <li class="chapter" data-level="2.2" data-path="pac02.html"><a href="pac02.html#booleans-definits-com-a-enumeratius"><i class="fa fa-check"></i><b>2.2</b> Booleans definits com a enumeratius</a></li>
 <li class="chapter" data-level="2.3" data-path="pac02.html"><a href="pac02.html#constants-define-vs-const"><i class="fa fa-check"></i><b>2.3</b> Constants: define vs const</a></li>
 <li class="chapter" data-level="2.4" data-path="pac02.html"><a href="pac02.html#com-mostrar-el-valor-duna-constant"><i class="fa fa-check"></i><b>2.4</b> Com mostrar el valor d’una constant</a></li>
 <li class="chapter" data-level="2.5" data-path="pac02.html"><a href="pac02.html#precisio-en-variables-float"><i class="fa fa-check"></i><b>2.5</b> Precisió en variables float</a></li>
 <li class="chapter" data-level="2.6" data-path="pac02.html"><a href="pac02.html#semantica-duna-expressio"><i class="fa fa-check"></i><b>2.6</b> Semàntica d’una expressió</a></li>
-<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a><ul>
+<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>2.7.1</b> Exemple 1: esParell</a></li>
 <li class="chapter" data-level="2.7.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>2.7.2</b> Exemple 2: capDeSetmana</a></li>
 <li class="chapter" data-level="2.7.3" data-path="pac02.html"><a href="pac02.html#exemple-3-esvocal"><i class="fa fa-check"></i><b>2.7.3</b> Exemple 3: esVocal</a></li>
@@ -135,7 +173,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.7.7" data-path="pac02.html"><a href="pac02.html#exemple-7-scoutingbasquet"><i class="fa fa-check"></i><b>2.7.7</b> Exemple 7: scoutingBasquet</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a><ul>
+<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="pac03.html"><a href="pac03.html#com-declarar-un-vector-en-llenguatge-algorismic"><i class="fa fa-check"></i><b>3.1</b> Com declarar un vector en llenguatge algorísmic</a></li>
 <li class="chapter" data-level="3.2" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>3.2</b> Significat dels arguments del main</a></li>
 <li class="chapter" data-level="3.3" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>3.3</b> Assignar valors a un vector</a></li>
@@ -144,14 +183,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.6" data-path="pac03.html"><a href="pac03.html#importancia-dels-tipus-utilitzats-en-llenguatge-c"><i class="fa fa-check"></i><b>3.6</b> Importància dels tipus utilitzats en llenguatge C</a></li>
 <li class="chapter" data-level="3.7" data-path="pac03.html"><a href="pac03.html#exemple-notafinal"><i class="fa fa-check"></i><b>3.7</b> Exemple: notaFinal</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a><ul>
+<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>4.1</b> Com tractar elements d’un vector amb un bucle</a></li>
 <li class="chapter" data-level="4.2" data-path="pac04.html"><a href="pac04.html#entrada-continua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>4.2</b> Entrada continua de valors amb un bucle</a></li>
 <li class="chapter" data-level="4.3" data-path="pac04.html"><a href="pac04.html#com-tractar-valors-en-multiples-vectors"><i class="fa fa-check"></i><b>4.3</b> Com tractar valors en múltiples vectors</a></li>
 <li class="chapter" data-level="4.4" data-path="pac04.html"><a href="pac04.html#definicio-chars-vs-strings"><i class="fa fa-check"></i><b>4.4</b> Definició chars vs strings</a></li>
 <li class="chapter" data-level="4.5" data-path="pac04.html"><a href="pac04.html#exemple-mitjanapes"><i class="fa fa-check"></i><b>4.5</b> Exemple: mitjanaPes</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a><ul>
+<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="pac05.html"><a href="pac05.html#comanda-strcmp"><i class="fa fa-check"></i><b>5.1</b> Comanda strcmp()</a></li>
 <li class="chapter" data-level="5.2" data-path="pac05.html"><a href="pac05.html#comanda-scanf"><i class="fa fa-check"></i><b>5.2</b> Comanda scanf</a></li>
 <li class="chapter" data-level="5.3" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strcmp"><i class="fa fa-check"></i><b>5.3</b> El finalitzador ‘\0’ i strcmp()</a></li>
@@ -160,8 +201,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="5.6" data-path="pac05.html"><a href="pac05.html#exemple-nomines"><i class="fa fa-check"></i><b>5.6</b> Exemple: nòmines</a></li>
 <li class="chapter" data-level="5.7" data-path="pac05.html"><a href="pac05.html#exemple-brisca"><i class="fa fa-check"></i><b>5.7</b> Exemple: brisca</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a><ul>
-<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a><ul>
+<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferencies-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a>
+<ul>
 <li class="chapter" data-level="6.1.1" data-path="pac06.html"><a href="pac06.html#parametres-dentrada-in"><i class="fa fa-check"></i><b>6.1.1</b> Paràmetres d’entrada (in)</a></li>
 <li class="chapter" data-level="6.1.2" data-path="pac06.html"><a href="pac06.html#parametres-de-sortida-out"><i class="fa fa-check"></i><b>6.1.2</b> Paràmetres de sortida (out)</a></li>
 <li class="chapter" data-level="6.1.3" data-path="pac06.html"><a href="pac06.html#parametres-dentradasortida-inout"><i class="fa fa-check"></i><b>6.1.3</b> Paràmetres d’entrada/sortida (inout)</a></li>
@@ -170,13 +213,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.2" data-path="pac06.html"><a href="pac06.html#exemple-us-daccions"><i class="fa fa-check"></i><b>6.2</b> Exemple: ús d’accions</a></li>
 <li class="chapter" data-level="6.3" data-path="pac06.html"><a href="pac06.html#exemple-us-de-funcions"><i class="fa fa-check"></i><b>6.3</b> Exemple: ús de funcions</a></li>
 <li class="chapter" data-level="6.4" data-path="pac06.html"><a href="pac06.html#exemple-nomines-1"><i class="fa fa-check"></i><b>6.4</b> Exemple: nòmines</a></li>
-<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a><ul>
+<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="pac06.html"><a href="pac06.html#explicacio-sobre-laccio-copiarjugadora"><i class="fa fa-check"></i><b>6.5.1</b> Explicació sobre l’acció copiarJugadora()</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a><ul>
+<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a>
+<ul>
 <li class="chapter" data-level="7.1" data-path="pac07.html"><a href="pac07.html#quan-utilitzar-dins-de-funcionsaccions"><i class="fa fa-check"></i><b>7.1</b> Quan utilitzar &amp; dins de funcions/accions</a></li>
-<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a><ul>
+<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a>
+<ul>
 <li class="chapter" data-level="7.2.1" data-path="pac07.html"><a href="pac07.html#funcionament-per-defecte-dun-projecte-a-codelite"><i class="fa fa-check"></i><b>7.2.1</b> Funcionament per defecte d’un projecte a CodeLite:</a></li>
 <li class="chapter" data-level="7.2.2" data-path="pac07.html"><a href="pac07.html#executable-dins-de-bin."><i class="fa fa-check"></i><b>7.2.2</b> Executable dins de /bin.</a></li>
 <li class="chapter" data-level="7.2.3" data-path="pac07.html"><a href="pac07.html#modularitzacio-del-programa-en-un-arxiu-de-capcaleres-i-un-de-funcions."><i class="fa fa-check"></i><b>7.2.3</b> Modularització del programa en un arxiu de capçaleres i un de funcions.</a></li>
@@ -188,40 +234,31 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.7" data-path="pac07.html"><a href="pac07.html#exemple-funcio-isparell"><i class="fa fa-check"></i><b>7.7</b> Exemple: funció isParell</a></li>
 <li class="chapter" data-level="7.8" data-path="pac07.html"><a href="pac07.html#exemple-pivotdefensiutirslliures"><i class="fa fa-check"></i><b>7.8</b> Exemple: pivotDefensiuTirsLliures</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a><ul>
+<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a>
+<ul>
 <li class="chapter" data-level="8.1" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>8.1</b> Com inicialitzar una taula</a></li>
 <li class="chapter" data-level="8.2" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota"><i class="fa fa-check"></i><b>8.2</b> Exemple: calcularNota</a></li>
 <li class="chapter" data-level="8.3" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota-amb-introduccio-iterativa"><i class="fa fa-check"></i><b>8.3</b> Exemple: calcularNota amb introducció iterativa</a></li>
 <li class="chapter" data-level="8.4" data-path="pac08.html"><a href="pac08.html#exemple-recorregut-vs-cerca"><i class="fa fa-check"></i><b>8.4</b> Exemple: recorregut vs cerca</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a><ul>
+<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="pac09.html"><a href="pac09.html#exemple"><i class="fa fa-check"></i><b>9.1</b> Exemple</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>10</b> PAC10</a></li>
-<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a><ul>
+<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a>
+<ul>
 <li class="chapter" data-level="11.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>11.1</b> Mode menu vs mode test</a></li>
 <li class="chapter" data-level="11.2" data-path="pr1.html"><a href="pr1.html#exemple-tupla-dins-de-tupla"><i class="fa fa-check"></i><b>11.2</b> Exemple: tupla dins de tupla</a></li>
-<li class="chapter" data-level="11.3" data-path="pr1.html"><a href="pr1.html#desplacament-delements-en-un-vector"><i class="fa fa-check"></i><b>11.3</b> Desplaçament d’elements en un vector</a><ul>
-<li class="chapter" data-level="11.3.1" data-path="pr1.html"><a href="pr1.html#afegir-un-element"><i class="fa fa-check"></i><b>11.3.1</b> Afegir un element</a></li>
-<li class="chapter" data-level="11.3.2" data-path="pr1.html"><a href="pr1.html#esborrar-un-element"><i class="fa fa-check"></i><b>11.3.2</b> Esborrar un element</a></li>
-<li class="chapter" data-level="11.3.3" data-path="pr1.html"><a href="pr1.html#exemple-diessetmana"><i class="fa fa-check"></i><b>11.3.3</b> Exemple: diesSetmana</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a><ul>
+<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a>
+<ul>
 <li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-1"><i class="fa fa-check"></i><b>12.1</b> Exemple</a></li>
+<li class="chapter" data-level="12.2" data-path="pr2.html"><a href="pr2.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>12.2</b> Com instal·lar les Guest Additions</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>13</b> VMWare i CodeLite</a><ul>
-<li class="chapter" data-level="13.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-que-una-maquina-virtual"><i class="fa fa-check"></i><b>13.1</b> Per què una màquina virtual?</a></li>
-<li class="chapter" data-level="13.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#virtualbox-i-requeriments-de-virtualitzacio"><i class="fa fa-check"></i><b>13.2</b> VirtualBox i requeriments de virtualització</a></li>
-<li class="chapter" data-level="13.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>13.3</b> Com instal·lar les Guest Additions</a></li>
-<li class="chapter" data-level="13.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>13.4</b> Primers passos amb CodeLite</a></li>
-<li class="chapter" data-level="13.5" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>13.5</b> Com activar un projecte</a></li>
-<li class="chapter" data-level="13.6" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>13.6</b> Canviar idioma del teclat</a></li>
-<li class="chapter" data-level="13.7" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#programa-per-defecte-al-crear-un-projecte"><i class="fa fa-check"></i><b>13.7</b> Programa per defecte al crear un projecte</a></li>
-<li class="chapter" data-level="13.8" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-fixar-el-kernel-dinici-amb-lubuntu"><i class="fa fa-check"></i><b>13.8</b> Com fixar el kernel d’inici amb Lubuntu</a></li>
-</ul></li>
-<li class="chapter" data-level="14" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>14</b> Altres</a><ul>
-<li class="chapter" data-level="14.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>14.1</b> Bilbliografia</a></li>
+<li class="chapter" data-level="13" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>13</b> Altres</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="altres.html"><a href="altres.html#bilbliografia"><i class="fa fa-check"></i><b>13.1</b> Bilbliografia</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://www.uoc.edu" target="blank">www.uoc.edu</a></li>
@@ -243,10 +280,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pr2" class="section level1">
-<h1><span class="header-section-number"> 12</span> PR2</h1>
-<div id="exemple-1" class="section level2">
-<h2><span class="header-section-number">12.1</span> Exemple</h2>
+<div id="pr2" class="section level1" number="12">
+<h1 number="12"><span class="header-section-number">12</span> PR2</h1>
+<div id="exemple-1" class="section level2" number="12.1">
+<h2 number="12.1"><span class="header-section-number">12.1</span> Exemple</h2>
 <p>Adjunto un exemple inventat on, donada una pila de cartes inicial, el que volem és codificar l’acció <code>separarDiamants</code> que ens permeti separar de la pila totes aquelles que són <code>DIAMANTS</code>, afegint-les a una nova pila de cartes <code>DIAMANTS</code>.</p>
 <p>Exemple: si inicialment tenim la pila1:</p>
 <pre><code>[Q] de PIQUES
@@ -265,203 +302,298 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>
 <img src="img/c.png" style="float:left; padding:10px" />
 </p>
-<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span>
-<span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span>
+<div class="sourceCode" id="cb152"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb152-1"><a href="pr2.html#cb152-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb152-2"><a href="pr2.html#cb152-2"></a><span class="pp">#include </span><span class="im">&lt;stdbool.h&gt;</span></span>
+<span id="cb152-3"><a href="pr2.html#cb152-3"></a></span>
+<span id="cb152-4"><a href="pr2.html#cb152-4"></a><span class="co">/* Definició del model de cartes segons l&#39;enllaç:</span></span>
+<span id="cb152-5"><a href="pr2.html#cb152-5"></a><span class="co">   https://ca.wikipedia.org/wiki/Joc_de_cartes#Joc_de_cartes_francès */</span></span>
+<span id="cb152-6"><a href="pr2.html#cb152-6"></a></span>
+<span id="cb152-7"><a href="pr2.html#cb152-7"></a><span class="pp">#define MAX_CARTES 54+1</span></span>
+<span id="cb152-8"><a href="pr2.html#cb152-8"></a></span>
+<span id="cb152-9"><a href="pr2.html#cb152-9"></a><span class="co">/* El terme &quot;coll&quot;&quot; equival a &quot;baraja&quot; */</span></span>
+<span id="cb152-10"><a href="pr2.html#cb152-10"></a><span class="kw">typedef</span> <span class="kw">enum</span> {DIAMANTS, PIQUES, TREVOLS, CORS} tColl;</span>
+<span id="cb152-11"><a href="pr2.html#cb152-11"></a></span>
+<span id="cb152-12"><a href="pr2.html#cb152-12"></a><span class="kw">typedef</span> <span class="kw">struct</span> {</span>
+<span id="cb152-13"><a href="pr2.html#cb152-13"></a>    <span class="dt">char</span> valor;</span>
+<span id="cb152-14"><a href="pr2.html#cb152-14"></a>    tColl coll;</span>
+<span id="cb152-15"><a href="pr2.html#cb152-15"></a>} tCarta;</span>
+<span id="cb152-16"><a href="pr2.html#cb152-16"></a></span>
+<span id="cb152-17"><a href="pr2.html#cb152-17"></a><span class="kw">typedef</span> <span class="kw">struct</span> {</span>
+<span id="cb152-18"><a href="pr2.html#cb152-18"></a>    tCarta A[MAX_CARTES];</span>
+<span id="cb152-19"><a href="pr2.html#cb152-19"></a>    <span class="dt">int</span> nelem;</span>
+<span id="cb152-20"><a href="pr2.html#cb152-20"></a>} tStack;</span>
+<span id="cb152-21"><a href="pr2.html#cb152-21"></a></span>
+<span id="cb152-22"><a href="pr2.html#cb152-22"></a><span class="co">/* Predeclaració de les accions i les funcions */</span></span>
+<span id="cb152-23"><a href="pr2.html#cb152-23"></a><span class="dt">void</span> createStack(tStack *s);</span>
+<span id="cb152-24"><a href="pr2.html#cb152-24"></a><span class="dt">void</span> push(tStack *s, tCarta e);</span>
+<span id="cb152-25"><a href="pr2.html#cb152-25"></a><span class="dt">void</span> pop(tStack *s);</span>
+<span id="cb152-26"><a href="pr2.html#cb152-26"></a>tCarta top(tStack s);</span>
+<span id="cb152-27"><a href="pr2.html#cb152-27"></a><span class="dt">bool</span> emptyStack(tStack s);</span>
+<span id="cb152-28"><a href="pr2.html#cb152-28"></a><span class="dt">bool</span> fullStack(tStack s);</span>
+<span id="cb152-29"><a href="pr2.html#cb152-29"></a><span class="dt">void</span> printStack(tStack s);</span>
+<span id="cb152-30"><a href="pr2.html#cb152-30"></a><span class="dt">void</span> separarDiamants(tStack *pilaCartes, tStack *pilaDiamants);</span>
+<span id="cb152-31"><a href="pr2.html#cb152-31"></a></span>
+<span id="cb152-32"><a href="pr2.html#cb152-32"></a><span class="co">/* Programa principal */</span></span>
+<span id="cb152-33"><a href="pr2.html#cb152-33"></a></span>
+<span id="cb152-34"><a href="pr2.html#cb152-34"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {</span>
+<span id="cb152-35"><a href="pr2.html#cb152-35"></a>    tCarta carta1, carta2, carta3, carta4, carta5;</span>
+<span id="cb152-36"><a href="pr2.html#cb152-36"></a>    tStack pilaCartes, pilaCartesDiamants;</span>
+<span id="cb152-37"><a href="pr2.html#cb152-37"></a>    </span>
+<span id="cb152-38"><a href="pr2.html#cb152-38"></a>    <span class="co">/* Creem dues piles (reviseu el comentari inicial del bloc</span></span>
+<span id="cb152-39"><a href="pr2.html#cb152-39"></a><span class="co">     * d&#39;implementació de les accions/funcions de la pila). </span></span>
+<span id="cb152-40"><a href="pr2.html#cb152-40"></a><span class="co">     */</span></span>
+<span id="cb152-41"><a href="pr2.html#cb152-41"></a>    createStack(&amp;pilaCartes);</span>
+<span id="cb152-42"><a href="pr2.html#cb152-42"></a>    createStack(&amp;pilaCartesDiamants);</span>
+<span id="cb152-43"><a href="pr2.html#cb152-43"></a>    </span>
+<span id="cb152-44"><a href="pr2.html#cb152-44"></a>    <span class="co">/* Definim una sèrie de cartes. */</span></span>
+<span id="cb152-45"><a href="pr2.html#cb152-45"></a>    carta1.valor = <span class="ch">&#39;3&#39;</span>;</span>
+<span id="cb152-46"><a href="pr2.html#cb152-46"></a>    carta1.coll = CORS;</span>
+<span id="cb152-47"><a href="pr2.html#cb152-47"></a>    carta2.valor = <span class="ch">&#39;A&#39;</span>;</span>
+<span id="cb152-48"><a href="pr2.html#cb152-48"></a>    carta2.coll = DIAMANTS;</span>
+<span id="cb152-49"><a href="pr2.html#cb152-49"></a>    carta3.valor = <span class="ch">&#39;J&#39;</span>;</span>
+<span id="cb152-50"><a href="pr2.html#cb152-50"></a>    carta3.coll = TREVOLS;</span>
+<span id="cb152-51"><a href="pr2.html#cb152-51"></a>    carta4.valor = <span class="ch">&#39;5&#39;</span>;</span>
+<span id="cb152-52"><a href="pr2.html#cb152-52"></a>    carta4.coll = DIAMANTS;</span>
+<span id="cb152-53"><a href="pr2.html#cb152-53"></a>    carta5.valor = <span class="ch">&#39;Q&#39;</span>;</span>
+<span id="cb152-54"><a href="pr2.html#cb152-54"></a>    carta5.coll = PIQUES;</span>
+<span id="cb152-55"><a href="pr2.html#cb152-55"></a>    </span>
+<span id="cb152-56"><a href="pr2.html#cb152-56"></a>    <span class="co">/* I les afegim totes a pilaCartes */</span></span>
+<span id="cb152-57"><a href="pr2.html#cb152-57"></a>    push(&amp;pilaCartes, carta1);</span>
+<span id="cb152-58"><a href="pr2.html#cb152-58"></a>    push(&amp;pilaCartes, carta2);</span>
+<span id="cb152-59"><a href="pr2.html#cb152-59"></a>    push(&amp;pilaCartes, carta3);</span>
+<span id="cb152-60"><a href="pr2.html#cb152-60"></a>    push(&amp;pilaCartes, carta4);</span>
+<span id="cb152-61"><a href="pr2.html#cb152-61"></a>    push(&amp;pilaCartes, carta5);</span>
+<span id="cb152-62"><a href="pr2.html#cb152-62"></a>    </span>
+<span id="cb152-63"><a href="pr2.html#cb152-63"></a>    <span class="co">/* Mostrem el contingut de pilaCartes per</span></span>
+<span id="cb152-64"><a href="pr2.html#cb152-64"></a><span class="co">     * pantalla, amb l&#39;acció addicional printStack. </span></span>
+<span id="cb152-65"><a href="pr2.html#cb152-65"></a><span class="co">     */</span></span>
+<span id="cb152-66"><a href="pr2.html#cb152-66"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Contingut de la pila &#39;pilaCartes&#39; :</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb152-67"><a href="pr2.html#cb152-67"></a>    printStack(pilaCartes);</span>
+<span id="cb152-68"><a href="pr2.html#cb152-68"></a>    </span>
+<span id="cb152-69"><a href="pr2.html#cb152-69"></a>    <span class="co">/* Ara volem separar de pilaCartes totes </span></span>
+<span id="cb152-70"><a href="pr2.html#cb152-70"></a><span class="co">     * aquelles cartes que són DIAMANTS, les quals</span></span>
+<span id="cb152-71"><a href="pr2.html#cb152-71"></a><span class="co">     * formaran part d&#39;una nova pila de cartes. </span></span>
+<span id="cb152-72"><a href="pr2.html#cb152-72"></a><span class="co">     */</span></span>
+<span id="cb152-73"><a href="pr2.html#cb152-73"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Separem les cartes en dues piles!!</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb152-74"><a href="pr2.html#cb152-74"></a>    </span>
+<span id="cb152-75"><a href="pr2.html#cb152-75"></a>    <span class="co">/* Explicació detallada dins de la implementació</span></span>
+<span id="cb152-76"><a href="pr2.html#cb152-76"></a><span class="co">     * de l&#39;acció. </span></span>
+<span id="cb152-77"><a href="pr2.html#cb152-77"></a><span class="co">     */</span></span>
+<span id="cb152-78"><a href="pr2.html#cb152-78"></a>    separarDiamants(&amp;pilaCartes, &amp;pilaCartesDiamants);</span>
+<span id="cb152-79"><a href="pr2.html#cb152-79"></a>    </span>
+<span id="cb152-80"><a href="pr2.html#cb152-80"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Contingut de la pila &#39;pilaCartes&#39; sense DIAMANTS :</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb152-81"><a href="pr2.html#cb152-81"></a>    printStack(pilaCartes);</span>
+<span id="cb152-82"><a href="pr2.html#cb152-82"></a>    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Contingut de la pila &#39;pilaCartesDiamants&#39; :</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb152-83"><a href="pr2.html#cb152-83"></a>    printStack(pilaCartesDiamants);</span>
+<span id="cb152-84"><a href="pr2.html#cb152-84"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb152-85"><a href="pr2.html#cb152-85"></a>}</span>
+<span id="cb152-86"><a href="pr2.html#cb152-86"></a></span>
+<span id="cb152-87"><a href="pr2.html#cb152-87"></a><span class="co">/* Implementació de les accions/funcions de la pila: he fet un copy/paste</span></span>
+<span id="cb152-88"><a href="pr2.html#cb152-88"></a><span class="co"> * de la codificació C de l&#39;exemple 19_04 de la xWiki, canviant</span></span>
+<span id="cb152-89"><a href="pr2.html#cb152-89"></a><span class="co"> * el genèric &quot;elem&quot; per &quot;tCarta&quot;. </span></span>
+<span id="cb152-90"><a href="pr2.html#cb152-90"></a><span class="co"> *</span></span>
+<span id="cb152-91"><a href="pr2.html#cb152-91"></a><span class="co"> * !!! Atenció !!!: hi poden haver diferències amb funcions/accions </span></span>
+<span id="cb152-92"><a href="pr2.html#cb152-92"></a><span class="co"> * que us demanen a la PR2. De cara a la PR2 heu de codificar aquests</span></span>
+<span id="cb152-93"><a href="pr2.html#cb152-93"></a><span class="co"> * mètodes segons les indicacions de l&#39;enunciat. </span></span>
+<span id="cb152-94"><a href="pr2.html#cb152-94"></a><span class="co"> */</span></span>
+<span id="cb152-95"><a href="pr2.html#cb152-95"></a></span>
+<span id="cb152-96"><a href="pr2.html#cb152-96"></a><span class="dt">void</span> createStack(tStack *s) {</span>
+<span id="cb152-97"><a href="pr2.html#cb152-97"></a>    s-&gt;nelem=<span class="dv">0</span>;</span>
+<span id="cb152-98"><a href="pr2.html#cb152-98"></a>}</span>
+<span id="cb152-99"><a href="pr2.html#cb152-99"></a></span>
+<span id="cb152-100"><a href="pr2.html#cb152-100"></a><span class="dt">void</span> push(tStack *s, tCarta e) {</span>
+<span id="cb152-101"><a href="pr2.html#cb152-101"></a>    <span class="cf">if</span> (s-&gt;nelem == MAX_CARTES) {</span>
+<span id="cb152-102"><a href="pr2.html#cb152-102"></a>        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st"> Full stack </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb152-103"><a href="pr2.html#cb152-103"></a>    } <span class="cf">else</span> {</span>
+<span id="cb152-104"><a href="pr2.html#cb152-104"></a>        s-&gt;A[s-&gt;nelem]=e; <span class="co">/* first position in C is 0 */</span></span>
+<span id="cb152-105"><a href="pr2.html#cb152-105"></a>        s-&gt;nelem++;</span>
+<span id="cb152-106"><a href="pr2.html#cb152-106"></a>    }</span>
+<span id="cb152-107"><a href="pr2.html#cb152-107"></a>}</span>
+<span id="cb152-108"><a href="pr2.html#cb152-108"></a></span>
+<span id="cb152-109"><a href="pr2.html#cb152-109"></a><span class="dt">void</span> pop(tStack *s) {</span>
+<span id="cb152-110"><a href="pr2.html#cb152-110"></a>    <span class="cf">if</span> (s-&gt;nelem == <span class="dv">0</span>) {</span>
+<span id="cb152-111"><a href="pr2.html#cb152-111"></a>        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st"> Empty stack</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb152-112"><a href="pr2.html#cb152-112"></a>    } <span class="cf">else</span> {</span>
+<span id="cb152-113"><a href="pr2.html#cb152-113"></a>        s-&gt;nelem--;</span>
+<span id="cb152-114"><a href="pr2.html#cb152-114"></a>    }</span>
+<span id="cb152-115"><a href="pr2.html#cb152-115"></a>}</span>
+<span id="cb152-116"><a href="pr2.html#cb152-116"></a></span>
+<span id="cb152-117"><a href="pr2.html#cb152-117"></a>tCarta top(tStack s) {</span>
+<span id="cb152-118"><a href="pr2.html#cb152-118"></a>    tCarta e;</span>
+<span id="cb152-119"><a href="pr2.html#cb152-119"></a>    <span class="cf">if</span> (s.nelem == <span class="dv">0</span>) {</span>
+<span id="cb152-120"><a href="pr2.html#cb152-120"></a>        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st"> Empty stack </span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb152-121"><a href="pr2.html#cb152-121"></a>    } <span class="cf">else</span> {</span>
+<span id="cb152-122"><a href="pr2.html#cb152-122"></a>        e = s.A[s.nelem-<span class="dv">1</span>];</span>
+<span id="cb152-123"><a href="pr2.html#cb152-123"></a>    }</span>
+<span id="cb152-124"><a href="pr2.html#cb152-124"></a>    <span class="cf">return</span> e;</span>
+<span id="cb152-125"><a href="pr2.html#cb152-125"></a>}</span>
+<span id="cb152-126"><a href="pr2.html#cb152-126"></a></span>
+<span id="cb152-127"><a href="pr2.html#cb152-127"></a><span class="dt">bool</span> emptyStack(tStack s) {</span>
+<span id="cb152-128"><a href="pr2.html#cb152-128"></a>    <span class="cf">return</span> (s.nelem == <span class="dv">0</span>);</span>
+<span id="cb152-129"><a href="pr2.html#cb152-129"></a>}</span>
+<span id="cb152-130"><a href="pr2.html#cb152-130"></a></span>
+<span id="cb152-131"><a href="pr2.html#cb152-131"></a><span class="dt">bool</span> fullStack(tStack s) {</span>
+<span id="cb152-132"><a href="pr2.html#cb152-132"></a>    <span class="cf">return</span> (s.nelem == MAX_CARTES);</span>
+<span id="cb152-133"><a href="pr2.html#cb152-133"></a>}</span>
+<span id="cb152-134"><a href="pr2.html#cb152-134"></a></span>
+<span id="cb152-135"><a href="pr2.html#cb152-135"></a><span class="co">/* Acció addicional que mostra per pantalla tots </span></span>
+<span id="cb152-136"><a href="pr2.html#cb152-136"></a><span class="co"> * els elements d&#39;una pila. </span></span>
+<span id="cb152-137"><a href="pr2.html#cb152-137"></a><span class="co"> */</span></span>
+<span id="cb152-138"><a href="pr2.html#cb152-138"></a><span class="dt">void</span> printStack(tStack s) {</span>
+<span id="cb152-139"><a href="pr2.html#cb152-139"></a>    </span>
+<span id="cb152-140"><a href="pr2.html#cb152-140"></a>    tCarta cartaAux;</span>
+<span id="cb152-141"><a href="pr2.html#cb152-141"></a>    </span>
+<span id="cb152-142"><a href="pr2.html#cb152-142"></a>    <span class="cf">while</span> (s.nelem &gt; <span class="dv">0</span>) {</span>
+<span id="cb152-143"><a href="pr2.html#cb152-143"></a>        cartaAux = s.A[s.nelem-<span class="dv">1</span>]; </span>
+<span id="cb152-144"><a href="pr2.html#cb152-144"></a>        <span class="cf">if</span> (cartaAux.coll == DIAMANTS) {</span>
+<span id="cb152-145"><a href="pr2.html#cb152-145"></a>            printf(<span class="st">&quot;  [%c] de DIAMANTS</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);</span>
+<span id="cb152-146"><a href="pr2.html#cb152-146"></a>        } <span class="cf">else</span> <span class="cf">if</span> (cartaAux.coll == PIQUES) {</span>
+<span id="cb152-147"><a href="pr2.html#cb152-147"></a>            printf(<span class="st">&quot;  [%c] de PIQUES</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);</span>
+<span id="cb152-148"><a href="pr2.html#cb152-148"></a>        } <span class="cf">else</span> <span class="cf">if</span> (cartaAux.coll == TREVOLS) {</span>
+<span id="cb152-149"><a href="pr2.html#cb152-149"></a>            printf(<span class="st">&quot;  [%c] de TREVOLS</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);</span>
+<span id="cb152-150"><a href="pr2.html#cb152-150"></a>        } <span class="cf">else</span> <span class="cf">if</span> (cartaAux.coll == CORS) {</span>
+<span id="cb152-151"><a href="pr2.html#cb152-151"></a>            printf(<span class="st">&quot;  [%c] de CORS</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);</span>
+<span id="cb152-152"><a href="pr2.html#cb152-152"></a>        }</span>
+<span id="cb152-153"><a href="pr2.html#cb152-153"></a>        s.nelem--;</span>
+<span id="cb152-154"><a href="pr2.html#cb152-154"></a>    }</span>
+<span id="cb152-155"><a href="pr2.html#cb152-155"></a>}</span>
+<span id="cb152-156"><a href="pr2.html#cb152-156"></a></span>
+<span id="cb152-157"><a href="pr2.html#cb152-157"></a><span class="co">/* Acció que rep dos paràmetres:</span></span>
+<span id="cb152-158"><a href="pr2.html#cb152-158"></a><span class="co"> * - pilaCartes (inout)</span></span>
+<span id="cb152-159"><a href="pr2.html#cb152-159"></a><span class="co"> * - pilaDiamants (out)</span></span>
+<span id="cb152-160"><a href="pr2.html#cb152-160"></a><span class="co"> * Aquesta acció separa de pilaCartes (inout) aquelles</span></span>
+<span id="cb152-161"><a href="pr2.html#cb152-161"></a><span class="co"> * cartes amb coll DIAMANTS, i les afegeix a</span></span>
+<span id="cb152-162"><a href="pr2.html#cb152-162"></a><span class="co"> * pilaDiamants (out). Així una vegada executada l&#39;acció, tindrem:</span></span>
+<span id="cb152-163"><a href="pr2.html#cb152-163"></a><span class="co"> * - pilaCartes: contindrà totes les cartes que no són DIAMANTS.</span></span>
+<span id="cb152-164"><a href="pr2.html#cb152-164"></a><span class="co"> * - pilaDiamants: contindrà tots els DIAMANTS. </span></span>
+<span id="cb152-165"><a href="pr2.html#cb152-165"></a><span class="co"> */</span></span>
+<span id="cb152-166"><a href="pr2.html#cb152-166"></a><span class="dt">void</span> separarDiamants(tStack *pilaCartes, tStack *pilaDiamants) {</span>
+<span id="cb152-167"><a href="pr2.html#cb152-167"></a>    </span>
+<span id="cb152-168"><a href="pr2.html#cb152-168"></a>    tCarta cartaAux;</span>
+<span id="cb152-169"><a href="pr2.html#cb152-169"></a>    tStack pilaNoDiamants;</span>
+<span id="cb152-170"><a href="pr2.html#cb152-170"></a>    </span>
+<span id="cb152-171"><a href="pr2.html#cb152-171"></a>    <span class="co">/* Totes les cartes inicialment estan a pilaCartes.</span></span>
+<span id="cb152-172"><a href="pr2.html#cb152-172"></a><span class="co">     * Es tracta d&#39;anar afegint els DIAMANTS a la pilaDiamants,</span></span>
+<span id="cb152-173"><a href="pr2.html#cb152-173"></a><span class="co">     * i els que no són DIAMANTS a la pila temporal pilaNoDiamants.</span></span>
+<span id="cb152-174"><a href="pr2.html#cb152-174"></a><span class="co">     * Posteriorment assignarem pilaNoDiamants a pilaCartes (inout).</span></span>
+<span id="cb152-175"><a href="pr2.html#cb152-175"></a><span class="co">     */</span></span>
+<span id="cb152-176"><a href="pr2.html#cb152-176"></a>    </span>
+<span id="cb152-177"><a href="pr2.html#cb152-177"></a>    <span class="co">/* Inicialitzem la pila auxiliar. */</span></span>
+<span id="cb152-178"><a href="pr2.html#cb152-178"></a>    createStack(&amp;pilaNoDiamants);</span>
+<span id="cb152-179"><a href="pr2.html#cb152-179"></a>    </span>
+<span id="cb152-180"><a href="pr2.html#cb152-180"></a>    <span class="co">/* Hem de tractar tots els elements de la pila. */</span></span>
+<span id="cb152-181"><a href="pr2.html#cb152-181"></a>    <span class="cf">while</span> (!emptyStack(*pilaCartes)) {</span>
+<span id="cb152-182"><a href="pr2.html#cb152-182"></a>        cartaAux = top(*pilaCartes);</span>
+<span id="cb152-183"><a href="pr2.html#cb152-183"></a>        <span class="cf">if</span> (cartaAux.coll == DIAMANTS) {</span>
+<span id="cb152-184"><a href="pr2.html#cb152-184"></a>            push(pilaDiamants, cartaAux);</span>
+<span id="cb152-185"><a href="pr2.html#cb152-185"></a>        } <span class="cf">else</span> {</span>
+<span id="cb152-186"><a href="pr2.html#cb152-186"></a>            push(&amp;pilaNoDiamants, cartaAux);            </span>
+<span id="cb152-187"><a href="pr2.html#cb152-187"></a>        }</span>
+<span id="cb152-188"><a href="pr2.html#cb152-188"></a>        </span>
+<span id="cb152-189"><a href="pr2.html#cb152-189"></a>        pop(pilaCartes);</span>
+<span id="cb152-190"><a href="pr2.html#cb152-190"></a>    }</span>
+<span id="cb152-191"><a href="pr2.html#cb152-191"></a>    </span>
+<span id="cb152-192"><a href="pr2.html#cb152-192"></a>    <span class="co">/* Reassignació de la pila auxiliar pilaNoDiamants</span></span>
+<span id="cb152-193"><a href="pr2.html#cb152-193"></a><span class="co">     * a pilaCartes, que al cap i a la fi és el paràmetre</span></span>
+<span id="cb152-194"><a href="pr2.html#cb152-194"></a><span class="co">     * de tipus inout de l&#39;acció. </span></span>
+<span id="cb152-195"><a href="pr2.html#cb152-195"></a><span class="co">     */</span></span>
+<span id="cb152-196"><a href="pr2.html#cb152-196"></a>    *pilaCartes = pilaNoDiamants;</span>
+<span id="cb152-197"><a href="pr2.html#cb152-197"></a>}</span></code></pre></div>
 
-<span class="co">/* Definició del model de cartes segons l&#39;enllaç:</span>
-<span class="co">   https://ca.wikipedia.org/wiki/Joc_de_cartes#Joc_de_cartes_francès */</span>
-
-<span class="pp">#define MAX_CARTES 54+1</span>
-
-<span class="co">/* El terme &quot;coll&quot;&quot; equival a &quot;baraja&quot; */</span>
-<span class="kw">typedef</span> <span class="kw">enum</span> {DIAMANTS, PIQUES, TREVOLS, CORS} tColl;
-
-<span class="kw">typedef</span> <span class="kw">struct</span> {
-    <span class="dt">char</span> valor;
-    tColl coll;
-} tCarta;
-
-<span class="kw">typedef</span> <span class="kw">struct</span> {
-    tCarta A[MAX_CARTES];
-    <span class="dt">int</span> nelem;
-} tStack;
-
-<span class="co">/* Predeclaració de les accions i les funcions */</span>
-<span class="dt">void</span> createStack(tStack *s);
-<span class="dt">void</span> push(tStack *s, tCarta e);
-<span class="dt">void</span> pop(tStack *s);
-tCarta top(tStack s);
-bool emptyStack(tStack s);
-bool fullStack(tStack s);
-<span class="dt">void</span> printStack(tStack s);
-<span class="dt">void</span> separarDiamants(tStack *pilaCartes, tStack *pilaDiamants);
-
-<span class="co">/* Programa principal */</span>
-
-<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
-    tCarta carta1, carta2, carta3, carta4, carta5;
-    tStack pilaCartes, pilaCartesDiamants;
-    
-    <span class="co">/* Creem dues piles (reviseu el comentari inicial del bloc</span>
-<span class="co">     * d&#39;implementació de les accions/funcions de la pila). </span>
-<span class="co">     */</span>
-    createStack(&amp;pilaCartes);
-    createStack(&amp;pilaCartesDiamants);
-    
-    <span class="co">/* Definim una sèrie de cartes. */</span>
-    carta1.valor = <span class="ch">&#39;3&#39;</span>;
-    carta1.coll = CORS;
-    carta2.valor = <span class="ch">&#39;A&#39;</span>;
-    carta2.coll = DIAMANTS;
-    carta3.valor = <span class="ch">&#39;J&#39;</span>;
-    carta3.coll = TREVOLS;
-    carta4.valor = <span class="ch">&#39;5&#39;</span>;
-    carta4.coll = DIAMANTS;
-    carta5.valor = <span class="ch">&#39;Q&#39;</span>;
-    carta5.coll = PIQUES;
-    
-    <span class="co">/* I les afegim totes a pilaCartes */</span>
-    push(&amp;pilaCartes, carta1);
-    push(&amp;pilaCartes, carta2);
-    push(&amp;pilaCartes, carta3);
-    push(&amp;pilaCartes, carta4);
-    push(&amp;pilaCartes, carta5);
-    
-    <span class="co">/* Mostrem el contingut de pilaCartes per</span>
-<span class="co">     * pantalla, amb l&#39;acció addicional printStack. </span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Contingut de la pila &#39;pilaCartes&#39; :</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printStack(pilaCartes);
-    
-    <span class="co">/* Ara volem separar de pilaCartes totes </span>
-<span class="co">     * aquelles cartes que són DIAMANTS, les quals</span>
-<span class="co">     * formaran part d&#39;una nova pila de cartes. </span>
-<span class="co">     */</span>
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Separem les cartes en dues piles!!</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    
-    <span class="co">/* Explicació detallada dins de la implementació</span>
-<span class="co">     * de l&#39;acció. </span>
-<span class="co">     */</span>
-    separarDiamants(&amp;pilaCartes, &amp;pilaCartesDiamants);
-    
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Contingut de la pila &#39;pilaCartes&#39; sense DIAMANTS :</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printStack(pilaCartes);
-    printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">Contingut de la pila &#39;pilaCartesDiamants&#39; :</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    printStack(pilaCartesDiamants);
-    <span class="cf">return</span> <span class="dv">0</span>;
-}
-
-<span class="co">/* Implementació de les accions/funcions de la pila: he fet un copy/paste</span>
-<span class="co"> * de la codificació C de l&#39;exemple 19_04 de la xWiki, canviant</span>
-<span class="co"> * el genèric &quot;elem&quot; per &quot;tCarta&quot;. </span>
-<span class="co"> *</span>
-<span class="co"> * !!! Atenció !!!: hi poden haver diferències amb funcions/accions </span>
-<span class="co"> * que us demanen a la PR2. De cara a la PR2 heu de codificar aquests</span>
-<span class="co"> * mètodes segons les indicacions de l&#39;enunciat. </span>
-<span class="co"> */</span>
-
-<span class="dt">void</span> createStack(tStack *s) {
-    s-&gt;nelem=<span class="dv">0</span>;
-}
-
-<span class="dt">void</span> push(tStack *s, tCarta e) {
-    <span class="cf">if</span> (s-&gt;nelem == MAX_CARTES) {
-        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st"> Full stack </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    } <span class="cf">else</span> {
-        s-&gt;A[s-&gt;nelem]=e; <span class="co">/* first position in C is 0 */</span>
-        s-&gt;nelem++;
-    }
-}
-
-<span class="dt">void</span> pop(tStack *s) {
-    <span class="cf">if</span> (s-&gt;nelem == <span class="dv">0</span>) {
-        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st"> Empty stack</span><span class="sc">\n</span><span class="st">&quot;</span>);
-    } <span class="cf">else</span> {
-        s-&gt;nelem--;
-    }
-}
-
-tCarta top(tStack s) {
-    tCarta e;
-    <span class="cf">if</span> (s.nelem == <span class="dv">0</span>) {
-        printf(<span class="st">&quot;</span><span class="sc">\n</span><span class="st"> Empty stack </span><span class="sc">\n</span><span class="st">&quot;</span>);
-    } <span class="cf">else</span> {
-        e = s.A[s.nelem-<span class="dv">1</span>];
-    }
-    <span class="cf">return</span> e;
-}
-
-bool emptyStack(tStack s) {
-    <span class="cf">return</span> (s.nelem == <span class="dv">0</span>);
-}
-
-bool fullStack(tStack s) {
-    <span class="cf">return</span> (s.nelem == MAX_CARTES);
-}
-
-<span class="co">/* Acció addicional que mostra per pantalla tots </span>
-<span class="co"> * els elements d&#39;una pila. </span>
-<span class="co"> */</span>
-<span class="dt">void</span> printStack(tStack s) {
-    
-    tCarta cartaAux;
-    
-    <span class="cf">while</span> (s.nelem &gt; <span class="dv">0</span>) {
-        cartaAux = s.A[s.nelem-<span class="dv">1</span>]; 
-        <span class="cf">if</span> (cartaAux.coll == DIAMANTS) {
-            printf(<span class="st">&quot;  [%c] de DIAMANTS</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);
-        } <span class="cf">else</span> <span class="cf">if</span> (cartaAux.coll == PIQUES) {
-            printf(<span class="st">&quot;  [%c] de PIQUES</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);
-        } <span class="cf">else</span> <span class="cf">if</span> (cartaAux.coll == TREVOLS) {
-            printf(<span class="st">&quot;  [%c] de TREVOLS</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);
-        } <span class="cf">else</span> <span class="cf">if</span> (cartaAux.coll == CORS) {
-            printf(<span class="st">&quot;  [%c] de CORS</span><span class="sc">\n</span><span class="st">&quot;</span>, cartaAux.valor);
-        }
-        s.nelem--;
-    }
-}
-
-<span class="co">/* Acció que rep dos paràmetres:</span>
-<span class="co"> * - pilaCartes (inout)</span>
-<span class="co"> * - pilaDiamants (out)</span>
-<span class="co"> * Aquesta acció separa de pilaCartes (inout) aquelles</span>
-<span class="co"> * cartes amb coll DIAMANTS, i les afegeix a</span>
-<span class="co"> * pilaDiamants (out). Així una vegada executada l&#39;acció, tindrem:</span>
-<span class="co"> * - pilaCartes: contindrà totes les cartes que no són DIAMANTS.</span>
-<span class="co"> * - pilaDiamants: contindrà tots els DIAMANTS. </span>
-<span class="co"> */</span>
-<span class="dt">void</span> separarDiamants(tStack *pilaCartes, tStack *pilaDiamants) {
-    
-    tCarta cartaAux;
-    tStack pilaNoDiamants;
-    
-    <span class="co">/* Totes les cartes inicialment estan a pilaCartes.</span>
-<span class="co">     * Es tracta d&#39;anar afegint els DIAMANTS a la pilaDiamants,</span>
-<span class="co">     * i els que no són DIAMANTS a la pila temporal pilaNoDiamants.</span>
-<span class="co">     * Posteriorment assignarem pilaNoDiamants a pilaCartes (inout).</span>
-<span class="co">     */</span>
-    
-    <span class="co">/* Inicialitzem la pila auxiliar. */</span>
-    createStack(&amp;pilaNoDiamants);
-    
-    <span class="co">/* Hem de tractar tots els elements de la pila. */</span>
-    <span class="cf">while</span> (!emptyStack(*pilaCartes)) {
-        cartaAux = top(*pilaCartes);
-        <span class="cf">if</span> (cartaAux.coll == DIAMANTS) {
-            push(pilaDiamants, cartaAux);
-        } <span class="cf">else</span> {
-            push(&amp;pilaNoDiamants, cartaAux);            
-        }
-        
-        pop(pilaCartes);
-    }
-    
-    <span class="co">/* Reassignació de la pila auxiliar pilaNoDiamants</span>
-<span class="co">     * a pilaCartes, que al cap i a la fi és el paràmetre</span>
-<span class="co">     * de tipus inout de l&#39;acció. </span>
-<span class="co">     */</span>
-    *pilaCartes = pilaNoDiamants;
-}</code></pre></div>
+<p>#VMWare i CodeLite</p>
+<p>##Per què una màquina virtual?</p>
+<p>La màquina virtual s’utilitza per tenir un entorn homogeni de programació, tant per part dels estudiants com per part dels consultors, de forma que qualsevol enunciat/solució publicat a les aules de teoria funcioni a tots els estudiants, i que tots els programes que realitzeu es comportin igual als entorns que s’utilitzaran per corregir-los.</p>
+<p>Fa uns semestres ens vam trobar amb uns pocs casos en els quals un programa que funcionava correctament al PC d’un estudiant, fallava a l’hora de ser corregit. I també alguns enunciats que en determinats sistemes operatius / versions de compiladors C, tampoc funcionaven correctament. Per aquest motiu es va decidir utilitzar una màquina virtual.</p>
+<p>Nosaltres no tenim forma de controlar que realment utilitzeu la FP20181 o bé un CodeLite instal·lat directament al vostre PC, però si no és així es pot donar alguna situació poc desitjable com les que he comentat.</p>
+<p>##VirtualBox i requeriments de virtualització</p>
+<p>Per poder utilitzar VirtualBox és necessari que disposi d’accés a l’opció de virtualització. Si no és així, es poden obtenir errors del tipus: <strong>VT-X está deshabilitado en el BIOS para todos los CPUs</strong>.</p>
+<p>L’error es pot produir per vàries raons:</p>
+<ul>
+<li>La BIOS del PC té deshabilitada l’opció. Per solucionar-ho, cal entrar dins de la BIOS del PC i trobar l’opció d’activació de la virtualització (varia segons el fabricant): pot ser <strong>VT-x</strong>, <strong>Virtualization Technology</strong>, <strong>VT-x/AMD-V</strong>, <strong>Intel Virtual Technology</strong>, <strong>Tecnología de virtualización (VTx/VTd)</strong>, etc.</li>
+<li>Tenim actiu un antivirus el qual té activada una virtualització pròpia que entra en conflicte amb la requerida per VirtualBox. En aquest cas, únicament cal desactivar l’opció de virtualització de l’antivirus.</li>
+</ul>
+</div>
+<div id="com-installar-les-guest-additions" class="section level2" number="12.2">
+<h2 number="12.2"><span class="header-section-number">12.2</span> Com instal·lar les Guest Additions</h2>
+<p>Les <strong>Guest Additions</strong> són una sèrie de drivers que milloren la interacció entre host i màquina virtual. Per instal·lar-les únicament cal fer:</p>
+<ol style="list-style-type: decimal">
+<li>Engegar la màquina virtual <strong>FP20181</strong></li>
+<li>Anar a la barra de menú superior -&gt; <strong>VirtualBox</strong> -&gt; <strong>Devices</strong> -&gt; <strong>Insert Guest Additions CD Image…</strong> -&gt; instal·larà una unitat de CD amb les <strong>Guest Additions</strong>.</li>
+<li>Obrir un terminal des de <strong>Lubuntu</strong> -&gt; <strong>System Tools</strong> -&gt; <strong>LXTerminal</strong></li>
+<li>Dins del terminal <strong>LXTerminal</strong> executar el següent (la versió que s’estigui instal·lant pot ser més nova que la 6.0.12):</li>
+</ol>
+<pre><code>cd /media/uoc/VBox_GAs_6.0.12/     
+sudo sh ./VBoxLinuxAdditions.run</code></pre>
+<ol style="list-style-type: decimal">
+<li>Reiniciar la <strong>FP20181</strong> per activar les <strong>Guest Additions</strong>.</li>
+</ol>
+<p>##Primers passos amb CodeLite</p>
+<p>A les xWiki trobareu el mòdul <strong>Introducció a l’entorn de programació CodeLite</strong>, en el qual es detallen els passos a realitzar per preparar l’entorn.</p>
+<p>A continuació resumeixo una sèrie d’aspectes que es comenten a la xWiki i que són importants recordar:</p>
+<ul>
+<li>Un <strong>workspace</strong> de CodeLite és una agrupació de projectes.</li>
+<li>Únicament es pot tenir un <strong>workspace</strong> obert dins de CodeLite.</li>
+<li>Per crear un <strong>workspace</strong>: <strong>CodeLite</strong> -&gt; <strong>Workspace</strong> -&gt; <strong>New Workspace…</strong> -&gt; <strong>Workspace type:</strong> <code>C++</code> -&gt; <strong>Workspace name</strong>: el que correspongui; <strong>Workspace Path</strong>: <code>/home/uoc/Documents/codelite/workspaces/</code> (o qualsevol altre) -&gt; fi</li>
+<li>Com que no es pot tenir més d’un <strong>workspace</strong> obert, no en podreu crear cap de nou si prèviament no tanqueu el workspace actiu. Si dins del menú de CodeLite veieu la opció <strong>New Workspace</strong> en gris i que no es pot seleccionar, significa que ja teniu un workspace obert. Per tancar-lo: <strong>CodeLite</strong> -&gt; <strong>Workspace</strong> -&gt; Close Workspace.</li>
+<li>Per afegir un projecte a un workspace: <strong>CodeLite</strong> -&gt; <strong>File</strong> -&gt; <strong>New</strong> -&gt; <strong>New Project</strong> -&gt; de tipus <strong>Console</strong>: <code>Simple executable (gcc)</code> -&gt; <strong>Project name</strong>: el que correspongui -&gt; <strong>Compiler</strong>: <code>GCC</code>; <strong>Debugger</strong>: <code>GNU gdb debugger</code> -&gt; fi</li>
+<li>El projecte que acabem de crear conté un programa <code>hello world</code> de mostra, que si executem mostra el missatge <em>“hello world”</em> per pantalla. Aquest programa en C el podem editar i afegir/treure tot allò que volem. És aquí dins on hem de codificar els nostres programes en C (<strong>no</strong> els algorismes!).</li>
+<li>Si tenim més d’un projecte dins d’un workspace, la forma que tenim per indicar quin d’ells és el que està actiu és fent <strong>doble clic</strong> sobre el nom del projecte. Veureu que el nom queda remarcat en negre i cursiva: a partir d’aquest moment, aquest serà el projecte que compilarem i executarem des de les opcions del menú de CodeLite. Tot i que estiguem visualitzant per pantalla el codi d’un altre projecte, la compilació i execució sempre es farà del projecte actiu.</li>
+<li>Per mostrar la barra d’eines (icones) a la part superior: <strong>CodeLite</strong> -&gt; <strong>View</strong> -&gt; <strong>Show toolbar</strong>.</li>
+<li>La icona del <strong>play</strong> de color verd cap a la dreta de la toolbar és per <strong>debuggar</strong>, no per compilar.</li>
+<li>Per compilar i executar podem fer: <strong>CodeLite</strong> -&gt; <strong>Build</strong> -&gt; <strong>Build and run project</strong>. També es pot compilar amb la icona de la toolbar de la fletxa blanca avall amb fons verd, i executar amb la icona de les rodes dentades grises.</li>
+<li>El resultat de l’execució del programa es mostrarà en una pantalla nova tipus terminal. És important anar tancant aquestes finestres una vegada ja hem comprovat el resultat de l’execució.</li>
+</ul>
+<p>##Com activar un projecte</p>
+<p>Dins de CodeLite, a la part esquerra es mostren tots els projects que s’han creat al workspace. Si ens fixem en el nom de tots ells, veurem que un està remarcat en negreta; per exemple podem tenir:</p>
+<ul>
+<li>PAC01</li>
+<li><strong>PAC02</strong></li>
+<li>PAC03</li>
+<li>PAC04</li>
+</ul>
+<p>Això significa que quan anem a <strong>CodeLite</strong> –&gt; <strong>Build</strong> –&gt; <strong>Build and Run Project</strong>, s’executarà l’acció sobre el project <strong>PAC02</strong>, tot i que per pantalla s’estigui mostrant el codi d’un altre project.</p>
+<p>Si es fa <strong>doble clic</strong> amb el ratolí sobre el nom del project <strong>PAC04</strong>, ara veurem:</p>
+<ul>
+<li>PAC01</li>
+<li>PAC02</li>
+<li>PAC03</li>
+<li><strong>PAC04</strong></li>
+</ul>
+<p>A partir d’aquest moment, el <strong>Build and Run Project</strong> s’aplicarà sobre <strong>PAC04</strong>.</p>
+<p>##Canviar idioma del teclat</p>
+<p>Dins de l’escriptori de Lubuntu, clica amb el botó dret del ratolí sobre la barra grisa superior -&gt; <strong>Add/Remove Panel Items</strong> -&gt; pestanya <strong>Panel Applets</strong> -&gt; botó <strong>Add</strong> -&gt; selecciona el plugin <strong>Keyboard Layout Handler</strong> -&gt; <strong>Add</strong> -&gt; <strong>Close</strong>.</p>
+<p>En aquests moments a la part superior dreta se’t mostrarà l’idioma definit per defecte pel teclat -&gt; marca sobre la bandera amb el botó dret -&gt; <strong>“Keyboard Layout Handler” settings</strong> -&gt; desmarca l’opció <strong>Keep system layout</strong> -&gt; i aquí ja pots afegir l’idioma que vulguis des del botó <strong>Add</strong>; pots prioritzar un idioma o l’altre posant-lo en primera posició a la llista. Una vegada hagis guardat la configuració desitjada, ja t’haurà canviat la disposició del teclat al nou idioma.</p>
+<p>Si has deixat definits varis idiomes a la llista, cada vegada que cliquis sobre la bandera de la part superior dreta, et farà un canvi a l’altre idioma de la llista.</p>
+<p>##Programa per defecte al crear un projecte</p>
+<p>Cada vegada que es crea un nou projecte a CodeLite, per defecte sempre conté el codi del programa <code>hello world</code>:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode" id="cb154"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb154-1"><a href="pr2.html#cb154-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb154-2"><a href="pr2.html#cb154-2"></a></span>
+<span id="cb154-3"><a href="pr2.html#cb154-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv)</span>
+<span id="cb154-4"><a href="pr2.html#cb154-4"></a>{</span>
+<span id="cb154-5"><a href="pr2.html#cb154-5"></a>    printf(<span class="st">&quot;hello world</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb154-6"><a href="pr2.html#cb154-6"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb154-7"><a href="pr2.html#cb154-7"></a>}</span></code></pre></div>
+<p>Per tant, quan volem crear el nostre propi programa, només cal esborrar el programa que crea per defecte i començar a codificar el teu programa nou.</p>
+<p>Si malgrat tot no es vol que es mostri aquest codi cada vegada, podem modificar el codi per defecte associat als nous projectes:</p>
+<ul>
+<li>Editar l’arxiu <code>/usr/share/codelite/templates/projects/executable/main.cpp</code>, que és el que es carrega per defecte en crear cada nou projecte.</li>
+<li>Crear un nou template de CodeLite i utilitzar-lo en el moment de crear un nou projecte. La creació d’un nou templates es fa a partir d’un projecte que tinguem -&gt; botó dret sobre el nom del projecte -&gt; <code>Save as template...</code>.</li>
+</ul>
+<p>##Com fixar el kernel d’inici amb Lubuntu</p>
+<p>Tot i ser una situació gens habitual, es pot donar el cas que Lubuntu només ens arranqui en un determinat kernel per problemes amb determinades targetes gràfiques. Tot i que el kernel sempre es pot seleccionar en el moment d’inici de Lubuntu, podem fixar quin és el que volem utilitzar malgrat que aquest no sigui el més nou de tots. Una possible opció per fer-ho amb l’aplicació <strong>Grub Customizer</strong>; per instal·lar-la fem:</p>
+<pre><code>sudo add-apt-repository ppa:danielrichter2007/grub-customizer</code></pre>
+<p>Ens identifiquem amb la password de l’usuari <strong>uoc</strong>.</p>
+<p>A continuació, actualitzem la llista de packages de tots els repositoris:</p>
+<pre><code>sudo apt-get update
+sudo apt-get install grub-customizer</code></pre>
+<p>En aquest punt haurem instal·lat <strong>Grub Customizer</strong> dins de la màquina virtual <strong>FP20181</strong>: aquest programa ens permetrà confirmar exactament què hi ha definit a l’arranc grub de la màquina virtual. Per executar el programa: icona de <strong>Lubuntu</strong> —&gt; <strong>System Tools</strong> —&gt; <strong>Grub Customizer</strong> —&gt; posar contrasenya <strong>uoc</strong> —&gt; a la pestanya inicial <strong>List configuration</strong> es mostren tots els kernels de què disposa l’entorn en aquests moments.</p>
+<p>Es recomanable fer una còpia prèvia de les PAC/PR que puguem tenir dins de la <strong>FP20181</strong> abans de canviar el kernel d’inici. Per canviar el kernel d’arranc per defecte: <strong>Grub Customizer</strong> -&gt; pestanya <strong>General Settings</strong> -&gt; com a <strong>default entry</strong>, seleccionar el kernel que funciona correctament d’entre tots els disponibles. Una vegada escollit, es prem el botó <strong>Save</strong> de la part superior esquerra.</p>
+<p>Per aplicar el canvi que s’acaba de desar a l’arranc de Lubuntu cal obrir un terminal de Lubuntu des de <strong>System Tools</strong> -&gt; <strong>LXTerminal</strong>, i des del terminal teclejar:</p>
+<pre><code>sudo update-grub</code></pre>
+<p>Una vegada hagi finalitzat el procés, cal realitzar un reboot de la <strong>FP20181</strong> per tal que agafi ara per defecte el kernel escollit.</p>
 
 </div>
 </div>
@@ -471,7 +603,7 @@ bool fullStack(tStack s) {
         </div>
       </div>
 <a href="pr1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="vmware-i-codelite.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="altres.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
